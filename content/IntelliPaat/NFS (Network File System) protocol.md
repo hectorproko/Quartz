@@ -1,0 +1,2 @@
+
+NFS (Network File System) is another network file sharing protocol, but it's most commonly used in Unix and Linux environments. NFS allows remote hosts to mount file systems over a network as if they were local.
