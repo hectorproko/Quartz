@@ -6,7 +6,7 @@
 
 #### The "NET"
 **What is Internet/lntranet**
-- A global computer network using standardized communication protocols (e.g. UDP, TCP/IP) Providing information and communication facilities, consisting of interconnected networks
+- A global computer network using standardized communication protocols (e.g. UDP, TCP/IP) Providing information and communication facilities, consisting of interconnected networks ^652c81
 - Intranet is a local private network created usingWorld Wide Web.
 
 #### Virtualization
