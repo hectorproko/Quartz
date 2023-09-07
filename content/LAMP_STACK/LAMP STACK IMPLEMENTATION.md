@@ -1,6 +1,5 @@
-# LAMP STACK IMPLEMENTATION
 
-> [!NOTE]
+> [!NOTE] LAMP STACK IMPLEMENTATION
 > A technology stack is a set of frameworks and tools used to develop a software product. Here we will implement a **LAMP** which consits of **L**inux, **A**pache, **M**ySQL, **P**HP|Python|Perl.
 > 
 > Technologies/Tools used:
