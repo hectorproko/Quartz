@@ -9,7 +9,7 @@ Picture doesnt work
 ## About Me
 Hi, I'm Hector Rodriguez. This webpage is a collection of my self-learning projects in the realm of DevOps technologies. Feel free to explore and see what I've been learning and working on.
 
-You can find my professional profile on [LinkedIn](https://www.linkedin.com/in/hector-rodriguez-84020a26/).
+You can find my professional profile on [LinkedIn](https://www.linkedin.com/in/hector-rodriguez-84020a26/).  
 You can find my GitHub profile on [GitHub](https://github.com/hectorproko).
 
 ## Projects
