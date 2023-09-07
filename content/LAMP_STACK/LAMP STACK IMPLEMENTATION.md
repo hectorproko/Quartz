@@ -72,21 +72,21 @@ Make sure when you run the command that your current working directory in the te
 * We will install Apache using Ubuntu's package manager **apt**
     * Update list of packages in package manager
     ```bash
-    sudo apt udpate
+sudo apt udpate
     ```
     * To install apache2 package
     ```bash
-    sudo apt install apache2
+sudo apt install apache2
     ```
     * Alternatively you can put everything together in one line
     ```bash
-    sudo apt update && sudo apt install apache2 -y
+sudo apt update && sudo apt install apache2 -y
     ```
     The **-y** puts yes whenever the systems asks during install
 
-    * To make sure apache is running 
+    * To make sure Apache is running 
     ```bash
-    systemctl status apache2
+systemctl status apache2
     ```
 
 * Now we are going to add a rule to our **Security Group** to allow **Inbound** HTTP requests
