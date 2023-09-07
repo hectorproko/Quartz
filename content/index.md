@@ -1,5 +1,7 @@
 ---
 title: Welcome
+tags:
+  - miniProject
 ---
 <!--
 Picture doesnt work
