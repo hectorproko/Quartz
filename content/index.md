@@ -47,8 +47,8 @@ Here are some of the projects I've been working on, categorized by technology:
 - [Project 24](https://github.com/hectorproko/BUILDING-ELASTIC-KUBERNETES-SERVICE-EKS-WITH-TERRAFORM)
 
 ### Linux (stacks):
-- [LAMP](https://github.com/hectorproko/LAMP_STACK) ==migrating to== [[LAMP STACK IMPLEMENTATION|LAMP]]
-- [LEMP](https://github.com/hectorproko/LEMP_STACK) ==migrating to== [[LEMP STACK IMPLEMENTATION|LEMP]]
+- [[LAMP STACK IMPLEMENTATION|LAMP]] *(old [LAMP](https://github.com/hectorproko/LAMP_STACK) )*  
+- [[LEMP STACK IMPLEMENTATION|LEMP]]  *(old [LEMP](https://github.com/hectorproko/LEMP_STACK) )*
 - [MERN](https://github.com/hectorproko/MERN_STACK)
 - [MEAN](https://github.com/hectorproko/MEAN_STACK)
 - [Project 6: Web Solution with WordPress](https://github.com/hectorproko/WEB-SOLUTION-WITH-WORDPRESS)
