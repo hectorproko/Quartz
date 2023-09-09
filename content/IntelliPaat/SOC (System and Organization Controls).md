@@ -1,3 +1,0 @@
-# System and Organization Controls
-
-SOC compliance refers to audits that measure how a given service organization manages data to protect the interests of the organization and the privacy of its clients. There are different kinds of SOC reports such as SOC 1, SOC 2, and SOC 3, each with a different focus but generally revolving around internal controls, security, availability, and processing integrity of the systems that process users' data.

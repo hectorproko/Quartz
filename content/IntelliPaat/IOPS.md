@@ -1,1 +1,0 @@
-It is the measure of the number of I/O operations a drive, SSD, or HDD can handle per second with each block being read from or written to a RANDOM location in the disk

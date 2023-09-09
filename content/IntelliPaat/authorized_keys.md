@@ -1,1 +1,0 @@
-Hold public keys of the machines that are allow to connect to this machine (the one with this filed)
