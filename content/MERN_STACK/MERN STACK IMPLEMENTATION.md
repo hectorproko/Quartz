@@ -1,6 +1,24 @@
-# IMPLEMENTING MERN STACK
+> [!NOTE]
+> A technology stack is a set of frameworks and tools used to develop a software product. Here we will implement a **MERN** which consits of:
+> 
+>  **M**ongoDB - No-SQL database <br>
+>  **E**xpressJS - A server side Web Application framework for Node.js <br>
+>  **R**eactJS - A JavaScript based frontend framework used to build User Interface (UI) components <br>
+>  **N**ode.js - A JavaScript runtime environment. It is used to run JavaScript on a machine rather than in a browser.
+> 
+> In this project the user interacts with the **ReactJS UI** components (application front-end ) from the browswer. This frontend is served by **ExpressJS** (running on top of **NodeJS**) which is the application backend. Any interaction that causes a data change request is sent to the **NodeJS** based **ExpressJS** server, which grabs data from the **MongoDB** database if required, and returns the data to the frontend of the application, which is then presented to the user.
+> 
+> Technologies/Tools used:
+> * AWS (EC2)
+> * Ubuntu Server 20.04 LTS
+> * MonogDB
+> * ExpressJS
+> * ReactJS
+> * Node.js
+> * GitBash
+> * Postman
 
-Before we start we need to have an environemnt to work with. I will we using my AWS account to create an EC2 instance with an Ubuntu Server.
+Before we start we need to have an environment to work with. I will we using my AWS account to create an EC2 instance with an Ubuntu Server.
 
 * First thing I'm going to do when I log in to AWS is look for the **EC2** services. There are various methods to navigate to it, here I'm using the **search bar** <br /> 
 ![Markdown Logo](https://raw.githubusercontent.com/hectorproko/LAMP_STACK/main/images/ec2search.png) <br>
