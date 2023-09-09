@@ -1,0 +1,6 @@
+- Xen Project is a hypervisor using microkernel design
+- Was launched in October 2003 by University of Cambridge Computer Laboratory
+- Leading open source virtualization platform which is powering the biggest players in cloud today
+- AWS, RackSpace, OpenStack, Verizon Cloud etc. use Xen
+- For more information visit — https://www.xenproject.org
+- KVM is also used in some places

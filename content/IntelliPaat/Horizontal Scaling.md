@@ -1,0 +1,3 @@
+- **Definition**: Horizontal scaling involves adding more machines of the same type to an existing resource pool.
+- **Advantages**: Improved fault tolerance, reduced latency, and better management of user experience.
+- **Disadvantages**: Higher costs and complex implementation.
