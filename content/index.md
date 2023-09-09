@@ -50,7 +50,7 @@ Here are some of the projects I've been working on, categorized by technology:
 - [[LAMP STACK IMPLEMENTATION|LAMP]] ~~*(old [LAMP](https://github.com/hectorproko/LAMP_STACK) )*~~  
 - [[LEMP STACK IMPLEMENTATION|LEMP]]  ~~*(old [LEMP](https://github.com/hectorproko/LEMP_STACK) )*~~
 - [[MERN STACK IMPLEMENTATION|MERN]] ~~*(old [MERN](https://github.com/hectorproko/MERN_STACK))*~~
-- [MEAN](https://github.com/hectorproko/MEAN_STACK)
+- [[MEAN STACK IMPLEMENTATION|MEAN]] ~~*(old [MEAN](https://github.com/hectorproko/MEAN_STACK))*~~
 - [Project 6: Web Solution with WordPress](https://github.com/hectorproko/WEB-SOLUTION-WITH-WORDPRESS)
 - [Project 7: DevOps Tooling Website Solution](https://github.com/hectorproko/Devops-Tooling-Website-Solution)
 - [Project 8: Load Balancer Solution with Apache](https://github.com/hectorproko/LOAD-BALANCER-SOLUTION-WITH-APACHE)
