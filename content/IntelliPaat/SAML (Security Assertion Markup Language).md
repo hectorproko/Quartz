@@ -1,1 +1,0 @@
-An XML-based standard for exchanging authentication and authorization data between parties, specifically between an [[IdP (Identity Provider)|identity provider (IdP)]] and a service provider (SP)

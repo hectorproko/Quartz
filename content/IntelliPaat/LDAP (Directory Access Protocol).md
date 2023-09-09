@@ -1,1 +1,0 @@
-LDAP stands for Lightweight Directory Access Protocol. It is an open, vendor-neutral protocol used for accessing and maintaining distributed directory information services over an IP network.

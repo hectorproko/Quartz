@@ -1,1 +1,0 @@
-![[Cloud Service Models.png]]

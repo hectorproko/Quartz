@@ -1,3 +1,0 @@
-- **Definition**: Vertical scaling involves increasing the resources on a single machine.
-- **Advantages**: Reduced software costs and simpler architecture since it involves only one instance.
-- **Disadvantages**: High downtime risks and hardware failure rates.
