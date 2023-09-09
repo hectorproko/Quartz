@@ -37,7 +37,7 @@ Here are some of the projects I've been working on, categorized by technology:
 
 ### Docker:
 - [Project 20](https://github.com/hectorproko/MIGRATION-TO-THE-LOUD-WITH-CONTAINERIZATION---DOCKER-DOSECKER-COMPO/blob/main/Project20_Steps.md)
-- [Implementing TLS Security for Docker](https://github.com/hectorproko/Docker/blob/main/Implementing%20TLS%20Security%20for%20Docker.md)
+- [[Implementing TLS Security for Docker]] ~~(old [Implementing TLS Security for Docker](https://github.com/hectorproko/Docker/blob/main/Implementing%20TLS%20Security%20for%20Docker.md))~~
 
 ### Kubernetes (EKS):
 - [Project 21](https://github.com/hectorproko/PROJECT-21-Orchestrating-containers-across-multiple-Virtual-Servers-with-Kubernetes/blob/main/Project21_Steps.md)
