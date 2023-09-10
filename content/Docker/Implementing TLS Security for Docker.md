@@ -5,9 +5,10 @@
 > To achieve this, the client and the daemon will be secured using certificates signed by a trusted Certificate Authority (CA). The client will be configured to only connect to Docker daemons that present certificates signed by the trusted CA, while the daemon will only accept connections from clients that provide certificates from the same trusted CA.
 > 
 > ![Example Image](images/docker-tls-diagram.png)
+> ![[Pasted image 20230910083014.png]]
 > 
 
-![Example Image](images/docker-tls-diagram.png)
+![[Pasted image 20230910083139.png]]
 
 *The CA we're building here is to help demonstrate how to configure Docker, we're not attempting to build something production-grade.*
 
