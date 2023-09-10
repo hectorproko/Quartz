@@ -7,6 +7,8 @@
 > ![Example Image](images/docker-tls-diagram.png)
 > 
 
+![Example Image](images/docker-tls-diagram.png)
+
 *The CA we're building here is to help demonstrate how to configure Docker, we're not attempting to build something production-grade.*
 
 I'll be using Vagrant to create the test environment
