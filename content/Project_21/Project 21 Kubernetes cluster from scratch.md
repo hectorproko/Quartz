@@ -1,6 +1,7 @@
 ---
-title: test
-tags: kubernetes
+title: Kubernetes cluster from scratch
+tags:
+  - kubernetes
 ---
 
 ## Description
