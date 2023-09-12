@@ -1,6 +1,6 @@
 ---
 title: Welcome
-tags: []
+tags:
 ---
 <!--
 Picture doesnt work
