@@ -53,7 +53,7 @@ Making script executable:
 chmod +x one.sh
 ```
 
-Testing `one.sh`
+Testing `one.sh`  
 ![[Pasted image 20230820014809.png]]
 
 2. Creating script `two.sh` containing a `case..esac` statement to call the functions defined in `one.sh`.
@@ -97,7 +97,7 @@ Making script executable:
 chmod +x two.sh
 ```
 
-Testing `two.sh`
+Testing `two.sh`  
 ![[Pasted image 20230820015844.png]]
 Executing `two.sh` also executes `one.sh` that's why we see its output at the beginning. Then we see the output of `two.sh` which prompts us to pick an option, I picked 2 which triggered function `square`
 

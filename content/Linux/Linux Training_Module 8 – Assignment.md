@@ -10,7 +10,7 @@
 
 ### Task 1:
 
-Launched Firefox 3 times:
+Launched Firefox 3 times:  
 ![[Pasted image 20230820123022.png]]
 
 After launching Firefox, I used the `pgrep` command to observe the multiple processes that were spawned:
@@ -79,12 +79,12 @@ I'll execute the script to start monitoring
 ```
 ![[Pasted image 20230820145952.png]]
 
-To test the monitoring I'll start creating files inside `log_folder`
+To test the monitoring I'll start creating files inside `log_folder`  
 ![[Pasted image 20230820150147.png]]
 
-We now see our running script has some console output
+We now see our running script has some console output  
 ![[Pasted image 20230820150231.png]]
 
-Now we check the output file generate by the script `inotifywait_log` an see the files created
+Now we check the output file generate by the script `inotifywait_log` an see the files created  
 ![[Pasted image 20230820150400.png]]
 

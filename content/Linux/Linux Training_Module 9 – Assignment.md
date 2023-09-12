@@ -9,10 +9,6 @@
 > 3. Create a shell script which can be used to insert 4 rows of data into table1 & table2
 > 
 
-^8e090f
-
-
-
 Update packages:
 ```bash
 sudo yum update -y
@@ -35,7 +31,7 @@ Run `mysql_secure_installation` for security-related operations like configuring
 sudo mysql_secure_installation
 ```
 
-Log in to the MySQL shell as the root user: `mysql -u root -p` using previously configured password
+Log in to the MySQL shell as the root user: `mysql -u root -p` using previously configured password  
 ![[Pasted image 20230820163104.png]]
 
 #### Step 1: Create a Database
@@ -93,7 +89,7 @@ Executing the script:
 ```bash
 ./insert_data.sh
 ```
-Prompts for password
+Prompts for password  
 ![[Pasted image 20230820165002.png]]
 
 

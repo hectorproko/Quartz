@@ -33,9 +33,9 @@ nginx -v
 ```
 ![[Pasted image 20230818230510.png]]
 
-Getting the IP of Nginx Server:
+Getting the IP of Nginx Server:  
 ![[Pasted image 20230819001838.png]]
 
-Testing the service:
+Testing the service:  
 ![[Pasted image 20230819001617.png]]
 

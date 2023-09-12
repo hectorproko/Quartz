@@ -24,7 +24,6 @@ sudo apt update && sudo apt install -y httpd
 ```bash
 chmod +x install_httpd.sh
 ```
-
 ![[Pasted image 20230820013308.png]]
 
 3. Executing the script

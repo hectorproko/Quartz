@@ -20,22 +20,22 @@
 > 
 
 
-1. **Mapping `5.75.179.162` to `ftp_server`**
+1. **Mapping `5.75.179.162` to `ftp_server`**  
 ![[Pasted image 20230821215223.png]]
-2. **Pinging `ftp_server`**
+2. **Pinging `ftp_server`**  
 ![[Pasted image 20230821215628.png]]
 
 
 
-3. **Using `5.75.179.162` I'll connect to the FTP server where I'll upload `test` file**
+3. **Using `5.75.179.162` I'll connect to the FTP server where I'll upload `test` file**  
 
-*Could have used `ftp_server` instead of IP to connect as well*
+*Could have used `ftp_server` instead of IP to connect as well*  
 ![[Pasted image 20230821221659.png]]
 
 ![[Pasted image 20230821215441.png]]
 
 
-4. **Install a web server and allow access to the port number of that server**
+4. **Install a web server and allow access to the port number of that server**  
 
 In terminal I run:
 ```bash
@@ -49,7 +49,7 @@ sudo systemctl status apache2
 ```
 ![[Pasted image 20230822205646.png]]
 
-Getting server IP:
+Getting server IP:  
 ![[Pasted image 20230822210024.png]]
 
 Enabling firewall
@@ -58,7 +58,7 @@ sudo ufw enable
 ```
 ![[Pasted image 20230822205932.png]]
 
-If I check in browser page does not appear
+If I check in browser page does not appear  
 ![[Pasted image 20230822210234.png]]
 
 Opening the necessary ports:
@@ -67,6 +67,6 @@ sudo ufw allow 80,443/tcp
 ```
 ![[Pasted image 20230822210318.png]]
 
-When I check again page appears:
+When I check again page appears:  
 ![[Pasted image 20230822210349.png]]
 

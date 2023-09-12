@@ -24,7 +24,7 @@ awk -F ',' 'NR >= 200 && NR <= 210 {print $2}' linux_mod6_dataset.csv
 
 Our target:
 ![[Pasted image 20230820024520.png]]
-Running awk:
+Running awk:  
 ![[Pasted image 20230820024624.png]]
 
 #### c) Print all the games released in the year 2005 between rows 100 to 500
