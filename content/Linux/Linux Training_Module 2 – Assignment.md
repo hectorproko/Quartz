@@ -96,7 +96,7 @@ Changing the group ownership to "prod":
 ```bash
 sudo chown :newgroup ../prod/myfile.txt
 ```
-Confirming:
+Confirming:  
 ![[Pasted image 20230820004623.png]]
 
 
