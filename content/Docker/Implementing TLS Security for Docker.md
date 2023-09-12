@@ -80,7 +80,6 @@ Vagrant.configure("2") do |config|
 
 *All nodes have access to a shared folder called `shared` that I'll use to distribute the keys*  
 
-
 ### Creating the envrioment
 
 We execute the `Vagrantfile` 

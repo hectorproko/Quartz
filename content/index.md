@@ -57,7 +57,8 @@ Here are some of the projects I've been working on, categorized by technology:
 - [Project 9: Continuous Integration Pipeline for Tooling Website](https://github.com/hectorproko/CONTINOUS-INTEGRATION-PIPELINE-FOR-TOOLING-WEBSITE)
     - Enhance the architecture prepared in Project 8 by adding a Jenkins server and configure a job
 - [Project 10: Configure Nginx as a Load Balancer with TLS](https://github.com/hectorproko/LOAD-BALANCER-SOLUTION-WITH-NGINX-AND-SSL-TLS)
-
+**Others:**
+- [[Linux Assignments|Assignments]]
 ### Packer:
 - [Packer To AMI (AWS)](https://github.com/hectorproko/Packer/blob/main/Packer_To_AMI.md)
     - Placeholder
