@@ -3,8 +3,6 @@ title: test
 tags: kubernetes
 ---
 
-<!--Project 21-->
-
 ## Description
 This project showcases a demonstration of setting up a Kubernetes cluster from scratch, aiming to exhibit a comprehensive understanding of the technology. The project encompasses the installation and configuration of Kubernetes control plane components, worker nodes, and networking. The instructions provided are designed for a Linux-based environment.
 
