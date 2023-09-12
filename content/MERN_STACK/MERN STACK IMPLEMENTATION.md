@@ -366,7 +366,7 @@ In the image below, make sure you change the time of deleting the entry from 6 H
 ![Markdown Logo](https://raw.githubusercontent.com/hectorproko/MERN_STACK/main/images/connectApp.png) <br>
 
 * Make sure Driver is set to **Node.js** and proper version (left mine 3.7) <br>
-Copy the string from \#2. We'll need it to establish a connection<br>
+Copy the string from number 2. We'll need it to establish a connection<br>
 ![Markdown Logo](https://raw.githubusercontent.com/hectorproko/MERN_STACK/main/images/connectToCluster.png) <br>
 
 ```bash
