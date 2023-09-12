@@ -40,7 +40,7 @@ Here are some of the projects I've been working on, categorized by technology:
 - [[Implementing TLS Security for Docker]] ~~(old [Implementing TLS Security for Docker](https://github.com/hectorproko/Docker/blob/main/Implementing%20TLS%20Security%20for%20Docker.md))~~
 
 ### Kubernetes (EKS):
-- [[Project 21 Kubernetes cluster from scratch]] ~~(old [Project 21](https://github.com/hectorproko/PROJECT-21-Orchestrating-containers-across-multiple-Virtual-Servers-with-Kubernetes/blob/main/Project21_Steps.md))~~
+- [[Project 21 Kubernetes cluster from scratch|Kubernetes cluster from scratch]] ~~(old [Project 21](https://github.com/hectorproko/PROJECT-21-Orchestrating-containers-across-multiple-Virtual-Servers-with-Kubernetes/blob/main/Project21_Steps.md))~~
 - [Project 22](https://github.com/hectorproko/DEPLOYING-APPLICATIONS-INTO-KUBERNETES-CLUSTER/blob/main/Project22_Steps.md)
 - [Project 23](https://github.com/hectorproko/PERSISTING-DATA-IN-KUBERNETES/blob/main/Project23_Steps.md)
 - [Project 24](https://github.com/hectorproko/BUILDING-ELASTIC-KUBERNETES-SERVICE-EKS-WITH-TERRAFORM)
@@ -62,3 +62,5 @@ Here are some of the projects I've been working on, categorized by technology:
 ### Packer:
 - [Packer To AMI (AWS)](https://github.com/hectorproko/Packer/blob/main/Packer_To_AMI.md)
     - Placeholder
+
+
