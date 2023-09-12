@@ -73,13 +73,13 @@ Removing user user3 from the group:
 ```bash
 sudo gpasswd -d user3 webdev #remove from group
 ```
-Removal and confirmation:
+Removal and confirmation:  
 ![[Pasted image 20230820003434.png]]
 Deleting the user:
 ```bash
 sudo userdel -r user3
 ```
-Deletion and confirmation:
+Deletion and confirmation:  
 ![[Pasted image 20230820003820.png]]
 
 5. **File Relocation and Ownership Change**: Move the file from the "dev" folder to another folder. Change the file's group ownership thereafter.
