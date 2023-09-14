@@ -1402,7 +1402,7 @@ k8s-cluster-from-ground-up.id_rsa
 hector@hector-Laptop:~/ssh$
 ```
 
-**Master #1** *(after I logged in, checked files)*
+**Master 1** *(after I logged in, checked files)*
 ``` bash
 master_1_ip=$(aws ec2 describe-instances \
 --filters "Name=tag:Name,Values=${NAME}-master-0" \
@@ -1424,7 +1424,7 @@ total 44
 ubuntu@ip-172-31-0-10:~$
 ```
 
-**Master #2**
+**Master 2**
 ``` bash
 master_2_ip=$(aws ec2 describe-instances \
 --filters "Name=tag:Name,Values=${NAME}-master-1" \
@@ -1446,7 +1446,7 @@ total 44
 ubuntu@ip-172-31-0-11:~$
 ```
 
-**Master #3**
+**Master 3**
 ``` bash
 master_3_ip=$(aws ec2 describe-instances \
 --filters "Name=tag:Name,Values=${NAME}-master-2" \
@@ -1580,7 +1580,7 @@ ubuntu@ip-172-31-0-12:~$
 
 9. Verify the `etcd` installation    
 
-**Master #1** *(master-0)*
+**Master 1** *(master-0)*
 ``` bash
 ubuntu@ip-172-31-0-10:~$ sudo ETCDCTL_API=3 etcdctl member list \
 >   --endpoints=https://127.0.0.1:2379 \
@@ -1594,7 +1594,7 @@ ed33b44c0b153ee3, started, master-2, https://172.31.0.12:2380, https://172.31.0.
 ubuntu@ip-172-31-0-10:~$
 ```
 
-**Master #2** *(master-1)*
+**Master 2** *(master-1)*
 ``` bash
 ubuntu@ip-172-31-0-11:~$ sudo ETCDCTL_API=3 etcdctl member list \
 >   --endpoints=https://127.0.0.1:2379 \
@@ -1607,7 +1607,7 @@ ade74a4f39c39f33, started, master-1, https://172.31.0.11:2380, https://172.31.0.
 ed33b44c0b153ee3, started, master-2, https://172.31.0.12:2380, https://172.31.0.12:2379, false
 ubuntu@ip-172-31-0-11:~$
 ```
-**Master #3** *(master-2)*
+**Master 3** *(master-2)*
 ``` bash
 ubuntu@ip-172-31-0-12:~$ sudo ETCDCTL_API=3 etcdctl member list \
 >   --endpoints=https://127.0.0.1:2379 \
