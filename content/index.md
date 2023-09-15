@@ -53,7 +53,7 @@ Here are some of the projects I've been working on, categorized by technology:
 - [[Project6 Web Solution WordPress|Web Solution WordPress]] *~~(old [Project 6](https://github.com/hectorproko/WEB-SOLUTION-WITH-WORDPRESS))~~*
 - [[Project7 DevOps Tooling Website Solution|DevOps Tooling Website Solution]] *~~(old [Project 7](https://github.com/hectorproko/Devops-Tooling-Website-Solution))~~*
 - [[Project 8 APACHE LOAD-BALANCER|Load Balancer Solution with Apache]] *~~(old [Project 8](https://github.com/hectorproko/LOAD-BALANCER-SOLUTION-WITH-APACHE))~~*
-    - Adds Load Balancer to Project 7
+    - Adds Load Balancer to [[Project7 DevOps Tooling Website Solution|DevOps Tooling Website Solution]]
 - [Project 9: Continuous Integration Pipeline for Tooling Website](https://github.com/hectorproko/CONTINOUS-INTEGRATION-PIPELINE-FOR-TOOLING-WEBSITE)
     - Enhance the architecture prepared in Project 8 by adding a Jenkins server and configure a job
 - [Project 10: Configure Nginx as a Load Balancer with TLS](https://github.com/hectorproko/LOAD-BALANCER-SOLUTION-WITH-NGINX-AND-SSL-TLS)  
