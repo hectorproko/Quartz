@@ -2,12 +2,28 @@
 title: Web Solution WordPress
 ---
 
-Before we start we need to have an environment to work with. I will we using my AWS account to create two EC2 instances (**Webserver** and **DB Server**)with Red-Hat as the OS. 
+> [!info]
+> In this project we will prepare storage infrastructure on two Linux servers and implement a basic web solution using WordPress. This will be implemented based on what is called the **Three-tier Architecture**.
+> 
+> In this project:
+> 1. Presentation Layer (PL): Any Browser (user interface)
+> 2. Business Layer (BL): An EC2 Linux Server as a web server (where WordPress is running)
+> 3. Data Access or Management Layer (DAL): An EC2 Linux server as a database (DB) server (MySQL)
+> 
+> We will create **EBS Volumes** partition them, create **Volume Groups**, create **Logical Volumes** format and mount them.
+> 
+> Technologies/Tools used:
+> * AWS (EC2)(EBS)
+> * Red Hat Enterprise Linux 8 (HVM)
+> * MySQL
+> * Wordpress
+> * GitBash
+> 
 
+Before we start we need to have an environment to work with. I will we using my AWS account to create two EC2 instances (**Webserver** and **DB Server**)with Red-Hat as the OS. 
 
 Use link:
 [Creating Red Hat instance in AWS](https://github.com/hectorproko/RepeatableSteps_tutorials/blob/main/AWS_ReHat_Instnace.md)
-
 
 We need to know which **availability zone** this instance is in when attaching **EBS**. Go to the list of instances to check. My example shows (instance which I named) **Project6** is in availability zone **us-east-1c**
 <br /> 

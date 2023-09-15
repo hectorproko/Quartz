@@ -54,9 +54,9 @@ Here are some of the projects I've been working on, categorized by technology:
 - [[Project7 DevOps Tooling Website Solution|DevOps Tooling Website Solution]] *~~(old [Project 7](https://github.com/hectorproko/Devops-Tooling-Website-Solution))~~*
 - [[Project 8 APACHE LOAD-BALANCER|Load Balancer Solution with Apache]] *~~(old [Project 8](https://github.com/hectorproko/LOAD-BALANCER-SOLUTION-WITH-APACHE))~~*
     - Adds Load Balancer to [[Project7 DevOps Tooling Website Solution|DevOps Tooling Website Solution]]
-- [Project 9: Continuous Integration Pipeline for Tooling Website](https://github.com/hectorproko/CONTINOUS-INTEGRATION-PIPELINE-FOR-TOOLING-WEBSITE)
+- [[Project9 CONTINOUS-INTEGRATION-PIPELINE-FOR-TOOLING-WEBSITE|Continuous Integration Pipeline for Tooling Website]] *~~(old [Project 9](https://github.com/hectorproko/CONTINOUS-INTEGRATION-PIPELINE-FOR-TOOLING-WEBSITE))~~*
     - Enhance the architecture prepared in Project 8 by adding a Jenkins server and configure a job
-- [Project 10: Configure Nginx as a Load Balancer with TLS](https://github.com/hectorproko/LOAD-BALANCER-SOLUTION-WITH-NGINX-AND-SSL-TLS)  
+- [[Project10 LOAD-BALANCER-SOLUTION-WITH-NGINX-AND-SSL-TLS|Configure Nginx as a Load Balancer with TLS]] *~~(old [Project 10](https://github.com/hectorproko/LOAD-BALANCER-SOLUTION-WITH-NGINX-AND-SSL-TLS)  )~~*
 **Others:**  
 - [[Linux Assignments|Assignments]]
 ### Packer:

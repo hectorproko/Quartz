@@ -1,5 +1,10 @@
-# LOAD-BALANCER-SOLUTION-WITH-NGINX-AND-SSL-TLS
+---
+title: Configure Nginx as a Load Balancer with TLS
+---
+
 PROJECT 10: LOAD BALANCER SOLUTION WITH NGINX AND SSL/TLS
+
+
 
 ## Provision the environment
  1. Create an Ubuntu Server 20.04  
