@@ -50,9 +50,9 @@ Here are some of the projects I've been working on, categorized by technology:
 - [[LEMP STACK IMPLEMENTATION|LEMP]]  ~~*(old [LEMP](https://github.com/hectorproko/LEMP_STACK) )*~~
 - [[MERN STACK IMPLEMENTATION|MERN]] ~~*(old [MERN](https://github.com/hectorproko/MERN_STACK))*~~
 - [[MEAN STACK IMPLEMENTATION|MEAN]] ~~*(old [MEAN](https://github.com/hectorproko/MEAN_STACK))*~~
-- [Project 6: Web Solution with WordPress](https://github.com/hectorproko/WEB-SOLUTION-WITH-WORDPRESS)
-- [Project 7: DevOps Tooling Website Solution](https://github.com/hectorproko/Devops-Tooling-Website-Solution)
-- [Project 8: Load Balancer Solution with Apache](https://github.com/hectorproko/LOAD-BALANCER-SOLUTION-WITH-APACHE)
+- [[Project6 Web Solution WordPress|Web Solution WordPress]] *~~(old [Project 6](https://github.com/hectorproko/WEB-SOLUTION-WITH-WORDPRESS))~~*
+- [[Project7 DevOps Tooling Website Solution|DevOps Tooling Website Solution]] *~~(old [Project 7](https://github.com/hectorproko/Devops-Tooling-Website-Solution))~~*
+- [[Project 8 APACHE LOAD-BALANCER|Load Balancer Solution with Apache]] *~~(old [Project 8](https://github.com/hectorproko/LOAD-BALANCER-SOLUTION-WITH-APACHE))~~*
     - Adds Load Balancer to Project 7
 - [Project 9: Continuous Integration Pipeline for Tooling Website](https://github.com/hectorproko/CONTINOUS-INTEGRATION-PIPELINE-FOR-TOOLING-WEBSITE)
     - Enhance the architecture prepared in Project 8 by adding a Jenkins server and configure a job
