@@ -2,9 +2,15 @@
 title: Configure Nginx as a Load Balancer with TLS
 ---
 
-PROJECT 10: LOAD BALANCER SOLUTION WITH NGINX AND SSL/TLS
-
-
+> [!info]
+> PROJECT 10: LOAD BALANCER SOLUTION WITH NGINX AND SSL/TLS
+> 
+> To know different alternative solutions for the same problem. We will implement a **Nginx Load Balancing** Web Solution with secured HTTPS connection with periodically updated SSL/TLS certificates.
+> 
+> In this project we will register our website with LetsEnrcypt Certificate Authority, to automate certificate issuance and use a shell client recommended by LetsEncrypt – certbot.
+> 
+> ![[NGINX LOAD-BALANCER with TLS/images/architecture.png]]
+> 
 
 ## Provision the environment
  1. Create an Ubuntu Server 20.04  
