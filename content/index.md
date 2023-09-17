@@ -63,7 +63,7 @@ Here are some of the projects I've been working on, categorized by technology:
 **Others:**  
 - [[Linux Assignments|Linux Assignments]]
 ### Packer:
-- [Packer To AMI (AWS)](https://github.com/hectorproko/Packer/blob/main/Packer_To_AMI.md) ==Pending migration==
+- [[Packer_To_AMI|Packer to AMI]] ~~*(old [Packer To AMI (AWS)](https://github.com/hectorproko/Packer/blob/main/Packer_To_AMI.md) )*~~
     - Placeholder
 
 
