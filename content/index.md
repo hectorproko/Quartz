@@ -13,37 +13,40 @@ Hi, I'm Hector Rodriguez. This webpage is a collection of my self-learning proje
 You can find my professional profile on [LinkedIn](https://www.linkedin.com/in/hector-rodriguez-84020a26/).  
 You can find my GitHub profile on [GitHub](https://github.com/hectorproko).
 
+> [!attention] In Progress 🚀
+> I'm currently in the process of migrating documentation from GitHub to this site.
+
 ## Projects
 Here are some of the projects I've been working on, categorized by technology:
 
 ### CI/CD Jenkins:
-- [Project 9](https://github.com/hectorproko/CONTINOUS-INTEGRATION-PIPELINE-FOR-TOOLING-WEBSITE)
-- [Project 14](https://github.com/hectorproko/EXPERIENCE-CONTINUOUS-INTEGRATION-WITH-JENKINS-ANSIBLE-ARTIFACTORY-SONARQUBE-PHP/blob/main/Steps_Project14.md)
+- [[Project9 CONTINOUS-INTEGRATION-PIPELINE-FOR-TOOLING-WEBSITE|CI Pipeline for Tooling Website]] *~~(old [Project 9](https://github.com/hectorproko/CONTINOUS-INTEGRATION-PIPELINE-FOR-TOOLING-WEBSITE))~~*
+- [[Project14 CONTINUOUS-INTEGRATION-WITH-JENKINS-ANSIBLE-ARTIFACTORY-SONARQUBE-PHP|CI with Jenkins, Ansible, Artifactory, SonarQube & PHP]] *~~(old [Project 14](https://github.com/hectorproko/EXPERIENCE-CONTINUOUS-INTEGRATION-WITH-JENKINS-ANSIBLE-ARTIFACTORY-SONARQUBE-PHP/blob/main/Steps_Project14.md))~~*
 
 ### AWS:
-- [Project 15](https://github.com/hectorproko/AWS-CLOUD-SOLUTION-FOR-2-COMPANY-WEBSITES-USING-A-REVERSE-PROXY-TECHNOLOGY/blob/main/Project15_Steps.md)
+- [[Project15 AWS CLOUD SOLUTION FOR 2 COMPANY WEBSITES USING A REVERSE PROXY TECHNOLOGY|AWS Solution for 2 Company Websites using a Reverse Proxy]] *(old [Project 15](https://github.com/hectorproko/AWS-CLOUD-SOLUTION-FOR-2-COMPANY-WEBSITES-USING-A-REVERSE-PROXY-TECHNOLOGY/blob/main/Project15_Steps.md))*
 
 ### Terraform:
-- [Project 16-19 (provisioning project 15)](https://github.com/hectorproko/AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1-to-4/tree/main/PBL)
-- [Other](https://github.com/hectorproko/Terraform)
-- [terraform-cloud](https://github.com/hectorproko/AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1-to-4/blob/main/PART4_PROJECT_19.md)
+- [Project 16-19 (provisioning project 15)](https://github.com/hectorproko/AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1-to-4/tree/main/PBL) ==Pending migration==
+- [Other](https://github.com/hectorproko/Terraform) ==Pending migration==
+- [terraform-cloud](https://github.com/hectorproko/AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1-to-4/blob/main/PART4_PROJECT_19.md)==Pending migration== 
 
 ### Ansible:
-- [Ansible](https://github.com/hectorproko/Ansible)
-- [Project 11](https://github.com/hectorproko/ANSIBLE-AUTOMATE)
-- [Project 12](https://github.com/hectorproko/ANSIBLE-REFACTORING-ASSIGNMENTS-IMPORTS/blob/main/Project12_Steps.md)
-- [Project 13](https://github.com/hectorproko/ANSIBLE-DYNAMIC-ASSIGNMENTS-INCLUDE-AND-COMMUNITY-ROLES/blob/main/Project13_Steps.md)
-- [Project 14](https://github.com/hectorproko/EXPERIENCE-CONTINUOUS-INTEGRATION-WITH-JENKINS-ANSIBLE-ARTIFACTORY-SONARQUBE-PHP/blob/main/Steps_Project14.md)
+- [Ansible](https://github.com/hectorproko/Ansible) ==Pending migration==
+- [Project 11](https://github.com/hectorproko/ANSIBLE-AUTOMATE) ==Pending migration==
+- [Project 12](https://github.com/hectorproko/ANSIBLE-REFACTORING-ASSIGNMENTS-IMPORTS/blob/main/Project12_Steps.md) ==Pending migration==
+- [Project 13](https://github.com/hectorproko/ANSIBLE-DYNAMIC-ASSIGNMENTS-INCLUDE-AND-COMMUNITY-ROLES/blob/main/Project13_Steps.md) ==Pending migration==
+- [Project 14](https://github.com/hectorproko/EXPERIENCE-CONTINUOUS-INTEGRATION-WITH-JENKINS-ANSIBLE-ARTIFACTORY-SONARQUBE-PHP/blob/main/Steps_Project14.md) ==Pending migration==
 
 ### Docker:
-- [Project 20](https://github.com/hectorproko/MIGRATION-TO-THE-LOUD-WITH-CONTAINERIZATION---DOCKER-DOSECKER-COMPO/blob/main/Project20_Steps.md)
+- [Project 20](https://github.com/hectorproko/MIGRATION-TO-THE-LOUD-WITH-CONTAINERIZATION---DOCKER-DOSECKER-COMPO/blob/main/Project20_Steps.md) ==Pending migration==
 - [[Implementing TLS Security for Docker]] ~~(old [Implementing TLS Security for Docker](https://github.com/hectorproko/Docker/blob/main/Implementing%20TLS%20Security%20for%20Docker.md))~~
 
 ### Kubernetes (EKS):
 - [[Project 21 Kubernetes cluster from scratch|Kubernetes cluster from scratch]] *~~(old [Project 21](https://github.com/hectorproko/PROJECT-21-Orchestrating-containers-across-multiple-Virtual-Servers-with-Kubernetes/blob/main/Project21_Steps.md))~~*
 - [[Project 22 Deploying applications into a Kubernetes cluster|Deploying applications into a Kubernetes cluster]] *~~(old [Project 22](https://github.com/hectorproko/DEPLOYING-APPLICATIONS-INTO-KUBERNETES-CLUSTER/blob/main/Project22_Steps.md))~~*
 - [[Project23 Persisting data in Kubernetes|Persisting data in Kubernetes]] *~~(old [Project 23](https://github.com/hectorproko/PERSISTING-DATA-IN-KUBERNETES/blob/main/Project23_Steps.md))~~*
-- [Project 24](https://github.com/hectorproko/BUILDING-ELASTIC-KUBERNETES-SERVICE-EKS-WITH-TERRAFORM)
+- [Project 24](https://github.com/hectorproko/BUILDING-ELASTIC-KUBERNETES-SERVICE-EKS-WITH-TERRAFORM) ==Pending migration==
 
 ### Linux (stacks):
 - [[LAMP STACK IMPLEMENTATION|LAMP]] ~~*(old [LAMP](https://github.com/hectorproko/LAMP_STACK) )*~~  
@@ -58,9 +61,9 @@ Here are some of the projects I've been working on, categorized by technology:
     - Enhance the architecture prepared in Project 8 by adding a Jenkins server and configure a job
 - [[Project10 LOAD-BALANCER-SOLUTION-WITH-NGINX-AND-TLS|Configure Nginx as a Load Balancer with TLS]] *~~(old [Project 10](https://github.com/hectorproko/LOAD-BALANCER-SOLUTION-WITH-NGINX-AND-SSL-TLS)  )~~*  
 **Others:**  
-- [[Linux Assignments|Assignments]]
+- [[Linux Assignments|Linux Assignments]]
 ### Packer:
-- [Packer To AMI (AWS)](https://github.com/hectorproko/Packer/blob/main/Packer_To_AMI.md)
+- [Packer To AMI (AWS)](https://github.com/hectorproko/Packer/blob/main/Packer_To_AMI.md) ==Pending migration==
     - Placeholder
 
 
