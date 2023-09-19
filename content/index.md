@@ -55,7 +55,7 @@ same:
 - [[LEMP STACK IMPLEMENTATION|LEMP]]  ~~*(old [LEMP](https://github.com/hectorproko/LEMP_STACK) )*~~
 - [[MERN STACK IMPLEMENTATION|MERN]] ~~*(old [MERN](https://github.com/hectorproko/MERN_STACK))*~~
 - [[MEAN STACK IMPLEMENTATION|MEAN]] ~~*(old [MEAN](https://github.com/hectorproko/MEAN_STACK))*~~
-- [[Project6 Web Solution WordPress|Web Solution WordPress]] *~~(old [Project 6](https://github.com/hectorproko/WEB-SOLUTION-WITH-WORDPRESS))~~*
+- [[Project6 Web Solution Wordpress|Web Solution WordPress]] *~~(old [Project 6](https://github.com/hectorproko/WEB-SOLUTION-WITH-WORDPRESS))~~*
 - [[Project7 DevOps Tooling Website Solution|DevOps Tooling Website Solution]] *~~(old [Project 7](https://github.com/hectorproko/Devops-Tooling-Website-Solution))~~*
 - [[Project 8 APACHE LOAD-BALANCER|Load Balancer Solution with Apache]] *~~(old [Project 8](https://github.com/hectorproko/LOAD-BALANCER-SOLUTION-WITH-APACHE))~~*
     - Adds Load Balancer to [[Project7 DevOps Tooling Website Solution|DevOps Tooling Website Solution]]
