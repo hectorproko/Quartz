@@ -2,7 +2,7 @@
 title: Minikube AWX Setup
 ---
 
-### Step 1: Start Minikube
+# Step 1: Start Minikube
 
 Starting Minikube with sufficient resources.
 
@@ -25,7 +25,7 @@ Running apiserver:
 Running kubeconfig: Configured
 ```
 
-#### Step 2: Set Up AWX Operator Namespace
+# Step 2: Set Up AWX Operator Namespace
 
 Creating a new namespace for AWX in the Kubernetes cluster called "awx" using the following command:
 
@@ -38,7 +38,7 @@ Output:
 namespace/awx created
 ```
 
-#### Step 3: Create `kustomization.yaml` File
+# Step 3: Create `kustomization.yaml` File
 
 1. Creating `kustomization.yaml` file in the directory where we're working with the following content
 ```bash
@@ -91,7 +91,7 @@ kubectl apply -k .
 AWX Operator has been <mark style="background: #BBFABBA6;">successfully deployed</mark> to the `awx` namespace in the Kubernetes cluster.
 
 
-#### Step 4: Creating an AWX instance.
+# Step 4: Creating an AWX instance.
 
 1. Creating a new YAML file called `awx-demo.yaml` in the same directory. 
 ```bash
@@ -157,7 +157,7 @@ kubectl apply -k .
 
 This should deploy an AWX instance named `awx-demo` in the `awx` namespace. 
 
-#### Step 5: Checking Pod Status
+# Step 5: Checking Pod Status
 Checking to see if the AWX Operator pods are running as expected:
 
 ```bash
@@ -297,7 +297,7 @@ awx-operator-controller-manager-566b76fc7f-mbkw2   2/2     Running   0          
 ```
 *All the AWX pods are running*
 
-#### Step 6: Accessing AWX Web Interface
+# Step 6: Accessing AWX Web Interface
 
 Once all the pods are running, we should be able to access the AWX web interface. Since we specified `service_type: nodeport` in `awx-demo.yaml`, we can find out the NodePort on which AWX is exposed by running:
 
@@ -332,7 +332,7 @@ We should now be able to access the AWX web interface by opening a web browser a
 
 ![[AWX web interface.png]]
 
-#### Step 7: Retrieving AWX Admin Credentials
+# Step 7: Retrieving AWX Admin Credentials
 
 Sometimes the AWX deployment might use randomly generated credentials. These should be stored in a Kubernetes secret.
 
