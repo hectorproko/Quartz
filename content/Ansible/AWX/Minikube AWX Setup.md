@@ -134,28 +134,26 @@ resources:
 ```bash
 kubectl apply -k .
 ```
-
-Output:
-```bash
-hector@hector-HP-Compaq-Elite-8300-CMT:~$ kubectl apply -k .
-Warning: resource namespaces/awx is missing the kubectl.kubernetes.io/last-applied-configuration annotation which is required by kubectl apply. kubectl apply should only be used on resources created declaratively by either kubectl create --save-config or kubectl apply. The missing annotation will be patched automatically.
-namespace/awx configured
-customresourcedefinition.apiextensions.k8s.io/awxbackups.awx.ansible.com created
-customresourcedefinition.apiextensions.k8s.io/awxrestores.awx.ansible.com created
-customresourcedefinition.apiextensions.k8s.io/awxs.awx.ansible.com created
-serviceaccount/awx-operator-controller-manager created
-role.rbac.authorization.k8s.io/awx-operator-awx-manager-role created
-role.rbac.authorization.k8s.io/awx-operator-leader-election-role created
-clusterrole.rbac.authorization.k8s.io/awx-operator-metrics-reader created
-clusterrole.rbac.authorization.k8s.io/awx-operator-proxy-role created
-rolebinding.rbac.authorization.k8s.io/awx-operator-awx-manager-rolebinding created
-rolebinding.rbac.authorization.k8s.io/awx-operator-leader-election-rolebinding created
-clusterrolebinding.rbac.authorization.k8s.io/awx-operator-proxy-rolebinding created
-configmap/awx-operator-awx-manager-config created
-service/awx-operator-controller-manager-metrics-service created
-deployment.apps/awx-operator-controller-manager created
-```
-
+> [!info]- Output
+> ```bash
+> hector@hector-HP-Compaq-Elite-8300-CMT:~$ kubectl apply -k .
+> Warning: resource namespaces/awx is missing the kubectl.kubernetes.io/last-applied-configuration annotation which is required by kubectl apply. kubectl apply should only be used on resources created declaratively by either kubectl create --save-config or kubectl apply. The missing annotation will be patched automatically.
+> namespace/awx configured
+> customresourcedefinition.apiextensions.k8s.io/awxbackups.awx.ansible.com created
+> customresourcedefinition.apiextensions.k8s.io/awxrestores.awx.ansible.com created
+> customresourcedefinition.apiextensions.k8s.io/awxs.awx.ansible.com created
+> serviceaccount/awx-operator-controller-manager created
+> role.rbac.authorization.k8s.io/awx-operator-awx-manager-role created
+> role.rbac.authorization.k8s.io/awx-operator-leader-election-role created
+> clusterrole.rbac.authorization.k8s.io/awx-operator-metrics-reader created
+> clusterrole.rbac.authorization.k8s.io/awx-operator-proxy-role created
+> rolebinding.rbac.authorization.k8s.io/awx-operator-awx-manager-rolebinding created
+> rolebinding.rbac.authorization.k8s.io/awx-operator-leader-election-rolebinding created
+> clusterrolebinding.rbac.authorization.k8s.io/awx-operator-proxy-rolebinding created
+> configmap/awx-operator-awx-manager-config created
+> service/awx-operator-controller-manager-metrics-service created
+> deployment.apps/awx-operator-controller-manager created
+> ```
 
 This should deploy an AWX instance named `awx-demo` in the `awx` namespace. 
 
@@ -253,36 +251,33 @@ resources:
 > ```
 
 
-Applying the changes:
+Applying the changes *(This should deploy the AWX instance)*
 ```
 kubectl apply -k .
 ```
-*This should deploy the AWX instance.*
-
-Output:
-```bash
-hector@hector-HP-Compaq-Elite-8300-CMT:~$ kubectl apply -k .
-namespace/awx unchanged
-customresourcedefinition.apiextensions.k8s.io/awxbackups.awx.ansible.com unchanged
-customresourcedefinition.apiextensions.k8s.io/awxrestores.awx.ansible.com unchanged
-customresourcedefinition.apiextensions.k8s.io/awxs.awx.ansible.com unchanged
-serviceaccount/awx-operator-controller-manager unchanged
-role.rbac.authorization.k8s.io/awx-operator-awx-manager-role configured
-role.rbac.authorization.k8s.io/awx-operator-leader-election-role unchanged
-clusterrole.rbac.authorization.k8s.io/awx-operator-metrics-reader unchanged
-clusterrole.rbac.authorization.k8s.io/awx-operator-proxy-role unchanged
-rolebinding.rbac.authorization.k8s.io/awx-operator-awx-manager-rolebinding unchanged
-rolebinding.rbac.authorization.k8s.io/awx-operator-leader-election-rolebinding unchanged
-clusterrolebinding.rbac.authorization.k8s.io/awx-operator-proxy-rolebinding unchanged
-configmap/awx-operator-awx-manager-config unchanged
-service/awx-operator-controller-manager-metrics-service unchanged
-deployment.apps/awx-operator-controller-manager configured
-awx.awx.ansible.com/awx-demo created
-hector@hector-HP-Compaq-Elite-8300-CMT:~$
-```
+> [!info]- Output
+> ```bash
+> hector@hector-HP-Compaq-Elite-8300-CMT:~$ kubectl apply -k .
+> namespace/awx unchanged
+> customresourcedefinition.apiextensions.k8s.io/awxbackups.awx.ansible.com unchanged
+> customresourcedefinition.apiextensions.k8s.io/awxrestores.awx.ansible.com unchanged
+> customresourcedefinition.apiextensions.k8s.io/awxs.awx.ansible.com unchanged
+> serviceaccount/awx-operator-controller-manager unchanged
+> role.rbac.authorization.k8s.io/awx-operator-awx-manager-role configured
+> role.rbac.authorization.k8s.io/awx-operator-leader-election-role unchanged
+> clusterrole.rbac.authorization.k8s.io/awx-operator-metrics-reader unchanged
+> clusterrole.rbac.authorization.k8s.io/awx-operator-proxy-role unchanged
+> rolebinding.rbac.authorization.k8s.io/awx-operator-awx-manager-rolebinding unchanged
+> rolebinding.rbac.authorization.k8s.io/awx-operator-leader-election-rolebinding unchanged
+> clusterrolebinding.rbac.authorization.k8s.io/awx-operator-proxy-rolebinding unchanged
+> configmap/awx-operator-awx-manager-config unchanged
+> service/awx-operator-controller-manager-metrics-service unchanged
+> deployment.apps/awx-operator-controller-manager configured
+> awx.awx.ansible.com/awx-demo created
+> hector@hector-HP-Compaq-Elite-8300-CMT:~$
+> ```
 
 *The output shows `awx.awx.ansible.com/awx-demo created`, which indicates that the AWX custom resource has been applied.*
-
 
 We can now monitor the status of the AWX pods by running:
 ```bash
