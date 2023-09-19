@@ -1,6 +1,17 @@
 ---
 title: Minikube AWX Setup
+tags:
+  - minikube
+  - ansible
+  - awx
 ---
+
+> [!info] Acknowledgement
+> The instructions followed in this setup guide were adapted from the official AWX Operator documentation, specifically the [Basic Installation Guide](https://github.com/ansible/awx-operator/blob/devel/docs/installation/basic-install.md) provided by the [Ansible AWX Operator GitHub repository](https://github.com/ansible/awx-operator). 
+
+> [!attention] Note
+> This setup guide assumes Minikube is installed and configured on our system. [Minikube documentation](https://minikube.sigs.k8s.io/docs/start/).
+> 
 
 # Step 1: Start Minikube
 
