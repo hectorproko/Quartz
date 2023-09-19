@@ -38,6 +38,7 @@ same:
 - [Project 12](https://github.com/hectorproko/ANSIBLE-REFACTORING-ASSIGNMENTS-IMPORTS/blob/main/Project12_Steps.md) ==Pending==
 - [Project 13](https://github.com/hectorproko/ANSIBLE-DYNAMIC-ASSIGNMENTS-INCLUDE-AND-COMMUNITY-ROLES/blob/main/Project13_Steps.md) ==Pending==
 - [Project 14](https://github.com/hectorproko/EXPERIENCE-CONTINUOUS-INTEGRATION-WITH-JENKINS-ANSIBLE-ARTIFACTORY-SONARQUBE-PHP/blob/main/Steps_Project14.md) ==Pending==
+- [[Minikube AWX Setup|Minikube AWX Setup]]
 
 ### Docker:
 - [[Project20 Containerizing the Tooling Web Application|Containerizing the Tooling Web Application]] *~~(old [Project 20](https://github.com/hectorproko/MIGRATION-TO-THE-LOUD-WITH-CONTAINERIZATION---DOCKER-DOSECKER-COMPO/blob/main/Project20_Steps.md))~~*
