@@ -3,8 +3,7 @@ Using Terraform to provisioning [[Project15 AWS CLOUD SOLUTION FOR 2 COMPANY WEB
 
 [[PART1_PROJECT_16]]  
 [[PART2_PROJECT_17]]  
-[[PART3_PROJECT_18]]  
-
-[[PART4_PROJECT_19]]  
+[[PART3_PROJECT18_Backends]]  
+[[PART4_PROJECT19_TerraformCloud]]  
 
 
