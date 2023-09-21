@@ -1,7 +1,8 @@
 ---
 title: Persisting data in Kubernetes
 tags:
-  - kubernetes
+  - Kubernetes
+  - EKS
 ---
 
 

@@ -1,4 +1,8 @@
-
+---
+tags:
+  - "#Terraform"
+  - IaC
+---
 <!--
 For reference
 https://github.com/darey-devops/PBL-project-18.git

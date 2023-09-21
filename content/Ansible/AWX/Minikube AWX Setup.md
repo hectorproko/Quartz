@@ -1,9 +1,9 @@
 ---
 title: Minikube AWX Setup
 tags:
-  - minikube
-  - ansible
-  - awx
+  - Ansible
+  - AWX
+  - Minikube
 ---
 
 > [!info] Acknowledgement

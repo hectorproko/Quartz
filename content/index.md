@@ -1,6 +1,15 @@
 ---
-title: Welcome
+title: Main Page
 tags:
+  - AWS
+  - Terraform
+  - IaC
+  - Bash
+  - Ansible
+  - Docker
+  - Linux
+  - CD/CD
+  - Kubernetes
 ---
 <!--
 Picture doesnt work
@@ -27,17 +36,13 @@ Here are some of the projects I've been working on, categorized by technology:
 - [[Project15 AWS CLOUD SOLUTION FOR 2 COMPANY WEBSITES USING A REVERSE PROXY TECHNOLOGY|AWS Solution for 2 Company Websites using a Reverse Proxy]] ~~*(old [Project 15](https://github.com/hectorproko/AWS-CLOUD-SOLUTION-FOR-2-COMPANY-WEBSITES-USING-A-REVERSE-PROXY-TECHNOLOGY/blob/main/Project15_Steps.md))*~~
 
 ### Terraform:
-same:
-- [Project 16-19 (provisioning project 15)](https://github.com/hectorproko/AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1-to-4/tree/main/PBL) ==Pending==
-- [terraform-cloud](https://github.com/hectorproko/AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1-to-4/blob/main/PART4_PROJECT_19.md)==Pending== 
-
-- [Other](https://github.com/hectorproko/Terraform) ==Pending==
-### Ansible:
-- [Ansible](https://github.com/hectorproko/Ansible) ==Pending==
-- [Project 11](https://github.com/hectorproko/ANSIBLE-AUTOMATE) ==Pending==
-- [Project 12](https://github.com/hectorproko/ANSIBLE-REFACTORING-ASSIGNMENTS-IMPORTS/blob/main/Project12_Steps.md) ==Pending==
-- [Project 13](https://github.com/hectorproko/ANSIBLE-DYNAMIC-ASSIGNMENTS-INCLUDE-AND-COMMUNITY-ROLES/blob/main/Project13_Steps.md) ==Pending==
-- [Project 14](https://github.com/hectorproko/EXPERIENCE-CONTINUOUS-INTEGRATION-WITH-JENKINS-ANSIBLE-ARTIFACTORY-SONARQUBE-PHP/blob/main/Steps_Project14.md) ==Pending==
+- [[AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM]] ==Pending==
+### Ansible:****
+- [[Ansible]] ==Pending==
+- [[Project11]] ==Pending==
+- [[Project12]] ==Pending==
+- [[Project13]] ==Pending==
+- [[Project14]] ==Pending==
 - [[Minikube AWX Setup|Minikube AWX Setup]]
 
 ### Docker:
@@ -48,7 +53,7 @@ same:
 - [[Project 21 Kubernetes cluster from scratch|Kubernetes cluster from scratch]] *~~(old [Project 21](https://github.com/hectorproko/PROJECT-21-Orchestrating-containers-across-multiple-Virtual-Servers-with-Kubernetes/blob/main/Project21_Steps.md))~~*
 - [[Project 22 Deploying applications into a Kubernetes cluster|Deploying applications into a Kubernetes cluster]] *~~(old [Project 22](https://github.com/hectorproko/DEPLOYING-APPLICATIONS-INTO-KUBERNETES-CLUSTER/blob/main/Project22_Steps.md))~~*
 - [[Project23 Persisting data in Kubernetes|Persisting data in Kubernetes]] *~~(old [Project 23](https://github.com/hectorproko/PERSISTING-DATA-IN-KUBERNETES/blob/main/Project23_Steps.md))~~*
-- [Project 24](https://github.com/hectorproko/BUILDING-ELASTIC-KUBERNETES-SERVICE-EKS-WITH-TERRAFORM) ==Pending==
+- [[Project24]] ==Pending==
 
 ### Linux (stacks):
 - [[LAMP STACK IMPLEMENTATION|LAMP]] ~~*(old [LAMP](https://github.com/hectorproko/LAMP_STACK) )*~~  

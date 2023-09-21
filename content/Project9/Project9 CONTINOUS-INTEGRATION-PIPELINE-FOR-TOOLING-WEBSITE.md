@@ -1,5 +1,11 @@
 ---
 title: Continuous Integration Pipeline for Tooling Website
+tags:
+  - Linux
+  - LoadBalancer
+  - Jenkins
+  - webhooks
+  - CD/CD
 ---
 PROJECT 9
 

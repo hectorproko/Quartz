@@ -1,5 +1,9 @@
 ---
 title: Continues Integration with Jenkins, Ansible, Artifactory, SonarQube & PHP
+tags:
+  - Jenkins
+  - Artifactory
+  - CD/CD
 ---
 
 **PROJECT 14**

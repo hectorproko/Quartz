@@ -1,5 +1,10 @@
 ---
 title: Configure Nginx as a Load Balancer with TLS
+tags:
+  - LoadBalancer
+  - TLS
+  - Nginx
+  - Linux
 ---
 
 > [!info]

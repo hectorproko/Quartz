@@ -1,5 +1,8 @@
 ---
 title: DevOps Tooling Website Solution
+tags:
+  - Linux
+  - EBS
 ---
 
 

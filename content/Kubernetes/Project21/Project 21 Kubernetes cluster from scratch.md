@@ -1,7 +1,7 @@
 ---
 title: Kubernetes cluster from scratch
 tags:
-  - kubernetes
+  - Kubernetes
 ---
 
 ## Description

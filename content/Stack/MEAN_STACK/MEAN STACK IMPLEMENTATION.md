@@ -1,4 +1,9 @@
-> [!NOTE]
+---
+tags:
+  - Linux
+---
+
+> [!info]
 > A technology stack is a set of frameworks and tools used to develop a software product. Here we will implement a **MEAN** stack which consits of:
 > 
 > **M**ongoDB - No-SQL database (Document database) <br>

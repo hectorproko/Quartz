@@ -1,7 +1,8 @@
 ---
 title: Deploying Applications into a Kubernetes Cluster
 tags:
-  - kubernetes
+  - Kubernetes
+  - EKS
 ---
 
 

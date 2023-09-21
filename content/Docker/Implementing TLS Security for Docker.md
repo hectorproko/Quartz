@@ -1,5 +1,9 @@
+---
+tags:
+  - Docker
+---
 
-> [!NOTE]
+> [!info]
 > The project involves configuring Docker for secure communication between the client and the daemon in both client mode and daemon mode TLS. The aim is to establish a secure environment for production use, even when all traffic is confined within trusted internal networks.
 > 
 > To achieve this, the client and the daemon will be secured using certificates signed by a trusted Certificate Authority (CA). The client will be configured to only connect to Docker daemons that present certificates signed by the trusted CA, while the daemon will only accept connections from clients that provide certificates from the same trusted CA.

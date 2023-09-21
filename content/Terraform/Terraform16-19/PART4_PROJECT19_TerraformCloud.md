@@ -1,3 +1,8 @@
+---
+tags:
+  - "#Terraform"
+  - IaC
+---
 # AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1-4
 Project 16-19 Terraform
 *==TERRAFORM CLOUD* ==

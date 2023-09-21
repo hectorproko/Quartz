@@ -1,3 +1,8 @@
+---
+tags:
+  - "#Terraform"
+  - IaC
+---
 # AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-2/4
 Project 17 Terraform
 

@@ -1,5 +1,7 @@
 ---
 title: Web Solution WordPress
+tags:
+  - Linux
 ---
 
 > [!info]

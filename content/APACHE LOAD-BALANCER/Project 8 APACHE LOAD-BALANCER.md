@@ -1,5 +1,9 @@
 ---
 title: Load Balancer Solution with Apache
+tags:
+  - Linux
+  - LoadBalancer
+  - "#Apache"
 ---
 
 

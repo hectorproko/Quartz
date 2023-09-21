@@ -1,3 +1,7 @@
+---
+tags:
+  - Linux
+---
 
 1. [[Linux Training_Module 1 – Assignment|Module 1 – Assignment]]
 2. [[Linux Training_Module 2 – Assignment|Module 2 – Assignment]]
@@ -9,3 +13,4 @@
 8. [[Linux Training_Module 8 – Assignment|Module 8 – Assignment]]
 9. [[Linux Training_Module 9 – Assignment|Module 9 – Assignment]]
 10. [[Linux Training_Module 10 – Assignment|Module 10 – Assignment]]
+11. 

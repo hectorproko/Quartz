@@ -1,5 +1,7 @@
 ---
 title: AWS Solution for 2 Company Websites using a Reverse Proxy
+tags:
+  - AWS
 ---
 
 > [!NOTE]

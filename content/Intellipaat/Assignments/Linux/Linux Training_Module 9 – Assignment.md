@@ -1,3 +1,7 @@
+---
+tags:
+  - Bash
+---
 
 > [!NOTE] Module 9 - Assignment
 > **Problem Statement:**

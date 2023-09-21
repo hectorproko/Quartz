@@ -1,5 +1,7 @@
 ---
 title: Containerizing the Tooling Web Application
+tags:
+  - Docker
 ---
 
 > [!info] PROJECT 20
