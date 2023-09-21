@@ -1,5 +1,8 @@
 ---
 title: "Module 2: Assignment 1 – EC2"
+tags:
+  - AWS
+  - EC2
 ---
 
 > [!info]

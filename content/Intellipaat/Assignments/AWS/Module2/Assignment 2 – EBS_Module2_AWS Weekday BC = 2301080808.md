@@ -1,10 +1,14 @@
 ---
 title: "Module 2: Assignment 2 – EBS"
+tags:
+  - AWS
+  - EC2
+  - EBS
 ---
 
 > [!info]
 > **Problem Statement:** 
-> You work for XYZ Corporation. Your tnrporation wants to launch a new web-based appliætion using AWS Virtual Machines. Configure the resources accMdingly with appropriate storage for the tasks. 
+> You work for XYZ Corporation. Your corporation wants to launch a new web-based application using AWS Virtual Machines. Configure the resources accordingly with appropriate storage for the tasks. 
 > 
 > **Tasks To Be Performed:** 
 > 1. Launch a Linux EC2 instance. 
