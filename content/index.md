@@ -1,15 +1,6 @@
 ---
 title: Main Page
 tags:
-  - AWS
-  - Terraform
-  - IaC
-  - Bash
-  - Ansible
-  - Docker
-  - Linux
-  - CD/CD
-  - Kubernetes
 ---
 <!--
 Picture doesnt work
@@ -28,6 +19,11 @@ You can find my GitHub profile on [GitHub](https://github.com/hectorproko).
 ## Projects
 Here are some of the projects I've been working on, categorized by technology:
 
+
+> [!tip] Tags
+> *Hover over them to see related tasks*
+>#AWS #Terraform #IaC #Bash #Ansible #Docker #Linux #CD/CD #Kubernetes
+   
 ### CI/CD Jenkins:
 - [[Project9 CONTINOUS-INTEGRATION-PIPELINE-FOR-TOOLING-WEBSITE|CI Pipeline for Tooling Website]] *~~(old [Project 9](https://github.com/hectorproko/CONTINOUS-INTEGRATION-PIPELINE-FOR-TOOLING-WEBSITE))~~*
 - [[Project14 CONTINUOUS-INTEGRATION-WITH-JENKINS-ANSIBLE-ARTIFACTORY-SONARQUBE-PHP|CI with Jenkins, Ansible, Artifactory, SonarQube & PHP]] *~~(old [Project 14](https://github.com/hectorproko/EXPERIENCE-CONTINUOUS-INTEGRATION-WITH-JENKINS-ANSIBLE-ARTIFACTORY-SONARQUBE-PHP/blob/main/Steps_Project14.md))~~*
