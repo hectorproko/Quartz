@@ -1,7 +1,3 @@
----
-title: 2023-09-01
-tags:
----
 <!--
 Picture doesnt work
 ![[IMG-20230405-WA0008.jpg|400]]
