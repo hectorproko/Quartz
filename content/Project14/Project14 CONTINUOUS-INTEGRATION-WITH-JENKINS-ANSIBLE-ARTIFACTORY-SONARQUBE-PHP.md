@@ -4,6 +4,7 @@ tags:
   - Jenkins
   - Artifactory
   - CD/CD
+  - Ansible
 ---
 
 **PROJECT 14**
