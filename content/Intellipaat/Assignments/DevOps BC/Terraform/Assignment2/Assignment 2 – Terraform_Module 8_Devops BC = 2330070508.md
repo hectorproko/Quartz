@@ -11,8 +11,8 @@ tags:
 Step 1:
 Destroying infrasctructure (EC2) created in [[Assignment 1 – Terraform_Module 8_Devops BC = 2330070508|Assignment 1 – Terraform]]
 
-![[Pasted image 20231115141034.png]]
-![[Pasted image 20231115141107.png]]
+<br>![[Pasted image 20231115141034.png]]
+<br>![[Pasted image 20231115141107.png]]
 
 Step 2: New instance with Elastic IP
 
@@ -59,7 +59,7 @@ resource "aws_eip" "example" {
 
 ``terraform apply``
 
-![[Pasted image 20231115142813.png]]
+<br>![[Pasted image 20231115142813.png]]
 
 my instance has Elastic IP
-![[Pasted image 20231115143419.png]]
+<br>![[Pasted image 20231115143419.png]]

@@ -10,7 +10,7 @@ tags:
 %%==Date 2023-11-15==%%
 ### Step 1: Terraform Setup
 
-![[Installing Terraform#Windows]]
+<br>![[Installing Terraform#Windows]]
 
 %%In we create IAM users [[Assignment 1 – IAM Users_Module3_AWS Weekday BC = 2301080808|Assignment 1 – IAM Users]]
 Things seem to have change you can no longer create a user and check for programmatic access now you just generate the keys?
@@ -58,9 +58,9 @@ $ nano main.tf
 Hecti@DESKTOP-7SBLCCA MINGW64 ~/Desktop
 ```
 
-![[Pasted image 20231115132535.png]]
+<br>![[Pasted image 20231115132535.png]]
 
-![[Pasted image 20231115133155.png]]
+<br>![[Pasted image 20231115133155.png]]
 
 Terraform plan
 
@@ -70,9 +70,9 @@ Terraform plan
 > 
 
 `terraform apply`
-![[Pasted image 20231115133459.png]]
+<br>![[Pasted image 20231115133459.png]]
 
-![[Pasted image 20231115140546.png]]
-![[Pasted image 20231115140913.png]]
-![[Pasted image 20231115140622.png]]
+<br>![[Pasted image 20231115140546.png]]
+<br>![[Pasted image 20231115140913.png]]
+<br>![[Pasted image 20231115140622.png]]
 

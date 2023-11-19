@@ -11,7 +11,7 @@ tags:
 
 ### Step 1
 Destroying infrastructure from [[Assignment 3 – Terraform_Module 8_Devops BC = 2330070508|Assignment 3 – Terraform]]
-![[Pasted image 20231115195447.png]]
+<br>![[Pasted image 20231115195447.png]]
 
 ### Step 2-3
 
@@ -110,7 +110,7 @@ In this configuration:
 - An EC2 instance is deployed within the created subnet and attached to the security group.
 
 `terraform apply`
-![[Pasted image 20231115205049.png]]
+<br>![[Pasted image 20231115205049.png]]
 
 %%
 > [!attention]- Issue: with `security_groups`
@@ -124,7 +124,7 @@ In this configuration:
 > > │   on main.tf line 73, in resource "aws_instance" "example_instance":
 > > │   73: resource "aws_instance" "example_instance" {
 > > ```
-> > ![[Pasted image 20231115203552.png]]
+> > <br>![[Pasted image 20231115203552.png]]
 > > 
 > 
 > > [!done] Solution
@@ -144,5 +144,5 @@ In this configuration:
 %%
 
 Just to test the instance i try to ssh into it
-![[Pasted image 20231115211158.png]]
-![[Pasted image 20231115210936.png]]''
+<br>![[Pasted image 20231115211158.png]]
+<br>![[Pasted image 20231115210936.png]]''

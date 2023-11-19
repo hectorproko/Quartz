@@ -12,11 +12,11 @@ tags:
    Once the download finishes, I find the `.zip` file in my Downloads folder. I right-click on it and choose `Extract All...`, which reveals the `terraform.exe` within. I decide to keep it simple and leave `terraform.exe` right there in the Downloads folder for now.
 
 3. **Setting Up the Environment Variable**
-   ![[Add.Edit Environment Variables (Windows)]]
+   <br>![[Add.Edit Environment Variables (Windows)]]
 4. **Testing the Terraform Command**
    To check if everything's working, I open a new Command Prompt window and type `terraform --version`.
   > [!success]
-  >    ![[terraform --version.png]]
+  >    <br>![[terraform --version.png]]
 
   
 ### Linux
