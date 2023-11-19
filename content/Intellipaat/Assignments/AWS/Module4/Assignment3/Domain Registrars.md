@@ -1,3 +1,4 @@
+==Pending CleanUP==
 #AWS
 1. **Function**: A domain registrar is a service where you can purchase and register domain names, like `example.com`.
     
