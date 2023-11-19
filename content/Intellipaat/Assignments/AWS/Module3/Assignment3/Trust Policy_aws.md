@@ -1,3 +1,4 @@
+#AWS
 ---
 aliases:
   - trust-policy.json
