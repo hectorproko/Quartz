@@ -1,6 +1,9 @@
 ---
 tags:
   - AWS
+  - CodePipeline
+  - CodeBuild
+  - CodeDeploy
 ---
 ==Pending CleanUP==
  

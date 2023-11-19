@@ -1,6 +1,8 @@
 ---
 tags:
   - AWS
+  - CloudFormation
+  - CloudWatch
 ---
 ==Pending CleanUP==
  

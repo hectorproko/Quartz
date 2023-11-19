@@ -1,6 +1,7 @@
 ---
 tags:
   - AWS
+  - CloudFormation
 ---
 ==Pending CleanUP==
  

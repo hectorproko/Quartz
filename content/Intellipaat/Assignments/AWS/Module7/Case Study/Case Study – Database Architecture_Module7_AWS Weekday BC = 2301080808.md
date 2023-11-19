@@ -233,7 +233,7 @@ Passcode: P1Ax6#UI
 
 ## Step 2: Setting Up Cross-Region Data Access
 
-%% #question Figure out how Redshift and RDS work together%%
+%% #question Explore more how Redshift and RDS work together%%
 
 1. **Go to my RDS Dashboard**:
     - I'll open up my AWS RDS dashboard.
