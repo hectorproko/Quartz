@@ -1,3 +1,7 @@
+---
+tags:
+  - AWS
+---
 ==Pending CleanUP==
  
 *The term "nameserver" specifically denotes a server responsible for handling domain name resolution within the context of the [[DNS (Domain Name System)|DNS]].*

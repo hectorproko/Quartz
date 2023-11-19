@@ -1,3 +1,7 @@
+---
+tags:
+  - AWS
+---
 ==Pending CleanUP==
  
 > [!info] Module 6: S3 Bucket Versioning

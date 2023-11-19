@@ -1,3 +1,7 @@
+---
+tags:
+  - AWS
+---
 ==Pending CleanUP==
  
 > [!info] Module 5: VPC Endpoints Assignment

@@ -1,3 +1,7 @@
+---
+tags:
+  - AWS
+---
 ==Pending CleanUP==
  
 > [!info] AWS DevOps Assignment - 1

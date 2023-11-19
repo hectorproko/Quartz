@@ -1,3 +1,7 @@
+---
+tags:
+  - AWS
+---
 ==Pending CleanUP==
  
 > [!Info] Module 3: CloudWatch Dashboard Assignment
