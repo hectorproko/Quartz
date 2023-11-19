@@ -1,5 +1,5 @@
 ==Pending CleanUP==
- #AWS
+ 
 ---
 aliases:
   - trust-policy.json

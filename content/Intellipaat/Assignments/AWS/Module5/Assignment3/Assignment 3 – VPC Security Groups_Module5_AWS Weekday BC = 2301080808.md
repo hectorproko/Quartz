@@ -1,5 +1,5 @@
 ==Pending CleanUP==
- #AWS
+ 
 
 > [!info] Module 5: VPC Security Groups Assignment
 >  **Problem Statement:** 

@@ -1,5 +1,5 @@
 ==Pending CleanUP==
- #AWS
+ 
 > [!info] AWS DevOps Case Study - 1
 > **Training Problem Statement:**
 > You work for XYZ Corporation. Your corporation wants the files to be stored on a private repository on the AWS Cloud. Once done, you are required to automate a few tasks for ease of the development team. 

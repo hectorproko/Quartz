@@ -1,5 +1,5 @@
 ==Pending CleanUP==
- #AWS
+ 
 1. **Target Tracking Scaling**: This is the policy you mentioned. It adjusts the number of EC2 instances in your group to maintain a specified metric value, such as average CPU utilization, close to the target value you set.
    ==Used in [[Case Study – ELB, ASG And Route 53_Module4_AWS Weekday BC = 2301080808#^b2587c|Case Study – ELB, ASG And Route 53]]==
     

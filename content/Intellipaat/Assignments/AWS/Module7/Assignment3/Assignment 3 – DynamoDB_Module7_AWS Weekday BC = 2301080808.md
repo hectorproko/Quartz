@@ -1,5 +1,5 @@
 ==Pending CleanUP==
- #AWS
+ 
 
 > [!info] Module 7: DynamoDB Assignment
 > **Problem Statement:** 

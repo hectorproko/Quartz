@@ -1,5 +1,5 @@
 ==Pending CleanUP==
- #AWS
+ 
 
 > [!NOTE]
 > Problem Statement: 

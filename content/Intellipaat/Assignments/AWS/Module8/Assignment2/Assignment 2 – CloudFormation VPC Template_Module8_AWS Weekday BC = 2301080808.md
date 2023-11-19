@@ -1,5 +1,5 @@
 ==Pending CleanUP==
- #AWS
+ 
 
 > [!info] Module 8: CloudFormation Assignment - 2 
 > **Problem Statement:** 

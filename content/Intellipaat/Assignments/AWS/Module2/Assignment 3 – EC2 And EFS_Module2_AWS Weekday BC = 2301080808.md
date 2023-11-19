@@ -1,5 +1,5 @@
 ==Pending CleanUP==
- #AWS
+ 
 
 > [!NOTE]
 > **Tasks To Be Performed:**
