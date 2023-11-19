@@ -1,4 +1,3 @@
-#AWS
 
 > [!NOTE]
 > Problem Statement: 

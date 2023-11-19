@@ -1,4 +1,3 @@
-#AWS
 
 > [!info] Module 6: Case Study - 1 
 > **Problem Statement:** 
@@ -28,7 +27,7 @@
 > [!tip]
 >   When using S3 for static website hosting and Route 53, the bucket name should match the domain/subdomain name you're trying to associate with it.
 
-<!--[[Case Study – S3 Versioning And Website Hosting_Module6_AWS Weekday BC = 2301080808#^921623|You had issues with this]]-->
+%%[[Case Study – S3 Versioning And Website Hosting_Module6_AWS Weekday BC = 2301080808#^921623|You had issues with this]]%%
 
 - **AWS Region**: Retained the default, which was "US East (N. Virginia) us-east-1".
   

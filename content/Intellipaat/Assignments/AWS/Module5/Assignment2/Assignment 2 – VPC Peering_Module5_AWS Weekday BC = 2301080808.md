@@ -1,4 +1,3 @@
-#AWS
 
 > [!info] Module 5: VPC Peering Assignment
 > **Problem Statement:** 

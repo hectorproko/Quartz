@@ -1,4 +1,3 @@
-#AWS
 > [!info] AWS DevOps Assignment - 2
 > **Training Problem Statement:**
 > You work for XYZ Corporation. Your corporation wants the files to be stored on a private repository on the AWS Cloud. Once done, you are required to automate a few tasks for ease of the development team. 
@@ -37,7 +36,7 @@ h. In "Deployment settings", I select the "CodeDeployDefault.OneAtATime" configu
 i. I finalize by clicking "Create deployment group".
 ![[Pasted image 20231019092629.png]]
 
-<!--Disabled load balancing[[create deploynet group.png]]-->
+%%Disabled load balancing[[create deploynet group.png]]%%
 
 You've now successfully created an AWS CodeDeploy application and a deployment group targeting an EC2 instance using the AWS Management Console.
 

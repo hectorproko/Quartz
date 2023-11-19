@@ -1,4 +1,3 @@
-#AWS
 > [!info] Module 6: S3 Bucket Creation
 > **Problem Statement:** 
 > You work for XYZ Corporation. Their application requires a storage service that can store files and publicly share them if required. Implement S3 for the same. 

@@ -1,4 +1,3 @@
-#AWS
 
 > [!info] Module 10: Organizations Assignment
 > **Tasks To Be Performed:** 
@@ -7,7 +6,7 @@
 > 3. Attach a service control policy which only allows access to EC2.
 
 
-<!--[[AWS Organizations#Demo 2 – AWS Organizations]]-->
+%%[[AWS Organizations#Demo 2 – AWS Organizations]]%%
 
 
 ### Task 1: Create an AWS Organization

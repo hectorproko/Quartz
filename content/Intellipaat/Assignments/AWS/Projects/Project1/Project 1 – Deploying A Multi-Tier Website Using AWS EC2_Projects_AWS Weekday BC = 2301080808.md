@@ -1,4 +1,3 @@
-#AWS
 
 > [!info] Project - 1: Deploying a Multi-Tier Website Using AWS EC2
 > **Description:** 
@@ -77,7 +76,7 @@ Using [[Assignment 3 – AWS Migration_Module11_AWS Weekday BC = 2301080808|Assi
 I ensure that the initial database name 'Intel' is set up.
 ![[Pasted image 20231030164833.png|400]]
 
-<!--==diff AZ in new one==,-->
+%%==diff AZ in new one==,%%
 ![[Pasted image 20231030165859.png]]
 
 Clicked on "View connection details"
@@ -179,5 +178,5 @@ I verify the data input by executing a SELECT query on the 'data' table within t
 
 ---
 
-<!--Another autoscaling reference [[Case Study – ELB, ASG And Route 53_Module4_AWS Weekday BC = 2301080808|Case Study]]-->
+%%Another autoscaling reference [[Case Study – ELB, ASG And Route 53_Module4_AWS Weekday BC = 2301080808|Case Study]]%%
 Now that my EC2 instance is fully equipped for hosting, I ensure it is also capable of auto-scaling, following the procedures outlined in [[Assignment 2 – Auto Scaling_Module4_AWS Weekday BC = 2301080808|Assignment 2 – Auto Scaling]]. My first step is to create an Amazon Machine Image (AMI) from the existing EC2 instance. Next, I craft a Launch Template incorporating this AMI. Finally, I establish an Auto Scaling group utilizing this Launch Template and configure it to maintain a desired capacity, with the parameters set to a minimum of 2 instance and a maximum of 3 instances. This setup guarantees that the hosting infrastructure adjusts automatically to the incoming traffic, maintaining efficiency and cost-effectiveness.

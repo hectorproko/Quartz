@@ -1,4 +1,3 @@
-#AWS
 > [!info] AWS DevOps Assignment - 1
 > **Problem Statement:**
 > You work for XYZ Corporation. Your corporation wants the files to be stored on a private repository on the AWS Cloud. 
@@ -6,7 +5,7 @@
 > **Tasks To Be Performed:** 
 > 1. Create a CodeCommit repository and import a GitHub repository content into it.
 
-<!--[[CodeCommit_aws]]-->
+%%[[CodeCommit_aws]]%%
 
 ### 1. Creating an IAM User:
 1. I log into AWS.
@@ -76,7 +75,7 @@ To verify the remote was successfully added, I type:
 git remote -v
 ```
 ![[Pasted image 20231018205114.png]]
-<!-- The key takeaway here is that when adding a remote, you can name it whatever you like (`codecommit` in our case), and then you specify the URL of that remote repository.-->
+%%The key takeaway here is that when adding a remote, you can name it whatever you like (`codecommit` in our case), and then you specify the URL of that remote repository.%%
 
 ### 7. **Pushing Repository Content to CodeCommit:**
 
@@ -85,7 +84,7 @@ Ensuring my SSH setup is correct, I can now push my local repository content to 
 git push codecommit main
 ```
 
-<!--**Note:** If you're using a branch other than `master`, replace `master` with your branch's name.-->
+%%**Note:** If you're using a branch other than `master`, replace `master` with your branch's name.%%
 ![[Pasted image 20231018210300.png]]
 
 

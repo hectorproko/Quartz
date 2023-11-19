@@ -1,4 +1,3 @@
-#AWS
 
 > [!info] Module 11: Migration Assignment - 3
 > **Problem Statement:**
@@ -65,7 +64,7 @@ To begin the data migration process using the AWS Database Migration Service (DM
 2. Once inside DMS, I navigate to the `Migrate data` section.
 3. Then, I choose `Replication instances`.
 4. On this screen, I'll click on the button titled "Create replication instance".
-<!--[[createreplicationinstanceIssue.png]]-->
+%%[[createreplicationinstanceIssue.png]]%%
 ![[Pasted image 20231017164539.png]]
 
 ### Setting Up Source and Target Endpoints

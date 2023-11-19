@@ -1,4 +1,3 @@
-#AWS
 
 > [!info] Module 5: Case Study - 1
 > **Problem Statement:** 
@@ -65,7 +64,7 @@
     - **Action**: Created a new route table, let's call it "PrivateSubnetsRouteTable," specifically for the DBCache and App1 subnets.
     - Added a route to this table, directing `0.0.0.0/0` (all internet-bound traffic) to the NAT Gateway.
   - **Route Table Adjustment**: Set the default route (`0.0.0.0/0`) for both DBCache and App1 to route through the NAT Gateway.
-<!-- Not adding NAT to DB and App2 is not needed reduce attack vector -->
+%% Not adding NAT to DB and App2 is not needed reduce attack vector %%
 
 ### Step 4: Implementing the Security Groups %%and NACLs%%
 
@@ -101,7 +100,7 @@
 
 - **Action**: For each subnet, I spun up an EC2 instance, naming them in alignment with their subnet names.
 
-<!--Need to prepare ssh from web, included adding outbound rules to ssh-->
+%%Need to prepare ssh from web, included adding outbound rules to ssh%%
 
 %%
 > [!NOTE]- Ping Record, for deletion

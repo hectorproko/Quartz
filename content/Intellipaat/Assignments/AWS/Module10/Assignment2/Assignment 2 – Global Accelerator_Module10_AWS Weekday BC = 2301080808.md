@@ -1,4 +1,3 @@
-#AWS
 
 > [!info] Module 10: Global Accelerator Assignment
 > **Tasks To Be Performed:** 

@@ -1,4 +1,3 @@
-#AWS
 
 > [!note]
 > **Problem Statement:**
@@ -200,7 +199,7 @@ Name Lustre
 ```bash
 sudo amazon-linux-extras install -y lustre2.10
 ```
-<!--make sure you pick Amazon Linux 2 AMI-->
+%%make sure you pick Amazon Linux 2 AMI%%
 ### Step 5: Attach FSx to EC2
 
 1. Navigate back to the FSx console and click "Attach" on your file system.
