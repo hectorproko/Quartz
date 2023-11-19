@@ -76,7 +76,7 @@ To verify the remote was successfully added, I type:
 git remote -v
 ```
 ![[Pasted image 20231018205114.png]]
-%%The key takeaway here is that when adding a remote, you can name it whatever you like (`codecommit` in our case), and then you specify the URL of that remote repository.%%
+<!-- The key takeaway here is that when adding a remote, you can name it whatever you like (`codecommit` in our case), and then you specify the URL of that remote repository.-->
 
 ### 7. **Pushing Repository Content to CodeCommit:**
 
