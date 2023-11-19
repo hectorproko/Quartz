@@ -1,5 +1,5 @@
 ==Pending CleanUP==
-#AWS
+ #AWS
 Used it as a [[Domain Registrars]]
 
 How to:

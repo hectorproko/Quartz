@@ -1,5 +1,5 @@
 ==Pending CleanUP==
-#AWS
+ #AWS
 
 > [!info] Module 9: Elastic Beanstalk Assignment
 > **Problem Statement:** 

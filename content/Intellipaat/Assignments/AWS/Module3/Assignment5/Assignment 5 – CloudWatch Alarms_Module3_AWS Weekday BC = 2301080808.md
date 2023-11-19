@@ -1,5 +1,5 @@
 ==Pending CleanUP==
-#AWS
+ #AWS
 Module 3: CloudWatch Alarms Assignment
 
 > [!info] Module 3: CloudWatch Alarms Assignment

@@ -1,5 +1,5 @@
 ==Pending CleanUP==
-#AWS
+ #AWS
 > [!NOTE]
 > **Problem Statement:** 
 > You work for XYZ Corporation. Your tnrporation wants to launch a new web-based appliætion using AWS Virtual Machines. Configure the resources accMdingly with appropriate storage for the tasks. 

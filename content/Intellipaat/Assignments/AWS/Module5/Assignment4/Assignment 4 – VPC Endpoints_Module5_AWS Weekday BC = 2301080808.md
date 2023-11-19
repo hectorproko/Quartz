@@ -1,5 +1,5 @@
 ==Pending CleanUP==
-#AWS
+ #AWS
 > [!info] Module 5: VPC Endpoints Assignment
 > **Problem Statement:** 
 > Working for an organization, you are required to provide them a safe and secure environment for the deployment of their resources. They might require different types of connectivity. Implement the following to fulfill the requirements of the company.

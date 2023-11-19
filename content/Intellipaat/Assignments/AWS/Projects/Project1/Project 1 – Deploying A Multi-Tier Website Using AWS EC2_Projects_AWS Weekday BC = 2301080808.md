@@ -1,5 +1,5 @@
 ==Pending CleanUP==
-#AWS
+ #AWS
 
 > [!info] Project - 1: Deploying a Multi-Tier Website Using AWS EC2
 > **Description:** 

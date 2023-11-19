@@ -1,3 +1,3 @@
 ==Pending CleanUP==
-#AWS
+ #AWS
 <br>![[scaling strategy]]

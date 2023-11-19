@@ -1,5 +1,5 @@
 ==Pending CleanUP==
-#AWS
+ #AWS
 
 > [!info] Assignment 1 – ELB Assignment
 > **Problem Statement:** 

@@ -1,5 +1,5 @@
 ==Pending CleanUP==
-#AWS
+ #AWS
 > [!info] Module 11: Migration Assignment - 2
 > **Problem Statement:**
 > You work for XYZ Corporation. Your corporation wants to move their infrastructure to the cloud to improve the performance and availability of the application hosted. You are given the opportunity to accomplish the tasks for successful migration.
