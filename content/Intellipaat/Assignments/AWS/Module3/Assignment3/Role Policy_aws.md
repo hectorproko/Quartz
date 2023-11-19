@@ -1,4 +1,3 @@
-#AWS
 ---
 aliases:
   - role-policy.json

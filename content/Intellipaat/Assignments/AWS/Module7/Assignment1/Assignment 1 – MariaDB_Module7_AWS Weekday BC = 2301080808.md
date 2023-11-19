@@ -1,4 +1,3 @@
-#AWS
 
 > [!info] Module 7: MariaDB Assignment
 > **Problem Statement:** 

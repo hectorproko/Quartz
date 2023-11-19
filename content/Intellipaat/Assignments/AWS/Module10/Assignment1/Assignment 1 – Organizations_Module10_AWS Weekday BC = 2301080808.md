@@ -1,4 +1,3 @@
-#AWS
 
 > [!info] Module 10: Organizations Assignment
 > **Tasks To Be Performed:** 

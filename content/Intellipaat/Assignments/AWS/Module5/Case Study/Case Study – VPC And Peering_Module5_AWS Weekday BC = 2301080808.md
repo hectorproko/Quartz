@@ -1,4 +1,3 @@
-#AWS
 
 > [!info] Module 5: Case Study - 1
 > **Problem Statement:** 

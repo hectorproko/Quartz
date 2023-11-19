@@ -1,4 +1,3 @@
-#AWS
 
 > [!info] Module 8: CloudFormation Assignment - 1 
 > **Training Problem Statement:** 

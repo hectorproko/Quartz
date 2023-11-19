@@ -1,4 +1,3 @@
-#AWS
 
 > [!info] Project - 3: Publishing Amazon SNS Messages Privately
 > **Industry:** Healthcare 

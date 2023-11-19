@@ -1,4 +1,3 @@
-#AWS
 
 > [!info] Project - 2: Website Orchestration
 > **Industry:** Internet related 
