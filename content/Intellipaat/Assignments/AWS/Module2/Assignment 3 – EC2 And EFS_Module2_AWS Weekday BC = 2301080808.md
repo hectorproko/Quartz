@@ -1,42 +1,35 @@
----
-title: "Module 2: Assignment 3 – EC2 and EFS"
-tags:
-  - EFS
-  - EC2
-  - AWS
----
 
-> [!info]
+> [!NOTE]
 > **Tasks To Be Performed:**
 > 1. Create an EFS and connect it to 3 different EC2 instances. Make sure that all instances have different operating systems. For instance, Ubuntu, Red Hat Linux and Amazon Linux 2.
 > 
 
-First I'll create 2 **Security Groups**  
-![[Intellipaat/Assignments/AWS/Module2/images/Others/Pasted image 20230823102350.png]]
+First I'll create 2 **Security Groups**
+![[Pasted image 20230823102350.png]]
 **SSH** - Allows SSH connection from anywhere
 **EFS/NFS** - Allows NFS traffic (typically on port 2049) from default VPC's CIDR `172.31.0.0/16`. This is aimed at enabling the instance to communicate with the EFS **mount target**.
 <!-- 
 Since this is only for allowing NFS traffic, it should have an outbound rule that permits traffic to the EFS mount target on port 2049.
 
 So in EC2 allow outboud but in mount target allow inboud?
--->  
-![[Intellipaat/Assignments/AWS/Module2/images/Others/Pasted image 20230823083807.png]]
+-->
+![[Pasted image 20230823083807.png]]
 
-I'll create an **EFS** filesystem called **EFS_for3Instance** at `Amazon EFS > Filesystems > Create file system`  
-![[Intellipaat/Assignments/AWS/Module2/images/Others/Pasted image 20230823103312.png]]
+I'll create an **EFS** filesystem called **EFS_for3Instance** at `Amazon EFS > Filesystems > Create file system`
+![[Pasted image 20230823103312.png]]
 
-I'll click on **EFS_for3Instance** and navigate to **Network** tab to replace the **Security Group** associated with **Mount Targets** with the one I create **EFS/NFS**  
-![[Intellipaat/Assignments/AWS/Module2/images/Others/Pasted image 20230823111350.png]]
+I'll click on **EFS_for3Instance** and navigate to **Network** tab to replace the **Security Group** associated with **Mount Targets** with the one I create **EFS/NFS**
+![[Pasted image 20230823111350.png]]
 
-I click the button **Attach** to get the **EFS**'s mount command. In this case is the following:  
+I click the button **Attach** to get the **EFS**'s mount command. In this case is the following:
 ```
 sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-035a12e0097bf3b55.efs.us-east-1.amazonaws.com:/ efs
 ```
 
 
 I will now create 3 EC2 Instances Ubuntu, Red Hat and Amazon Linux. 
-They will all have the same **Security Groups** that I created attached  
-![[Intellipaat/Assignments/AWS/Module2/images/Others/Pasted image 20230823112024.png]]
+They will all have the same **Security Groups** that I created attached
+![[Pasted image 20230823112024.png]]
 
 For the EC2 instance to work I need to install **Amazon EFS client** in them. Sense all 3 instances have different OS the commands are different
 
@@ -44,8 +37,8 @@ For the EC2 instance to work I need to install **Amazon EFS client** in them. Se
 > https://docs.aws.amazon.com/efs/latest/ug/installing-amazon-efs-utils.html#installing-other-distro
 
 
-I'll do this installation at the time I launch the Instance through Advance details - User data  
-![[Intellipaat/Assignments/AWS/Module2/images/Others/Pasted image 20230823112643.png]]
+I'll do this installation at the time I launch the Instance through Advance details - User data
+![[Pasted image 20230823112643.png]]
 
 Ubuntu's - *User data*
 ```bash
@@ -95,20 +88,20 @@ sudo mkdir /efs
 # Mount the EFS filesystem
 sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-035a12e0097bf3b55.efs.us-east-1.amazonaws.com:/ /efs
 ```
-  
+
 ![[Pasted image 20230823114001.png]]
 
 Now I'll connect to each instance to check:
 
-Ubuntu:  
+Ubuntu:
 ![[Pasted image 20230823113731.png]]
 I see the mounted EFS and create a test file `fromUbuntu` inside
 
-Amazon Linux:  
+Amazon Linux:
 ![[Pasted image 20230823113844.png]]
 
-Red Hat:  
-![[Intellipaat/Assignments/AWS/Module2/images/Others/Pasted image 20230823114135.png]]
+Red Hat:
+![[Pasted image 20230823114135.png]]
 
 
 Everything works as expected

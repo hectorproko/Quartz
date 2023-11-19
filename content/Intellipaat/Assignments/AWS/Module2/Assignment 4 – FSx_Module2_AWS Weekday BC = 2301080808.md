@@ -182,7 +182,7 @@ sudo mount -t lustre -o noatime,flock fs-0e0819e73ccdda5f1.fsx.us-east-1.amazon
 
 from default VPC's CIDR `172.31.0.0/16`. This is aimed at enabling the instance to communicate with the EFS **mount target**.
 Name Lustre
-![[Pasted image 20230824144921.png]]
+![[lustre security group.png]]
 
 ---
 
@@ -199,7 +199,7 @@ Name Lustre
 ```bash
 sudo amazon-linux-extras install -y lustre2.10
 ```
-
+%%make sure you pick Amazon Linux 2 AMI%%
 ### Step 5: Attach FSx to EC2
 
 1. Navigate back to the FSx console and click "Attach" on your file system.
