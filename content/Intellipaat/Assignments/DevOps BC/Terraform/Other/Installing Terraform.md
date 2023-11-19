@@ -1,3 +1,7 @@
+---
+tags:
+  - Terraform
+---
 ==Pending CleanUP==
 ### Windows
 

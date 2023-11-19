@@ -1,3 +1,7 @@
+---
+tags:
+  - Terraform
+---
 ==Pending CleanUP==
 > [!info] Module 8: Terraform Assignment - 5
 > **Tasks To Be Performed:** 
