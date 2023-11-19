@@ -35,8 +35,8 @@ Resources:
 - Once satisfied with the configurations, I saved the `s3_bucket_template.yaml` file. 
 - Navigating back to the CloudFormation section in the AWS console, I clicked on "Create Stack". 
 - I then uploaded the `s3_bucket_template.yaml` and closely followed the on-screen instructions. 
-  ![[Pasted image 20231007162942.png]]
-  ![[Pasted image 20231007163618.png]]
+  <br>![[Pasted image 20231007162942.png]]
+  <br>![[Pasted image 20231007163618.png]]
 
 `s3_bucket_template.yaml`
 ```yaml
@@ -52,13 +52,13 @@ Resources:
         Status: Enabled
 ```
 
-![[Pasted image 20231007183507.png]]
+<br>![[Pasted image 20231007183507.png]]
 
 4. **Validating My Implementation:** 
 
 > [!success]
 > As expected, I found my freshly minted bucket, "intellipaat-hector", and confirmed that versioning was indeed enabled.
 > 
-> ![[Pasted image 20231007183820.png]]
+> <br>![[Pasted image 20231007183820.png]]
 > 
 > 

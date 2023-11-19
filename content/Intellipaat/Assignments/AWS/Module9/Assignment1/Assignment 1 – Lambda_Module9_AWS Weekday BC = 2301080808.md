@@ -50,10 +50,10 @@ def lambda_handler(event, context):
     
     - In the AWS Lambda dashboard, I find the "Designer" section for my function.
     - I click on "Add trigger".
-      ![[Pasted image 20231011091137.png]]
+      <br>![[Pasted image 20231011091137.png]]
     - I choose "SQS" from the list of available services.
     - I select the SQS queue I want to use.
-      ![[Pasted image 20231011093004.png]]
+      <br>![[Pasted image 20231011093004.png]]
     - Made sure "Activate trigger" was checked
     - Left default configurations.
     - Clicked "Add".
@@ -76,24 +76,24 @@ def lambda_handler(event, context):
 >         - Search for the `AWSLambdaSQSQueueExecutionRole` managed policy, which provides permissions for a Lambda function to interact with SQS.
 
 > [!success] Successfully moved on to the next step
-> ![[Pasted image 20231011105757.png]]
+> <br>![[Pasted image 20231011105757.png]]
 > *Edited the trigger made sure "Activate trigger" was checked*
 
-![[Pasted image 20231011113245.png]]
+<br>![[Pasted image 20231011113245.png]]
 - **Testing the Lambda Function**
     
     - I navigate to the SQS dashboard.
     - I select the queue I've set as a trigger `lambdaSQS`.
     - I click on the "Send and receive messages" button.
     - I send a sample message to the queue.
-      ![[Pasted image 20231011110115.png]]
+      <br>![[Pasted image 20231011110115.png]]
     - I wait for a moment as AWS Lambda automatically triggers upon receiving the message in SQS.
     - I then navigate to the CloudWatch logs associated with my Lambda function.
-      ![[Pasted image 20231011112354.png]]
+      <br>![[Pasted image 20231011112354.png]]
     - I confirm the print statement from my Python code displays the message I sent to the queue.
 
 > [!success]
-> ![[Pasted image 20231011132559.png]]
+> <br>![[Pasted image 20231011132559.png]]
 
 
 

@@ -39,15 +39,15 @@ sudo systemctl enable httpd
 ```
 
 Testing page:
-![[Pasted image 20230923211139.png]]
+<br>![[Pasted image 20230923211139.png]]
 
 3. **Create an AMI:**
  - After configuring the web server as I want, I'll create an Amazon Machine Image (AMI) from my EC2 instance:
   - In the EC2 dashboard, I'll right-click on my running instance.
   - Then, I'll select`Image` and choose`Image and templates` and`Create Image`.
-    ![[Pasted image 20230923211402.png]]
+    <br>![[Pasted image 20230923211402.png]]
   - I'll follow the prompts to create the image.
-    ![[Pasted image 20230923211846.png]]
+    <br>![[Pasted image 20230923211846.png]]
 
 ### Task 2: Create a Launch Template
 
@@ -65,13 +65,13 @@ Testing page:
 - I'll click the`Create launch template` button.
 - In the Launch Template configuration:
     - I'll choose the AMI I created in Task 1.
-      ![[Pasted image 20230923214006.png]]
+      <br>![[Pasted image 20230923214006.png]]
     - I'll select an instance type that suits my needs.
     - I'll pick a security groups with HTTP/s open.
 - After configuring the Launch Template:
     - I'll review the settings.
     - Finally, I'll click`Create Launch Template`.
-      ![[Pasted image 20230923214153.png]]
+      <br>![[Pasted image 20230923214153.png]]
 
 ### Task 3: Create an Auto Scaling Group
 
@@ -82,19 +82,19 @@ Testing page:
 2. **Configure Auto Scaling Group Settings:**
  
  - I'll select the launch configuration I created in Task 2.
-   ![[Pasted image 20230923215706.png]]
+   <br>![[Pasted image 20230923215706.png]]
  - I'll set the desired capacity, with a minimum of 1 instance and a maximum of 3 instances.
  - If needed, I can configure other settings like network, subnets, and load balancers.
  - We'll skip scaling policies based on metrics such as CPU utilization or network traffic.
  - I'll carefully review the Auto Scaling group settings.
  - Finally, I'll click`Create Auto Scaling group`.
-   ![[Pasted image 20230923220326.png]]
+   <br>![[Pasted image 20230923220326.png]]
 
 I'll terminate my instance to see if Auto Scaling starts a new one:
-![[Pasted image 20230923231419.png]]
+<br>![[Pasted image 20230923231419.png]]
 Confirmed new instance comes up
-![[Pasted image 20230923231505.png]]
-![[Pasted image 20230923231524.png]]
+<br>![[Pasted image 20230923231505.png]]
+<br>![[Pasted image 20230923231524.png]]
 
 
 %% Issue

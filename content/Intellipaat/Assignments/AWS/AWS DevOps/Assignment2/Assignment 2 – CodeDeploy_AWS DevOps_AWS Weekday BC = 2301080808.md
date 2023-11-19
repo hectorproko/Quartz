@@ -17,7 +17,7 @@ c. I click "Getting started", then choose "Create Application".
 d. I type "XYZ_Corporation_App" as the Application Name. 
 e. I select "EC2/On-premises" for the "Compute platform". 
 f. I click "Create application".
-![[Pasted image 20231019092334.png]]
+<br>![[Pasted image 20231019092334.png]]
     
 
 ### 2. Setting up Deployment Group for the EC2 Instance:
@@ -36,7 +36,7 @@ g. I decide to identify my EC2 instance using tags. I ensure the EC2 instance I 
 h. In "Deployment settings", I select the "CodeDeployDefault.OneAtATime" configuration for simplicity.
 
 i. I finalize by clicking "Create deployment group".
-![[Pasted image 20231019092629.png]]
+<br>![[Pasted image 20231019092629.png]]
 
 %%Disabled load balancing[[create deploynet group.png]]%%
 

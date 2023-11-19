@@ -29,7 +29,7 @@
 %% Used [[Assignment 1 – ELB_Module4_AWS Weekday BC = 2301080808#Creation of the Three EC2 Instances]] %%
 
 1. Launched the EC2 Instance Noted the Public IP.
-   ![[Pasted image 20231004142226.png]]
+   <br>![[Pasted image 20231004142226.png]]
 2. Installed the Web Server 
 ```bash
 #!/bin/bash
@@ -45,7 +45,7 @@ echo "Hello from Web Server!" | sudo tee /var/www/html/index.html
 sudo systemctl restart httpd
 ```
 3. Testing.
-   ![[Pasted image 20231004142258.png]]
+   <br>![[Pasted image 20231004142258.png]]
 
 ### Created a Hosted Zone in Route 53:
 
@@ -56,16 +56,16 @@ sudo systemctl restart httpd
     - **Domain Name**: Entered my domain name `temp.hectorproko.com`.
     - **Type**: Selected "Public Hosted Zone".
 5. Clicked "Create".
-   ![[Pasted image 20231004143005.png]]
+   <br>![[Pasted image 20231004143005.png]]
 
 After creating the hosted zone, Route 53 provides me with a set of **NS (Name Server) records**. We'll need to update out domain registrar's nameserver settings with these NS records to delegate the domain's DNS to Route 53.
 
 > [!NOTE] Updating Registrar
 > 
-> ![[Pasted image 20231004143128.png]]
+> <br>![[Pasted image 20231004143128.png]]
 > *I've mapped all four Name Servers to my domain 'temp.hectorproko.com' within the [[IONOS]] platform, inputting them one by one.*
 > 
-> ![[Pasted image 20231004153525.png]]
+> <br>![[Pasted image 20231004153525.png]]
 > 
 
 ^c3e5c2
@@ -81,9 +81,9 @@ After creating the hosted zone, Route 53 provides me with a set of **NS (Name Se
     - **Value/Route traffic to**: Entered the public IPv4 address of your EC2 instance.
     - **TTL (Time to Live)**: A common value is 300 seconds, but you can adjust based on your needs.
     - **Record type**: Chose "Simple routing".
-      ![[Pasted image 20231004151545.png]]
+      <br>![[Pasted image 20231004151545.png]]
 4. Clicked "Create records".
-   ![[Pasted image 20231004151639.png]]
+   <br>![[Pasted image 20231004151639.png]]
 
 
 ### Verifying the Route:
@@ -92,5 +92,5 @@ After creating the hosted zone, Route 53 provides me with a set of **NS (Name Se
 Opened a browser and enter my domain name. I should see the Apache web server page I created.
    
 > [!success]
->    ![[Pasted image 20231004153026.png]]
+>    <br>![[Pasted image 20231004153026.png]]
 

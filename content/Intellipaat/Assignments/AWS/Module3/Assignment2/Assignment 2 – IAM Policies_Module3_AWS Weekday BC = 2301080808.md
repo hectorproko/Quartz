@@ -44,7 +44,7 @@ I clicked the `Create policy` button and then switched to the JSON tab. Here, I 
 }
 ```
 After reviewing the policy to make sure it met the requirements, I named the policy `PolicyNumber1` and clicked `Create policy`.
-![[PolicyNumber1.png]]
+<br>![[PolicyNumber1.png]]
 ### Task 2: Creating Policy Number 2
 ```json
 {
@@ -70,19 +70,19 @@ After reviewing the policy to make sure it met the requirements, I named the pol
 }
 ```
 Continuing in the IAM dashboard, I clicked on the `Policies` tab again and then clicked the `Create policy` button. I switched over to the JSON tab, just like before, and pasted in the JSON policy for allowing full access to CloudWatch and billing as well as the ability to only list EC2 and S3 resources. After reviewing this second policy, I named it `PolicyNumber2` and clicked `Create policy`.
-![[PolicyNumber1-2.png]]
+<br>![[PolicyNumber1-2.png]]
 ### Task 3: Attaching Policy Number 1 to the `DevTeam`
 
 Next, I moved on to attaching `PolicyNumber1` to the `DevTeam`. I clicked on the `User groups` tab on the left sidebar and selected the `DevTeam` group by clicking its name. 
 
 Within the `DevTeam` group interface, I clicked the `Permissions` tab, `Add permissions` button and `Attach policies`. 
-![[attach policies.png]]
+<br>![[attach policies.png]]
 
 A list of available policies appeared, and I searched for `PolicyNumber1`. Upon finding it, I selected it and then clicked the `Attach policies` button.
-![[attach permission.png]]
+<br>![[attach permission.png]]
 ### Task 4: Attaching Policy Number 2 to the `OpsTeam`
 
 Finally, to attach `PolicyNumber2` to the `OpsTeam`, I went back to the `User groups` tab and clicked on the `OpsTeam` group. 
 
 Just like with the `DevTeam`, while inside the `OpsTeam` group interface I clicked the `Permissions` tab, `Add permissions` button and `Attach policies`. I searched for `PolicyNumber2` selected it from the list, and then clicked the `Attach policies` button.
-![[OpsTeam permissions PolicyNumber2.png]]
+<br>![[OpsTeam permissions PolicyNumber2.png]]

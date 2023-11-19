@@ -30,7 +30,7 @@ In this instance, the account in use is not new and an AWS Organization has alre
 5. I click on "Create organization unit".
 6. I see that the new organizational unit "OU1" has appeared under the "Root" OU in the organizational structure.
 7. I repeat the above steps if I want to create additional organizational units.
-![[Pasted image 20231013124855.png]]
+<br>![[Pasted image 20231013124855.png]]
 
 
 ### Task 3: Restricting AWS Access to EC2 Only
@@ -38,19 +38,19 @@ In this instance, the account in use is not new and an AWS Organization has alre
 1. I log into my AWS account and navigate to the AWS Organizations dashboard.
 2. On the left side of the dashboard, I click on "Policies".
 3. Within the "Policies" section, I click on "Service control policies".
-   ![[Pasted image 20231013143604.png]]
+   <br>![[Pasted image 20231013143604.png]]
 4. To enable service control policies, I click on the "Enable service control policies" button.
-   ![[Pasted image 20231013143618.png]]
+   <br>![[Pasted image 20231013143618.png]]
 5. Once enabled, I proceed to create a new policy that allows EC2 access. To do this: a. I click on the "Create policy" button (or a similar action button). b. In the policy editor, I provide the necessary JSON policy document that allows EC2 access. c. I provide a name for the policy, for example, "Access to EC2", and any other required details. d. I click "Save" or "Create" to finalize the policy creation.
-   ![[policy.png]]
+   <br>![[policy.png]]
 6. After the policy "Access to EC2" is created, I select it from the list of available policies.
 7. With the policy selected, I click on the "Actions" dropdown menu.
 8. From the dropdown, I select "Attach policy".
-   ![[Pasted image 20231013150316.png]]
+   <br>![[Pasted image 20231013150316.png]]
    
 9. A dialogue or new page appears, listing all the organizational units (OUs). I select the OUs I recently created to which I want to attach this policy.
 10. Once the desired OUs are selected, I confirm the action, attaching the "Access to EC2" policy to the chosen OUs.
-    ![[Pasted image 20231013150448.png]]
+    <br>![[Pasted image 20231013150448.png]]
   
 
 Now, the "Access to EC2" policy is attached to the selected organizational units, granting them the permissions defined in the policy.

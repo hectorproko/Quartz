@@ -35,12 +35,12 @@ maybe change to ubuntu ami cuse is super slow  amazon linux
 Need to compare default VPC and MyVPC
 > [!fail] Issue
 > Had an issue similar to [[Assignment 1 – MariaDB_Module7_AWS Weekday BC = 2301080808#^41cbaa|Assignment 1 – MariaDB]] related to subnet group
-> ![[Pasted image 20230928143047.png]]
+> <br>![[Pasted image 20230928143047.png]]
 > <mark style="background: #BBFABBA6;">**Solution**: added second private subnet</mark>
 > 
 
 Issue2
-![[Pasted image 20231011160126.png]]
+<br>![[Pasted image 20231011160126.png]]
 CidrIp: !Ref PrivateSubnetId
 
 However, `PrivateSubnetId` is a reference to a subnet ID, not a CIDR block
@@ -349,22 +349,22 @@ By structuring the infrastructure in this way, the template promotes a layered s
 ### Verifying Web Page Accessibility
 
 The hosted zone in Route 53 has been correctly configured with a record set pointing to the `WebTier` instance - `54.242.228.183`.
-![[Pasted image 20231013105213.png]]
+<br>![[Pasted image 20231013105213.png]]
 When accessing the public IP address `54.242.228.183` directly, the default Apache2 welcome page from an Ubuntu server is displayed, confirming the web server's correct operation.
-![[Pasted image 20231013105012.png|460]]
+<br>![[Pasted image 20231013105012.png|460]]
 After updating the domain's nameservers in the registrar settings to match those provided by AWS Route 53, navigating to `temp.hectorproko.com` successfully resolves to the Apache2 default page. This confirms that the domain is correctly pointing to the intended web server.
 
 > [!success]
-> ![[Pasted image 20231013104938.png|460]]
+> <br>![[Pasted image 20231013104938.png|460]]
 
 ### Testing RDS Connection
 
 From the Web Tier instance with IP ending in `.247`, I initiated an SSH connection to the App Instance:
-![[Pasted image 20231012210418.png]]
+<br>![[Pasted image 20231012210418.png]]
 
 Upon establishing a successful connection to the App Instance ending in `.67`, I then connected to the RDS instance using its provided endpoint:
 
 > [!success]
 > 
-> ![[Pasted image 20231012210158.png]]
+> <br>![[Pasted image 20231012210158.png]]
 > The MySQL prompt was displayed, confirming a successful connection to the RDS instance and indicating that all components are functioning as expected.

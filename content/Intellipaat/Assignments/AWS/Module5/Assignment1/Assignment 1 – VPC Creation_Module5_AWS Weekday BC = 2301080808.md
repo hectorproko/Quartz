@@ -26,7 +26,7 @@
 1. **Initiate Subnet Creation**: Under the VPC Dashboard, I'll go to “Subnets” and select “Create subnet”.
 2. **Configuration**:
  - **VPC**: Selected the VPC I just created `Assignment1`.
-  ![[Pasted image 20230925115628.png]]
+  <br>![[Pasted image 20230925115628.png]]
  - **Name**: Labeled it "Public-Subnet".
  - **CIDR block**: Entered "120.0.0.0/24".
  - **Availability Zone**: Chose `us-east-1a`.
@@ -44,7 +44,7 @@
  - **CIDR block**: Use "120.0.2.0/24".
  - **Availability Zone**: Chose `us-east-1c`. 
   Click “Create subnet”.
-![[Pasted image 20230925121055.png]]
+<br>![[Pasted image 20230925121055.png]]
 ## 3. **Facilitating Internet Access**:
 
 1. **Create Internet Gateway**:
@@ -55,9 +55,9 @@
 2. **Update Route Table for Public Subnet**:
  - I'll go to “Route tables”.
  - Edit the route table associated with the public subnet.
-  ![[Pasted image 20230925122901.png]]
+  <br>![[Pasted image 20230925122901.png]]
  - Add a rule to allow traffic to "0.0.0.0/0" through the internet gateway.
-  ![[Pasted image 20230925123151.png]]
+  <br>![[Pasted image 20230925123151.png]]
 
 ## 4. **Ensuring Private Subnet Connectivity via NAT**:
 
@@ -65,7 +65,7 @@
  - Navigated to "NAT Gateways" and clicked "Create NAT gateway".
  - **Subnet**: Place it in the public subnet for internet access.
  - **Allocate new EIP**: To ensure the NAT gateway has a public IP allocated an Elastic IP by clicking `Allocate Elastic IP`.
-  ![[Pasted image 20230925124639.png]]
+  <br>![[Pasted image 20230925124639.png]]
   
 2. **Update Private Subnet Route Table**:
 
@@ -86,13 +86,13 @@
 	 - I need to point all outbound traffic to the NAT gateway, so I'll add a route:
 	  - For `Destination`, I'll enter `0.0.0.0/0`.
 	  - For `Target`, I'll pick the NAT gateway from the list.
-	   ![[Pasted image 20230925132355.png]]
+	   <br>![[Pasted image 20230925132355.png]]
 	 - That's done. I'll save the changes.
 	  
 	3. **Link My Private Subnets to This New Table**:
 	 - Staying in the details of this route table, I'll navigate to “Actions”.
 	 - I'll click on “Edit subnet associations” option.
-	  ![[Pasted image 20230925133134.png]]
+	  <br>![[Pasted image 20230925133134.png]]
 	 - From the list, I'll tick the boxes next to my private subnets and click "Save associations"
 
 

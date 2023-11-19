@@ -23,7 +23,7 @@
 **Step 4:** I scrolled down to find the "Static website hosting" box and clicked on Edit.
 
 **Step 5:** I specified 'index.html' for the Index document and 'error.html' for the Error document. This means any visitor to my website's root URL will be served the 'index.html' file, and any errors will direct them to 'error.html'.
-![[Pasted image 20230927223731.png]]
+<br>![[Pasted image 20230927223731.png]]
 
 **Step 6:** I noted down the endpoint URL provided by AWS, as this will be the URL for the hosted static website.
 ```bash
@@ -94,7 +94,7 @@ color: red;
 **Step 3:** After both files were added, I clicked the "Upload" button to finalize the upload process.
 
 1. Access the Bucket URL: `http://my-test-bucket-unique-name.s3-website-us-east-1.amazonaws.com`
-  ![[Pasted image 20230927223840.png]]
+  <br>![[Pasted image 20230927223840.png]]
   *We get access denied*
 
 2. Modify Public Access Settings:
@@ -103,7 +103,7 @@ color: red;
   - Selected "Block public access (bucket settings)".
   - Clicked on "Edit".
   - Unchecked "Block all public access" to allow changes to individual object permissions.
-    ![[Pasted image 20230928102228.png]]
+    <br>![[Pasted image 20230928102228.png]]
 
 3. Update the Bucket Policy:
 
@@ -133,7 +133,7 @@ color: red;
   - Access the website again using the provided URL.
 
 > [!success]
->   ![[Pasted image 20230928102434.png]]
+>   <br>![[Pasted image 20230928102434.png]]
 
 ---
 
@@ -161,11 +161,11 @@ color: red;
 1. I spotted the "Expire current versions of objects" option and checked it.
 2. I wanted to ensure objects were deleted after a set time, so I specified "200" days for their automatic deletion.
     
-![[Pasted image 20230928110726.png]]
+<br>![[Pasted image 20230928110726.png]]
 
 **Step 6:** I took a moment to review everything. Satisfied, I clicked "Create rule".
 
-![[Pasted image 20230928111253.png]]
+<br>![[Pasted image 20230928111253.png]]
 
 ---
 

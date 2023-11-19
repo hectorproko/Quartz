@@ -27,7 +27,7 @@ git clone https://github.com/aws-samples/aws-sns-samples.git
 %%
 ### Step 1: EC2 Key Pair
 I have will make usre of a private key I already have
-![[Pasted image 20231103143217.png]]
+<br>![[Pasted image 20231103143217.png]]
 
 
 %%[[Project-3-–-Solution-1.pdf#page=3&selection=24,0,24,31|Step 2: Create the AWS Resource]]%%
@@ -67,11 +67,11 @@ I have will make usre of a private key I already have
 I navigate to CloudFormation Dashboard and click "Create stack"
 
 - **Step 1**: Create stack
-  ![[Step 1Create stack.png|400]]
+  <br>![[Step 1Create stack.png|400]]
   *We upload the template*
 
 - **Step 2**: Specify stack details
-  ![[Step 2Specify stack details.png|400]]
+  <br>![[Step 2Specify stack details.png|400]]
   *After naming the stack, I fill in the 'KeyName' parameter with the name of an existing EC2 KeyPair to enable SSH access. I set the 'SSHLocation' parameter to '0.0.0.0/0', which allows SSH connections from any IP address.*
 
 - **Step 3**: Configure stack options
@@ -84,36 +84,36 @@ I navigate to CloudFormation Dashboard and click "Create stack"
 ### Step 3: Confirming the EC2 Instance lacks internet access
 
 First, I'll need to establish an SSH connection, it is necessary to obtain the EC2 instance's public IP address.
-![[Pasted image 20231103145918.png]]
+<br>![[Pasted image 20231103145918.png]]
 
 Using the Public IP I `ssh` into the EC2
-![[Pasted image 20231103150221.png]]
+<br>![[Pasted image 20231103150221.png]]
 
 Using ping verifies instance's lack of internet connectivity:
-![[Pasted image 20231103150323.png]]
+<br>![[Pasted image 20231103150323.png]]
 
 To verify that the instance lacks connectivity to Amazon SNS:
-![[Pasted image 20231103150832.png|450]]
+<br>![[Pasted image 20231103150832.png|450]]
 
 Using AWS CLI I attempt to publish a message SNS topic `VPCE-Tutorial-Topic`
 ```bash
 aws sns publish --region us-east-1 --topic-arn arn:aws:sns:us-east-1:838427752759:VPCE-Tutorial-Topic --message "Hello"
 ```
-![[Pasted image 20231103151127.png]]
+<br>![[Pasted image 20231103151127.png]]
 *No message is published*
 
 %%[[Project-3-–-Solution-1.pdf#page=7&selection=42,0,42,52|Step 4: Create an Amazon VPC Endpoint for Amazon SNS]]%%
 ### Step 4: VPC Endpoint for Amazon SNS
 
 I begin by assigning the endpoint a Name Tag: 'VPCE-Tutorial'. Under **Services**, I select the AWS service that the endpoint will connect to, which is the Simple Notification Service (SNS) in the US East (N. Virginia) region, identified by `com.amazonaws.us-east-1.sns`.
-![[Pasted image 20231103153253.png]]
+<br>![[Pasted image 20231103153253.png]]
 I ensure that I select the VPC that was created from the CloudFormation template.
-![[Pasted image 20231103153311.png]]
-![[Pasted image 20231103153517.png]]
+<br>![[Pasted image 20231103153311.png]]
+<br>![[Pasted image 20231103153517.png]]
 I select the 'Tutorial Security Group' as the Security Group, which was previously established by the CloudFormation template.
-![[Pasted image 20231103153433.png]]
+<br>![[Pasted image 20231103153433.png]]
 
-![[endpoint vpce-tutorial.png]]
+<br>![[endpoint vpce-tutorial.png]]
 
 
 %%[[Project-3-–-Solution-1.pdf#page=10&selection=4,0,4,50|Step 5: Publish a message to your Amazon SNS topic]]%%
@@ -123,7 +123,7 @@ I select the 'Tutorial Security Group' as the Security Group, which was previous
 ```bash
 aws sns publish --region us-east-1 --topic-arn arn:aws:sns:us-east-1:838427752759:VPCE-Tutorial-Topic --message "Hello"
 ```
-![[Pasted image 20231103153954.png]]
+<br>![[Pasted image 20231103153954.png]]
 
 
 %%[[Project-3-–-Solution-1.pdf#page=10&selection=22,0,22,38|Step 6: Verify your message deliveries]]%%
@@ -131,24 +131,24 @@ aws sns publish --region us-east-1 --topic-arn arn:aws:sns:us-east-1:83842775275
 
 To verify that the Lambda functions were invoked
 %%[[VPCE-Tutorial-Lambda-1.png]]%%
-![[Pasted image 20231103154701.png|300]]
+<br>![[Pasted image 20231103154701.png|300]]
 
 To verify that the CloudWatch logs were updated:
 
 > [!NOTE] VPCE-Tutorial-Lambda-1
-> ![[VPCE-Tutorial-Lambda-1 cloudwatch.png]]
+> <br>![[VPCE-Tutorial-Lambda-1 cloudwatch.png]]
 > 
 > > [!success]
-> > ![[Pasted image 20231103155309.png]]
+> > <br>![[Pasted image 20231103155309.png]]
 > 
 
 > [!NOTE] VPCE-Tutorial-Lambda-2
 > 
-> ![[Pasted image 20231103155506.png]]
+> <br>![[Pasted image 20231103155506.png]]
 > 
 > 
 > > [!success]
-> > ![[Pasted image 20231103155525.png]]
+> > <br>![[Pasted image 20231103155525.png]]
 > 
 > 
 
@@ -158,9 +158,9 @@ To verify that the CloudWatch logs were updated:
 
 To delete the VPC endpoint: 
 I go to `Actions > Delete VPC endpoints`
-![[endpoint vpce-tutorial.png]]
+<br>![[endpoint vpce-tutorial.png]]
 
 
 To delete the AWS CloudFormation stack:
-![[Pasted image 20231103160118.png|500]]
+<br>![[Pasted image 20231103160118.png|500]]
 

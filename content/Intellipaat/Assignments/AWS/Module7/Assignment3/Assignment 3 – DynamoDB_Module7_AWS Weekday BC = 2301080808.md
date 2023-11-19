@@ -20,15 +20,15 @@ Certainly! Here's a step-by-step guide from your point of view to set up, popula
 **Step 2:** On the DynamoDB dashboard, I clicked the "Create table" button.
 
 **Step 3:** For the table name, I entered a suitable name, say "XYZ_Table". I set the partition key as "ID". Once done, I clicked the "Create" button.
-![[Pasted image 20230929175748.png]]
+<br>![[Pasted image 20230929175748.png]]
 ### **2. Populating the DynamoDB Table:**
 
 **Step 1:** After the table was created, I clicked it from the dashboard.
 
 **Step 2:** I clicked the "Actions" dropdwon and then the "Create item" button.
-![[Pasted image 20230929180636.png]]
+<br>![[Pasted image 20230929180636.png]]
 **Step 3:** I then entered the required details for the item, ensuring the "ID" was filled in. I repeated this process for all 5 items, making sure each one had a unique ID.
-![[Pasted image 20230929180933.png]]
+<br>![[Pasted image 20230929180933.png]]
 ### **3. Taking a Backup of the Table:**
 
 **Step 1:** Back on the dashboard, I clicked my table `XYZ_Table`.
@@ -36,8 +36,8 @@ Certainly! Here's a step-by-step guide from your point of view to set up, popula
 **Step 2:** In the "Backups" tab, I clicked the "Create backup" button.
 
 **Step 3:** I named the backup appropriately and clicked the "Create backup" button.
-![[Pasted image 20230929181540.png]]
-![[Pasted image 20230929181632.png]]
+<br>![[Pasted image 20230929181540.png]]
+<br>![[Pasted image 20230929181632.png]]
 ### **4. Deleting the DynamoDB Table:**
 
 **Step 1:** After ensuring that the backup was successful, I selected the table from the dashboard and clicked button "Delete"
@@ -59,7 +59,7 @@ Note: Deleting a table in DynamoDB is irreversible, so always ensure you have ad
 **Step 3:** In the list of backups, I located the backup of the "XYZ_Table".
 
 **Step 4:** I selected the desired backup by clicking the checkbox next to it.
-![[Pasted image 20230929190750.png]]
+<br>![[Pasted image 20230929190750.png]]
 
 **Step 5:** With the backup selected, I clicked on the "Restore" button or option.
 
@@ -70,6 +70,6 @@ Note: Deleting a table in DynamoDB is irreversible, so always ensure you have ad
 **Step 8:** After confirming all details, I clicked on the "Restore" or "Confirm" button to initiate the restoration process.
 
 **Step 9:** I returned to the "Tables" section to monitor the status of the restore. The table status should eventually change from "Restoring" to "Active" once the restoration process is complete.
-![[Pasted image 20230929191121.png]]
+<br>![[Pasted image 20230929191121.png]]
 
 Once the status is "<mark style="background: #BBFABBA6;">Active</mark>," the table has been restored, and we can begin querying and working with your data again. 

@@ -50,7 +50,7 @@
     - **Name**: DB
     - **CIDR**: Went with `10.0.5.0/24` in the same AZ as DBCache.  
 
-![[Pasted image 20230926182412.png]]
+<br>![[Pasted image 20230926182412.png]]
 
 ### Step 3: Setting Up Internet Connectivity
 

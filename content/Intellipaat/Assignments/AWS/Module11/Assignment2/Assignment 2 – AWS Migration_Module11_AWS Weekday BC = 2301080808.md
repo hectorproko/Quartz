@@ -23,7 +23,7 @@ Continuing from [[Assignment 1 – AWS Migration_Module11_AWS Weekday BC = 23010
 
 1. I open the Oracle VM VirtualBox Manager where I can see my "UbuntuDesktop for Migration" VM.
 2. I right-click on the VM and select 'Export to OCI'.
-   ![[Pasted image 20231015223909.png]]
+   <br>![[Pasted image 20231015223909.png]]
    
 3. I follow the prompts and export it in the Open Virtualization Format (OVF).
 
@@ -31,11 +31,11 @@ Continuing from [[Assignment 1 – AWS Migration_Module11_AWS Weekday BC = 23010
 
 4. I log into my AWS Management Console.
 5. I navigate to S3 and select existing bucket  `my-test-bucket-unique-name`.
-   ![[Pasted image 20231015175057.png|400]]
+   <br>![[Pasted image 20231015175057.png|400]]
 6. I click on 'Upload', select the exported .ova file, and start the upload.
-   ![[Pasted image 20231015224028.png]]
-   ![[Pasted image 20231015224130.png]]
-   ![[Pasted image 20231015230609.png]]
+   <br>![[Pasted image 20231015224028.png]]
+   <br>![[Pasted image 20231015224130.png]]
+   <br>![[Pasted image 20231015230609.png]]
    
 ### **Creating the "MigrationRole" in AWS IAM**
 
@@ -76,9 +76,9 @@ Continuing from [[Assignment 1 – AWS Migration_Module11_AWS Weekday BC = 23010
     - I navigate to the AWS Management Console.
     - I click on my account (e.g., `hrodGmail`) at the top right.
     - In the dropdown, I select "Security credentials."
-      ![[Pasted image 20231019142304.png]]
+      <br>![[Pasted image 20231019142304.png]]
     - Under "Access keys," I click on "Create access key."
-      ![[Pasted image 20231019142209.png]]
+      <br>![[Pasted image 20231019142209.png]]
 
 3. **After receiving the keys, I configure the AWS CLI:**
     - I run the command: `aws configure`
@@ -90,7 +90,7 @@ Continuing from [[Assignment 1 – AWS Migration_Module11_AWS Weekday BC = 23010
 4. **To verify the connection, I list the S3 buckets:**
     - I run the command: `aws s3 ls`
       
-![[Pasted image 20231019142746.png]]
+<br>![[Pasted image 20231019142746.png]]
 
 
 5. I create a new file named `container.json` with the following content:
@@ -115,22 +115,22 @@ Continuing from [[Assignment 1 – AWS Migration_Module11_AWS Weekday BC = 23010
 	aws ec2 import-image --disk-containers "file://C:\Users\Hecti\Downloads\container.json" --role MigrationRole
 	```
 	
-	![[Pasted image 20231019150718.png]]
+	<br>![[Pasted image 20231019150718.png]]
 
 2. To monitor the progress of the image import task and obtain its status, I use:
 	```
 	aws ec2 describe-import-image-tasks --import-task-ids "import-ami-0faf4b221ede0a163"
 	```
 	
-	![[Pasted image 20231019150823.png]]
+	<br>![[Pasted image 20231019150823.png]]
 	*The progress was at `39%` when I last checked.*
 
 
 After the process completes, I receive a snapshot.
-![[Pasted image 20231019151924.png]]
+<br>![[Pasted image 20231019151924.png]]
 
 The AWS VM Import/Export service processed my disk image, took a snapshot, and subsequently generated an Amazon Machine Image (AMI) from that snapshot.
-![[Pasted image 20231019161606.png]]
+<br>![[Pasted image 20231019161606.png]]
 
 The name of the AMI is `import-ami-0faf4b221ede0a163`.
 
@@ -147,7 +147,7 @@ ssh hector@ec2-54-80-238-211.compute-1.amazonaws.com
 ```
 
 > [!success]
-> ![[Pasted image 20231023104729.png]]
+> <br>![[Pasted image 20231023104729.png]]
 
 
 

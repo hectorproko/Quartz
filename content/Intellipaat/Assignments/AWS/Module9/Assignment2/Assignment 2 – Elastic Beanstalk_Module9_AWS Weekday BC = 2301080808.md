@@ -14,7 +14,7 @@
 
 > [!fail]- Issue
 > 
-> ![[Pasted image 20231012142752.png]]
+> <br>![[Pasted image 20231012142752.png]]
 > Got this issue again seem realated to the RDS issue which was caused by the VPC, 
 > 
 > > [!tip] Solution
@@ -63,20 +63,20 @@ This is the part I used different VPC
       
 10. Once I've filled everything, I'll click "Next" and "Skip to review" button and "Submit" to set up the environment.
 
-![[Pasted image 20231012150425.png]]
+<br>![[Pasted image 20231012150425.png]]
 
 ### Deploying My Code to Elastic Beanstalk:
 
 1. I clicked my environment, `PHP-App-env-env`.
-   ![[Pasted image 20231012150827.png]]
+   <br>![[Pasted image 20231012150827.png]]
 2. I clicked on `Upload and deploy`.
-   ![[Pasted image 20231012150857.png|450]]
+   <br>![[Pasted image 20231012150857.png|450]]
 3. I chose my file, `index.zip`, and uploaded it.
 4. I named this upload `PHP-App-env-version-1`.
 5. I pressed `Deploy` and waited for it to finish.
 6. After deploying, I tested my PHP page by visiting the provided domain: `PHP-App-env-env-eba-nsk8y8bp.us-east-1.elasticbeanstalk.com`.
 
-![[Pasted image 20231012151043.png]]
+<br>![[Pasted image 20231012151043.png]]
 
 I've successfully set up an AWS Elastic Beanstalk environment running PHP and deployed my simple PHP application.
 

@@ -30,7 +30,7 @@
 
 **Step 9:** Once all settings were in place, I clicked on the "Create database" button.
 
-![[Pasted image 20230929162625.png]]
+<br>![[Pasted image 20230929162625.png]]
 
 %%
 Yes, when you create an Aurora database cluster using the "Production" template, AWS provisions it with high availability in mind. This means it automatically sets up a primary (or "writer") instance and a standby replica in a separate Availability Zone for failover support. If the primary instance fails, Aurora will automatically fail over to the standby replica without any manual intervention.
@@ -44,7 +44,7 @@ In the screenshot you've shared:
 It's important to note that this standby replica is not used for read scaling by default. It's primarily there for failover support. If you want additional read replicas for scaling read-heavy workloads, you can manually add more reader instances, as you've been doing.
 %%
 
-![[Pasted image 20230929162859.png]]
+<br>![[Pasted image 20230929162859.png]]
 ``
 #### **2. Creating Read Replicas:**
 
@@ -53,7 +53,7 @@ It's important to note that this standby replica is not used for read scaling by
 **Step 2:** Within the cluster details page, I located the "Actions" dropdown menu.
 
 **Step 3:** From the dropdown, I selected "Add reader" to initiate the process of setting up a read replica.
-![[Pasted image 20230929164256.png]]
+<br>![[Pasted image 20230929164256.png]]
 
 **Step 4:** When I began setting up the first read replica, Aurora gave me an option to choose between two Availability Zones: 'a' and 'b'. Since the default reader was already in AZ 'a' and the writer was in AZ 'b', I decided to balance the read load by placing this replica in AZ 'a'.
 
@@ -65,6 +65,6 @@ It's important to note that this standby replica is not used for read scaling by
 With the above steps, I successfully set up an AuroraDB cluster with two read replicas spread across different availability zones, ensuring high availability and fault tolerance.
 
 #### Test the Connection:
-![[XAMPP.png]]
+<br>![[XAMPP.png]]
 
 

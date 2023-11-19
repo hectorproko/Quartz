@@ -12,10 +12,10 @@
 
 ### Creation of the Three EC2 Instances:
 Created 3 EC2 instances with the following:
-![[Pasted image 20230922172403.png]]
+<br>![[Pasted image 20230922172403.png]]
 - **Security Group Attached**: 
   I attached a security group to each of the three instances that allows HTTP, HTTPS, and SSH from all sources.
-  ![[Pasted image 20230922162116.png|500]]
+  <br>![[Pasted image 20230922162116.png|500]]
 
 - **Commands Executed on Each EC2 Instance**:
   
@@ -43,7 +43,7 @@ Changed: `"Hello from Instance[1,2,3]!"` for each instance
 2. **Start Creating the Classic Load Balancer**:
    - Under the `Load Balancers` section, I'll click on `Create Load Balancer`.
   - I'll choose `Classic Load Balancer` and hit `Create`.
-    ![[Pasted image 20230922172146.png|400]]
+    <br>![[Pasted image 20230922172146.png|400]]
 
 3. **Set Up the Load Balancer**:
  - I'll give it a unique name.
@@ -60,18 +60,18 @@ Changed: `"Hello from Instance[1,2,3]!"` for each instance
 6. **Adding My EC2 Instances**:
  - I'll click on `Add instances`.
  - I'll select the three instances I set up manually.
-   ![[Pasted image 20230922173204.png]]
+   <br>![[Pasted image 20230922173204.png]]
 
 
 7. **Finalize Creation**:
  - I'll review everything and click `Create load balancer`.
 
-![[Pasted image 20230922172900.png]]
+<br>![[Pasted image 20230922172900.png]]
 
 When I open the browser using the DNS name of the load balancer, I see that it hits all three servers.
-![[Pasted image 20230922173742.png]]
-![[Pasted image 20230922173758.png]]
-![[Pasted image 20230922174124.png]]
+<br>![[Pasted image 20230922173742.png]]
+<br>![[Pasted image 20230922173758.png]]
+<br>![[Pasted image 20230922174124.png]]
 ### Migrating to an Application Load Balancer:
 
 To migrate a Classic Load Balancer to an ALB using the migration wizard, follow these steps:
@@ -81,8 +81,8 @@ To migrate a Classic Load Balancer to an ALB using the migration wizard, follow 
 3. Select the Classic Load Balancer that you want to migrate.
 4. Click the **Migration** tab.
 5. Click the **Launch ALB Migration Wizard** button.
-   ![[Pasted image 20230922215643.png|500]]
+   <br>![[Pasted image 20230922215643.png|500]]
 6. Follow the instructions in the wizard to migrate your Classic Load Balancer to an ALB.
-   ![[Pasted image 20230922220124.png]]
+   <br>![[Pasted image 20230922220124.png]]
 
 Once the migration is complete, you will be able to use the ALB to load balance your traffic.

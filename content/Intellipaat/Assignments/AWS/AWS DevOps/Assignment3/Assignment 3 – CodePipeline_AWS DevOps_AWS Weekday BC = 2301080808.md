@@ -23,7 +23,7 @@
 	  echo "Hello, World! Today's date is " . date('Y-m-d') . ".";
 	?>
 	```
-![[Pasted image 20231020160319.png]]
+<br>![[Pasted image 20231020160319.png]]
 *I ensure that my IAM user has the necessary permissions for CodePipeline, CodeCommit, Elastic Beanstalk, and any other relevant services I might use.*
 
 ### Steps:
@@ -41,7 +41,7 @@
     - To verify everything is set up correctly, I decide to load a sample application.
     - Once loaded, I check the domain to confirm it's operational.
 	%%[[php app beanstalk.png]]%%
-	![[Pasted image 20231020162225.png]]
+	<br>![[Pasted image 20231020162225.png]]
 
 2. **I Create a Pipeline in AWS CodePipeline**:
 
@@ -52,7 +52,7 @@
     - For the source stage, I select "AWS CodeCommit" as the source provider.
     - I select my repository named "php page" and choose the "main" branch.
     - For change detection, I choose the "AWS CodePipeline" option so it periodically checks for changes.
-    - I set the output artifact format to "CodePipeline default" as it fits my needs.![[Pasted image 20231020164021.png]]
+    - I set the output artifact format to "CodePipeline default" as it fits my needs.<br>![[Pasted image 20231020164021.png]]
 
 3. **I Set Up the Source Stage**:
     - I select 'AWS CodeCommit' as the source provider.
@@ -73,7 +73,7 @@
     - I pick the Elastic Beanstalk application I previously set up for the Application Name.
     - I remember and select the environment of the Elastic Beanstalk application I made a note of earlier for the Environment Name.
     - I confirm my choices by clicking on 'Done'.
-      ![[Pasted image 20231020165247.png]]
+      <br>![[Pasted image 20231020165247.png]]
       
 %%
 > [!attention]
@@ -88,24 +88,24 @@
     - I finalize my setup by clicking on 'Create pipeline'.
 
 After setting everything up, every time I modify my PHP application in the CodeCommit repository I specified, CodePipeline takes note and promptly rolls out the updates to my Elastic Beanstalk PHP application.
-![[Pasted image 20231020165627.png]]
+<br>![[Pasted image 20231020165627.png]]
 
 That's how you can set up an AWS CodePipeline to automate the deployment of your PHP application from AWS CodeCommit to Elastic Beanstalk.
 
 7. **After creating the pipeline, I check my PHP application.**
     - I go to my Elastic Beanstalk domain and see the expected result.
-      ![[Pasted image 20231020165756.png]]
+      <br>![[Pasted image 20231020165756.png]]
 
 8. **I make an update to my PHP application.**
     - I open the `index.php` in the CodeCommit repository.
     - I add the "UPDATE" text.
     - I save and commit the changes.
-      ![[Pasted image 20231020170436.png]]
+      <br>![[Pasted image 20231020170436.png]]
 
-      ![[Pasted image 20231020170322.png]]
+      <br>![[Pasted image 20231020170322.png]]
 
 9. **I wait for AWS CodePipeline to detect and process the change.**
     - Once done, I can see the "UPDATE" text when I visit the Elastic Beanstalk domain.
 > [!success]
-> ![[Pasted image 20231020170518.png]]
+> <br>![[Pasted image 20231020170518.png]]
 

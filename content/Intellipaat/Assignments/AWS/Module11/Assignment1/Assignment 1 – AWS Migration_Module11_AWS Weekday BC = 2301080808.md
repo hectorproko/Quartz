@@ -18,11 +18,11 @@
 2. **I Start the Virtual Machine:**
     - I select the "UbuntuServer" VM.
     - I click the "Start" button, represented by the green arrow.
-      ![[Pasted image 20231015222941.png]]
+      <br>![[Pasted image 20231015222941.png]]
 1. **Creating a File on the VM's Desktop:**
     - Once my virtual machine is fully operational, I proceed to the desktop environment.
     - Once the machine is up and running, I create a file named "Test_File" on the desktop. I'll use this file to identify the image [[Assignment 2 – AWS Migration_Module11_AWS Weekday BC = 2301080808|later on]].
-      ![[Pasted image 20231015222433.png]]
+      <br>![[Pasted image 20231015222433.png]]
       
     
 

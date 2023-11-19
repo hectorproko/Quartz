@@ -9,7 +9,7 @@
 
 1. **Preparation**:
     - I first ensured that I had two EC2 instances running: `instance1` and `instance2`.
-      ![[Pasted image 20230921163553.png]]
+      <br>![[Pasted image 20230921163553.png]]
 
 2. **Building My Dashboard**:
     - I logged into AWS and went straight to CloudWatch.
@@ -22,11 +22,11 @@
     - Under `Metrics`, I navigated to `EC2 -> Per-Instance Metrics`.
     - I selected `CPUUtilization` and then filtered by my EC2 instance's ID or name for accuracy.
     - For networking, I picked metrics like `NetworkPacketsIn` and `NetworkPacketsOut`. Again, I made sure to filter by my EC2 instance.
-      ![[Pasted image 20230921164405.png]]
+      <br>![[Pasted image 20230921164405.png]]
       *Here I picked `Instance1` will repeat steps for `Instance2`*
    - Once I added all my metrics, I clicked `Create widget`.
    - The result is a dashboard with 2 widgets for `Instance1` and `Instance2`
-     ![[Pasted image 20230921165156.png]]
+     <br>![[Pasted image 20230921165156.png]]
       
 4. **Saving My Work**:
     - I was happy with how everything looked, so I clicked `Save dashboard`. 
@@ -43,10 +43,10 @@
    After initiating the CPU-intensive task on `instance1`
    
    NetworkPacketsIn:
-   ![[Pasted image 20230921172021.png]]
+   <br>![[Pasted image 20230921172021.png]]
    `Instance1` showcased heightened incoming packets due to the network tasks.
 
    CPUUtilization:
-   ![[Pasted image 20230921171959.png]]
+   <br>![[Pasted image 20230921171959.png]]
    High CPU usage was evident on `Instance1` from the hashing operation.
  

@@ -65,11 +65,11 @@ Passcode: P1Ax6#UI
     
     - For a robust backup strategy, I set the "Backup retention period" to 2 days, which retains automated backups for two days.
       
-      ![[Pasted image 20231003103152.png]]
+      <br>![[Pasted image 20231003103152.png]]
 
 
-![[Pasted image 20231003104510.png]]
-![[Pasted image 20231007125643.png]]
+<br>![[Pasted image 20231003104510.png]]
+<br>![[Pasted image 20231007125643.png]]
 
 10. **Validating RDS Connectivity via EC2 Instance**:
 
@@ -113,14 +113,14 @@ Passcode: P1Ax6#UI
 >     - I'll click on "Create Data Stream" 
 >     - I'll provide a descriptive name for the stream "MyDataStream"
 >     - With the name set and default configurations in place, I'll simply click on the "Create data stream" button.
->       ![[Pasted image 20231003122541.png]]
+>       <br>![[Pasted image 20231003122541.png]]
 > 1. **Integrate Aurora with Kinesis**:
 >     
 >     - I'll go back to the RDS dashboard and select my Aurora cluster, "database-1".
 >     - In the "Actions" dropdown, I'll find an option to integrate or stream data to Kinesis and select it.
 >     - I'll link the Aurora cluster with the Kinesis data stream I just created.
->       ![[Pasted image 20231003124233.png]]
->       ![[Pasted image 20231003124610.png]]
+>       <br>![[Pasted image 20231003124233.png]]
+>       <br>![[Pasted image 20231003124610.png]]
 >       create a new AWS KMS key name RDS_key
 >       
 >       1. **AWS KMS key**: Choose an existing AWS KMS (Key Management Service) key for encrypting the data stream. If you don't have one, you can easily create a new one by clicking on "Create an AWS KMS key". This key ensures that your database activity data is encrypted for security purposes.
@@ -142,7 +142,7 @@ Passcode: P1Ax6#UI
 > 4. Finally, after configuring your desired settings, click on the "Start database activity stream" button to initiate the stream.
 > 
 > Once started, all database activities will be streamed to the Kinesis data stream, allowing you to monitor and analyze the activities in near real-time.
-> ![[Pasted image 20231003124838.png]]
+> <br>![[Pasted image 20231003124838.png]]
 > 
 > 
 > 3. **Set Up Amazon Redshift for Analysis**:
@@ -217,7 +217,7 @@ Passcode: P1Ax6#UI
 > - we will use auroa cuse at any point we can change from mysql to prostress
 > - we cant use Dev/test cuse we need high availability
 > - So doesnt charge you if less than 4 hours
->   ![[Pasted image 20231006201838.png]]
+>   <br>![[Pasted image 20231006201838.png]]
 > 
 > - will not make public,
 > - security goroup incoming port 3306 0.00.0.0 or VPC CIDR
@@ -238,7 +238,7 @@ Passcode: P1Ax6#UI
 3. **Access the 'Actions' Menu**:
     - With "database-1" selected, I'll click on the "Actions" dropdown menu at the top.
 4. **Initiate Creation of Cross-Region Read Replica**:
-    - I'll select the option "Create cross-Region read replica". !![[Pasted image 20231007131931.png]]
+    - I'll select the option "Create cross-Region read replica". !<br>![[Pasted image 20231007131931.png]]
 5. **Configure the Read Replica**:
     - I'll provide the "DB instance identifier" as `myinstancerds`.
       %% at some point was RDSReplica, images from different trys %%
@@ -264,29 +264,29 @@ I might have changed the "name identifier"
 > [!todo] Fix: Modifying the DB cluster parameter
 > 1. **Identifying the Current DB Cluster Parameter**:
 >     - The database is currently using the `default.aurora-mysql8.0` DB cluster parameter group.
->       ![[Pasted image 20231007133239.png]]
+>       <br>![[Pasted image 20231007133239.png]]
 >       
 > 2. **Creating New Parameter Groups**:
 >     - Default parameter groups cannot be modified, so I need to create custom ones.
 >     - I've created two new parameter groups:
 >         - `myclusterparametergroup` for the cluster parameter group.
->           ![[Pasted image 20231007135813.png]]
+>           <br>![[Pasted image 20231007135813.png]]
 > 3. **Modifying Cluster Parameter Group**:
 >     - I selected `myclusterparametergroup` and clicked "edit".
 >     - Located `binlog_format` and set its value to `MIXED`.
->       ![[Pasted image 20231007140003.png]]
+>       <br>![[Pasted image 20231007140003.png]]
 > 4. **Applying the New Cluster Parameter Group to the Database**:    
 >     - For the `database-1` cluster, I changed its parameter group to the newly created `myclusterparametergroup`.
->       ![[Pasted image 20231007140614.png]]
->       ![[Pasted image 20231007142026.png]]
+>       <br>![[Pasted image 20231007140614.png]]
+>       <br>![[Pasted image 20231007142026.png]]
 >     - The modifications are applied after the database is rebooted.
 > 
 
 > [!success] Replication now functioning. 
-> ![[Pasted image 20231007141952.png]]  
+> <br>![[Pasted image 20231007141952.png]]  
 
 In the Oregon region, which we selected, we observe the replica:  
-![[Pasted image 20231007142741.png]]
+<br>![[Pasted image 20231007142741.png]]
 
 
 
@@ -299,24 +299,24 @@ In the Oregon region, which we selected, we observe the replica:
 4. I name my cluster `redshift-cluster-1` and adjust other parameters as necessary.
 5. I ensure "Sample data" is checked during the setup.
 
-![[Pasted image 20231007122509.png]]
+<br>![[Pasted image 20231007122509.png]]
 
 I open the **Redshift query editor v2**.
-![[Pasted image 20231007124500.png]]
+<br>![[Pasted image 20231007124500.png]]
 
  - I navigate to the `category` table, found under `dev` > `public`.
  - I execute my sample query: `SELECT * FROM "dev"."public"."category"`.
 
-![[Pasted image 20231007125130.png]]
+<br>![[Pasted image 20231007125130.png]]
 
 **Evaluating Query Performance**:
 I monitor the query's performance, noting the elapsed time for each run.
 
 > [!success]
 > I observe the reduction in query execution time over multiple runs, which indicates effective caching by Redshift.
-> ![[elapse1.png]]
-> ![[elapse2.png]]
-> ![[elapse3.png]]
+> <br>![[elapse1.png]]
+> <br>![[elapse2.png]]
+> <br>![[elapse3.png]]
 > 
 
 

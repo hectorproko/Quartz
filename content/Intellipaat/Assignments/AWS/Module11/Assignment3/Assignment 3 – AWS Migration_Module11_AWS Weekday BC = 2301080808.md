@@ -31,16 +31,16 @@ bs1aT2$$
 
 Just Like in [[Assignment 2 – Aurora_Module7_AWS Weekday BC = 2301080808|Assignment 2 – Aurora]]
 MySQL is just an instance, clouformation [[Case Study – Multi-Tier Architecture_Module8_AWS Weekday BC = 2301080808|Case Study – Multi-Tier Architecture]]
-![[mysql.yaml]]
+<br>![[mysql.yaml]]
 %%
 
 ### MySQL Database Setup and Data Generation
 
 We set up an RDS instance with the MySQL Engine and an Aurora Cluster for Postgres. MySQL serves as our source database, while Postgres acts as our target.
-![[Pasted image 20231018154908.png]]
+<br>![[Pasted image 20231018154908.png]]
 
 I will connect to these databases using an EC2 instance by selecting the "Set up EC2 connection" option for each database.
-![[Pasted image 20231017154145.png]]
+<br>![[Pasted image 20231017154145.png]]
 
 #### Connecting to the MySQL Instance
 
@@ -56,7 +56,7 @@ Connecting to the MySQL instance hosted on Amazon RDS.
 ```
 mysql -h mysql.cnk8gecauqro.us-east-1.rds.amazonaws.com -P 3306 -u admin -p
 ```
-![[Pasted image 20231018155600.png]]
+<br>![[Pasted image 20231018155600.png]]
 
 ### Creating a Replication Instance
 
@@ -67,7 +67,7 @@ To begin the data migration process using the AWS Database Migration Service (DM
 3. Then, I choose `Replication instances`.
 4. On this screen, I'll click on the button titled "Create replication instance".
 %%[[createreplicationinstanceIssue.png]]%%
-![[Pasted image 20231017164539.png]]
+<br>![[Pasted image 20231017164539.png]]
 
 ### Setting Up Source and Target Endpoints
 
@@ -86,7 +86,7 @@ For the PostgreSQL Target Endpoint: %%[[postgres_endpoint.png]]%%
 2. This time, I set it up for our PostgreSQL database, specifying it as our target.
 3. I provide the required Amazon Aurora PostgreSQL details and finish the configuration.
 
-![[Pasted image 20231018154846.png]]
+<br>![[Pasted image 20231018154846.png]]
 
 ### Database Migration Task
   
@@ -98,7 +98,7 @@ To initiate the actual data migration process, here's what I'm doing: %%[[Create
 4. I pick the previously created replication instance
 5. I ensure that the correct source (MySQL) and target (PostgreSQL) endpoints are selected.
 6. With the task configured, I begin the migration. As seen in the dashboard, the task with the identifier `mysql-postgres` has successfully completed a full load, transferring 100% of the data from the MySQL source to the PostgreSQL target. This confirms our data has been moved successfully.
-![[Pasted image 20231018154924.png]]
+<br>![[Pasted image 20231018154924.png]]
 
 ### Verifying Data Migration in PostgreSQL
 
@@ -108,7 +108,7 @@ psql -h postgres2-instance-1.cnk8gecauqro.us-east-1.rds.amazonaws.com -U postgre
 ```
 
 > [!success]
-> ![[Pasted image 20231018155052.png]]
+> <br>![[Pasted image 20231018155052.png]]
 
 
 
@@ -120,7 +120,7 @@ psql -h postgres2-instance-1.cnk8gecauqro.us-east-1.rds.amazonaws.com -U postgre
 
 > [!fail] Issue
 > 
-> ![[Pasted image 20231017160919.png]]
+> <br>![[Pasted image 20231017160919.png]]
 > `The IAM Role arn:aws:iam::838427752759:role/dms-vpc-role is not configured properly.`
 
 > [!note] Posible solution
@@ -134,12 +134,12 @@ psql -h postgres2-instance-1.cnk8gecauqro.us-east-1.rds.amazonaws.com -U postgre
 > > Clicked again and started creating it, without doing anything
 
 > [!fail]
-> ![[Pasted image 20231017165323.png]]
+> <br>![[Pasted image 20231017165323.png]]
 > ```
 > SYSTEM ERROR MESSAGE:Error in mapping rules. At least one selection rule is required.
 > ```
 > <mark style="background: #BBFABBA6;">Just make sure have</mark>
-> ![[Pasted image 20231017170357.png]]
+> <br>![[Pasted image 20231017170357.png]]
 > 
 
 

@@ -22,7 +22,7 @@
 **Step 4:** For the "Add Tags" step, I added a tag with the key as “Name” and value as “Master” for the first instance.
 
 **Step 5:** I repeated the process for the second EC2 instance, but this time naming it "Client".
-![[Pasted image 20230925222840.png]]
+<br>![[Pasted image 20230925222840.png]]
 ### **2. Configuring Security Groups for Secure Access:**
 
 **Step 1:** Once both instances were running, I navigated to the "Security Groups" section under the EC2 dashboard.
@@ -30,14 +30,14 @@
 **Step 2:** I created a new security group named “MasterSG” for the Master instance. I allowed inbound SSH traffic from any IP address so I could directly SSH into it when needed.
 
 **Step 3:** I associated the "MasterSG" with the Master instance
-![[Pasted image 20230925221534.png]]
+<br>![[Pasted image 20230925221534.png]]
 
 **Step 4:** I then created another security group named “ClientSG” for the Client instance. Instead of allowing direct SSH access from any IP, I limited the inbound SSH traffic to only come from the private IP address of the Master instance. This ensures that the Client can only be accessed (SSH) through the Master instance.
-![[Pasted image 20230925221022.png]]
+<br>![[Pasted image 20230925221022.png]]
 *I specify the instance Master through the security group that is attached to it.*
 
 I associated the "ClientSG" with the Client instance.
-![[Pasted image 20230925221717.png]]
+<br>![[Pasted image 20230925221717.png]]
 *Security Groups are applied to interfaces*
 
 
@@ -93,7 +93,7 @@ From the Master instance, I then tried to SSH into the Client instance using its
 To further ensure the setup's security, I attempted to SSH directly to the Client instance using "EC2 Instance Connect" as expected connections only work from the Master instance. 
 
 > [!Fail]
-> ![[Pasted image 20230925224234.png]]
+> <br>![[Pasted image 20230925224234.png]]
 
 
 

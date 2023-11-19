@@ -22,14 +22,14 @@
 
 2. **Test the FIFO SQS Queue**:
 - Once my CloudFormation stack shows a status of `CREATE_COMPLETE`, I'll go to the **SQS** service in the AWS Console.
-![[Pasted image 20231009163149.png]]
+<br>![[Pasted image 20231009163149.png]]
 - I'll find the `my-test-fifo-queue.fifo` in the list of queues.
-![[Pasted image 20231009163132.png]]
+<br>![[Pasted image 20231009163132.png]]
 - To send a test message, I'll select the queue, click on **Send and receive messages**, input a test message, and click **Send message**.
-![[Pasted image 20231009164124.png]]
+<br>![[Pasted image 20231009164124.png]]
 - I can then click on **Poll for messages** to see if my message appears, confirming the queue is working correctly.
-![[Pasted image 20231009164214.png]]
-![[Pasted image 20231009164242.png]]
+<br>![[Pasted image 20231009164214.png]]
+<br>![[Pasted image 20231009164242.png]]
 
 
 ```yaml
@@ -51,7 +51,7 @@ ContentBasedDeduplication: true
 - Clicked **Create identity**, I'll choose **Email Addresses**.
 - I'll click on **Create identity** button
 - Received a verification email in my inbox, I'll click the verification link to confirm.
-![[Pasted image 20231009165046.png]]
+<br>![[Pasted image 20231009165046.png]]
 
 2. **Send a Test Email**:
 
@@ -64,7 +64,7 @@ In the SES console, displaying my verified email identity (`nakamo5309@mugadget.
 - For the **Message body**, I'll write "This is a test email sent from Amazon SES."
 - After inputting the details, I'll click on **Send test email**. 
 - I'll then check my email inbox for `nakamo5309@mugadget.com` to confirm that I've received the test email from SES.
-  ![[Pasted image 20231009172335.png]]
+  <br>![[Pasted image 20231009172335.png]]
 
 I've now successfully deployed a FIFO SQS queue and set up SES to send a test email to my verified address.
 

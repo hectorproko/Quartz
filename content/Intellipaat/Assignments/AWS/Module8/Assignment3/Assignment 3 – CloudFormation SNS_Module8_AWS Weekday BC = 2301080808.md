@@ -17,7 +17,7 @@
     - I'll make sure to select "Standard" as the type because FIFO topics don't offer email subscription
     - I'll provide a name for my topic `CloudFormationNotifications`, and then click on "Create topic".
     - Once my topic is created, I'll click on it to see its details. I need to remember to copy the **Topic ARN** because I'll use it later.
-      ![[Pasted image 20231008105455.png]]
+      <br>![[Pasted image 20231008105455.png]]
       ARN: `arn:aws:sns:us-east-1:838427752759:CloudFormationNotifications`
       
 2. **I'll Subscribe My Email to the SNS Topic**:
@@ -25,29 +25,29 @@
     - For the "Protocol", I'll choose `Email`.
     - In the "Endpoint", I'll type in my email address where I want to receive the notifications.
     - I'll click on "Create subscription".
-      ![[Pasted image 20231008110311.png]]
+      <br>![[Pasted image 20231008110311.png]]
     - I'll then check my email. I should find a message from AWS asking me to confirm the subscription. I'll click on the link in that email to confirm.
-      ![[Pasted image 20231008110338.png]]
+      <br>![[Pasted image 20231008110338.png]]
 3. **I'll Deploy the CloudFormation Stack**:
     
     - I'll head over to the CloudFormation service in the AWS Console.
     - I'll click on "Create stack".
     - I'll choose the "Upload a template file" option and upload the CloudFormation template used in [[Assignment 2 – CloudFormation VPC Template_Module8_AWS Weekday BC = 2301080808|Assignment 2 – CloudFormation VPC Template]].
-      ![[Pasted image 20231007210826.png]]
+      <br>![[Pasted image 20231007210826.png]]
     - I'm prompted to provide an email address for receiving CloudFormation notifications.
-      ![[Pasted image 20231007210926.png]]
+      <br>![[Pasted image 20231007210926.png]]
     - After clicking "Next", I'll give a unique name for my stack `EC2VPC`.
     - I'll go through the prompts until I reach the "Configure stack options" page.
     - In the "Advanced options" section, I'll find the "Amazon SNS topics" heading. Here, I'll paste the **Topic ARN** I copied earlier.
-      ![[Pasted image 20231008111754.png]]
+      <br>![[Pasted image 20231008111754.png]]
     - I'll continue with the stack creation process, reviewing everything, and then start the creation by clicking "Create stack".
       
 4. **I'll Monitor the Stack Creation and Check My Notifications**:
     
     - The CloudFormation Dashboard will show me the progress of my stack. As the stack gets created, I'll also start receiving email notifications because of the SNS topic I set up.
-      ![[Pasted image 20231008111928.png]]
+      <br>![[Pasted image 20231008111928.png]]
       Lets open one email
-      ![[Pasted image 20231008112858.png]]
+      <br>![[Pasted image 20231008112858.png]]
       
 5. **Clean Up When I'm Done**:
     

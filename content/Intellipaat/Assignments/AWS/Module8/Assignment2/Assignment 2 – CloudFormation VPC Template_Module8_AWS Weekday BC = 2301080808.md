@@ -95,15 +95,15 @@ Outputs:
 ```
 
 Events Leading to the Stack Creation:
-![[Pasted image 20231007192923.png]]
+<br>![[Pasted image 20231007192923.png]]
 The stack `EC2VPC` was successfully created as indicated by the `CREATE_COMPLETE` status.
-![[Pasted image 20231007194538.png]]
+<br>![[Pasted image 20231007194538.png]]
 
 The VPC defined in the template (`AssignmentVPC`) appears to be available.
-![[Pasted image 20231007193250.png]]
+<br>![[Pasted image 20231007193250.png]]
 
 Instances `CFintnanace` is up and running
-![[Pasted image 20231007193535.png]]
+<br>![[Pasted image 20231007193535.png]]
 This instance is associated with the `AssignmentVPC` and `AssignmentPublicSubnet` that were recently created.
-![[Pasted image 20231007193611.png]]
+<br>![[Pasted image 20231007193611.png]]
 

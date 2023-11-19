@@ -26,12 +26,12 @@ Module 3: CloudWatch Alarms Assignment
 
 
 6. Defined the conditions. Set `Threshold type` to `Static` and whenever the metric is... `Greater` than... `$500`.
-![[Pasted image 20230921200826.png]]
+<br>![[Pasted image 20230921200826.png]]
 
 7. Selected `In alarm` configured action to send a notification. Chose to create a new SNS topic `demoSNS`
 
 8. Added an email address to receive the notification.
-![[Pasted image 20230921201338.png]]
+<br>![[Pasted image 20230921201338.png]]
 9. Named the alarm `$500_alarm`
 
 10. Click `Create Alarm`.
@@ -49,9 +49,9 @@ Module 3: CloudWatch Alarms Assignment
 4. Chose the `EC2` namespace and then `Per-Instance Metrics`.
 
 5. Chose `CPUUtilization` for my EC2 instance `Instance2`, then clicked `select metric`.
-![[Pasted image 20230921204216.png]]
+<br>![[Pasted image 20230921204216.png]]
 6. Defined the conditions. Set `Threshold type` to `Static` and whenever the metric is... `Greater` than... `65`.
- ![[Pasted image 20230921204337.png]]
+ <br>![[Pasted image 20230921204337.png]]
 
 7. Configure actions. For ALARM state, chose to send a notification. Select an existing SNS topic `demoSNS`.
 
@@ -62,7 +62,7 @@ Module 3: CloudWatch Alarms Assignment
 10. Clicked `Create alarm`.
 
 > [!success] Now we can see the 2 newly created alarms
-> ![[Pasted image 20230921204943.png]]
+> <br>![[Pasted image 20230921204943.png]]
 
 
 **Testing and Verification**:
@@ -70,5 +70,5 @@ Module 3: CloudWatch Alarms Assignment
 1. To verify the CPU utilization alarm, I SSHed into our EC2 instance and ran `while true; do openssl dgst -sha256 /dev/zero; done &` to artificially spike the CPU usage and trigger the alarm.
   
 2. I keenly observed and waited for the email notification, confirming that the setup was functioning as expected.
-   ![[Pasted image 20230921210841.png]]
+   <br>![[Pasted image 20230921210841.png]]
    

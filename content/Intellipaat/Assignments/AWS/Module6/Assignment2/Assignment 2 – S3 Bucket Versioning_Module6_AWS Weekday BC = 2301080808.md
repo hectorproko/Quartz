@@ -21,7 +21,7 @@
 **Step 3:** I then went to the "Properties" tab to adjust the settings.
 
 **Step 4:** I found the "Versioning" section and clicked on “Edit”.
-![[Pasted image 20230927220740.png]]
+<br>![[Pasted image 20230927220740.png]]
 **Step 5:** I saw the option to enable versioning, so I toggled the switch to "Enable".
 
 **Step 6:** After confirming the change, I saved it to activate versioning for my bucket.
@@ -47,7 +47,7 @@
 **Step 3:** Just as I hoped, multiple versions of `document.docx` were listed, confirming the versioning feature was active.
 
 **Step 4:** For good measure, I repeated the process with `image.jpg` and saw its multiple versions too.
-![[Pasted image 20230927221846.png]]
+<br>![[Pasted image 20230927221846.png]]
 
 ---
 

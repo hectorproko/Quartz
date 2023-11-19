@@ -45,7 +45,7 @@
   - I'll name the connection `Peering-MYVPC1-MYVPC2`.
   - For "Requester VPC", I'll choose `MYVPC1`.
   - For "Accepter VPC", I'll choose `MYVPC2`.
-    ![[Pasted image 20230925161831.png]]
+    <br>![[Pasted image 20230925161831.png]]
   - I'll click "Create peering connection".
   - After creating, I'll select the new peering connection, click "Actions", and choose "Accept Request".
  
@@ -58,8 +58,8 @@
   - I'll change the region for "Accepter" to Oregon (us-west-2) and select `VPCOregon1`.
   - I'll click " Create peering connection".
   - Now, I'll switch my region to Oregon (us-west-2), find my peering connection, click "Actions", and choose "Accept Request".
-  ![[Pasted image 20230925162349.png]]
-  ![[Pasted image 20230925162559.png]]
+  <br>![[Pasted image 20230925162349.png]]
+  <br>![[Pasted image 20230925162559.png]]
 ### Step 3: Update Route Tables
 
 To ensure the VPCs can communicate, I'll update their route tables:
@@ -71,30 +71,30 @@ To ensure the VPCs can communicate, I'll update their route tables:
   - For `MYVPC1`, I'll point to `MYVPC2`'s CIDR block using the peering connection.
     - In the "Destination" field, I'll enter the CIDR block of `MYVPC2` `10.0.2.0/24`.
     - In the "Target" dropdown, I'll select "Peering Connection" and then select the peering connection between `MYVPC1` and `MYVPC2` from the list.
-      ![[Pasted image 20230925181241.png]]
+      <br>![[Pasted image 20230925181241.png]]
   - For `MYVPC2`, I'll point to both `MYVPC1` and `VPCOregon1`'s CIDR blocks using their respective peering connections.
     `MYVPC1`:
     - For "Destination", I'll enter the CIDR block of `MYVPC1` (`10.0.1.0/24`).
     - In "Target", I'll select "Peering Connection" and choose the peering connection
-      ![[Pasted image 20230925180309.png]]
+      <br>![[Pasted image 20230925180309.png]]
     `VPCOregon1`:
     - For "Destination", I'll enter the CIDR block of `VPCOregon1` (`10.0.3.0/24`).
     - In "Target", I'll select "Peering Connection" and choose the peering connection between `MYVPC2` and `VPCOregon1`.
-      ![[Pasted image 20230925180455.png]]
+      <br>![[Pasted image 20230925180455.png]]
   - For `VPCOregon1`, I'll point to `MYVPC2`'s CIDR block using the peering connection.
     - For "Destination", I'll enter the CIDR block of `MYVPC2` `10.0.2.0/24`.
     - In "Target", I'll select "Peering Connection" and then choose the peering connection between `MYVPC2` and `VPCOregon1` from the list.
-      ![[Pasted image 20230925175638.png]]
+      <br>![[Pasted image 20230925175638.png]]
 5. I'll save these routes.
 
 %%
 
 > [!fail] Found issue in route table, Blackhole
-> ![[Pasted image 20230925181728.png]]
+> <br>![[Pasted image 20230925181728.png]]
 
 > [!success] Solution
 > *Turns out I forgot to accept request*
-> ![[Pasted image 20230925182114.png]]
+> <br>![[Pasted image 20230925182114.png]]
 
 %%
 

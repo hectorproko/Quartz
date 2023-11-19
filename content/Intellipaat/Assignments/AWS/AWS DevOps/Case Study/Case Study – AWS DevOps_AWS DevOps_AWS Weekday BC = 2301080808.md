@@ -27,7 +27,7 @@
 
 1. **GitHub Repository Creation**:
   - Created a GitHub repository named `php_page`.
-    ![[Pasted image 20231026092129.png|260]]
+    <br>![[Pasted image 20231026092129.png|260]]
 
 2. **AWS CodeCommit Repository**:
   - Created a new repository named `php_page` in AWS CodeCommit.
@@ -41,7 +41,7 @@ Use the following command:
 git remote add codecommit ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/php_page
 ```
 
-![[Pasted image 20231020205521.png]]
+<br>![[Pasted image 20231020205521.png]]
 
 4. **Setting Up the SSH Client for AWS CodeCommit**
    I open my terminal: This is where I'll input all the necessary commands.
@@ -53,7 +53,7 @@ User APKAG4NQRHE3SUWI647
 IdentityFile ~/.ssh/id_rsa
 ```
 %%The User in this assignment or repo was not APKAG4NQRHE3SUWI647, used AKIA4GNRQHE3YHDJ77VM just wanted to reuse the image%%
-![[Pasted image 20231018202828.png]]
+<br>![[Pasted image 20231018202828.png]]
 
 I push the content to AWS CodeCommit: Using the terminal, I run:
 ```bash
@@ -61,7 +61,7 @@ git push codecommit main
 ```
 
 I verify the push: I navigate to the `php_page` repository in CodeCommit
-![[Pasted image 20231026091502.png|400]]
+<br>![[Pasted image 20231026091502.png|400]]
 
 
 5. Setting Up 2 EC2 Instances for Deployment
@@ -130,8 +130,8 @@ Server 2 (PROD Environment)
 
 **Attaching an IAM Role to EC2**
 After creating the EC2 instances, I select them in the EC2 dashboard. Then, I click on **Modify IAM role**. In the dropdown menu, I pick the role `EC2CodeDeploy` (associated with the policy `AmazonEC2RoleCodeDeploy`).
-![[Pasted image 20231026095027.png|400]]
-![[Pasted image 20231026095620.png|550]]
+<br>![[Pasted image 20231026095027.png|400]]
+<br>![[Pasted image 20231026095620.png|550]]
 
 6. **Creating Application in AWS CodeDeploy**
 
@@ -140,7 +140,7 @@ After creating the EC2 instances, I select them in the EC2 dashboard. Then, I cl
 	- Under "Application configuration", set the following:
 	    - Application name: XYZ-website
 	    - Compute platform: EC2/On-premises
-	![[Pasted image 20231026102046.png|400]]
+	<br>![[Pasted image 20231026102046.png|400]]
 	
 	Deployment Groups: Create two deployment groups, namely QA and PROD.
 	- Role: `CodeDeployRole` *(with policies `AmazonEC2FullAccess` and `AWSCodeDeployRole`)*.
@@ -158,7 +158,7 @@ After creating the EC2 instances, I select them in the EC2 dashboard. Then, I cl
 	- I repeat the same steps to set up the application in the PROD environment.
 	%%[[deployment group PROD.png]]%%
 	
-	![[Pasted image 20231026103800.png|500]]
+	<br>![[Pasted image 20231026103800.png|500]]
 	
 	
 	
@@ -168,8 +168,8 @@ After creating the EC2 instances, I select them in the EC2 dashboard. Then, I cl
 
 	I start by navigating to AWS Elastic Beanstalk. Once there, I initiate the creation process by clicking on the `Applications` tab and selecting "Create New Application". I then set the application name to "PHP_app". Keeping in line with [[Assignment 2 – Elastic Beanstalk_Module9_AWS Weekday BC = 2301080808|Assignment 2 – Elastic Beanstalk]], I ensure that I choose a PHP web environment to host my page.
 	
-	![[PHP Beanstalk app.png|450]]
-	![[PHP beanstalk env.png]]
+	<br>![[PHP Beanstalk app.png|450]]
+	<br>![[PHP beanstalk env.png]]
 
 
 
@@ -178,31 +178,31 @@ After creating the EC2 instances, I select them in the EC2 dashboard. Then, I cl
 	I start by naming my pipeline "Deploying_PHP" and selecting "V1" for the version. I use the default role.
 	
 	Next, for the source stage, I choose AWS CodeCommit as the source provider. I pick the repository "php_page" and set the branch to "php".
-	![[Pasted image 20231026135039.png|400]]
+	<br>![[Pasted image 20231026135039.png|400]]
 	*I chose the "php" branch because that's where I stored the web pages and scripts* %%Maybe merge to main%%
 	
 	In the "Add build stage", I selected AWS CodeBuild as my build provider. I set the region to "US East (N. Virginia)". When it came to selecting a project name, I realized I needed to create a new one. So, I opted to create "SimpleZIP" right there by clicking the "Create project" button. Once "SimpleZIP" was successfully created in the AWS CodeBuild console, I proceeded. I didn't add any environment variables at this stage. For the build type, I chose "Simple build" to trigger a single build.
-	![[Pasted image 20231024145833.png|470]]
+	<br>![[Pasted image 20231024145833.png|470]]
 	*A BuildProject defines the environment in which you execute the build phase commands.*
 	
 	For the "Add deploy stage", I'll skip it for now. Once I edit the pipeline, I'll incorporate all the deploy stages.
 	
 	Both stages have completed without any issues as indicated by the green checkmarks. Next, I'll proceed by clicking the "Edit" button to make necessary adjustments.
-	![[IntelliPaat/Assignments/AWS/AWS DevOps/Case Study/pipeline.png]]
+	<br>![[IntelliPaat/Assignments/AWS/AWS DevOps/Case Study/pipeline.png]]
 	
 	
 	I've added three new stages titled "QA", "PROD", and "Beanstalk" by clicking the "Add stage" button. For each stage, there's an option to include specific actions. 
-	![[Pasted image 20231026141016.png|300]]
+	<br>![[Pasted image 20231026141016.png|300]]
 	
 	To define actions for these stages, I'll proceed by clicking the "Add action group" button within each stage.
 	
 	For the "QA" stage, an action group named "Deploying-QA" has been set up. It utilizes AWS CodeDeploy as the action provider and targets the "US East (N. Virginia)" region. The input artifact selected is "BuildArtifact". Within this action, the application name defined is "QX-XYZ-Website" and the deployment group is "QA".
-	![[QA Action Group.png|450]]
+	<br>![[QA Action Group.png|450]]
 	
 	Similarly, for the "PROD" stage, an [[PROD Action Group.png|action group]] has been created with settings that are largely consistent with the "QA" action group, but with a different deployment group specified.
 	
 	For the "Beanstalk" stage, an action group named "Deploying-Beanstalk" has been established. This action uses AWS Elastic Beanstalk as its provider and is directed at the "US East (N. Virginia)" region. The input artifact chosen is "BuildArtifact". The specified application within this action is "[[PHP Beanstalk app.png|PHP_app]]" and it targets the "[[PHP beanstalk env.png|PHPapp-env]]" environment in Elastic Beanstalk.
-	![[Beanstalk Action Group.png|450]]
+	<br>![[Beanstalk Action Group.png|450]]
 	
 	
 	
@@ -213,15 +213,15 @@ After creating the EC2 instances, I select them in the EC2 dashboard. Then, I cl
 	When I see that all [[successfulStages.png|stages have been successfully completed]] stages have been successfully completed, I know my tasks are accomplished.
 	
 	I navigate to my EC2 dashboard to verify if the page is hosted. Once there, I spot all my EC2 instances that are hosting the PHP page, including the Beanstalk-associated one. Using their public IPs, I promptly access my browser and input each IP to view the hosted content.
-	![[Pasted image 20231026143401.png]]
+	<br>![[Pasted image 20231026143401.png]]
 
 > [!Success]
 > **Beanstalk**
-> ![[Pasted image 20231026143451.png]]
+> <br>![[Pasted image 20231026143451.png]]
 > **Server1 (QA)**
-> ![[Pasted image 20231026143556.png]]
+> <br>![[Pasted image 20231026143556.png]]
 > **Server 2 (PROD)**
-> ![[Pasted image 20231026143634.png]]``
+> <br>![[Pasted image 20231026143634.png]]``
 
 
 ---
@@ -284,13 +284,13 @@ After creating the EC2 instances, I select them in the EC2 dashboard. Then, I cl
 
 # Errors
 To test inside each applicaiton created a deployment but had ec2 tags as targets
-![[Pasted image 20231020212730.png]]
+<br>![[Pasted image 20231020212730.png]]
 
 Had this error
-![[Pasted image 20231021190606.png]]
+<br>![[Pasted image 20231021190606.png]]
 Was targeting Index.zip, but the actually file was lowercase index.zip
 
 I belive this error was because no agent was running
-![[Pasted image 20231021202731.png]]
+<br>![[Pasted image 20231021202731.png]]
 
 %%

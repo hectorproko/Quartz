@@ -36,17 +36,17 @@ Referring to [[Assignment 1 – EC2_Module2_AWS Weekday BC = 2301080808|Assignme
 
 ---
 Convert the private key 'daro.io.pem' using PuTTYgen to `.ppk` format
-![[Pasted image 20231030160515.png|450]]
+<br>![[Pasted image 20231030160515.png|450]]
 
 I get the Public IP of the instance
-![[ec2 public ip.png]]
+<br>![[ec2 public ip.png]]
 
 
 I use PuTTY to connect by loading the newly converted 'daro.io.ppk' key into the PuTTY configuration.
-![[PuTTY .ppk key.png]]
+<br>![[PuTTY .ppk key.png]]
 
 Once the login prompt appears, I use 'ubuntu' as the username.
-![[Pasted image 20231030161441.png]]
+<br>![[Pasted image 20231030161441.png]]
 
 I proceed with the following commands
 ```bash
@@ -76,13 +76,13 @@ Using [[Assignment 3 – AWS Migration_Module11_AWS Weekday BC = 2301080808|Assi
 - Instance Configuration: db.t2.micro.
 
 I ensure that the initial database name 'Intel' is set up.
-![[Pasted image 20231030164833.png|400]]
+<br>![[Pasted image 20231030164833.png|400]]
 
 %%==diff AZ in new one==,%%
-![[Pasted image 20231030165859.png]]
+<br>![[Pasted image 20231030165859.png]]
 
 Clicked on "View connection details"
-![[Pasted image 20231101145437.png|500]]
+<br>![[Pasted image 20231101145437.png|500]]
 
 ```
 mysqldatabase.cnk8gecauqro.us-east-1.rds.amazonaws.com
@@ -90,22 +90,22 @@ mysqldatabase.cnk8gecauqro.us-east-1.rds.amazonaws.com
 
 ---
 I copy the Security Group from the EC2
-![[Pasted image 20231101145537.png]]
+<br>![[Pasted image 20231101145537.png]]
 ```
 launch-wizard-73
 ```
 
 I click on the security group associated with the RDS to edit its settings.
-![[Pasted image 20231101145729.png]]
+<br>![[Pasted image 20231101145729.png]]
 
 Once I open the security group for the RDS, I edit its inbound rules to restrict access solely to my EC2 instance through the EC2's assigned security group `launch-wizard-73`.
-![[Pasted image 20231101145941.png]]
+<br>![[Pasted image 20231101145941.png]]
 
 I establish a connection to the RDS from the EC2 instance.
-![[Pasted image 20231101150809.png]]
+<br>![[Pasted image 20231101150809.png]]
 
 I create a table named 'data' in the 'Intel' database.
-![[Pasted image 20231101154523.png]]
+<br>![[Pasted image 20231101154523.png]]
 
 ---
 
@@ -115,25 +115,25 @@ I have installed the FileZilla client, which is available for download at the [F
 
 I will establish a connection to the EC2 instance using the FileZilla client by following these steps: Navigate to `File > Site Manager`, select the 'SFTP' protocol, enter the [[ec2 public ip.png|EC2 public IP]], and use the same .`ppk` key for authentication that we [[PuTTY .ppk key.png|used with PuTTY]].
 
-![[Pasted image 20231101151811.png]]
+<br>![[Pasted image 20231101151811.png]]
 
 In the FileZilla client, I select the 'index.php' file and 'images' folder from the 'Local site' panel, which is my source directory. In the 'Remote site' panel, I target the '/var/www/html' directory as my destination on the EC2 instance. By right-clicking the selected items and clicking 'Upload', I initiate the process to transfer the files from my local machine to the remote server.
 
 > [!attention]
 > Before I can transfer files using FileZilla with the 'ubuntu' user, I must set the proper permissions for the 'html' directory by executing the command
 
-![[Pasted image 20231101152041.png]]
+<br>![[Pasted image 20231101152041.png]]
 
 I verify 'index.php' for database connection setup.
-![[Pasted image 20231101154040.png]]
+<br>![[Pasted image 20231101154040.png]]
 
 %%Keep in mind we had the PHPSite with the code sent
-![[Pasted image 20231030180020.png]]
+<br>![[Pasted image 20231030180020.png]]
 %%
 
 
 `sudo nano /etc/apache2/sites-available/000-default.conf`
-![[Pasted image 20231101153224.png]]
+<br>![[Pasted image 20231101153224.png]]
 Always ensure to check the syntax of the Apache configuration files before restarting the service:
 `sudo apache2ctl configtest`
 If you get `Syntax OK`, then it's safe to proceed with the restart. Otherwise, check for any errors reported by the command and correct them before restarting Apache.
@@ -150,7 +150,7 @@ After you've modified the file, restart Apache to apply the changes:
 > ```bash
 > sudo nano /etc/apache2/sites-available/000-default.conf
 > ```
-> ![[Pasted image 20231101153224.png]]
+> <br>![[Pasted image 20231101153224.png]]
 > Within this file, I prioritize 'index.php' by setting it as the first value in the 'DirectoryIndex' directive to ensure it's served as the default page.
 > 
 > Before applying changes, it's crucial to verify the configuration's syntax. I run the following command:
@@ -165,17 +165,17 @@ After you've modified the file, restart Apache to apply the changes:
 > 
 
 To verify that the webpage is active and to test data input functionality, I navigate to my [[ec2 public ip.png|EC2 instance's public IP address]] in a web browser.
-![[Pasted image 20231101154222.png]]
+<br>![[Pasted image 20231101154222.png]]
 Click "Submit" 
 
 
 I verify the data input by executing a SELECT query on the 'data' table within the 'intel' database. The query results confirm that the input has been successfully recorded, as shown by the retrieved data entries.
 
 > [!success]
-> ![[Pasted image 20231101154650.png]]
+> <br>![[Pasted image 20231101154650.png]]
 
 %%Code use in this project given by intellipaat[[Project-1-–-Solution-1.pdf]]
-![[code.zip]]
+<br>![[code.zip]]
 %%
 
 ---

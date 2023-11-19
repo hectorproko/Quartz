@@ -66,4 +66,4 @@
 
 
 ### **4. Verifying the Upload:**
-![[Pasted image 20230927213348.png]]
+<br>![[Pasted image 20230927213348.png]]

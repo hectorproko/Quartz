@@ -29,7 +29,7 @@ Questions and possible answers that arouse here moved to [[without routing traff
     - For "Route tables", I'll associate the route table "rtb-8583fbfb" .
     - In the "Policy" section, I'll give "Full access" for simplicity, but is good practice to refine it for security.
     - I'll click on "Create endpoint".
-    ![[Pasted image 20230926130131.png]]
+    <br>![[Pasted image 20230926130131.png]]
       
 
 
@@ -37,7 +37,7 @@ Questions and possible answers that arouse here moved to [[without routing traff
 Started instance configure 
 aws cli inside secret key etc
 need to modify the IAm role attached to the ec2, created one with full s3 access
-![[Pasted image 20230926143331.png]]
+<br>![[Pasted image 20230926143331.png]]
 
 
 Create EC2 in private subnet, connected to it from an isntnace in public instane
@@ -87,4 +87,4 @@ was able to create a bucket without attaching a role
 > [ec2-user@ip-172-31-2-88 ~]$ aws s3 ls s3://my-test-bucket-unique-name/
 > 2023-09-26 19:52:18          5 test.txt
 > ```
-> ![[Pasted image 20230926155340.png]]
+> <br>![[Pasted image 20230926155340.png]]

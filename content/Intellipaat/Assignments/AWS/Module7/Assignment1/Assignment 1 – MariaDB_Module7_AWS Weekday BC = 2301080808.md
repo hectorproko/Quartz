@@ -33,9 +33,9 @@
 - Picked an appropriate security group *(opening port 3306)* and gave the database a name.
 
 **Step 6:** Feeling confident with my settings, I clicked "Create database". I waited a bit as AWS set things up for me.
-![[Pasted image 20230928155537.png]]
+<br>![[Pasted image 20230928155537.png]]
 
-![[Pasted image 20230928205153.png]]
+<br>![[Pasted image 20230928205153.png]]
 %%  Had to create a VPC just for this as per issue below and had to put Internet Gateway in the Route table %%
 
 ---
@@ -45,12 +45,12 @@
 #### **a. Through a SQL Client on my Windows Machine (using MySQL Workbench):**
 
 **Step 1:** I had XAMPP Installed
-![[XAMPP.png]]
+<br>![[XAMPP.png]]
 
 **Step 2:** I started MySQL and launched Shell
 
 **Step 3:** For the hostname, I entered the endpoint of the MariaDB RDS instance (found in the RDS dashboard). I also added my username and password.
-![[Pasted image 20230928204804.png]]
+<br>![[Pasted image 20230928204804.png]]
 **Step 4:** Once everything looked good, I tested the connection. I was connected to my MariaDB RDS instance.
 
 #### **b. From a Linux-based EC2 Instance:**
@@ -84,7 +84,7 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 mysql> 
 ```
 %%
-![[Pasted image 20230928213300.png]]
+<br>![[Pasted image 20230928213300.png]]
 After hitting enter, I was prompted to enter my password.
 
 **Step 5:** I entered my password, and just like that, I was connected to my RDS instance from my EC2 machine.
@@ -103,7 +103,7 @@ Reference from [[Amazon RDS (Relational Database Service)#Demo 1 – RDS ( MySQL
 
 > [!fail] ISSUE
 > 
-> ![[Pasted image 20230928143047.png]]
+> <br>![[Pasted image 20230928143047.png]]
 > 
 > > [!success] Solution
 > > Created a new VPC with  10.0.0.0/16

@@ -62,7 +62,7 @@ After ensuring all the settings met my requirements, I finalized by clicking on 
 **Step 3:** Name the rule "AutoDeleteAfter75Days".
 
 **Step 4:** Choose "Expire current versions of objects" and set to 75 days.
-![[Pasted image 20231005212125.png]]
+<br>![[Pasted image 20231005212125.png]]
 **Step 5:** Save the rule.
 
 ---
@@ -71,7 +71,7 @@ After ensuring all the settings met my requirements, I finalized by clicking on 
 
 When I created the bucket, I enabled "Versioning" 
 
-![[Pasted image 20231005212945.png]]
+<br>![[Pasted image 20231005212945.png]]
 
 **Demonstrating Versioning in Amazon S3:**
 
@@ -86,7 +86,7 @@ Inside the S3 bucket, I toggled the "Show versions" option. This revealed both t
 
 4. Retrieving Content:
 By selecting and opening each version, I confirmed that the content corresponds to its respective upload: the older version displays "Hello World" and the newer version displays "Hello World 2".
-![[Pasted image 20231005213953.png]]
+<br>![[Pasted image 20231005213953.png]]
 
 
 ---
@@ -98,7 +98,7 @@ By selecting and opening each version, I confirmed that the content corresponds 
 **Step 2:** Clicked "Edit" next to  "Static website hosting" .
 
 **Step 3:** Set 'index.html' as the Index document and 'error.html' as the Error document.
-![[Pasted image 20230927223731.png]] ^d9a6c3
+<br>![[Pasted image 20230927223731.png]] ^d9a6c3
 
 **Step 5:** Uploaded `index.htm` and `error.html` with the following content:
 `index.html`
@@ -112,7 +112,7 @@ By selecting and opening each version, I confirmed that the content corresponds 
 
 **Step 5:** Made the static site available to the public, I clicked on 'Actions' and then select 'Make public using ACL'.
 
-![[Pasted image 20231005220106.png]]
+<br>![[Pasted image 20231005220106.png]]
 
 **Step 6: Configuring Route 53 to Point to the S3 Static Website**
 
@@ -126,13 +126,13 @@ By selecting and opening each version, I confirmed that the content corresponds 
 
 With this configuration in place, any visits to "temp.hectorproko.com" will be routed to the static site I've set up in my S3 bucket.
 
-![[Pasted image 20231005223916.png]]
+<br>![[Pasted image 20231005223916.png]]
 
-![[Pasted image 20231005224147.png]]
+<br>![[Pasted image 20231005224147.png]]
 %%
 > [!fail]- Issue pointing to bucket
 > When i tried to point to the S3 bucket got this error
-> ![[Pasted image 20231005222809.png]]
+> <br>![[Pasted image 20231005222809.png]]
 > 
 > Seems like I need to reanme the bucke to 
 > **Bucket Name and Domain Name Matching**: When using S3 for static website hosting and Route 53, the bucket name should match the domain/subdomain name you're trying to associate with it. If your bucket's name is `bucketforcasestudy`, but you're trying to point it to a domain/subdomain like `example.com`, Route 53 won't recognize the S3 website endpoint because of this mismatch.
@@ -153,13 +153,13 @@ With this configuration in place, any visits to "temp.hectorproko.com" will be r
 1. I accessed `temp.hectorproko.com` and was correctly presented with the **Index Page**.
 
 > [!success]
->    ![[Pasted image 20231005225206.png]]
+>    <br>![[Pasted image 20231005225206.png]]
 
  
 2. To simulate an error, I navigated to `temp.hectorproko.com/test` and was appropriately directed to the **Error Page**.
 
 > [!success]
->    ![[Pasted image 20231005225134.png]]
+>    <br>![[Pasted image 20231005225134.png]]
 
 
 
