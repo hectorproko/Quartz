@@ -1,3 +1,4 @@
+==Pending CleanUP==
 > [!info] Module 8: Case Study 1 - Creating an Architecture using Terraform on AWS 
 > You work as a DevOps Engineer in a leading software company. You have been asked to build an infrastructure safely and efficiently. 
 > 

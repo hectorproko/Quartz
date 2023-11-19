@@ -1,3 +1,4 @@
+==Pending CleanUP==
 I open the Command Prompt (CMD), as an Administrator
 ![[Pasted image 20231110211759.png]]
 

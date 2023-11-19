@@ -1,3 +1,4 @@
+==Pending CleanUP==
 > [!info] Module 8: Terraform Assignment - 4
 > **Tasks To Be Performed:** 
 > 1. Destroy the previous deployments 
