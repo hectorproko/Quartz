@@ -35,7 +35,7 @@
 ![[Pasted image 20230928155537.png]]
 
 ![[Pasted image 20230928205153.png]]
-%%  Had to create a VPC just for this as per issue below and had to put Internet Gateway in the Route table %%
+<!--  Had to create a VPC just for this as per issue below and had to put Internet Gateway in the Route table -->
 
 ---
 

@@ -6,7 +6,7 @@
 > **Tasks To Be Performed:** 
 > 1. Create a CodeCommit repository and import a GitHub repository content into it.
 
-%%[[CodeCommit_aws]]%%
+<!--[[CodeCommit_aws]]-->
 
 ### 1. Creating an IAM User:
 1. I log into AWS.
@@ -85,7 +85,7 @@ Ensuring my SSH setup is correct, I can now push my local repository content to 
 git push codecommit main
 ```
 
-%%**Note:** If you're using a branch other than `master`, replace `master` with your branch's name.%%
+<!--**Note:** If you're using a branch other than `master`, replace `master` with your branch's name.-->
 ![[Pasted image 20231018210300.png]]
 
 

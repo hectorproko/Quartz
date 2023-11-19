@@ -51,7 +51,7 @@ Host git-codecommit.*.amazonaws.com
 User APKAG4NQRHE3SUWI647   
 IdentityFile ~/.ssh/id_rsa
 ```
-%%The User in this assignment or repo was not APKAG4NQRHE3SUWI647, used AKIA4GNRQHE3YHDJ77VM just wanted to reuse the image%%
+<!--The User in this assignment or repo was not APKAG4NQRHE3SUWI647, used AKIA4GNRQHE3YHDJ77VM just wanted to reuse the image-->
 ![[Pasted image 20231018202828.png]]
 
 I push the content to AWS CodeCommit: Using the terminal, I run:
@@ -80,7 +80,7 @@ sudo chmod +x ./install
 sudo ./install auto
 sudo service codedeploy-agent start
 ```
-%%*Doesnt seem to do the job from user data consistently*, May require you to resintall, if deploy fails%%
+<!--*Doesnt seem to do the job from user data consistently*, May require you to resintall, if deploy fails-->
 %%
 > [!NOTE]- Installing CodeDeploy agent for Ubuntu
 > 1. Update the package manager and install Ruby and wget:

@@ -9,7 +9,7 @@
 > 2. Set the Lambda Trigger as SQS and send a message to test invocations. 
 
 
-%%[[Lambda_aws#Demo 1 – Lambda Function]]%%
+<!--[[Lambda_aws#Demo 1 – Lambda Function]]-->
 
 **Setting Up and Testing an AWS Lambda Triggered by SQS**
 1. **I create an SQS queue.**
@@ -61,7 +61,7 @@ def lambda_handler(event, context):
 > [!fail]
 > An error occurred when creating the trigger: The provided execution role does not have permissions to call ReceiveMessage on SQS
 
-%%Much like in [[Assignment 3 – IAM Roles_Module3_AWS Weekday BC = 2301080808|Assignment 3 – IAM Roles]]%%
+<!--Much like in [[Assignment 3 – IAM Roles_Module3_AWS Weekday BC = 2301080808|Assignment 3 – IAM Roles]]-->
 
 > [!tip] Solution
 > For my function `myPythonFunction`, I'll update the attached role `myPythonFunction-role-me7z96sv` in the IAM console by adding the necessary permissions.

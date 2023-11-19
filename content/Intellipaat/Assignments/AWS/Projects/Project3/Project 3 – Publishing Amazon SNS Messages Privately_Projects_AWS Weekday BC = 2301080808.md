@@ -15,7 +15,7 @@
 > 3. Publish message privately with SNS
 
 
-%% #question Not sure what the connection of Lambda functions is to the rest of thing s[[Project-3-–-Solution-1.pdf]]%%
+<!-- #question Not sure what the connection of Lambda functions is to the rest of thing s[[Project-3-–-Solution-1.pdf]]-->
 
 To clone the repository that contains the CloudFormation templates, I use the following command and link:
 ```bash
@@ -29,7 +29,7 @@ I have will make usre of a private key I already have
 ![[Pasted image 20231103143217.png]]
 
 
-%%[[Project-3-–-Solution-1.pdf#page=3&selection=24,0,24,31|Step 2: Create the AWS Resource]]%%
+<!--[[Project-3-–-Solution-1.pdf#page=3&selection=24,0,24,31|Step 2: Create the AWS Resource]]-->
 
 ### Step 2: Create the AWS Resource
 
@@ -79,7 +79,7 @@ I navigate to CloudFormation Dashboard and click "Create stack"
 - **Step 4**: Review
 
 
-%%[[Project-3-–-Solution-1.pdf#page=6&selection=4,0,4,67|Step 3: Confirming the EC2 Instance lacks internet access]]%%
+<!--[[Project-3-–-Solution-1.pdf#page=6&selection=4,0,4,67|Step 3: Confirming the EC2 Instance lacks internet access]]-->
 ### Step 3: Confirming the EC2 Instance lacks internet access
 
 First, I'll need to establish an SSH connection, it is necessary to obtain the EC2 instance's public IP address.
@@ -101,7 +101,7 @@ aws sns publish --region us-east-1 --topic-arn arn:aws:sns:us-east-1:83842775275
 ![[Pasted image 20231103151127.png]]
 *No message is published*
 
-%%[[Project-3-–-Solution-1.pdf#page=7&selection=42,0,42,52|Step 4: Create an Amazon VPC Endpoint for Amazon SNS]]%%
+<!--[[Project-3-–-Solution-1.pdf#page=7&selection=42,0,42,52|Step 4: Create an Amazon VPC Endpoint for Amazon SNS]]-->
 ### Step 4: VPC Endpoint for Amazon SNS
 
 I begin by assigning the endpoint a Name Tag: 'VPCE-Tutorial'. Under **Services**, I select the AWS service that the endpoint will connect to, which is the Simple Notification Service (SNS) in the US East (N. Virginia) region, identified by `com.amazonaws.us-east-1.sns`.
@@ -115,7 +115,7 @@ I select the 'Tutorial Security Group' as the Security Group, which was previous
 ![[endpoint vpce-tutorial.png]]
 
 
-%%[[Project-3-–-Solution-1.pdf#page=10&selection=4,0,4,50|Step 5: Publish a message to your Amazon SNS topic]]%%
+<!--[[Project-3-–-Solution-1.pdf#page=10&selection=4,0,4,50|Step 5: Publish a message to your Amazon SNS topic]]-->
 ### Step 5: Publish a message to SNS topic
 
 [[Pasted image 20231103151127.png|Once again]], I use the AWS CLI to publish a message to the SNS topic `VPCE-Tutorial-Topic`.
@@ -125,11 +125,11 @@ aws sns publish --region us-east-1 --topic-arn arn:aws:sns:us-east-1:83842775275
 ![[Pasted image 20231103153954.png]]
 
 
-%%[[Project-3-–-Solution-1.pdf#page=10&selection=22,0,22,38|Step 6: Verify your message deliveries]]%%
+<!--[[Project-3-–-Solution-1.pdf#page=10&selection=22,0,22,38|Step 6: Verify your message deliveries]]-->
 ### Step 6: Message deliveries verification
 
 To verify that the Lambda functions were invoked
-%%[[VPCE-Tutorial-Lambda-1.png]]%%
+<!--[[VPCE-Tutorial-Lambda-1.png]]-->
 ![[Pasted image 20231103154701.png|300]]
 
 To verify that the CloudWatch logs were updated:
@@ -151,7 +151,7 @@ To verify that the CloudWatch logs were updated:
 > 
 > 
 
-%%[[Project-3-–-Solution-1.pdf#page=12&selection=24,0,24,16|Step 7: Clean Up]]%%
+<!--[[Project-3-–-Solution-1.pdf#page=12&selection=24,0,24,16|Step 7: Clean Up]]-->
 
 ### Step 7: Clean Up
 

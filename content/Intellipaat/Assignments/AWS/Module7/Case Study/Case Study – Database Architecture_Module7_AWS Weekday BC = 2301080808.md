@@ -228,7 +228,7 @@ Passcode: P1Ax6#UI
 
 ## Step 2: Setting Up Cross-Region Data Access
 
-%% #question Figure out how Redshift and RDS work together%%
+<!-- #question Figure out how Redshift and RDS work together-->
 
 1. **Go to my RDS Dashboard**:
     - I'll open up my AWS RDS dashboard.
@@ -290,7 +290,7 @@ In the Oregon region, which we selected, we observe the replica:
 
 
 ## Step 3: Setting Up Amazon Redshift for Data Analysis:
-%% We could reuse data from [[Assignment 4 – Redshift_Module7_AWS Weekday BC = 2301080808#**1. Setting up a Redshift Cluster **|Assignment 4 – Redshift]]%%
+<!-- We could reuse data from [[Assignment 4 – Redshift_Module7_AWS Weekday BC = 2301080808#**1. Setting up a Redshift Cluster **|Assignment 4 – Redshift]]-->
 **Initiate the Redshift Setup**:
 1. I navigate to the **Amazon Redshift** service on my AWS console.
 2. I click on "Create cluster".
