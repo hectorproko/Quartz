@@ -1,3 +1,4 @@
+#AWS
 
 
 > [!info] Module 4: Auto-Scaling Assignment

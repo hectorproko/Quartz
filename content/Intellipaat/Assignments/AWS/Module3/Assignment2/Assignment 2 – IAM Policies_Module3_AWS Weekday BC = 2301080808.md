@@ -1,3 +1,4 @@
+#AWS
 > [!info] Module 3: IAM Policies Assignment
 > **Problem Statement:** 
 > You work for XYZ Corporation. To maintain the security of the AWS account and the resources you have been asked to implement a solution that can help easily recognize and monitor the different users. 
