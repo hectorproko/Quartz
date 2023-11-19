@@ -2,7 +2,7 @@
 tags:
   - AWS
 ---
-==Pending CleanUP==
+==PENDING CLEANUP==
  
 > [!info] Module 5: VPC Endpoints Assignment
 > **Problem Statement:** 

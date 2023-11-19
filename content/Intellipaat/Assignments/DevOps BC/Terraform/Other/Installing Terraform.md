@@ -2,7 +2,7 @@
 tags:
   - Terraform
 ---
-==Pending CleanUP==
+==PENDING CLEANUP==
 ### Windows
 
 1. **Downloading Terraform**

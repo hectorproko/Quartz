@@ -2,7 +2,7 @@
 tags:
   - AWS
 ---
-==Pending CleanUP==
+==PENDING CLEANUP==
  
 ``
 > [!info] Module 11: Migration Assignment - 1

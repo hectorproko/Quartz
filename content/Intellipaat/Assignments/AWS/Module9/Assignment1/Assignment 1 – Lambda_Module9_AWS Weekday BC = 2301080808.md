@@ -3,7 +3,7 @@ tags:
   - AWS
   - CloudWatch
 ---
-==Pending CleanUP==
+==PENDING CLEANUP==
  
 
 > [!info] Module 9: Lambda Assignment

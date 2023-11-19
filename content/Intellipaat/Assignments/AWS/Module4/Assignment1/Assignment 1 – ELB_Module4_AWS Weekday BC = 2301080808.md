@@ -2,7 +2,7 @@
 tags:
   - AWS
 ---
-==Pending CleanUP==
+==PENDING CLEANUP==
  
 
 > [!info] Assignment 1 – ELB Assignment

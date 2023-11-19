@@ -3,7 +3,7 @@ tags:
   - AWS
   - CodeDeploy
 ---
-==Pending CleanUP==
+==PENDING CLEANUP==
  
 > [!info] AWS DevOps Assignment - 2
 > **Training Problem Statement:**

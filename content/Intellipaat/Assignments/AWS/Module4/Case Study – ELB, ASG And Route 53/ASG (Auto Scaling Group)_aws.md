@@ -2,6 +2,6 @@
 tags:
   - AWS
 ---
-==Pending CleanUP==
+==PENDING CLEANUP==
  
 <br>![[scaling strategy]]

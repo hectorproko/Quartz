@@ -2,7 +2,7 @@
 tags:
   - AWS
 ---
-==Pending CleanUP==
+==PENDING CLEANUP==
  
 
 > [!info] Project - 1: Deploying a Multi-Tier Website Using AWS EC2

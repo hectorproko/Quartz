@@ -4,7 +4,7 @@ tags:
   - CloudFormation
   - CloudWatch
 ---
-==Pending CleanUP==
+==PENDING CLEANUP==
  
 
 > [!info] Project - 3: Publishing Amazon SNS Messages Privately

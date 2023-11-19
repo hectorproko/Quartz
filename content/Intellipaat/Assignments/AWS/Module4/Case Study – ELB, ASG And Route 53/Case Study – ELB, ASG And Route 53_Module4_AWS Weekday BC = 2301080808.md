@@ -3,7 +3,7 @@ tags:
   - AWS
   - CloudWatch
 ---
-==Pending CleanUP==
+==PENDING CLEANUP==
  
 
 > [!NOTE] Module 4: Case Study - 1

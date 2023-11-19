@@ -2,7 +2,7 @@
 tags:
   - AWS
 ---
-==Pending CleanUP==
+==PENDING CLEANUP==
  
 > [!info] Module 6: S3 Bucket Creation
 > **Problem Statement:** 

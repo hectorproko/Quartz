@@ -2,7 +2,7 @@
 tags:
   - Terraform
 ---
-==Pending CleanUP==
+==PENDING CLEANUP==
 > [!info] Module 8: Terraform Assignment - 2
 > **Tasks To Be Performed:** 
 > 1. Destroy the previous deployment 

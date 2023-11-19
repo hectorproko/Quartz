@@ -3,7 +3,7 @@ tags:
   - AWS
   - CodePipeline
 ---
-==Pending CleanUP==
+==PENDING CLEANUP==
  
 > [!info] AWS DevOps Assignment - 3
 > **Training Problem Statement:**

@@ -5,7 +5,7 @@ tags:
   - CodeBuild
   - CodeDeploy
 ---
-==Pending CleanUP==
+==PENDING CLEANUP==
  
 > [!info] AWS DevOps Case Study - 1
 > **Training Problem Statement:**

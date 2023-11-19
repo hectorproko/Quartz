@@ -3,7 +3,7 @@ tags:
   - AWS
   - CloudWatch
 ---
-==Pending CleanUP==
+==PENDING CLEANUP==
  
 Module 3: CloudWatch Alarms Assignment
 

@@ -2,7 +2,7 @@
 tags:
   - AWS
 ---
-==Pending CleanUP==
+==PENDING CLEANUP==
  
 > [!info] AWS DevOps Assignment - 1
 > **Problem Statement:**

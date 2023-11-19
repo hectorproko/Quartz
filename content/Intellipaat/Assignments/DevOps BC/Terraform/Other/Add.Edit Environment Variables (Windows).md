@@ -1,4 +1,4 @@
-==Pending CleanUP==
+==PENDING CLEANUP==
 I open the Command Prompt (CMD), as an Administrator
 <br>![[Pasted image 20231110211759.png]]
 

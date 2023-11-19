@@ -3,7 +3,7 @@ tags:
   - AWS
   - CloudWatch
 ---
-==Pending CleanUP==
+==PENDING CLEANUP==
  
 > [!Info] Module 3: CloudWatch Dashboard Assignment
 > **Problem Statement:** 

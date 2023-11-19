@@ -3,7 +3,7 @@ tags:
   - AWS
   - CloudFormation
 ---
-==Pending CleanUP==
+==PENDING CLEANUP==
  
 
 > [!info] Module 8: Case Study - 1

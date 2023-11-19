@@ -2,7 +2,7 @@
 tags:
   - AWS
 ---
-==Pending CleanUP==
+==PENDING CLEANUP==
  
 > [!info] Module 3: IAM Users Assignment
 > **Problem Statement:** 
