@@ -66,3 +66,10 @@ Here are some of the projects I've been working on, categorized by technology:
     - Placeholder
 
 
+---
+
+```mermaid 
+graph TD 
+Biology --> Chemistry 
+class Biology,Chemistry internal-link; 
+```
