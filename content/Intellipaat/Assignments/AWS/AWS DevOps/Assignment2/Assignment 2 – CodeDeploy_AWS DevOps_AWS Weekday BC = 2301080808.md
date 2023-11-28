@@ -43,35 +43,6 @@ h. In "Deployment settings", I select the "CodeDeployDefault.OneAtATime" configu
 i. I finalize by clicking "Create deployment group".
 <br>![[Pasted image 20231019092629.png]]
 
-%%Disabled load balancing[[create deploynet group.png]]%%
-
 You've now successfully created an AWS CodeDeploy application and a deployment group targeting an EC2 instance using the AWS Management Console.
 
-%%
-> [!info]- Explanations 
-> 1. **CodeDeploy Application**:
->     
->     - This is a logical entity that represents your application in AWS CodeDeploy. Think of it as a container or a namespace for your deployments.
-> 2. **Deployment Group**:
->     
->     - This is a set of individual deployment targets, in this case, an EC2 instance. It specifies the criteria to identify the deployment targets (using tags or an Auto Scaling group name).
->     - The deployment group also specifies the service role that CodeDeploy should assume to carry out deployments (the `AWSCodeDeployRole`).
-> 3. **Configuration for Deployment**:
->     
->     - The deployment configuration associated with the deployment group, such as `CodeDeployDefault.OneAtATime`, determines how the deployment will be carried out on the targets.
-> 4. **EC2 Target Instance**:
->     
->     - This is the actual server or virtual machine where you want to deploy your application.
->     - The EC2 instance should have the CodeDeploy agent installed and running, and it should be tagged or belong to an Auto Scaling group as specified in your deployment group settings.
-> 5. **Service Role (IAM Role)**:
->     
->     - The IAM role (`AWSCodeDeployRole`) that CodeDeploy assumes to interact with other AWS services, such as accessing an application stored in an S3 bucket or interacting with EC2 instances.
-> 
-> However, there are a couple of important things to note:
-> 
-> - **No Actual Application Deployed Yet**: You've set up the infrastructure and the configuration, but you haven't actually deployed any code or application to the EC2 instance through CodeDeploy. The actual content to be deployed (like an application revision stored in S3 or GitHub) needs to be specified in a deployment.
->     
-> - **Prerequisite Configurations**: This setup assumes that the EC2 instance you're targeting already has the CodeDeploy agent installed and running. The instance should also have the necessary IAM instance profile attached to allow the agent to communicate with CodeDeploy.
-
-%%
 

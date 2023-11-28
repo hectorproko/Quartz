@@ -15,7 +15,6 @@ tags:
 > 2. Set the Lambda Trigger as SQS and send a message to test invocations. 
 
 
-%%[[Lambda_aws#Demo 1 – Lambda Function]]%%
 
 **Setting Up and Testing an AWS Lambda Triggered by SQS**
 1. **I create an SQS queue.**
@@ -39,14 +38,11 @@ def lambda_handler(event, context):
 
 
 3. **Deploying the Lambda Function on AWS**
-   %%Make sure to click button deploy%%
     - I log into my AWS account.
     - I navigate to the AWS Lambda dashboard.
     - I click on "Create function".
     - I provide a name for my function `myPythonFunction`.
     - I choose Python 3.11 for the runtime.
-    %%~~- I create or select an execution role with permissions to read messages from SQS.~~ ### **Permissions Info** By default, Lambda will create an execution role with permissions to upload logs to Amazon CloudWatch Logs. You can customize this default role later when adding triggers.%%
-    %%Ended up having to add the policy to the role generated (see below)%%
     - Clicked "Create function"
     - I copy and paste the Python code from step 1 into the Lambda editor.
     - I click "Save" to save my function.
@@ -62,12 +58,11 @@ def lambda_handler(event, context):
     - Made sure "Activate trigger" was checked
     - Left default configurations.
     - Clicked "Add".
-      %%whole picture[[FireShot Capture 023 - Add triggers - Lambda - us-east-1.console.aws.amazon.com.png]]%%
+      
 
 > [!fail]
 > An error occurred when creating the trigger: The provided execution role does not have permissions to call ReceiveMessage on SQS
 
-%%Much like in [[Assignment 3 – IAM Roles_Module3_AWS Weekday BC = 2301080808|Assignment 3 – IAM Roles]]%%
 
 > [!tip] Solution
 > For my function `myPythonFunction`, I'll update the attached role `myPythonFunction-role-me7z96sv` in the IAM console by adding the necessary permissions.
@@ -100,10 +95,3 @@ def lambda_handler(event, context):
 > [!success]
 > <br>![[Pasted image 20231011132559.png]]
 
-
-
-%%
-> [!question] 
-> Yes, by default, when you create a Lambda function, AWS automatically creates a new log group in Amazon CloudWatch Logs named `/aws/lambda/<function-name>` for that function. Every time your Lambda function is invoked, detailed information about the invocation is automatically recorded in CloudWatch Logs.
-
-%%

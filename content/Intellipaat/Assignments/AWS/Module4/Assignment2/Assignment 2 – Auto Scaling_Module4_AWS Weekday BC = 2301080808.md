@@ -2,9 +2,6 @@
 tags:
   - AWS
 ---
-==PENDING CLEANUP==
- 
-
 
 > [!info] Module 4: Auto-Scaling Assignment
 > **Problem Statement:** 
@@ -100,17 +97,3 @@ Confirmed new instance comes up
 <br>![[Pasted image 20230923231505.png]]
 <br>![[Pasted image 20230923231524.png]]
 
-
-%% Issue
-There the autoscaling isntnace did had no page
-had something to do with security group ~~that needs subnet~~, in Template
-
-subnet specify in autoscaling
-
-~~let see if you specify in the launch template, will appear to choose in the auto scaling part~~ debunked, need to choose subnet in auto scaling still
-- The availability zone you pick auto scaling group is just the range of AZ the instnaces will appear in
-- The AZ specify in the Template is
-
-Indeed, when you specify a subnet in an AWS Launch Template, a network interface is automatically added to the template. This network interface (ENI - Elastic Network Interface) is associated with the specified subnet and is an essential component for your EC2 instances. Here's why this happens and what it means:
-
-When instances are launched by an Auto Scaling group, the subnet configuration is typically specified within the Auto Scaling group settings and not within the Launch Template directly. %%

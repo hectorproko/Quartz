@@ -36,18 +36,6 @@ tags:
 
 <br>![[Pasted image 20230929162625.png]]
 
-%%
-Yes, when you create an Aurora database cluster using the "Production" template, AWS provisions it with high availability in mind. This means it automatically sets up a primary (or "writer") instance and a standby replica in a separate Availability Zone for failover support. If the primary instance fails, Aurora will automatically fail over to the standby replica without any manual intervention.
-
-In the screenshot you've shared:
-
-- `auroradatabase` is the cluster endpoint.
-- `auroradatabase-instance-1` is the primary (or "writer") instance.
-- `auroradatabase-instance-1-us-east-1a` is the standby replica (or "reader") instance in a separate Availability Zone.
-
-It's important to note that this standby replica is not used for read scaling by default. It's primarily there for failover support. If you want additional read replicas for scaling read-heavy workloads, you can manually add more reader instances, as you've been doing.
-%%
-
 <br>![[Pasted image 20230929162859.png]]
 ``
 #### **2. Creating Read Replicas:**

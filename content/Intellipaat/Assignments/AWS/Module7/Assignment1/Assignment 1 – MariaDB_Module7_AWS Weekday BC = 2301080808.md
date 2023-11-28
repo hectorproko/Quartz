@@ -40,7 +40,6 @@ tags:
 <br>![[Pasted image 20230928155537.png]]
 
 <br>![[Pasted image 20230928205153.png]]
-%%  Had to create a VPC just for this as per issue below and had to put Internet Gateway in the Route table %%
 
 ---
 
@@ -69,25 +68,7 @@ tags:
 ```bash
 mysql -h [RDS_ENDPOINT] -u [USERNAME] -p
 ```
-%%
-```
-ubuntu@ip-10-0-2-77:~$ mysql -h database-1.cnk8gecauqro.us-east-1.rds.amazonaws.com -u admin -p
-Enter password: 
-Welcome to the MySQL monitor.  Commands end with ; or \g.
-Your MySQL connection id is 98
-Server version: 5.5.5-10.6.14-MariaDB-log managed by https://aws.amazon.com/rds/
 
-Copyright (c) 2000, 2023, Oracle and/or its affiliates.
-
-Oracle is a registered trademark of Oracle Corporation and/or its
-affiliates. Other names may be trademarks of their respective
-owners.
-
-Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
-
-mysql> 
-```
-%%
 <br>![[Pasted image 20230928213300.png]]
 After hitting enter, I was prompted to enter my password.
 
@@ -97,44 +78,3 @@ After hitting enter, I was prompted to enter my password.
 
 After these steps, I had a MariaDB RDS instance up and running, and I could connect to it both from my Windows machine and from a Linux-based EC2 instance. Success!
 
-
-
-
-
-%%
-
-Reference from [[Amazon RDS (Relational Database Service)#Demo 1 – RDS ( MySQL )]]
-
-> [!fail] ISSUE
-> 
-> <br>![[Pasted image 20230928143047.png]]
-> 
-> > [!success] Solution
-> > Created a new VPC with  10.0.0.0/16
-> > subnets
-> > 10.0.1.0/24
-> > 10.0.2.0/24
-> > 10.0.3.0/24
-> > 10.0.4.0/24
-
-%%
-
-^41cbaa
-
-%%
-```
-Setting environment for using XAMPP for Windows.
-Hecti@DESKTOP-7SBLCCA c:\xampp
-# mysql -h database-1.cnk8gecauqro.us-east-1.rds.amazonaws.com -u admin -p
-Enter password: ********
-Welcome to the MariaDB monitor.  Commands end with ; or \g.
-Your MariaDB connection id is 31
-Server version: 10.6.14-MariaDB-log managed by https://aws.amazon.com/rds/
-
-Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
-
-Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
-
-MariaDB [(none)]>
-```
-%%

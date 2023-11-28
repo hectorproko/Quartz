@@ -2,8 +2,7 @@
 tags:
   - AWS
 ---
-==PENDING CLEANUP==
- 
+
 > [!info] Module 11: Migration Assignment - 2
 > **Problem Statement:**
 > You work for XYZ Corporation. Your corporation wants to move their infrastructure to the cloud to improve the performance and availability of the application hosted. You are given the opportunity to accomplish the tasks for successful migration.
@@ -12,13 +11,6 @@ tags:
 > 1. Export the Ubuntu server VM created in [[Assignment 1 – AWS Migration_Module11_AWS Weekday BC = 2301080808|task 1]]. 
 > 2. Upload it to an S3 bucket. 
 > 3. Use that VM to create an AMI and create an EC2 instance with it. 
-
-%%
-[Zoom Recording](https://us02web.zoom.us/rec/share/YxS9QPTsC8Ey8KlH-G1FzEyjSpn8SRe2kmhzci99FY0odS4Lb16VMwMKN8Ru5S_S.Tcn70g5VrRXiywqX)
-Passcode: `7FgXH0k=`
-
-https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-image-import.html
-%%
 
 
 Continuing from [[Assignment 1 – AWS Migration_Module11_AWS Weekday BC = 2301080808|Assignment 1 – AWS Migration]]

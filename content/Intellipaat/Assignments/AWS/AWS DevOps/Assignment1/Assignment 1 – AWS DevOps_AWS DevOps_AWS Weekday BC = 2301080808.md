@@ -11,7 +11,7 @@ tags:
 > **Tasks To Be Performed:** 
 > 1. Create a CodeCommit repository and import a GitHub repository content into it.
 
-%%[[CodeCommit_aws]]%%
+
 
 ### 1. Creating an IAM User:
 1. I log into AWS.
@@ -41,13 +41,6 @@ tags:
 	```
 	<br>![[Pasted image 20231018202828.png]]
 
-%%
-## 4. Test SSH Connection:
-To ensure you've set everything up correctly, try cloning an existing CodeCommit repository:
-```
-git clone ssh://git-codecommit.us-east-1.amazonaws.com/v1/repos/Packer
-```
-%%
 
 ### 4. **Set Up CodeCommit Repository**
 1. I go to AWS CodeCommit in the AWS Management Console.
@@ -81,7 +74,7 @@ To verify the remote was successfully added, I type:
 git remote -v
 ```
 <br>![[Pasted image 20231018205114.png]]
-%%The key takeaway here is that when adding a remote, you can name it whatever you like (`codecommit` in our case), and then you specify the URL of that remote repository.%%
+
 
 ### 7. **Pushing Repository Content to CodeCommit:**
 
@@ -90,7 +83,6 @@ Ensuring my SSH setup is correct, I can now push my local repository content to 
 git push codecommit main
 ```
 
-%%**Note:** If you're using a branch other than `master`, replace `master` with your branch's name.%%
 <br>![[Pasted image 20231018210300.png]]
 
 

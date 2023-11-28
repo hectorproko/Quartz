@@ -2,8 +2,6 @@
 tags:
   - AWS
 ---
-==PENDING CLEANUP==
- 
 
 > [!info] Module 9: Elastic Beanstalk Assignment
 > **Problem Statement:** 
@@ -13,30 +11,14 @@ tags:
 > 1. Create an Elastic Beanstalk environment with the runtime as PHP. 
 > 2. Upload a simple PHP file to the environment once created.
 
-%%
-[[Elastic Beanstalk_aws#Demo 2 – Beanstalk]]
 
-> [!fail]- Issue
-> 
-> <br>![[Pasted image 20231012142752.png]]
-> Got this issue again seem realated to the RDS issue which was caused by the VPC, 
-> 
-> > [!tip] Solution
-> > used a new none Default vpc
-> 
-
-This is the part I used different VPC
-[[myVPC used Beanstalk.png]]
-%%
-
-`index.php` ^6f66a7
+`index.php` 
 ```php
 <?php
   echo "Hello, World! Today's date is " . date('Y-m-d') . ".";
 ?>
 ```
 
-^e77287
 
 ### Step 1: Create a New Elastic Beanstalk Environment
 
@@ -83,22 +65,5 @@ This is the part I used different VPC
 <br>![[Pasted image 20231012151043.png]]
 
 I've successfully set up an AWS Elastic Beanstalk environment running PHP and deployed my simple PHP application.
-
-
-
-%%
-
-> [!attention]
-> make sure you pick public subnet if your EC2 is hoting page
-
-> [!attention]- Had issue with custom VPC `MyVPC`
-> Here it works when using the Default VPC
-> Had an issue with MyVPC custom VPC that was fixed
-> [[Project 2 – Website Orchestration_Projects_AWS Weekday BC = 2301080808#^6aff71|Project 2 – Website Orchestration Issue]]
-
-%%
-
-
-
 
 

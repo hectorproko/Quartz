@@ -23,17 +23,6 @@ The applied template performs the following tasks:
 2. Creates a public subnet within the VPC.
 3. Launches an Amazon Linux EC2 instance within the public subnet and tags it as "CFinstance".
 
-%%
-> [!question]- Question you had
-> The keyword `MyVPC:` in the CloudFormation template is not a built-in name. It's just an identifier or logical name that you use within the CloudFormation template to reference that particular resource.
-> 
-> You can name it whatever you like, as long as you are consistent within the template. For example, you could replace `MyVPC` with `TestVPC` or `AssignmentVPC` or any other name you prefer. Whenever you reference that VPC within the template, you would then use that chosen name.
-> 
-> For example, if you change it to `TestVPC:`, then later in the template where you see `!Ref MyVPC`, you'd change it to `!Ref TestVPC`.
-> 
-> It's essentially an internal name within the CloudFormation template to help you reference and organize resources.
-
-%%
 
 
 ```yaml
