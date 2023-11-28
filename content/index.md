@@ -67,9 +67,3 @@ Here are some of the projects I've been working on, categorized by technology:
 
 
 ---
-
-```mermaid 
-graph TD 
-Biology --> Chemistry 
-class Biology,Chemistry internal-link; 
-```
