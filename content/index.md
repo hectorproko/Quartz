@@ -66,7 +66,5 @@ Here are some of the projects I've been working on, categorized by technology:
     - Placeholder
 
 
----
-
 Test
 <iframe frameborder="0" style="width:100%;height:213px;" src="https://viewer.diagrams.net/?tags=%7B%7D&highlight=0000ff&edit=_blank&layers=1&nav=1#RxVZdc9sgEPw1erQHCxHbj63tttOZZjJxO236xkgXiRYbB6FY6q8vMugLYjdJp9WTYVmOY291JsCrXfle0kP2SSTAgxAlZYDXQRjOIhzpnxqpDDK%2FQgZIJUssqQO27BdYsKEVLIF8QFRCcMUOQzAW%2Bz3EaoBRKcVxSLsXfHjqgabgAduYch%2F9yhKVGXRBUId%2FAJZmzckzZFd2tCFbIM9oIo49CG8CvJJCKDPalSvgtXiNLmbfuzOrbWIS9uo5Gzjly5%2Bfy%2B%2Bb2%2BsvD9cPk8nH22ISmiiPlBf2wmyfQDnN1I7btFXVaKHjadn15O0xYwq2BxrXK0ddeY2dtuD1TA9tUJAKyrPZzloNtHlA7EDJSlPKVkizpXLmx14VLJT1CtBg1NY9bSN30uiBVecFSmFPqRykvuL0Rx40nh5JKxyRoVbhyFpFnlb687xnaa3VqEKhoanCaGShiCeUp09caJclVgPYJ2%2FqpqanMad5zuKhRlIU%2BvOt2ejE1jl%2BqydTFJIGuDsBZLFogHXZ56%2Br%2FuwGJNNXBWlBkx4kXtN0SqC7NJUpqD99UH6peqUgT5SiwSRwqtjjMI2n6mNPuBFMJ9i1l6XTXohT4lwUMga7q99VnUCthZpAyAlkdPAC6TLSqkc71IT8fMLeOQRdzMu7IBrw9cBk0Hm3rcHr7Xz1v%2By87Nxr7IznZGQ7R2PaOcJOteevtDNBzl%2FJ8t%2FYmTideLa4bGfiPgeWl%2FkRcfj4r%2Byvp91DzdC75y7e%2FAY%3D"></iframe>
