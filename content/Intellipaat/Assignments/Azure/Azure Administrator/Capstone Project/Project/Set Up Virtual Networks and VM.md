@@ -1,3 +1,4 @@
+==Pending CleanUP==
 - Create two Virtual Networks (VNets), one in the East US region (Vnet 1) and one in the West US region (Vnet 2).
  - In each VNet, deploy two Virtual Machines (VMs) - VM1 and VM2.
 ---
