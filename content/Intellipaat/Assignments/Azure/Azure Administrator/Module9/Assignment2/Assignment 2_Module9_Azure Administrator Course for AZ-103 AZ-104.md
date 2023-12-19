@@ -1,0 +1,67 @@
+> [!info] Module 9: Assignment - 2
+> **Tasks To Be Performed:** 
+> 1. Use the [[Assignment 1_Module9_Azure Administrator Course for AZ-103 AZ-104|previously connected VMs]] 
+> 2. Connect Log Analytics to this virtual machine
+
+
+**Step 1: Create a Log Analytics Workspace**
+
+1. Log into the Azure portal: [https://portal.azure.com](https://portal.azure.com/).
+2. Go to All services and search for Log Analytics.
+3. Select Log Analytics workspaces.
+4. In the Log Analytics workspaces blade, click Create.
+5. Enter the necessary information: Subscription, Resource Group, Name, and Region.
+6. Click Next to select a Pricing tier, and then choose the appropriate pricing tier.
+7. Review your settings and click Create.
+8. Refresh the Log Analytics workspaces blade to display the new workspace.
+
+![[Pasted image 20231212174955.png]]
+
+**Step 3: Connect Virtual Machines to the Log Analytics Workspace**
+
+1. In the Azure portal, go to the workspace you created in Step 1.
+2. Click on "Connect a data source" and choose "Azure Virtual machine (VMs)".
+   ![[Pasted image 20231212180709.png]]
+   ![[Pasted image 20231212180838.png]]
+3. Search for the virtual machine you want to connect.
+   ![[Pasted image 20231212180949.png]]
+   ![[Pasted image 20231212181223.png]]
+4. Click the entry of your virtual machine and then click Connect.
+5. Wait for the extension to be installed on the virtual machine.
+
+
+---
+VIDEO
+
+create the workspace
+goes to resource
+Click connect a data source, azure virtual
+selects the VM, just to look
+
+goes to the "agent" in the left side of workspae "legacy actiivty log connector"
+
+create diagnostics settings, creates one, all logs all metrics
+![[Pasted image 20231214095625.png]]
+
+![[Pasted image 20231214095647.png]]
+creates diagnostic settings
+
+then goes to logs to run some queries
+
+
+----
+
+create the works pace
+![[Pasted image 20231212174955.png]]
+
+To connect the VM
+![[Pasted image 20231214100315.png]]
+![[Pasted image 20231214100519.png]]
+
+We select allLogs, AllMetrics and select "Send to Log Analytics workspace"
+![[Pasted image 20231214100729.png]]
+
+back in workspace we click Logs and try a query
+![[Pasted image 20231214100947.png]]
+
+![[Pasted image 20231214101322.png]]
