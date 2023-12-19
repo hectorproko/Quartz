@@ -90,5 +90,3 @@ echo "This is VM1" | sudo tee /var/www/html/index.html
       After refreshing the page 100 times..
       <br>![[Pasted image 20231209100947.png]]
 
-%% Linkedin
-By completing these steps, you will have successfully deployed two VMs with Apache2, customized their web pages, and set up a load balancer to distribute traffic between them.%%

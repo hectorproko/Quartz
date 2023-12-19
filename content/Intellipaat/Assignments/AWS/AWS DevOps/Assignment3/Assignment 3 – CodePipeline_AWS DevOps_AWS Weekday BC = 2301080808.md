@@ -45,12 +45,12 @@ tags:
     - I ensure that the "Web server environment" option is selected and set the platform to PHP.
     - To verify everything is set up correctly, I decide to load a sample application.
     - Once loaded, I check the domain to confirm it's operational.
-	%%[[php app beanstalk.png]]%%
+	
 	<br>![[Pasted image 20231020162225.png]]
 
 2. **I Create a Pipeline in AWS CodePipeline**:
 
-     %%If prompted, I either select the default role or opt to create a new role.%%
+     
 	
 	Upon searching for CodePipeline, I find and click on the "Create pipeline" button.
 	
@@ -80,13 +80,7 @@ tags:
     - I confirm my choices by clicking on 'Done'.
       <br>![[Pasted image 20231020165247.png]]
       
-%%
-> [!attention]
-> In the deploy stage you were tempted to pick CodeDeploy but you just had to pick Beanstalk
->and the application and evironemtn previously created
->''php page''
 
-%%
 
 6. **I Finalize the Pipeline Creation**:
     - I double-check all the stages to ensure everything is in order.

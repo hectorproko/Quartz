@@ -82,7 +82,7 @@ Using [[Assignment 3 – AWS Migration_Module11_AWS Weekday BC = 2301080808|Assi
 I ensure that the initial database name 'Intel' is set up.
 <br>![[Pasted image 20231030164833.png|400]]
 
-%%==diff AZ in new one==,%%
+
 <br>![[Pasted image 20231030165859.png]]
 
 Clicked on "View connection details"
@@ -131,9 +131,7 @@ In the FileZilla client, I select the 'index.php' file and 'images' folder from 
 I verify 'index.php' for database connection setup.
 <br>![[Pasted image 20231101154040.png]]
 
-%%Keep in mind we had the PHPSite with the code sent
-<br>![[Pasted image 20231030180020.png]]
-%%
+
 
 
 `sudo nano /etc/apache2/sites-available/000-default.conf`
@@ -178,11 +176,9 @@ I verify the data input by executing a SELECT query on the 'data' table within t
 > [!success]
 > <br>![[Pasted image 20231101154650.png]]
 
-%%Code use in this project given by intellipaat[[Project-1-–-Solution-1.pdf]]
-<br>![[code.zip]]
-%%
+
 
 ---
 
-%%Another autoscaling reference [[Case Study – ELB, ASG And Route 53_Module4_AWS Weekday BC = 2301080808|Case Study]]%%
+
 Now that my EC2 instance is fully equipped for hosting, I ensure it is also capable of auto-scaling, following the procedures outlined in [[Assignment 2 – Auto Scaling_Module4_AWS Weekday BC = 2301080808|Assignment 2 – Auto Scaling]]. My first step is to create an Amazon Machine Image (AMI) from the existing EC2 instance. Next, I craft a Launch Template incorporating this AMI. Finally, I establish an Auto Scaling group utilizing this Launch Template and configure it to maintain a desired capacity, with the parameters set to a minimum of 2 instance and a maximum of 3 instances. This setup guarantees that the hosting infrastructure adjusts automatically to the incoming traffic, maintaining efficiency and cost-effectiveness.

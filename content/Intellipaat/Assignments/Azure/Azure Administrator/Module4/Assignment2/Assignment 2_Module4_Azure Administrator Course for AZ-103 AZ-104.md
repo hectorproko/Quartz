@@ -8,7 +8,7 @@ tags:
 > 2. Open the RDP port 
 > 3. Connect to it using Windows Remote Desktop 
 
-%%[[Create Windows VM in Azure]]%%
+
 
 ### Step 1: Create a Windows VM in the West US Region
 
@@ -34,7 +34,7 @@ tags:
 2. **I Set Up Authentication**:
     
     - Under the "Administrator account" section, I choose a username and a strong password that I will use to log in to the VM.
-      %%azureuser YourPassword!%%
+      
 3. **I Configure Ports**:
     
     - In the "Public inbound ports" section, I choose to allow selected ports and ensure that "RDP (3389)" is checked to allow Remote Desktop connections to the VM.
@@ -73,6 +73,3 @@ tags:
     - The Remote Desktop window opens, showing the desktop of the Windows VM.
       <br>![[Pasted image 20231207112902.png]]
 
-%%
-Linkedin
-By following these steps, I have successfully created a Windows VM in the Azure West US region, opened the RDP port, and connected to it using Windows Remote Desktop.%%

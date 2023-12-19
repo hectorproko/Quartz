@@ -22,8 +22,8 @@ To create VM I follow steps in [[Assignment 1_Module4_Azure Administrator Course
     
     - I click "+Crreate" to create a new Bastion host.
     - I select the same virtual network as my VM and fill in the details required for the Bastion service, including a name and the region.
-      %%<br>![[Pasted image 20231210141917.png]]%%
-      %%<br>![[Pasted image 20231210142212.png]]%%
+      
+      
       <br>![[Pasted image 20231210142256.png]]
     - For Azure Bastion, I do need to create a new public IP address because Bastion will serve as my secure access point.
     - I review and create the Bastion host.
@@ -47,4 +47,3 @@ To create VM I follow steps in [[Assignment 1_Module4_Azure Administrator Course
 
 
 
-%%By following these steps, you will have successfully created a VM without a public IP address and used Azure Bastion to securely connect to it. Azure Bastion provides RDP and SSH connectivity through the Azure Portal using SSL without the need for a public IP on the VM itself.%%

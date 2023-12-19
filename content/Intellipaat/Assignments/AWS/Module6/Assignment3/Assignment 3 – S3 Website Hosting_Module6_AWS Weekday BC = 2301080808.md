@@ -92,9 +92,6 @@ color: red;
 </html>
 ```
 
-%%
-"Make public using ACL" options in Actions was grayed out. To make clickable go to Object Ownership, and click ACL enabled
-%%
 **Step 3:** After both files were added, I clicked the "Upload" button to finalize the upload process.
 
 1. Access the Bucket URL: `http://my-test-bucket-unique-name.s3-website-us-east-1.amazonaws.com`

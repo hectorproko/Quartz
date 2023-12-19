@@ -8,7 +8,7 @@ tags:
 > 2. Add storage account to rg-1 
 > 3. Move storage account from rg-1 to rg-2 
 
-%%Same way I started [[Assignment 1_Module1_Azure Administrator Course for AZ-103 AZ-104]]%%
+
 
 In the Azure Portal I navigate to the "Cloud Shell"  Icon in the upper right corner
 <br>![[Pasted image 20231206090119.png]]
@@ -28,10 +28,6 @@ az group list -o table
 <br>![[Pasted image 20231206103718.png]]
 
 ### Step 2: Add a Storage Account to `rg-1`
-%%I delete the storage created in [[Assignment 1_Module1_Azure Administrator Course for AZ-103 AZ-104]] and it was used to run the Terminal, so closed the terminal
-
-So created a new one automatically again cs21003200105a6a072
-%%
 
 I create a new storage account in resource group `rg-1`
 ```bash

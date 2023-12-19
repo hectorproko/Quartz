@@ -49,6 +49,3 @@ To create the VM, I follow the steps outlined in [[Assignment 1_Module4_Azure Ad
     - Once I've configured the backup settings, I click "Enable Backup".
     - Azure will schedule the backup job based on the policy I've defined.
 
-
-%%Linkedin
-By completing these steps, I will have successfully created a Recovery Services vault and set up a backup for my Linux VM with Apache2 installed. The VM's data will be backed up according to the schedule and retention policy I've configured.%%

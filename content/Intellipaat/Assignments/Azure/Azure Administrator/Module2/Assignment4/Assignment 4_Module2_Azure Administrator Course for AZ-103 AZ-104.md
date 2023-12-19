@@ -39,16 +39,6 @@ tags:
     - I fill in the necessary details, including a unique name `myCDNProfile` for the CDN profile, and select my pricing tier.
     - I finalize the creation of the CDN profile.
 
-%%
-> [!question]- Issue
-> > [!fail]
-> > <br>![[Pasted image 20231206153957.png]]
-> 
-> > [!done] solution
-> > [[Assignment 4_Module2_Azure Administrator Course for AZ-103 AZ-104#^af4473|Register CDN in subscription]]
-> 
-
-%%
 
 ### Step 3: Create a CDN Endpoint and Connect to Azure Blob Storage
 
@@ -69,20 +59,3 @@ tags:
 
 
 
-%%
-> [!question]- **Issue:** Could not change access level of the container
-> 
-> > [!fail]
-> > Grayed out
-> > <br>![[Pasted image 20231206164545.png]]
-> 
-> > [!done] Solution
-> > Need to enable anonymous access in storage account
-> > <br>![[Pasted image 20231206164742.png]]
-> > 
-> > <br>![[azure container access level blob.png]]
-> > 
-> 
-> 
-
-%%

@@ -58,7 +58,7 @@ It then asks for `Add permissions`, I attached the previously created `VPCAndDyn
 **Modifying the Trust Relationship**:
 After the role is created, I need to modify its trust relationship to ensure only `User1` and `User2` can assume this role:
 - I'll head back to the `Roles` section and click on the role I've just created.
-- In the `Trust relationships tab`, I'll click `Edit trust policy`. %%[[Trust Policy_aws|Trust Policy]]%%
+- In the `Trust relationships tab`, I'll click `Edit trust policy`. 
 - I'll adjust the policy document to the following:
 
 Original: `"AWS": "arn:aws:iam::838427752759:root"`

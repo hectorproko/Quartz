@@ -7,7 +7,7 @@ tags:
 > 1. Use the same storage accounts from previous assignment 
 > 2. Use AzCopy utility to copy data from one storage container to another
 
-%%Follow [[Azure Storage#AZCopy Demo]]%%
+
 
 Continuing from [[Assignment 3_Module3_Azure Administrator Course for AZ-103 AZ-104|Assignment 3]]
 

@@ -58,4 +58,3 @@ I obtain its public IP to test it
 > <br>![[Pasted image 20231207181430.png]]
 
 
-%%By following this corrected sequence, you first prepare the VM by generalizing it while it's running, then deallocate the VM, and finally capture the image. This ensures the VM is in a consistent state and ready to be used as a template for creating new VMs.%%

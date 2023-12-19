@@ -34,9 +34,7 @@ Using `StaticIPVM` from [[Assignment 2_Module6_Azure Administrator Course for AZ
 2. **I Attach the NIC to the VM**:
     
     - Once the VM is stopped, I navigate to the VM's settings and select "Networking" - "Network settings".
-      %%
-      Dont add to this picture it is shared on another note
-      %%
+      
       <br>![[Pasted image 20231208115551.png]]
     - I click "Attach network interface" and select the NIC I just created.
       <br>![[Pasted image 20231208123149.png]]
@@ -49,6 +47,3 @@ Using `StaticIPVM` from [[Assignment 2_Module6_Azure Administrator Course for AZ
 
 
 
-%%
-Linkedin
-By following these steps, you will have successfully created a new Network Interface Card and attached it to your existing VM in Azure. This allows your VM to have multiple network interfaces for different networking purposes, such as segregating traffic or connecting to different networks.%%

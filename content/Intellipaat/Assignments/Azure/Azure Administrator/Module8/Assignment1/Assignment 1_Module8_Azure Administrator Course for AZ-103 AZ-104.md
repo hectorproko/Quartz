@@ -7,7 +7,7 @@ tags:
 > 1. Create a custom role which can view, start and stop VMs 
 > 2. But should not be able to do anything else
 
-%%[[Azure Access Management]]%%
+
 
 
 ### Step 1: Define the Custom Role
@@ -33,7 +33,7 @@ tags:
 		    "AssignableScopes": ["/subscriptions/SUBSCRIPTION_ID"]
 		}
 		```
-    - I replace `SUBSCRIPTION_ID` with my actual subscription ID. %%`37c43e3f-51ba-4c33-ba98-e70251afe450`%%
+    - I replace `SUBSCRIPTION_ID` with my actual subscription ID. 
 
 3. **I Save the JSON Definition**:
 
@@ -55,7 +55,4 @@ Go to Subscriptions > Access control (IAM) > Roles
 > [!success]
 > <br>![[Pasted image 20231210174432.png]]
 
-
-%%By completing these steps, you will have successfully created a custom role that has the specific permissions to view, start, and stop VMs in Azure. This role will not grant any additional permissions beyond those explicitly defined.
-%%
 

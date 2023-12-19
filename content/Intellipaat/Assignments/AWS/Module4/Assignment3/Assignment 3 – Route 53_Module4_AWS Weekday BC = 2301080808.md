@@ -5,18 +5,7 @@ tags:
 ==PENDING CLEANUP==
  
 
-%%
 
-> [!tip]
-> Similar to [[Route 53_aws#Demo 6 – Route 53 Creation]]
-
-> [!question]
-> question
-> freenom can just point directely to teh EC2 public ip why go througth route 53
-> 
-<mark style="background: #BBFABBA6;">The answers</mark> [[Route 53_aws#Explanation]] 
-
-%%
 
 
 > [!info] Module 4: Route 53 Assignment
@@ -30,7 +19,6 @@ tags:
 
 ### Created an EC2 instance with a Web Server:
 
-%% Used [[Assignment 1 – ELB_Module4_AWS Weekday BC = 2301080808#Creation of the Three EC2 Instances]] %%
 
 1. Launched the EC2 Instance Noted the Public IP.
    <br>![[Pasted image 20231004142226.png]]
@@ -74,7 +62,7 @@ After creating the hosted zone, Route 53 provides me with a set of **NS (Name Se
 
 ^c3e5c2
 
-%%Complete image of records [[IONOS NS records added from Route 53.png]]%%
+
 
 
 2. Clicked on "Create Record" to point `temp.hectorproko.com` to Web Server.
@@ -92,7 +80,7 @@ After creating the hosted zone, Route 53 provides me with a set of **NS (Name Se
 
 ### Verifying the Route:
 
-%%Remember, this might take some time due to DNS propagation.%%
+
 Opened a browser and enter my domain name. I should see the Apache web server page I created.
    
 > [!success]

@@ -33,7 +33,7 @@ tags:
 > [!tip]
 >   When using S3 for static website hosting and Route 53, the bucket name should match the domain/subdomain name you're trying to associate with it.
 
-%%[[Case Study – S3 Versioning And Website Hosting_Module6_AWS Weekday BC = 2301080808#^921623|You had issues with this]]%%
+
 
 - **AWS Region**: Retained the default, which was "US East (N. Virginia) us-east-1".
   
@@ -49,9 +49,6 @@ tags:
 
 After ensuring all the settings met my requirements, I finalized by clicking on the "Create bucket" button.
 
-%% Full picture, name of bucket had to change
-[[FireShot Capture 015 - S3 bucket - s3.console.aws.amazon.com (1).png]]
-%%
 
 ---
 
@@ -133,23 +130,7 @@ With this configuration in place, any visits to "temp.hectorproko.com" will be r
 <br>![[Pasted image 20231005223916.png]]
 
 <br>![[Pasted image 20231005224147.png]]
-%%
-> [!fail]- Issue pointing to bucket
-> When i tried to point to the S3 bucket got this error
-> <br>![[Pasted image 20231005222809.png]]
-> 
-> Seems like I need to reanme the bucke to 
-> **Bucket Name and Domain Name Matching**: When using S3 for static website hosting and Route 53, the bucket name should match the domain/subdomain name you're trying to associate with it. If your bucket's name is `bucketforcasestudy`, but you're trying to point it to a domain/subdomain like `example.com`, Route 53 won't recognize the S3 website endpoint because of this mismatch.
-> 
-> For the domain `temp.hectorproko.com`, you should name the S3 bucket exactly as:
-> 
-> `temp.hectorproko.com`
-> 
-> This ensures that the S3 bucket's website endpoint can be correctly mapped to that domain using Route 53.
 
-%%
-
-^921623
 
 
 **Step 7: Site Testing:**
@@ -173,18 +154,6 @@ With this configuration in place, any visits to "temp.hectorproko.com" will be r
 
 
 
-%%
-> [!fail]- S3 Static Website Hosting: Case Sensitivity Issue
-> **Issue:** When accessing the static website via the S3 endpoint, the error page was displayed by default.
-> 
-> **Root Cause:** The specified default index document in the S3 bucket's static website hosting configuration was "index.html". However, the actual file uploaded to the bucket was named "Inde.html". S3 treats filenames as case-sensitive, thus it couldn't locate the correct index file.
->  [[Case Study – S3 Versioning And Website Hosting_Module6_AWS Weekday BC = 2301080808#^d9a6c3|Mistake made here]]
-> 
-> **Solution:** Ensure that the file names, especially those specified in configurations, match the actual uploaded file names exactly, taking into account case sensitivity.
-> 
-> **Note:** Always be mindful of file naming conventions and case sensitivity when working with AWS S3 and similar services.
-
-%%
 
 ---
 

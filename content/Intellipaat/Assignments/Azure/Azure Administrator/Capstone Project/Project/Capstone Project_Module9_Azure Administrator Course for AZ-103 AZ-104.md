@@ -34,9 +34,9 @@ tags:
 > 8. Finally, your Traffic Manager should be pointing to the application gateway of both the regions.
 
 ---
-https://drive.google.com/file/d/1XswCZKE8GtOOTW_sdoSp3rYVUna15vpZ/view
 
-[[Capstone video notes]]
+==PENDING CLEANUP==
+
 
 ---
 
@@ -44,49 +44,11 @@ https://drive.google.com/file/d/1XswCZKE8GtOOTW_sdoSp3rYVUna15vpZ/view
 Regions to use "West US 3" and "East US"
 
 1. **[[Set Up Virtual Networks and VM]]s:**
-    
-
 2. **[[Clone the GitHub Repository]]:**
-    
-   
 3. **[[Configure VMs]]:**
-    
-    
-4. **Set Up Application Gateways:**
-    
-    - In each region, configure an Application Gateway.
-    - Set up the Application Gateway to direct `example.com` to the home page hosted on VM2.
-    - Set up the Application Gateway to direct `example.com/upload` to the upload page hosted on VM1.
-    - Configure the Application Gateway to use custom error pages by pointing the 403 and 502 error responses to `error.html`.
-5. **Configure Storage Account:**
-    
-    - Host `error.html` as a static website in your Storage Account.
-    - Create a container named `upload` in the Storage Account, to be used by the upload page for storing files.
-6. **Implement VNet-VNet Peering:**
-    
-    - Establish VNet-to-VNet peering between Vnet 1 and Vnet 2 to allow the two VNets to communicate directly over the Azure backbone network.
-7. **Set Up Azure Traffic Manager:**
-    
-    - Configure the Azure Traffic Manager to manage traffic to both Application Gateways.
-    - Ensure the Traffic Manager distributes traffic optimally between the East US and West US regions.
-8. **DNS and Traffic Routing:**
-    
-    - The domain name `example.com` referred to in the instructions is managed by the Traffic Manager.
-    - Adjust your DNS settings to ensure that `example.com` points to the Traffic Manager's DNS name, which in turn will route to the appropriate Application Gateway depending on the traffic routing method chosen (e.g., performance, failover, round-robin).
-9. **Testing:**
-    
-    - After the deployment, test the website by accessing `example.com` and `example.com/upload` to ensure they are routed correctly.
-    - Test the error page redirection by triggering 403 and 502 errors and confirming that the custom `error.html` page is displayed.
-10. **Monitoring and Management:**
-    
-    - Monitor the VMs, Application Gateways, and Traffic Manager for health and performance.
-    - Set up alerts for any issues that might arise.
 
-Remember to replace `example.com` with the actual domain name provided by the Traffic Manager and to update the DNS records accordingly. Ensure that you follow the Azure best practices for security and management throughout the implementation.
 
 ---
-
-# REDOING
 
 I already have the same Virtual Network
 

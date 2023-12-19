@@ -24,15 +24,7 @@ tags:
     - I review and create the virtual network.
       <br>![[Pasted image 20231208102601.png]]
     
-%%Originally was West US 2, created new one, this pic was edited to show 3 instead of 2
 
-> [!tip]
-> The resource group affects the region you can choose
-
-> [!attention]
-> Re-did everything with a resource group based on region
-
-%%
 ### Step 2: Create Another Virtual Network in South India
 
 1. **I Repeat the Creation Process for South India**:
@@ -82,17 +74,3 @@ I'll SSH into the SouthIndiaVM and attempt to ping WestUSVM using its private IP
 > <br>![[Pasted image 20231208110909.png]]
 
 
-%%
-> [!question]- Question on why create 2 connections if with one both VMs were able to ping each other
-> In Azure, VNet peering connections are bi-directional, but they must be explicitly created in both VNets to establish a successful peering relationship. When you create a peering from West US VNet to the South India VNet, you've only established one half of the peering. For the peering to be fully functional, you need to create a corresponding peering from the South India VNet back to the West US VNet.
-
-Went ahead to created the second peering in the other VNet already had it, cant remember doing it myself, not sure if it was automatically
-
-%%
-
-
-%%
-For linkedin
-
-By completing these steps, you have created two virtual networks in different regions, deployed VMs within each network, established VNet-to-VNet peering, and verified the connectivity using the ping command.
-%%

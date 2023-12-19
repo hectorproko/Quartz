@@ -65,19 +65,16 @@ tags:
   - **Action**: Created a route table `Web Tier` with a default route (`0.0.0.0/0`) pointed towards the IGW `ProductionVPC-igw`.
    
 3. **For DBCache and App1 Subnets**:
-  - **Action**: To maintain security while still permitting outbound internet connectivity, I initiated a NAT Gateway *(Requires Elastic IP)* in the Web subnet *(a public subnet)*. %%Gives NAT the ability to communicate directly with the Internet via the Internet Gateway (IGW).%%
+  - **Action**: To maintain security while still permitting outbound internet connectivity, I initiated a NAT Gateway *(Requires Elastic IP)* in the Web subnet *(a public subnet)*. 
   - **New Route Table Creation**:
     - **Action**: Created a new route table, let's call it "PrivateSubnetsRouteTable," specifically for the DBCache and App1 subnets.
     - Added a route to this table, directing `0.0.0.0/0` (all internet-bound traffic) to the NAT Gateway.
   - **Route Table Adjustment**: Set the default route (`0.0.0.0/0`) for both DBCache and App1 to route through the NAT Gateway.
-%% Not adding NAT to DB and App2 is not needed reduce attack vector %%
 
-### Step 4: Implementing the Security Groups %%and NACLs%%
 
-%% For Deletion
-5. **NACLs**:
-  - **Action**: Adopted a security-first approach. All [[sg (Security Group)_aws#Inbound rules|inbound traffic]] was denied by default, with explicit rules for the necessary traffic. Checked and validated the configuration to ensure optimal communication.
-%%
+### Step 4: Implementing the Security Groups 
+
+
 
 1. **Web Tier**:
   
@@ -106,106 +103,7 @@ tags:
 
 - **Action**: For each subnet, I spun up an EC2 instance, naming them in alignment with their subnet names.
 
-%%Need to prepare ssh from web, included adding outbound rules to ssh%%
 
-%%
-> [!NOTE]- Ping Record, for deletion
-> App2 10.0.3.70
-> ```
-> [ec2-user@ip-10-0-3-70 ~]$ ping 10.0.1.94
-> PING 10.0.1.94 (10.0.1.94) 56(84) bytes of data.
-> ^C
-> --- 10.0.1.94 ping statistics ---
-> 3 packets transmitted, 0 received, 100% packet loss, time 2041ms
-> 
-> [ec2-user@ip-10-0-3-70 ~]$ ping 10.0.2.188
-> PING 10.0.2.188 (10.0.2.188) 56(84) bytes of data.
-> ^C
-> --- 10.0.2.188 ping statistics ---
-> 5 packets transmitted, 0 received, 100% packet loss, time 4198ms
-> 
-> [ec2-user@ip-10-0-3-70 ~]$ ping 10.0.4.209
-> PING 10.0.4.209 (10.0.4.209) 56(84) bytes of data.
-> 64 bytes from 10.0.4.209: icmp_seq=1 ttl=127 time=1.60 ms
-> 64 bytes from 10.0.4.209: icmp_seq=2 ttl=127 time=0.882 ms
-> 64 bytes from 10.0.4.209: icmp_seq=3 ttl=127 time=0.969 ms
-> 64 bytes from 10.0.4.209: icmp_seq=4 ttl=127 time=0.870 ms
-> ^C
-> --- 10.0.4.209 ping statistics ---
-> 4 packets transmitted, 4 received, 0% packet loss, time 3004ms
-> rtt min/avg/max/mdev = 0.870/1.080/1.601/0.302 ms
-> [ec2-user@ip-10-0-3-70 ~]$ ping 10.0.5.93
-> PING 10.0.5.93 (10.0.5.93) 56(84) bytes of data.
-> ^C
-> --- 10.0.5.93 ping statistics ---
-> 4 packets transmitted, 0 received, 100% packet loss, time 3086ms
-> 
-> [ec2-user@ip-10-0-3-70 ~]$
-> ```
-> DBCache 10.0.4.209
-> ```
-> [ec2-user@ip-10-0-4-209 ~]$ ping 10.0.1.94
-> PING 10.0.1.94 (10.0.1.94) 56(84) bytes of data.
-> ^C^C
-> --- 10.0.1.94 ping statistics ---
-> 5 packets transmitted, 0 received, 100% packet loss, time 4172ms
-> 
-> [ec2-user@ip-10-0-4-209 ~]$ ping 10.0.2.188
-> PING 10.0.2.188 (10.0.2.188) 56(84) bytes of data.
-> ^C
-> --- 10.0.2.188 ping statistics ---
-> 4 packets transmitted, 0 received, 100% packet loss, time 3146ms
-> 
-> [ec2-user@ip-10-0-4-209 ~]$ ^C
-> [ec2-user@ip-10-0-4-209 ~]$ ping 10.0.3.70
-> PING 10.0.3.70 (10.0.3.70) 56(84) bytes of data.
-> ^C
-> --- 10.0.3.70 ping statistics ---
-> 6 packets transmitted, 0 received, 100% packet loss, time 5161ms
-> 
-> [ec2-user@ip-10-0-4-209 ~]$ ping 10.0.5.93
-> PING 10.0.5.93 (10.0.5.93) 56(84) bytes of data.
-> 64 bytes from 10.0.5.93: icmp_seq=1 ttl=127 time=7.59 ms
-> 64 bytes from 10.0.5.93: icmp_seq=2 ttl=127 time=0.544 ms
-> 64 bytes from 10.0.5.93: icmp_seq=3 ttl=127 time=0.412 ms
-> ^C
-> --- 10.0.5.93 ping statistics ---
-> 3 packets transmitted, 3 received, 0% packet loss, time 2010ms
-> rtt min/avg/max/mdev = 0.412/2.850/7.594/3.354 ms
-> [ec2-user@ip-10-0-4-209 ~]$
-> ```
-> 
-> DB 10.0.5.93
-> ```
-> [ec2-user@ip-10-0-5-93 ~]$ ping 10.0.1.94
-> PING 10.0.1.94 (10.0.1.94) 56(84) bytes of data.
-> ^C
-> --- 10.0.1.94 ping statistics ---
-> 3 packets transmitted, 0 received, 100% packet loss, time 2055ms
-> 
-> [ec2-user@ip-10-0-5-93 ~]$ ping 10.0.2.188
-> PING 10.0.2.188 (10.0.2.188) 56(84) bytes of data.
-> ^C
-> --- 10.0.2.188 ping statistics ---
-> 3 packets transmitted, 0 received, 100% packet loss, time 2051ms
-> 
-> [ec2-user@ip-10-0-5-93 ~]$ ping 10.0.3.70
-> PING 10.0.3.70 (10.0.3.70) 56(84) bytes of data.
-> ^C
-> --- 10.0.3.70 ping statistics ---
-> 4 packets transmitted, 0 received, 100% packet loss, time 3100ms
-> 
-> [ec2-user@ip-10-0-5-93 ~]$ ping 10.0.4.209
-> PING 10.0.4.209 (10.0.4.209) 56(84) bytes of data.
-> ^C
-> --- 10.0.4.209 ping statistics ---
-> 10 packets transmitted, 0 received, 100% packet loss, time 9331ms
-> 
-> [ec2-user@ip-10-0-5-93 ~]$ 
-> ```
-> 
-
-%%
 
 |Source/Target|**Web** 10.0.1.94|**App1** 10.0.2.188|**App2** 10.0.3.70|**DBCache** 10.0.4.209|**DB** 10.0.5.93|
 |---|---|---|---|---|---|

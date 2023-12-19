@@ -43,18 +43,3 @@ Will reuse the subdomain from [[Assignment 3 – Route 53_Module4_AWS Weekday BC
       <br>![[Pasted image 20231208184406.png]]
 
 
-%%Linkedin
-By completing these steps, I have successfully linked a free domain to my Azure VM using Azure DNS. The domain should now resolve to the IP address of my VM, allowing me to access the Apache2 server using the domain name.%%
-
-
-%%
-> [!question] Issue
-> I was trying to access on the browser `temp.hectorproko.com` and it was not working
-> 
-> > [!done] Solution
-> > I had to put `www` in front, `www.temp.hectorproko.com`
-> > Make sure the `www` is in [[Pasted image 20231208182346.png|the record]] though, I tried `test` instead of `www` and it worked as well so it is not must to have `www` but we have to use whatever we put
-> > 
-> 
-
-%%

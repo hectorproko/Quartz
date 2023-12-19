@@ -8,7 +8,6 @@ tags:
 > 2. Select the Ubuntu image for creating the VM 
 > 3. Open the SSH port 4. Connect to the Linux VM using the terminal
 
-%%[[Create Linux VM in Azure]] update it%%
 
 ### Step 1: Create a VM in the West US Region
 
@@ -50,7 +49,6 @@ tags:
     - I make sure to download the keys when prompted
       <br>![[generate new  key pair download.png]]
 
-%%The Key [[Assig_key.pem]]%%
 
 ### Step 4: Connect to the Linux VM Using the Terminal
 
@@ -72,6 +70,3 @@ tags:
       <br>![[Pasted image 20231207102447.png]]
 
 
-
-%%Linkedin
-By following these steps, I have successfully created an Ubuntu VM in the Azure West US region, opened the SSH port, and connected to the VM using SSH from the terminal.%%

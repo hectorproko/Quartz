@@ -43,7 +43,7 @@ tags:
 2. **I Set Up Authentication**:
     
     - Under the "Administrator account" section, I choose a username and a strong password that I will use to log in to the VM.
-      %%azureuser YourPassword!%%
+      
 3. **I Configure Ports**:
     
     - In the "Public inbound ports" section, I choose to allow selected ports and ensure that "RDP (3389)" is checked to allow Remote Desktop connections to the VM.

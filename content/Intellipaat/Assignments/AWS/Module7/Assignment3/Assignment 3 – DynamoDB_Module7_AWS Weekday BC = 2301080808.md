@@ -49,9 +49,7 @@ Certainly! Here's a step-by-step guide from your point of view to set up, popula
 **Step 2:** A prompt appeared, asking for confirmation. I double-checked to make sure the backup was intact, then confirmed the deletion.
 
 ---
-%%
-Note: Deleting a table in DynamoDB is irreversible, so always ensure you have adequate backups and have verified them before deleting a table. The steps provided are a straightforward approach to the requirements and can be modified based on any specific details or constraints.
-%%
+
 
 
 ### **Restoring the DynamoDB Table from a Backup:**

@@ -57,7 +57,6 @@ Continuing [[Assignment 1_Module8_Azure Administrator Course for AZ-103 AZ-104|A
 > [!success]
 > <br>![[Pasted image 20231210182343.png]]
 
-%%By completing these steps, you will have successfully created a new user in Azure Active Directory and assigned them the custom role that allows them to view, start, and stop VMs, but not perform any other actions.%%
 
 
 

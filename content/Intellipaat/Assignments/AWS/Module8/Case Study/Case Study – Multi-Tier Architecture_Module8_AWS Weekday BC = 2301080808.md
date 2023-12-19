@@ -20,39 +20,7 @@ tags:
 >    1. Development team can test their code without having to involve the system admins and can invest their time in testing the code rather than provisioning, configuring and updating the resources needed to test the code. 
 >    2. Make sure when the development team deletes the stack, RDS DB instances should not be deleted.
 
-%%
-Used [[Case Study – Database Architecture_Module7_AWS Weekday BC = 2301080808#^787ee9|Case Study – Database Architecture]] as reference mysql-server
 
-had to add a NAT for the instnaces to be able to update install mysql and connect to rds
-
-
-
-```bash
-mysql -h [RDS_ENDPOINT] -u [USERNAME] -p
-```
-```bash
-chmod +x install_httpd.sh
-```
-maybe change to ubuntu ami cuse is super slow  amazon linux
-
-==Keep in mind RDS deletion==
-
-Need to compare default VPC and MyVPC
-> [!fail] Issue
-> Had an issue similar to [[Assignment 1 – MariaDB_Module7_AWS Weekday BC = 2301080808#^41cbaa|Assignment 1 – MariaDB]] related to subnet group
-> <br>![[Pasted image 20230928143047.png]]
-> <mark style="background: #BBFABBA6;">**Solution**: added second private subnet</mark>
-> 
-
-Issue2
-<br>![[Pasted image 20231011160126.png]]
-CidrIp: !Ref PrivateSubnetId
-
-However, `PrivateSubnetId` is a reference to a subnet ID, not a CIDR block
-
-Need to  change the nameservers like in  [[Assignment 3 – Route 53_Module4_AWS Weekday BC = 2301080808#^c3e5c2|Assignment 3 – Route 53]]
-
-%%
 ### Template 1: VPC Configuration
 
 This template will set up a VPC, subnets, an internet gateway, and all the foundational components:

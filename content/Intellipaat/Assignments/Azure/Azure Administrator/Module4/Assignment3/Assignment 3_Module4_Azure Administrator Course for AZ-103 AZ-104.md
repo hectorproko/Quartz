@@ -69,7 +69,6 @@ tags:
 
 <br>![[Pasted image 20231207123748.png]]
 I login to it to stress it
-%%I edited this picture. I copied one of the VMs from the pic [[Pasted image 20231207131432.png|underneath]]. Cuse i was expecting to see the original VM next to the newly created VM from scaleet, not the case, I think this was due to repeating the steps and mixing the pics with new and old, fingers cross #%%
 
 <br>![[create virtual machine scale set.png]]
 In networking tab had to edit the NIC to allow inboud SSH

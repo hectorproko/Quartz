@@ -73,13 +73,6 @@ However, it doesn't work over the internet because port 80 is not open.
 > We have now opened port 80 within the subnet. However, to access it from the internet, we need to open port 80 directly on the NIC associated with the public IP we are using.
 
 
-%%Issue Still cant access the site:
-I have 2 nsg attached to the VM now
-its default has 22 open
-subnet has 80 open
-but the default nsg seems to be interfering with the subnet one. Because I opened http in the default nsg and works. But when i remove it is like it doesnt reach the second nsg which opens http
-<br>![[Pasted image 20231208145332.png]]
-It works not but not sure why, because when it [[Pasted image 20231208144001.png|was like]] this it kept on failiding, then the screen change to the above and the only difference i see is the order in which the nsg appears%%
 
 ### Step 5: Verify the Apache2 Page
 - After opening Port 80 in NIC
@@ -90,30 +83,3 @@ It works not but not sure why, because when it [[Pasted image 20231208144001.png
 
 
 
-%%
-
----
-
-In Networking > Netwok settings
-I can now see again
-<br>![[Pasted image 20231208144001.png]]
-and i can not even ssh to machine
-
-Original first one has ssh
-Second has http
-
-after adding ssh open like so, in the second one, i can ssh but I can not HTTP
-<br>![[Pasted image 20231208163647.png]]
-
-letst add http ot the first nsg
-
-
----
-Subnet SEcuirty group applies to private IPs?
-only works in the networks within subnet or subnets withing that subnet.
-
-If VM has NIC with public IP, it wont apply to it, need to apply NSG to the NIC
-
-<br>![[Untitled.jpg]]
-
-%%

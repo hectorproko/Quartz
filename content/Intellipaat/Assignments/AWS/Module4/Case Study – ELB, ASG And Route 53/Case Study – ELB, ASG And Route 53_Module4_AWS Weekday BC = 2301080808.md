@@ -51,12 +51,6 @@ Based on the steps from [[Assignment 2 – Auto Scaling_Module4_AWS Weekday BC =
 
 **Testing Autoscaling group by making EC2 go over 80% utilization** 
 
-%%
-> [!NOTE]-
-> <br>![[Assignment 4 – CloudWatch Dashboard_Module3_AWS Weekday BC = 2301080808#^877754|Simulating Load]]
-> 
-
-%%
 
 To simulate high CPU usage in the EC2 instances, I mirrored the approach from [[Assignment 4 – CloudWatch Dashboard_Module3_AWS Weekday BC = 2301080808|Assignment 4 – CloudWatch Dashboard]] . Specifically, I executed the command `while true; do openssl dgst -sha256 /dev/zero; done`.
 

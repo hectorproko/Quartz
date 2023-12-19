@@ -45,16 +45,7 @@ tags:
 <br>![[Pasted image 20230929215206.png|]]
 
 **Step 4: Loading Data from Local Workstation:**
-%% Comment
 
-> [!info]- Issue Info
-> The error message you're seeing, "A staging Amazon S3 bucket is required and is not configured. Go to account settings to configure a staging S3 bucket.", indicates that while you're attempting to load data directly from your local machine, Redshift still requires an intermediate S3 bucket to stage the data before loading it into your Redshift cluster.
-> 
-> This is a unique aspect of Redshift's architecture. Even when loading from a local file, the data is first uploaded to this staging S3 bucket, then Redshift loads the data from this bucket.
-> 
-> Remember, while you're uploading from a local source, the data first goes to this S3 bucket and then into Redshift. Ensure the appropriate permissions are set so that Redshift can access and load data from this bucket.
-
-%%
 
 > [!tip] Prerequisite
 > **Step 1:** **Create an S3 Bucket:** I realized I needed an S3 bucket to stage my data for Redshift. So, I headed over to the S3 console and used old bucket `my-test-bucket-unique-name`. This would be used for staging my data before it's loaded into Redshift.

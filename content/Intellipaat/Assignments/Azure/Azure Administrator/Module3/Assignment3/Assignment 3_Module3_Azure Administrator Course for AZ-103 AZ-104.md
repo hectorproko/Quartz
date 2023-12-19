@@ -39,11 +39,7 @@ Creating "New connection" to source container and tested it
 <br>![[Pasted image 20231206222313.png]]
 Had to click `+ New connection` show above
 
-%%
-> [!attention] Only worked with one file at at time
-> 
 
-%%
 
 ---
 

@@ -91,18 +91,9 @@ To ensure the VPCs can communicate, I'll update their route tables:
       <br>![[Pasted image 20230925175638.png]]
 5. I'll save these routes.
 
-%%
 
-> [!fail] Found issue in route table, Blackhole
-> <br>![[Pasted image 20230925181728.png]]
 
-> [!success] Solution
-> *Turns out I forgot to accept request*
-> <br>![[Pasted image 20230925182114.png]]
-
-%%
-
-Once I've completed these steps, the VPCs should be interconnected as intended. %%Additionally, I'll remember to configure security groups and network ACLs to manage traffic appropriately.%%
+Once I've completed these steps, the VPCs should be interconnected as intended. 
 
 
 
@@ -162,13 +153,7 @@ Once I've completed these steps, the VPCs should be interconnected as intended. 
 > > 
 > 
 
-%%
 
-What i had to do just to test this connectivity
-
-To ensure functional instances and allow SSH access from the internet, I had to create subnets, internet gateways, and route table entries. Additionally, I attached the internet gateway to the VPC and then associated it with the subnet. This setup was crucial for enabling direct access to the instances over the internet.
-
-%%
 
 > [!summary]
 > Given AWS's VPC peering model, the inability of `insta1` in `MYVPC1` to ping `insta3` in `VPCOregon1` was <mark style="background: #BBFABBA6;">expected</mark>. Transitive peering isn't supported by AWS. Even though there's a peering connection between `MYVPC1` and `MYVPC2`, and another one between `MYVPC2` and `VPCOregon1`, it doesn't automatically facilitate traffic flow from `MYVPC1` directly to `VPCOregon1` via `MYVPC2`.

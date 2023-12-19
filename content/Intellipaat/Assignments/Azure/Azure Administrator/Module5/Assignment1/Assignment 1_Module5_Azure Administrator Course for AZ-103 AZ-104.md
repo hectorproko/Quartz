@@ -15,7 +15,7 @@ tags:
     
     - Will use the VM from [[Assignment 5_Module4_Azure Administrator Course for AZ-103 AZ-104|Assignment 5: Module 4]] 
       
-      %%This is why it had Apache installed and cause you [[Assignment 1_Module5_Azure Administrator Course for AZ-103 AZ-104#^a0d827|issues]]%%
+      
 1. **I Install Docker Using `docker.io`**: ^f947ef
     - I run the following commands to update the package index and install Docker from the Ubuntu repositories:
       `sudo apt-get update`
@@ -75,31 +75,3 @@ azureuser@VMCustomImage:~$
 
 <br>![[Pasted image 20231210212722.png]]
 
-%%
-By completing these steps, you will have installed Docker on a Linux VM, pulled the `hshar/webapp` Docker repository, and created a new file within this repository. After creating the new file inside the running Docker container, you then commit these changes to create a new Docker image.
-%%
-
-%%
-
-> [!question] Issue
-> 
-> > [!fail]
-> > Addition test I did
-> > run that image I created as container and access it using VM Public IP, made sure port 80 was opened
-> > ```
-> > sudo docker run -d -p 8080:80 --name mywebapp hectorregistry.azurecr.io/webapp_updated:latest
-> > ```
-> > Here we get appache deault page
-> 
-> but when using App Service we get
-> <br>![[Pasted image 20231213123114.png]]
-> 
-> 
-> > [!success]
-> > The VM had apache running and the container was set to be access on port 8080, was using not only port 80 but also apache in the VM instead of container
-> > <br>![[Pasted image 20231213150047.png]]
-> 
-
-%%
-
-^a0d827

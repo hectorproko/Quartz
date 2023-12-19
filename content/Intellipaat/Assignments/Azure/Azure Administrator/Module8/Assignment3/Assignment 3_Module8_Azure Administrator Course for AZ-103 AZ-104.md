@@ -75,4 +75,3 @@ I created two new users, 'user1' and 'user2,' following the same steps as in [[A
       <br>![[Pasted image 20231210191235.png]]
 
 
-%%By completing these steps, you will have created a user group, assigned the custom role to this group, and added users to the group. The users added to this group should now inherit the permissions defined by the custom role, which, in your case, allows viewing, starting, and stopping VMs. Remember, it may take a few minutes for role assignments to propagate and become active.%%

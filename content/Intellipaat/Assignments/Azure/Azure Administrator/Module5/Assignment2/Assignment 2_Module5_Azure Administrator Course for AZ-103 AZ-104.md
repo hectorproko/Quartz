@@ -10,8 +10,6 @@ tags:
 > 
 
 
-%%[[Video tutorial]] uses az %%
-%%Solution video used docker to login%%
 
 Using image from [[Assignment 1_Module5_Azure Administrator Course for AZ-103 AZ-104|Assignment 1:Module 5]]
 
@@ -95,33 +93,6 @@ Back in the portal I verity the image was uploaded
 <br>![[Pasted image 20231212130744.png]]
 
 
-
-
-
-%%
-
-ISSUE:
-<br>![[Pasted image 20231212115500.png]]
-
-> [!done] solution
-> Tells you to use `az login --use-device-code` which gives the expected link and code as before
-<br>![[Pasted image 20231212120031.png]]
-
-worked previously with `az login`
-        <br>![[Pasted image 20231210220902.png]]
-
-
-Issue is cause because of this installation: ==I think due to the version== Significant higher? or maybe to do with the 'extensions' portion this one does not have any and [[Pasted image 20231212124827.png|older version install]] does have "azure-devops"
-
-[Option 1: Install with one command](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-linux?pivots=apt#option-1-install-with-one-command)
-```bash
-curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
-```
-This method of install give us [[Pasted image 20231212115500.png|this issue]]
-<br>![[Pasted image 20231212114801.png]]
-%%
-
-
 ### Step 4: Create an App Service to Deploy the Image
 
 1. **I Open the Azure Portal Again**:
@@ -153,24 +124,4 @@ This method of install give us [[Pasted image 20231212115500.png|this issue]]
 
 
 
-%%By completing these steps, you will have successfully created an Azure Container Registry, connected it to Docker running in a VM, uploaded your Docker image to the registry, and then deployed that image using Azure App Service. This process showcases how to manage and deploy containerized applications in Azure.%%
 
-%%
-> [!attention]
-> The admin account is currently required for some scenarios to deploy an image from a container registry to certain Azure services. For example, the admin account is needed when you use the Azure portal to deploy a container image from a registry directly to [Azure Container Instances](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-using-azure-container-registry#deploy-with-azure-portal) or [Azure Web Apps for Containers](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-tutorial-deploy-app).
-
-
-> [!question]- ISSUE:
-> 
-> > [!fail]
-> > <br>![[Pasted image 20231213115839.png]]
-> 
-> > [!done] Solution
-> > I follow the [provided link](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-authentication?tabs=azure-cli#admin-account) 
-> > To enable the admin user for an existing registry, you can use the `--admin-enabled` parameter of the [az acr update](https://learn.microsoft.com/en-us/cli/azure/acr#az-acr-update) command in the Azure CLI:
-> > ```bash
-> > az acr update -n hectorregistry --admin-enabled true
-> > ```
-> > <br>![[azure enable admin container registry.png]]
-
-%%

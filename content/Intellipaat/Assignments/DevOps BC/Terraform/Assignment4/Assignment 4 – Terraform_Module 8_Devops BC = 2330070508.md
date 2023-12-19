@@ -112,36 +112,7 @@ In this configuration:
 `terraform apply`
 <br>![[Pasted image 20231115205049.png]]
 
-%%
-> [!attention]- Issue: with `security_groups`
-> 
-> > [!fail]
-> > ```bash
-> > │ Error: creating EC2 Instance: InvalidParameterCombination: The parameter groupName cannot be used with the parameter subnet
-> > │       status code: 400, request id: 3b2ef40d-a093-47af-a83f-b2d49d08a006
-> > │
-> > │   with aws_instance.example_instance,
-> > │   on main.tf line 73, in resource "aws_instance" "example_instance":
-> > │   73: resource "aws_instance" "example_instance" {
-> > ```
-> > <br>![[Pasted image 20231115203552.png]]
-> > 
-> 
-> > [!done] Solution
-> > When you're launching an EC2 instance in a VPC (as opposed to EC2-Classic), you need to specify a VPC security group using its ID, not its name.
-> > 
-> > Changed 
-> > ```
-> > security_groups = [aws_security_group.example_sg.name]
-> > ```
-> > to 
-> > ```
-> > vpc_security_group_ids = [aws_security_group.example_sg.id]
-> > ```
-> > 
-> > 
 
-%%
 
 Just to test the instance i try to ssh into it
 <br>![[Pasted image 20231115211158.png]]

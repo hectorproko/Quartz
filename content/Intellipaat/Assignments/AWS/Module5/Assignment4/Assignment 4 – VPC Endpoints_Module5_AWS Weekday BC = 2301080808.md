@@ -11,12 +11,6 @@ tags:
 > **Tasks To Be Performed:** 
 > 1. Create a VPC endpoint for a S3 bucket of your choice for secure access to the files.
 
-%%
-Creating a VPC endpoint allows resources within your VPC to communicate with AWS services without requiring access over the internet. When you create an endpoint specifically for Amazon S3, your EC2 instances or other resources in the VPC can use Amazon S3 without needing to traverse the internet, adding an extra layer of security.
-
-Questions and possible answers that arouse here moved to [[without routing traffic through the public internet]]
-
-%%
 
 1. **I'll Start by Accessing the Amazon VPC Dashboard**:
     - I'll sign in to the AWS Management Console.
@@ -37,23 +31,7 @@ Questions and possible answers that arouse here moved to [[without routing traff
       
 
 
-%%
-Started instance configure 
-aws cli inside secret key etc
-need to modify the IAm role attached to the ec2, created one with full s3 access
-<br>![[Pasted image 20230926143331.png]]
 
-
-Create EC2 in private subnet, connected to it from an isntnace in public instane
-
-you add endpoint to the route table from the endpoint interface
-
-made sure the public instance was able to ssh to private, bastion
-
-Inside private instnace aws configure to configure credentials
-
-was able to create a bucket without attaching a role
-%%
 
 
  **To verify the functionality of the VPC endpoint I set up, I followed these steps:**

@@ -45,17 +45,7 @@ resource "aws_eip" "example" {
 - The `aws_eip` resource creates an Elastic IP.
 - The `instance` attribute in the `aws_eip` resource is set to `aws_instance.example.id`, which associates the EIP with your EC2 instance.
 
-%%
-> [!attention]- Deprecated:
-> ```yaml
-> resource "aws_eip" "example" {
->   instance = aws_instance.example.id
->   vpc      = true
-> }
-> ```
-> `vpc = true` for `domain = "vpc"`
 
-%%
 
 ``terraform apply``
 

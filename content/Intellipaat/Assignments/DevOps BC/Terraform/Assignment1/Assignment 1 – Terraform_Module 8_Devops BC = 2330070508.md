@@ -11,9 +11,6 @@ tags:
 ### Step 1: Terraform Setup
 
 <br>![[Installing Terraform#Windows]]
-
-%%In we create IAM users [[Assignment 1 – IAM Users_Module3_AWS Weekday BC = 2301080808|Assignment 1 – IAM Users]]
-Things seem to have change you can no longer create a user and check for programmatic access now you just generate the keys?%%
 ### Step 2:  A way to for Terraform to authenticate with AWS
 
 I will be using the same AWS CLI setup from [[Assignment 2 – AWS Migration_Module11_AWS Weekday BC = 2301080808#**Using AWS CLI **|Assignment 2 – AWS Migration]]

@@ -59,7 +59,7 @@ Host git-codecommit.*.amazonaws.com
 User APKAG4NQRHE3SUWI647   
 IdentityFile ~/.ssh/id_rsa
 ```
-%%The User in this assignment or repo was not APKAG4NQRHE3SUWI647, used AKIA4GNRQHE3YHDJ77VM just wanted to reuse the image%%
+
 <br>![[Pasted image 20231018202828.png]]
 
 I push the content to AWS CodeCommit: Using the terminal, I run:
@@ -88,33 +88,7 @@ sudo chmod +x ./install
 sudo ./install auto
 sudo service codedeploy-agent start
 ```
-%%*Doesnt seem to do the job from user data consistently*, May require you to resintall, if deploy fails%%
-%%
-> [!NOTE]- Installing CodeDeploy agent for Ubuntu
-> 1. Update the package manager and install Ruby and wget:
-> ```
-> sudo apt update -y
-> sudo apt install wget -y
-> ```
-> 2. Download the CodeDeploy agent archive to the default user's home directory:
-> ```
-> cd /home/ubuntu
-> wget https://aws-codedeploy-us-east-1.s3.amazonaws.com/latest/install
-> ```
-> 
-> 3. Make the installer script executable:
-> ```
-> chmod +x ./install
-> ```
-> 
-> 4. Do one of the following:
->    - To install the latest version of the CodeDeploy agent on any supported version of Ubuntu Server except 20.04:
-> ```
-> sudo ./install auto
-> ```
-> 
 
-%%
 **EC2 Instance Tags**
 The tags for each EC2 instance are crucial. They enable the deployment group in AWS CodeDeploy to correctly reference and target the instances during the deployment process. Without the appropriate tagging, the deployment might not work as intended.
 
@@ -151,25 +125,24 @@ After creating the EC2 instances, I select them in the EC2 dashboard. Then, I cl
 	
 	Deployment Groups: Create two deployment groups, namely QA and PROD.
 	- Role: `CodeDeployRole` *(with policies `AmazonEC2FullAccess` and `AWSCodeDeployRole`)*.
-	%%<mark style="background: #FFB8EBA6;">does it really need EC2FullAccess or is it included in the other</mark>%%
+	
 	
 	I manage Tags:
 	- I ensure to pick tags that relate to my EC2 instances.
 	- I identify the specific EC2 instance by selecting two tags: "app" and "env". I make sure both tags match by using two tag groups.
 	
 	- During the setup, I uncheck the option "Enable load balancing".
-	%%[[deployment group QA.png]]%%
-	%%Forgot to change to *CodeDeployDefault.OneAtATime* diff in pic%%
+	
 	
 	I replicate the steps for PROD:
 	- I repeat the same steps to set up the application in the PROD environment.
-	%%[[deployment group PROD.png]]%%
+	
 	
 	<br>![[Pasted image 20231026103800.png|500]]
 	
 	
 	
-	%%Pipeline roles default can be used%%
+	
 
 7. **Creating an Elastic Beanstalk Environment**
 
@@ -186,7 +159,7 @@ After creating the EC2 instances, I select them in the EC2 dashboard. Then, I cl
 	
 	Next, for the source stage, I choose AWS CodeCommit as the source provider. I pick the repository "php_page" and set the branch to "php".
 	<br>![[Pasted image 20231026135039.png|400]]
-	*I chose the "php" branch because that's where I stored the web pages and scripts* %%Maybe merge to main%%
+	*I chose the "php" branch because that's where I stored the web pages and scripts*  
 	
 	In the "Add build stage", I selected AWS CodeBuild as my build provider. I set the region to "US East (N. Virginia)". When it came to selecting a project name, I realized I needed to create a new one. So, I opted to create "SimpleZIP" right there by clicking the "Create project" button. Once "SimpleZIP" was successfully created in the AWS CodeBuild console, I proceeded. I didn't add any environment variables at this stage. For the build type, I chose "Simple build" to trigger a single build.
 	<br>![[Pasted image 20231024145833.png|470]]
@@ -230,74 +203,3 @@ After creating the EC2 instances, I select them in the EC2 dashboard. Then, I cl
 > **Server 2 (PROD)**
 > <br>![[Pasted image 20231026143634.png]]``
 
-
----
-
-%%
-
-> [!tip]
-> Remember teh pipeline uses a bucket that it creates, and the bucket needs verision, i guess when you dont pick one of yours it creates one with what is needed
-> 
-
-
-# Issue
-
-> [!question] Issue:
-> 
-> The build was causing deploy to fail:
-> > [!error]
-> >    `No such file or directory @ rb_sysopen - /opt/codedeploy-agent/deployment-root/789d20b6-ab8f-4c53-aba9-d37d152225c7/d-0L021MKF2/deployment-archive/index.php`
-> 
-> 1. I think is because `buildspec.yml` has
-> ```
-> artifacts:
->   type: 
->   files:
->     - index.html
->     - appspec.yml
->     - scripts/install_dependencies
->     - scripts/start_server
->     - 1.png
->     - aws.gif
->     - back.jpg
-> ```
-> and some of these files dont exist in repo 1.png, aws.gif, back.jpg
-> will trying removing them from list
-> 
-> > [!success]
-> > 2. about removing but adding index.php into the artifiacts
-> > ```
-> > artifacts:
-> >   type: 
-> >   files:
-> >     - index.html
-> >     - index.php
-> >     - appspec.yml
-> >     - scripts/install_dependencies
-> >     - scripts/start_server
-> >     - 1.png
-> >     - aws.gif
-> >     - back.jpg
-> > ```
-> > 
-
-
-> [!tip] Explanation
-> - The files you specify in the `artifacts` section of the `buildspec.yml` are the ones that get packaged up after the build.
->     
-> - The files you specify in the `files` section of the `appspec.yml` are the ones that CodeDeploy expects to find in the artifact and will attempt to deploy to the target instances.
-
-
-
-# Errors
-To test inside each applicaiton created a deployment but had ec2 tags as targets
-<br>![[Pasted image 20231020212730.png]]
-
-Had this error
-<br>![[Pasted image 20231021190606.png]]
-Was targeting Index.zip, but the actually file was lowercase index.zip
-
-I belive this error was because no agent was running
-<br>![[Pasted image 20231021202731.png]]
-
-%%
