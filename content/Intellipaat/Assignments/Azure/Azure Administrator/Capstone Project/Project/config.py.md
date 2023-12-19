@@ -1,4 +1,3 @@
-==Pending CleanUP==
 The `config.py` should likely be a `.ini` file, as `configparser` is designed to read INI files, not Python scripts. The provided configuration is for setting up the necessary details to connect to Azure Blob Storage.
 
 **Security Note**: The key provided in the `config.py` snippet appears to be an actual Azure Storage account key. You should never expose keys or credentials in code, especially not in public repositories or forums, as it poses a severe security risk. Always keep such sensitive information secret, perhaps using environment variables or other secure methods of storing secrets. If the key is real, you should consider it compromised and rotate it immediately through your Azure portal.

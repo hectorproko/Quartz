@@ -1,4 +1,3 @@
-==Pending CleanUP==
 connects to VM
 
 adds registry, in same resource group as VM

@@ -1,4 +1,3 @@
-==Pending CleanUP==
 The `app.py` file you've provided is a Python script using the Flask web framework to create a simple web application. Here's a breakdown of what this script does:
 
 1. **Imports**: The script imports necessary modules for web development (`Flask`, `request`, `redirect`, `url_for`, `render_template`), file handling (`secure_filename`), Azure Blob Storage interaction (`BlobServiceClient`), and configuration file parsing (`configparser`).

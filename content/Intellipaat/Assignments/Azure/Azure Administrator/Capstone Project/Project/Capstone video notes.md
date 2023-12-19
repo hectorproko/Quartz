@@ -1,4 +1,3 @@
-==Pending CleanUP==
 for VM we have 1 subnet and for App Gateway we have different subnet
 
 says to use link <br>![[Pasted image 20231218101707.png]]
