@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 > [!info] Module 5: Assignment - 1
 > **Tasks To Be Performed:** 
 > 1. Install a Docker using VM 

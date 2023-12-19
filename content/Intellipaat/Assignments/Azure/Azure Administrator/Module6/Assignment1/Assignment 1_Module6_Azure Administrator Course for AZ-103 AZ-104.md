@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 > [!info] Module 6: Assignment - 1
 > **Tasks To Be Performed:** 
 > 1. Create a virtual network in West US 

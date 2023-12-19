@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 > [!info] Module 3: Assignment - 2
 > **Tasks To Be Performed:** 
 > Do the following using the Storage explorer: 

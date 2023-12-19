@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 > [!info] Module 4: Assignment - 2
 > **Tasks To Be Performed:** 
 > 1. Create a Windows VM in west US region 

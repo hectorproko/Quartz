@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 > [!info] Module 7: Assignment - 1
 > **Tasks To Be Performed:** 
 > 1. Deploy 2 VMs with Ubuntu and Apache2 installed 

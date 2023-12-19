@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 > [!info] Module 8: Assignment - 3
 > **Tasks To Be Performed:** 
 >  1. Create a user group 

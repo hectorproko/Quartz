@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 > [!info] Module 6: Assignment - 2
 > **Tasks To Be Performed:** 
 > 1. Create a VM in West US 

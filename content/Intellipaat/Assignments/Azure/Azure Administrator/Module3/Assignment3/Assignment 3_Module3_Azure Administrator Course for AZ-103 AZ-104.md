@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 > [!info] Module 3: Assignment - 3
 > **Tasks To Be Performed:** 
 > 1. Create two storage accounts and create a container inside it 

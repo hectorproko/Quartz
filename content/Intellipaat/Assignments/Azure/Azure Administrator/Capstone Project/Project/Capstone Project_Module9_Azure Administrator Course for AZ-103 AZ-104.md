@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 > [!info] Azure Administrator Capstone Project Az-104
 > You work as an Azure professional for a Corporation. You are assigned the task of implementing the below architecture for the company’s website. 
 > ![[Pasted image 20231210204021.png]]

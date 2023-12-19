@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 > [!info] Module 9: Assignment - 3
 > **Tasks To Be Performed:** 
 > 1. Use the previous VM deployment 

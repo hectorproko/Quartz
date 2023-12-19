@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 > [!info] Module 7: Assignment - 5
 > **Tasks To Be Performed:** 
 > 1. Create a VM without public IP address 

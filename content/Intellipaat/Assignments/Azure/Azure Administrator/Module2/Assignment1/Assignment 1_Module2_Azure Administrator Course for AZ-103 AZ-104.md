@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 > [!info] Module 2: Assignment - 1
 > **Tasks To Be Performed:**
 > 1. Create 2 resource groups rg-1 and rg-2 

@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 > [!info] Module 1: Assignment - 4
 > **Tasks To Be Performed:** 
 > Use Azure CLI and Azure PowerShell to: 

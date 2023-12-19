@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 > [!info] Module 7: Assignment - 3
 > **Tasks To Be Performed:** 
 > 1. For the two VMs deployed previously configure DNS for the public IPs of the VM

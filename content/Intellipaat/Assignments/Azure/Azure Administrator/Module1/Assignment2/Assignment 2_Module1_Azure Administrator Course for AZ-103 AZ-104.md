@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 > [!info] Module 1: Assignment - 2
 > **Tasks To Be Performed:** 
 > 1. Connect Azure PowerShell to your Azure account 

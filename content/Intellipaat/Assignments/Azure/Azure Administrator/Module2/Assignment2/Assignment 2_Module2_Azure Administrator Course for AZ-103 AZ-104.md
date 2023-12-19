@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 > [!info] Module 2: Assignment - 2
 > **Tasks To Be Performed:**
 > 1. Create 3 storage accounts with “Team” tags: team1, team2 and team3 respectively 

@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 > [!info] Module 8: Assignment - 1
 > **Tasks To Be Performed:** 
 > 1. Create a custom role which can view, start and stop VMs 

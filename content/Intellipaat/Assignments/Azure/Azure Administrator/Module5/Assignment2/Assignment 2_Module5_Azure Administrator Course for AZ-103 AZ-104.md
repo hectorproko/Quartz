@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 > [!info] Module 5: Assignment - 2
 > **Tasks To Be Performed:** 
 > 1. Create an Azure Container Registry and connect it to Docker running in VM 

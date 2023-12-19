@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 > [!info] Module 9: Assignment - 2
 > **Tasks To Be Performed:** 
 > 1. Use the [[Assignment 1_Module9_Azure Administrator Course for AZ-103 AZ-104|previously connected VMs]] 

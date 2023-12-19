@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 > [!info] Module 7: Assignment - 2
 > **Tasks To Be Performed:** 
 > Create an application gateway with the following configuration: 

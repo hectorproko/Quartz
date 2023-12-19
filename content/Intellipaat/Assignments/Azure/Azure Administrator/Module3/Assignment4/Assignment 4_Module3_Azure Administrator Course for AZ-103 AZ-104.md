@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 > [!info] Module 3: Assignment - 4
 > **Tasks To Be Performed:** 
 > 1. Use the same storage accounts from previous assignment 

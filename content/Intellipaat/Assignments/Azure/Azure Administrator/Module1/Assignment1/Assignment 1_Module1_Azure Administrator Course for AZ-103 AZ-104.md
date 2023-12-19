@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 > [!info] Module 1: Assignment - 1
 > **Tasks To Be Performed:** 
 > 1. Connect to Azure Cloud Shell 

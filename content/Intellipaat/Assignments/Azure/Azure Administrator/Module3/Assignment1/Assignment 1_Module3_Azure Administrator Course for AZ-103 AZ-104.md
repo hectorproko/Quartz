@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 > [!info] Module 3: Assignment - 1
 > **Tasks To Be Performed:** 
 > 1. Create a storage account 

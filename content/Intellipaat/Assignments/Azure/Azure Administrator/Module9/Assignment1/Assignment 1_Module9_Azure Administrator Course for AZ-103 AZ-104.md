@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 > [!info] Module 9: Assignment - 1
 > **Tasks To Be Performed:** 
 > 1. Create a Linux VM and install Apache2 on it 

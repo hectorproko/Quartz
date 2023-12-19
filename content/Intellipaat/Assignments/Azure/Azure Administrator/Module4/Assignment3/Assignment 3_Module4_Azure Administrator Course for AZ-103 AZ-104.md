@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 > [!info] Module 4: Assignment - 3
 > **Tasks To Be Performed:** 
 > 1. Create a VM scale set with Ubuntu as OS 

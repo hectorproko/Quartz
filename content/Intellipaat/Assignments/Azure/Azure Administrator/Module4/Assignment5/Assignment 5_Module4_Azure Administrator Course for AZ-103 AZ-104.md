@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 > [!info] Module 4: Assignment - 5
 > **Tasks To Be Performed:** 
 > 1. Deploy a VM from the previously created image 

@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 > [!info] Module 4: Assignment - 4
 > **Tasks To Be Performed:** 
 > 1. Create a Linux VM with Ubuntu OS 

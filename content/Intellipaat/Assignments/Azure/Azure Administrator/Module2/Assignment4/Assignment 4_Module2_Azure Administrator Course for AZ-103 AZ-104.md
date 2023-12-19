@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 > [!info] Module 2: Assignment - 4
 > **Tasks To Be Performed:** 
 > 1. Create a Storage account, and upload some files in Blob storage 

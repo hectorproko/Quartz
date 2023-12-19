@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 > [!info] Module 6: Assignment - 4
 > **Tasks To Be Performed:** 
 > 1. Use the previously created Linux VM 

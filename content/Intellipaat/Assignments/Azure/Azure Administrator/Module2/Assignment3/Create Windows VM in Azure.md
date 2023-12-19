@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 [[Assignment 2_Module4_Azure Administrator Course for AZ-103 AZ-104]]
 
 
