@@ -25,14 +25,14 @@ tags:
       `sudo systemctl enable docker`
     - I verify Installation
       `sudo docker --version`
-      ![[Pasted image 20231207195403.png]]
+      <br>![[Pasted image 20231207195403.png]]
 
 ### Step 2: Pull the `hshar/webapp` Docker Repository
 
 1. **I Pull the Docker Image**:
     - I use the Docker command to pull the `hshar/webapp` image from Docker Hub:
       `sudo docker pull hshar/webapp`
-      ![[Pasted image 20231207195804.png]]
+      <br>![[Pasted image 20231207195804.png]]
 
 ### Step 3: Create a New File in the Repository
 
@@ -51,7 +51,7 @@ tags:
     - Inside the container, I navigate to the desired directory.
     - I create a new file `touch newfile.txt`  
 
-![[Pasted image 20231210212045.png]]
+<br>![[Pasted image 20231210212045.png]]
 ### Step 4: Commit the Changes to Create a New Docker Image
 
 1. **Commit the Container to a New Image**:
@@ -73,7 +73,7 @@ hshar/webapp           latest    0cbc1f535ed8   4 years ago      303MB
 azureuser@VMCustomImage:~$
 ```
 
-![[Pasted image 20231210212722.png]]
+<br>![[Pasted image 20231210212722.png]]
 
 %%
 By completing these steps, you will have installed Docker on a Linux VM, pulled the `hshar/webapp` Docker repository, and created a new file within this repository. After creating the new file inside the running Docker container, you then commit these changes to create a new Docker image.
@@ -92,12 +92,12 @@ By completing these steps, you will have installed Docker on a Linux VM, pulled 
 > > Here we get appache deault page
 > 
 > but when using App Service we get
-> ![[Pasted image 20231213123114.png]]
+> <br>![[Pasted image 20231213123114.png]]
 > 
 > 
 > > [!success]
 > > The VM had apache running and the container was set to be access on port 8080, was using not only port 80 but also apache in the VM instead of container
-> > ![[Pasted image 20231213150047.png]]
+> > <br>![[Pasted image 20231213150047.png]]
 > 
 
 %%

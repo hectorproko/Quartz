@@ -30,13 +30,13 @@ Continuing [[Assignment 1_Module8_Azure Administrator Course for AZ-103 AZ-104|A
     
     - I select "Access control (IAM)" from the subscription or resource blade.
     - I click on "Add role assignment"
-      ![[Pasted image 20231210181841.png]]
+      <br>![[Pasted image 20231210181841.png]]
     
 3. **I Assign the Role to the Group**:
     
     - I select the custom role that I created, for example, "VM Operator".
     - I click "Select members" and search for the group I just created.
-      ![[Pasted image 20231210185310.png]]
+      <br>![[Pasted image 20231210185310.png]]
     - I select the group and then click "Review + assign" to assign the role to the group.
 
 4. **I Check the Role Assignment**:
@@ -44,7 +44,7 @@ Continuing [[Assignment 1_Module8_Azure Administrator Course for AZ-103 AZ-104|A
     - I use the "Check access" feature to search for the group and confirm that the "VM Operator" role is listed under their assigned roles.
 
 > [!success]
-> ![[Pasted image 20231210185520.png]]
+> <br>![[Pasted image 20231210185520.png]]
 
 
 
@@ -64,15 +64,15 @@ I created two new users, 'user1' and 'user2,' following the same steps as in [[A
     - I click "+ Add members".
     - I search for and select the new users I want to add to the group.
     - I click "Select" to add them as members of the group.
-      ![[Pasted image 20231210190828.png]]
+      <br>![[Pasted image 20231210190828.png]]
 
 ### Step 4: Check Whether the Permissions Are Assigned
 
 1. **I Verify the Permissions for a User**:
     - To check if the permissions have been correctly assigned through group membership, I can navigate to "Access control (IAM)" in the subscription or resource group.
     - I use the "Check access" feature, search for a user I added to the group, and verify that they have the permissions associated with the "VM Operator" role.
-      ![[Pasted image 20231210191211.png]]
-      ![[Pasted image 20231210191235.png]]
+      <br>![[Pasted image 20231210191211.png]]
+      <br>![[Pasted image 20231210191235.png]]
 
 
 %%By completing these steps, you will have created a user group, assigned the custom role to this group, and added users to the group. The users added to this group should now inherit the permissions defined by the custom role, which, in your case, allows viewing, starting, and stopping VMs. Remember, it may take a few minutes for role assignments to propagate and become active.%%

@@ -13,7 +13,7 @@ tags:
 ### Step 1: Previous VM
 
 SSH into "StaticIPVM" from [[Assignment 3_Module6_Azure Administrator Course for AZ-103 AZ-104|Assignment 3: Module 6]]
-![[staticipvm overview.png]]
+<br>![[staticipvm overview.png]]
 ### Step 2: Install Apache
 
 ```bash
@@ -24,10 +24,10 @@ sudo systemctl enable apache2
 ```
 
 Verifying locally using the command `lynx localhost`
-![[Pasted image 20231208124906.png]]
+<br>![[Pasted image 20231208124906.png]]
 
 However, it doesn't work over the internet because port 80 is not open.
-![[Pasted image 20231208124956.png]]
+<br>![[Pasted image 20231208124956.png]]
 
 
 
@@ -40,7 +40,7 @@ However, it doesn't work over the internet because port 80 is not open.
     
     - I fill in the details for the NSG, such as name, subscription, resource group, and the location that matches my VM's location.
     - I click "Create" to provision the NSG.
-      ![[Pasted image 20231208130317.png]]
+      <br>![[Pasted image 20231208130317.png]]
 
 ### Step 4: Open NSG Rules for Subnet and VM on Port 80
 
@@ -62,11 +62,11 @@ However, it doesn't work over the internet because port 80 is not open.
     
     -  Withing the newly created NSG I navigate to "Settings > Subnet" and click "+ Associate".
     - I select the Virtual Network where VM is and the subnet.
-      ![[Pasted image 20231208141252.png]]
+      <br>![[Pasted image 20231208141252.png]]
     - Click "OK"
-      ![[Pasted image 20231208141909.png]]
+      <br>![[Pasted image 20231208141909.png]]
       Since my VM resides in the subnet I applied the NSG, it inherits the NSG. In the VMs "Settings > Networking" I see an addition security group added vi subnet
-      ![[Pasted image 20231208144001.png]]
+      <br>![[Pasted image 20231208144001.png]]
       
 
 > [!attention]
@@ -78,13 +78,13 @@ I have 2 nsg attached to the VM now
 its default has 22 open
 subnet has 80 open
 but the default nsg seems to be interfering with the subnet one. Because I opened http in the default nsg and works. But when i remove it is like it doesnt reach the second nsg which opens http
-![[Pasted image 20231208145332.png]]
+<br>![[Pasted image 20231208145332.png]]
 It works not but not sure why, because when it [[Pasted image 20231208144001.png|was like]] this it kept on failiding, then the screen change to the above and the only difference i see is the order in which the nsg appears%%
 
 ### Step 5: Verify the Apache2 Page
 - After opening Port 80 in NIC
 - I use a web browser to navigate to `http://<VM-public-IP>`
-![[20.14.87.3 browser test.png]]
+<br>![[20.14.87.3 browser test.png]]
 
 
 
@@ -96,14 +96,14 @@ It works not but not sure why, because when it [[Pasted image 20231208144001.png
 
 In Networking > Netwok settings
 I can now see again
-![[Pasted image 20231208144001.png]]
+<br>![[Pasted image 20231208144001.png]]
 and i can not even ssh to machine
 
 Original first one has ssh
 Second has http
 
 after adding ssh open like so, in the second one, i can ssh but I can not HTTP
-![[Pasted image 20231208163647.png]]
+<br>![[Pasted image 20231208163647.png]]
 
 letst add http ot the first nsg
 
@@ -114,6 +114,6 @@ only works in the networks within subnet or subnets withing that subnet.
 
 If VM has NIC with public IP, it wont apply to it, need to apply NSG to the NIC
 
-![[Untitled.jpg]]
+<br>![[Untitled.jpg]]
 
 %%

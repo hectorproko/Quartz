@@ -4,7 +4,7 @@ tags:
 ---
 > [!info] Azure Administrator Capstone Project Az-104
 > You work as an Azure professional for a Corporation. You are assigned the task of implementing the below architecture for the company’s website. 
-> ![[Pasted image 20231210204021.png]]
+> <br>![[Pasted image 20231210204021.png]]
 > There are three web pages to be deployed: 
 > 1. The home page is the default page (VM2) 
 > 2. The upload page is where you can upload the files to your Azure Blob Storage (VM1) 
@@ -91,19 +91,19 @@ Remember to replace `example.com` with the actual domain name provided by the Tr
 I already have the same Virtual Network
 
 VM1, West
-![[Pasted image 20231218170259.png]]
+<br>![[Pasted image 20231218170259.png]]
 VM2, West
-![[Pasted image 20231218170721.png]]
+<br>![[Pasted image 20231218170721.png]]
 
 VM1, East
-![[Pasted image 20231218171008.png]]
+<br>![[Pasted image 20231218171008.png]]
 
 VM2, East
-![[Pasted image 20231218171350.png]]
+<br>![[Pasted image 20231218171350.png]]
 
 I created the VMs with open HTTPS, HTTP, need to rest it by removing it and applying it as subnet
 
-![[Pasted image 20231218171833.png]]
+<br>![[Pasted image 20231218171833.png]]
 
 ---
 We dont yet have subnet for the app gateway
@@ -112,27 +112,27 @@ We dont yet have subnet for the app gateway
 
 Using "storage account" `hectorstorage12345`
 
-![[Pasted image 20231218172916.png]]
+<br>![[Pasted image 20231218172916.png]]
 I create container "upload" with blob access
 
 We create error.html file
 which i get from https://github.com/azcloudberg/azproject
 
 w3school output
-![[Pasted image 20231218173452.png]]
+<br>![[Pasted image 20231218173452.png]]
 
 
 I download it and uploaded to "Static website"
-![[Pasted image 20231218174417.png]]
+<br>![[Pasted image 20231218174417.png]]
 I click Save and i get the endpoints
 
-![[Pasted image 20231218174537.png]]
+<br>![[Pasted image 20231218174537.png]]
 ```bash
 https://hectorstorage12345.z1.web.core.windows.net/
 ```
 I click $web
 
-![[Pasted image 20231218175139.png]]
+<br>![[Pasted image 20231218175139.png]]
 
 --- 
 Creating App Gateways
@@ -142,76 +142,76 @@ Lets start with east us
 
 ---
 ISSUE:
-![[WhatsApp Image 2023-12-18 at 19.33.48_180e2bd4.jpg]]
+<br>![[WhatsApp Image 2023-12-18 at 19.33.48_180e2bd4.jpg]]
 
 Bypass:
 Instead of using `+ Gateway` subnet use `+ Subnet`
 Seems like i can use whatever name bu
 
 has something to do with the "availability dependent on dynamic use"
-![[Pasted image 20231218202600.png]]
+<br>![[Pasted image 20231218202600.png]]
 
 ---
 
 ### Creating gateways
 
 > "app-gate-west-us"
-> ![[Pasted image 20231218203526.png]]
+> <br>![[Pasted image 20231218203526.png]]
 > 
 > Frontends: 
 > I create new Public IP
-> ![[Pasted image 20231218203502.png]]
+> <br>![[Pasted image 20231218203502.png]]
 > 
 > Backend:
-> ![[Pasted image 20231218203658.png]]
+> <br>![[Pasted image 20231218203658.png]]
 > 
 > Configuration:
-> ![[Pasted image 20231218203753.png]]
+> <br>![[Pasted image 20231218203753.png]]
 > 
-> ![[Pasted image 20231218174537.png]]
+> <br>![[Pasted image 20231218174537.png]]
 > ```bash
 > https://hectorstorage12345.z1.web.core.windows.net/
 > ```
 > I use the endpoint making sure to add `error.html` at the end
 > 
-> ![[Pasted image 20231218204429.png]]
+> <br>![[Pasted image 20231218204429.png]]
 > 
 > Backend targets:
 > Pool2 has VM2 which is home page so on top
 > 
 > 
 > Pool1 with VM1 added as a path
-> ![[Pasted image 20231218205456.png]]
-> ![[Pasted image 20231218205642.png]]
+> <br>![[Pasted image 20231218205456.png]]
+> <br>![[Pasted image 20231218205642.png]]
 > 
-> ![[Pasted image 20231218205938.png]]
+> <br>![[Pasted image 20231218205938.png]]
 > 
 
 
 
 
 "app-gate-east-us"
-![[FireShot Capture 116 - Create application gateway - Microsoft Azure - portal.azure.com.png]]
+<br>![[FireShot Capture 116 - Create application gateway - Microsoft Azure - portal.azure.com.png]]
 
-![[Pasted image 20231218210542.png]]
+<br>![[Pasted image 20231218210542.png]]
 
-![[Pasted image 20231218210645.png]]
+<br>![[Pasted image 20231218210645.png]]
 
 copy from top
-![[Pasted image 20231218203753.png]]
+<br>![[Pasted image 20231218203753.png]]
 
 copy from top cuse is extaclty the same anyway
-![[Pasted image 20231218204429.png]]
+<br>![[Pasted image 20231218204429.png]]
 
 The pictures end up the same here also
 
-![[Pasted image 20231218205456.png]]
+<br>![[Pasted image 20231218205456.png]]
 
-![[Pasted image 20231218205642.png]]
+<br>![[Pasted image 20231218205642.png]]
 
-![[Pasted image 20231218211700.png]]
+<br>![[Pasted image 20231218211700.png]]
 
-![[Pasted image 20231218212050.png]]
+<br>![[Pasted image 20231218212050.png]]
 
 
 ---
@@ -224,7 +224,7 @@ cd azproject
 ---
 Edit the file `config.py` and replace the key and accout name
 
-![[Pasted image 20231218215826.png]]
+<br>![[Pasted image 20231218215826.png]]
 
 ```bash
 +gUKWA3UnIjAFv1u/xfV4cRNvCGbBS6H1SEVK54X9EPr1vELLpGQm2j3uYb1cefZnY/X5bYwPng/+AStbD71PA==
@@ -244,39 +244,39 @@ container =upload
 
 
 the we run app.py
-![[Pasted image 20231218220802.png]]
+<br>![[Pasted image 20231218220802.png]]
 
 ---
 I create traffic manager
 
-![[Pasted image 20231218221252.png]]
+<br>![[Pasted image 20231218221252.png]]
 
-![[Pasted image 20231218221508.png]]
+<br>![[Pasted image 20231218221508.png]]
 
 I go to my Traffic Manager and nagivate to "Endpoints" where I click "+ Add"
 
 Yes the the gateway IP will we asked to ahve DNS
-![[Pasted image 20231218222011.png]]
-![[Pasted image 20231218222118.png]]
+<br>![[Pasted image 20231218222011.png]]
+<br>![[Pasted image 20231218222118.png]]
 
-![[Pasted image 20231218222306.png]]
+<br>![[Pasted image 20231218222306.png]]
 
-![[Pasted image 20231218222413.png]]
-
-
-![[Pasted image 20231218222607.png]]
-
-![[Pasted image 20231218222636.png]]
+<br>![[Pasted image 20231218222413.png]]
 
 
-![[Pasted image 20231218222729.png]]
+<br>![[Pasted image 20231218222607.png]]
 
-![[Pasted image 20231218222743.png]]
+<br>![[Pasted image 20231218222636.png]]
 
-![[Pasted image 20231218223243.png]]
+
+<br>![[Pasted image 20231218222729.png]]
+
+<br>![[Pasted image 20231218222743.png]]
+
+<br>![[Pasted image 20231218223243.png]]
 
 If i navigate to my container `upload` I see the file i just uploaded
-![[Pasted image 20231218223459.png]]
+<br>![[Pasted image 20231218223459.png]]
 
 Going to remove rules HTTP and HTTPS from all NICs and put them as subnet
 
@@ -286,9 +286,9 @@ After removing all of that and leaving only SSH, it still worked, no need
 
 Create VNet peering just like in [[Assignment 1_Module6_Azure Administrator Course for AZ-103 AZ-104#Step 5 Create VNet-to-VNet Peering|Assignment 1: Module 6]]
 
-![[FireShot Capture 117 - Add peering - Microsoft Azure - portal.azure.com.png]]
+<br>![[FireShot Capture 117 - Add peering - Microsoft Azure - portal.azure.com.png]]
 
-![[Pasted image 20231218225520.png]]
+<br>![[Pasted image 20231218225520.png]]
 
 
-![[Pasted image 20231218225754.png]]
+<br>![[Pasted image 20231218225754.png]]

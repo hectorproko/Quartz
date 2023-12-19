@@ -11,10 +11,10 @@ tags:
 
 
 In the Azure Portal I navigate to the "Cloud Shell"  Icon in the upper right corner
-![[Pasted image 20231206090119.png]]
+<br>![[Pasted image 20231206090119.png]]
 
 It prompts me to create ''Storage account", I click "Create" which results in a new account
-![[azure storage account module1 assig1.png]]
+<br>![[azure storage account module1 assig1.png]]
 
 
 Afterwards "Cloud Shell" opens a bash terminal by default (Azure CLI)
@@ -23,7 +23,7 @@ In the terminal I run the following command to create resource group:
 ```bash
 az group create --name new-rg --location southcentralus
 ```
-![[Pasted image 20231206092831.png]]
+<br>![[Pasted image 20231206092831.png]]
 
 To verify I list the resource groups in that region
 ```bash
@@ -31,7 +31,7 @@ az group list --query "[?location=='southcentralus']" --output table
 ```
 
 > [!success]
-> ![[Pasted image 20231206093026.png]]
+> <br>![[Pasted image 20231206093026.png]]
 
 
 

@@ -5,12 +5,12 @@
 > [!attention] VNet to check location,  cidr
 
 
-![[Pasted image 20231214155942.png]]
+<br>![[Pasted image 20231214155942.png]]
 
-![[Pasted image 20231214160004.png]]
-![[Pasted image 20231214150852.png]]
+<br>![[Pasted image 20231214160004.png]]
+<br>![[Pasted image 20231214150852.png]]
 
-![[Pasted image 20231214160407.png]]
+<br>![[Pasted image 20231214160407.png]]
 
 
 while creating the VPC we get an option to create Bastion, did that on central-us
@@ -19,7 +19,7 @@ while creating the VPC we get an option to create Bastion, did that on central-u
 ### VMs
 1. [[Clone the GitHub Repository]]
 
-2. ![[Configure VMs]]
+2. <br>![[Configure VMs]]
 
 # Creating VM1 and VM2 East US
 VM1 manual
@@ -51,10 +51,10 @@ sudo python3 app.py
 >  `sudo ufw allow 5000/tcp` ==app is running on 80==
 
 
-![[Pasted image 20231215092722.png]]
+<br>![[Pasted image 20231215092722.png]]
 
-![[Pasted image 20231215095439.png]]
-![[Pasted image 20231215095800.png]]
+<br>![[Pasted image 20231215095439.png]]
+<br>![[Pasted image 20231215095800.png]]
 after opening port 80 in NIC
 
 

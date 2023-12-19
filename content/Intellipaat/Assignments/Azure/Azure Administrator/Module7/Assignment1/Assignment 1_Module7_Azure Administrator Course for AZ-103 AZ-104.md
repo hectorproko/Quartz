@@ -34,7 +34,7 @@ sudo systemctl enable apache2
 echo "This is VM1" | sudo tee /var/www/html/index.html
 ```
 
-![[Pasted image 20231208222410.png]]
+<br>![[Pasted image 20231208222410.png]]
 ### Step 2: Change index.html on Both VMs
 
 1. **I SSH into VM1**:
@@ -58,9 +58,9 @@ echo "This is VM1" | sudo tee /var/www/html/index.html
     - I search for "Load Balancer" and click "+ Create"
     - Made sure "Type" was "Public"
     - "Frontend IP configuration" picked a Public IP I created in "Public IP Addresses"
-      ![[Pasted image 20231208223457.png]]
+      <br>![[Pasted image 20231208223457.png]]
     - "Backend pools" I add my 2 VMs
-      ![[Pasted image 20231208224628.png]]
+      <br>![[Pasted image 20231208224628.png]]
 2. **I Create a New Load Balancer**:
     
     - I fill in the details for the load balancer, like name, region (should be the same as VMs), and choose Public.
@@ -69,26 +69,26 @@ echo "This is VM1" | sudo tee /var/www/html/index.html
     
     - After creating the load balancer, I navigate to its settings.
     - I add a backend pool and include both VM1 and VM2 in this pool.
-      ![[Pasted image 20231209095331.png]]
+      <br>![[Pasted image 20231209095331.png]]
 5. **I Configure Load Balancing Rules**:
   - The probe can be set to check the HTTP availability on port 80.
-    ![[Pasted image 20231209095638.png]]
+    <br>![[Pasted image 20231209095638.png]]
 
    
-    ![[Pasted image 20231209095801.png]]
+    <br>![[Pasted image 20231209095801.png]]
     - I create a load balancing rule that directs traffic to the backend pool.
     - I set it to listen on port 80 and direct traffic to port 80 on the VMs.
-      ![[Pasted image 20231209100056.png]]
-      ![[loadbalancer.png]]
+      <br>![[Pasted image 20231209100056.png]]
+      <br>![[loadbalancer.png]]
 
 7. **I Test the Load Balancer**:
     
     - I navigate to the public IP address of the load balancer in a web browser.
     - The page should display “This is VM1” or “This is VM2”, depending on which VM is serving the request.
       
-      ![[Pasted image 20231209100935.png]]
+      <br>![[Pasted image 20231209100935.png]]
       After refreshing the page 100 times..
-      ![[Pasted image 20231209100947.png]]
+      <br>![[Pasted image 20231209100947.png]]
 
 %% Linkedin
 By completing these steps, you will have successfully deployed two VMs with Apache2, customized their web pages, and set up a load balancer to distribute traffic between them.%%

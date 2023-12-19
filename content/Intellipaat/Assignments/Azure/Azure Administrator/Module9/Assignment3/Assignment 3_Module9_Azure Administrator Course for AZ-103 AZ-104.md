@@ -16,21 +16,21 @@ I search "Alerts"
 Click "+ Create" and select "Alert Rule"
 
 I selected my VM as the scope.
-![[Pasted image 20231214103540.png]]
+<br>![[Pasted image 20231214103540.png]]
 
 As for the condition, I configured it to detect a signal for the deletion of the VM.
-![[Pasted image 20231214104216.png]]
+<br>![[Pasted image 20231214104216.png]]
 
 For the 'Actions' section, I created an action group with 'Notifications' set to an email address.
-![[Pasted image 20231214104119.png]]
+<br>![[Pasted image 20231214104119.png]]
 
 I reviewed the settings and clicked on 'Create.'
-![[Pasted image 20231214104404.png]]
+<br>![[Pasted image 20231214104404.png]]
 To test the alert, I deleted the VM by clicking the 'Delete' button.
-![[Pasted image 20231214111937.png]]
+<br>![[Pasted image 20231214111937.png]]
 
 Upon checking the alerts, I observed the notifications, and in my mailbox, I received corresponding emails. I received multiple notifications because I clicked 'Delete' several times.
 
 > [!success]
-> ![[Pasted image 20231214113513.png]]
-> ![[Pasted image 20231214113933.png]]
+> <br>![[Pasted image 20231214113513.png]]
+> <br>![[Pasted image 20231214113933.png]]

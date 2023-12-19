@@ -53,7 +53,7 @@ tags:
 Go to Subscriptions > Access control (IAM) > Roles
 
 > [!success]
-> ![[Pasted image 20231210174432.png]]
+> <br>![[Pasted image 20231210174432.png]]
 
 
 %%By completing these steps, you will have successfully created a custom role that has the specific permissions to view, start, and stop VMs in Azure. This role will not grant any additional permissions beyond those explicitly defined.

@@ -15,7 +15,7 @@ az group list --query "[?location=='westus'].name" -o tsv | xargs -I {} az group
 ```
 
 > `az group list --query "[?location=='westus'].name" -o tsv` lists all resource groups and filters them to only include those in the "West US" region, outputting only their names in a tab-separated values format.
->    ![[Pasted image 20231206095622.png]]
+>    <br>![[Pasted image 20231206095622.png]]
 > 
 > `xargs -I {} az group delete --name {} --yes --no-wait` takes each name and uses it to run the `az group delete` command, which deletes the resource group. The `--yes` flag bypasses the confirmation prompt, and the `--no-wait` flag makes the command return immediately without waiting for the deletion to complete.
 
@@ -25,4 +25,4 @@ az group list --query "[?location=='westus']" --output table
 ```
 
 > [!success]
-> ![[Pasted image 20231206100730.png]]
+> <br>![[Pasted image 20231206100730.png]]

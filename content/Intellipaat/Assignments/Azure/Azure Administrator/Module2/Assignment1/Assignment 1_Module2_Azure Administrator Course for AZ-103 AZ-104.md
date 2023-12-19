@@ -11,7 +11,7 @@ tags:
 %%Same way I started [[Assignment 1_Module1_Azure Administrator Course for AZ-103 AZ-104]]%%
 
 In the Azure Portal I navigate to the "Cloud Shell"  Icon in the upper right corner
-![[Pasted image 20231206090119.png]]
+<br>![[Pasted image 20231206090119.png]]
 
 ### Step 1: Create Two Resource Groups
 
@@ -25,7 +25,7 @@ Verify:
 ```bash
 az group list -o table
 ```
-![[Pasted image 20231206103718.png]]
+<br>![[Pasted image 20231206103718.png]]
 
 ### Step 2: Add a Storage Account to `rg-1`
 %%I delete the storage created in [[Assignment 1_Module1_Azure Administrator Course for AZ-103 AZ-104]] and it was used to run the Terminal, so closed the terminal
@@ -42,7 +42,7 @@ Verity:
 ```bash
 az storage account list --resource-group rg-1 --query "[].{Name:name, ResourceGroup:resourceGroup}" -o table
 ```
-![[Pasted image 20231206104926.png]]
+<br>![[Pasted image 20231206104926.png]]
 
 ### Step 3: Move Storage Account from `rg-1` to `rg-2`
 
@@ -61,7 +61,7 @@ Using variable, I move the storage account to `rg-2` with the following.
 az resource move --destination-group rg-2 --ids $storageid
 ```
 
-![[Pasted image 20231206105929.png]]
+<br>![[Pasted image 20231206105929.png]]
 
 ### Verity:
 The following command confirms storage account no longer in `rg-1`
@@ -72,4 +72,4 @@ The following confirms it is located in `rg-2`
 ```bash
 az storage account list --resource-group rg-2 --query "[].{Name:name, ResourceGroup:resourceGroup}" -o table
 ```
-![[Pasted image 20231206110516.png]]
+<br>![[Pasted image 20231206110516.png]]

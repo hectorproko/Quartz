@@ -20,7 +20,7 @@ tags:
     - I select the public IP resource to open its properties.
     - In the "Configuration" settings, I find the "DNS name label" section.
     - I enter a unique DNS name label for VM1. This label, combined with the location's DNS suffix, will form the fully qualified DNS name. For example, if I enter `myvm1`, the full DNS name will be `myvm1.<region>.cloudapp.azure.com`.
-      ![[Pasted image 20231209221930.png]]
+      <br>![[Pasted image 20231209221930.png]]
       
       `thisisvm1.eastus.cloudapp.azure.com`
       
@@ -40,5 +40,5 @@ tags:
 
 ### Step 3: Test the DNS Configuration
 
-![[Pasted image 20231209222718.png]]
-![[Pasted image 20231209222825.png]]
+<br>![[Pasted image 20231209222718.png]]
+<br>![[Pasted image 20231209222825.png]]

@@ -15,14 +15,14 @@ tags:
 
 Using image from [[Assignment 1_Module5_Azure Administrator Course for AZ-103 AZ-104|Assignment 1:Module 5]]
 
-![[Pasted image 20231210212722.png]]
+<br>![[Pasted image 20231210212722.png]]
 
 
 Installing Azure CLI:
 ```bash
 sudo apt install azure-cli
 ```
-![[Pasted image 20231212124827.png]]
+<br>![[Pasted image 20231212124827.png]]
 
 ### Step 1: Create an Azure Container Registry
 
@@ -34,7 +34,7 @@ sudo apt install azure-cli
     - I fill in the required details, such as the registry name, subscription, resource group, and location.
     - I choose the pricing tier Standard
     - I review and create the container registry.
-      ![[Pasted image 20231210214517.png]]
+      <br>![[Pasted image 20231210214517.png]]
 
 
 ### Step 2: Connect the Registry to Docker in the VM
@@ -51,11 +51,11 @@ hectorregistry.azurecr.io
       `az login`
         
         
-        ![[Pasted image 20231210220508.png]]
+        <br>![[Pasted image 20231210220508.png]]
         
-        ![[Pasted image 20231210220743.png]]
-        ![[Pasted image 20231210220813.png]]
-        ![[Pasted image 20231212120031.png]]
+        <br>![[Pasted image 20231210220743.png]]
+        <br>![[Pasted image 20231210220813.png]]
+        <br>![[Pasted image 20231212120031.png]]
         
         
 
@@ -67,7 +67,7 @@ hectorregistry.azurecr.io
 1. **I Tag the Docker Image**:
     
     - Before pushing the image to ACR, I need to tag it with the ACR login server name:
-      ![[Pasted image 20231212120337.png]]
+      <br>![[Pasted image 20231212120337.png]]
       
 ```bash
 docker tag mynewimage:latest <registry_name>.azurecr.io/mynewimage:latest
@@ -76,23 +76,23 @@ docker tag mynewimage:latest <registry_name>.azurecr.io/mynewimage:latest
 ```bash
 docker tag hshar/webapp_updated:latest hectorregistry.azurecr.io/webapp_updated:latest
 ```
-![[Pasted image 20231212120520.png]]
+<br>![[Pasted image 20231212120520.png]]
 
 2. **I Push the Image to ACR**:
 - Login to the container registry
 ```
 sudo az acr login --name hectorregistry
 ```
-![[Pasted image 20231212125808.png]]
+<br>![[Pasted image 20231212125808.png]]
 
 - I use the Docker CLI to push the image to the ACR:
 ```bash
 sudo docker push hectorregistry.azurecr.io/webapp_updated:latest
 ```
-![[Pasted image 20231212130333.png]]
+<br>![[Pasted image 20231212130333.png]]
 
 Back in the portal I verity the image was uploaded
-![[Pasted image 20231212130744.png]]
+<br>![[Pasted image 20231212130744.png]]
 
 
 
@@ -101,14 +101,14 @@ Back in the portal I verity the image was uploaded
 %%
 
 ISSUE:
-![[Pasted image 20231212115500.png]]
+<br>![[Pasted image 20231212115500.png]]
 
 > [!done] solution
 > Tells you to use `az login --use-device-code` which gives the expected link and code as before
-![[Pasted image 20231212120031.png]]
+<br>![[Pasted image 20231212120031.png]]
 
 worked previously with `az login`
-        ![[Pasted image 20231210220902.png]]
+        <br>![[Pasted image 20231210220902.png]]
 
 
 Issue is cause because of this installation: ==I think due to the version== Significant higher? or maybe to do with the 'extensions' portion this one does not have any and [[Pasted image 20231212124827.png|older version install]] does have "azure-devops"
@@ -118,7 +118,7 @@ Issue is cause because of this installation: ==I think due to the version== Sign
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 ```
 This method of install give us [[Pasted image 20231212115500.png|this issue]]
-![[Pasted image 20231212114801.png]]
+<br>![[Pasted image 20231212114801.png]]
 %%
 
 
@@ -131,25 +131,25 @@ This method of install give us [[Pasted image 20231212115500.png|this issue]]
     
     - I search for "App Services".
     - I click "+ Create" and select "+ Web App".
-      ![[Pasted image 20231213115310.png]]
+      <br>![[Pasted image 20231213115310.png]]
 
     - I fill in the details such as the app name, subscription, resource group, and plan.
     - make sure select right OS Linux and for "Publish" select "Docker Container"
-      ![[create web app.png]]
+      <br>![[create web app.png]]
       
     - Under "Docker," I select the "Single Container" option.
     - I choose Azure Container Registry as the source and select the image I pushed earlier.
-      ![[Pasted image 20231213120821.png]]
+      <br>![[Pasted image 20231213120821.png]]
 3. **I Review and Create the Web App**:
     
     - I review all the settings and click "Create" to deploy the web app.
-      ![[Pasted image 20231213121046.png]]
+      <br>![[Pasted image 20231213121046.png]]
 4. **I Verify the Deployment**:
     - I "Got to resource"
     - Once the app is deployed, I navigate to the URL provided by the App Service.
-      ![[Pasted image 20231213121214.png]]
+      <br>![[Pasted image 20231213121214.png]]
     - I should see the application running, served by the Docker image deployed from ACR.
-      ![[Pasted image 20231213123114.png]]
+      <br>![[Pasted image 20231213123114.png]]
 
 
 
@@ -163,7 +163,7 @@ This method of install give us [[Pasted image 20231212115500.png|this issue]]
 > [!question]- ISSUE:
 > 
 > > [!fail]
-> > ![[Pasted image 20231213115839.png]]
+> > <br>![[Pasted image 20231213115839.png]]
 > 
 > > [!done] Solution
 > > I follow the [provided link](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-authentication?tabs=azure-cli#admin-account) 
@@ -171,6 +171,6 @@ This method of install give us [[Pasted image 20231212115500.png|this issue]]
 > > ```bash
 > > az acr update -n hectorregistry --admin-enabled true
 > > ```
-> > ![[azure enable admin container registry.png]]
+> > <br>![[azure enable admin container registry.png]]
 
 %%

@@ -39,7 +39,7 @@ tags:
     
     - In the "Public inbound ports" section, I choose to allow selected ports and ensure that "SSH (22)" is checked to allow SSH connections to the VM.
 
-![[azure linux vm creation.png]]
+<br>![[azure linux vm creation.png]]
 
 ### Step 3: Review and Create the VM
 
@@ -48,7 +48,7 @@ tags:
     - I go through the remaining settings and adjust them as necessary (such as networking, management, advanced settings, etc.).
     - Once I'm satisfied with the configuration, I click "Review + create" to check my settings.
     - I make sure to download the keys when prompted
-      ![[generate new  key pair download.png]]
+      <br>![[generate new  key pair download.png]]
 
 %%The Key [[Assig_key.pem]]%%
 
@@ -58,18 +58,18 @@ tags:
     
     - Once the VM is deployed, I go to the VM's overview page in the Azure Portal.
     - I find the public IP address of the VM displayed on this page.
-      ![[Pasted image 20231207101724.png]]
+      <br>![[Pasted image 20231207101724.png]]
 2. **I Connect via SSH**:
     
     - I open a terminal on my computer.
     - I use the SSH command to connect to the VM: `ssh <username>@<VM-public-IP>`, replacing `<username>` with the username I set up and `<VM-public-IP>` with the VM's public IP address.
     - If prompted, I accept the host key to continue with the connection.
-      ![[Pasted image 20231207102427.png]]
+      <br>![[Pasted image 20231207102427.png]]
 
 2. **I Verify the Connection**:
     
     - Once connected, I should be logged into the VM's shell prompt, ready to execute commands on the VM.
-      ![[Pasted image 20231207102447.png]]
+      <br>![[Pasted image 20231207102447.png]]
 
 
 

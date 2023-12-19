@@ -24,7 +24,7 @@ Verify:
 ```bash
 az storage account list --resource-group rg-1 --query "[].{Name:name, ResourceGroup:resourceGroup}" -o table
 ```
-![[Pasted image 20231206114839.png]]
+<br>![[Pasted image 20231206114839.png]]
 
 ### Step 2: Create One More Storage Account for Team2
 
@@ -39,6 +39,6 @@ I use the following command to list all resources that have been assigned the ta
 ```bash
 az resource list --tag Team=team2 -o table
 ```
-![[Pasted image 20231206115528.png]]
+<br>![[Pasted image 20231206115528.png]]
 
 

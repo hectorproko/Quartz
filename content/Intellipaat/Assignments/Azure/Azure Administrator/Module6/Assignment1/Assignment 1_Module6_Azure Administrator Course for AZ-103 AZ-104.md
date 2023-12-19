@@ -22,7 +22,7 @@ tags:
     - I fill in the details, setting the "Name" and choosing "West US" as the "Region".
     - I specify the address space and subnet details.
     - I review and create the virtual network.
-      ![[Pasted image 20231208102601.png]]
+      <br>![[Pasted image 20231208102601.png]]
     
 %%Originally was West US 2, created new one, this pic was edited to show 3 instead of 2
 
@@ -38,8 +38,8 @@ tags:
 1. **I Repeat the Creation Process for South India**:
     - Similarly, I create another virtual network, this time choosing "South India" as the region.
     - I ensure that the address space does not overlap with the West US virtual network.
-      ![[Pasted image 20231207203055.png]]
-      ![[Pasted image 20231208102917.png]]
+      <br>![[Pasted image 20231207203055.png]]
+      <br>![[Pasted image 20231208102917.png]]
 
 
 ### Step 3: Deploy a VM in West US within the West US Virtual Network
@@ -53,10 +53,10 @@ tags:
 1. **I Create a VM in the South India Virtual Network**:
     - I follow the same steps to create another VM, this time in the South India region and associated with the South India virtual network.
 
-![[Pasted image 20231208105100.png]]
+<br>![[Pasted image 20231208105100.png]]
 
 I'll SSH into the SouthIndiaVM and attempt to ping WestUSVM using its private IP, but as expected, it fails.
-![[Pasted image 20231208104659.png]]
+<br>![[Pasted image 20231208104659.png]]
 
 ### Step 5: Create VNet-to-VNet Peering
 
@@ -64,12 +64,12 @@ I'll SSH into the SouthIndiaVM and attempt to ping WestUSVM using its private IP
     
     - In the Azure Portal, I go to the West US virtual network and select "Peerings".
     - I click "Add" and fill in the details to create a peering connection to the South India virtual network.
-      ![[Vnetpeering add.png]]
-      ![[Pasted image 20231208112613.png]]
+      <br>![[Vnetpeering add.png]]
+      <br>![[Pasted image 20231208112613.png]]
 2. **I Set Up Peering for South India Virtual Network**:
     
     - Similarly, I set up peering from the South India virtual network to the West US virtual network.
-      ![[Pasted image 20231208112530.png]]
+      <br>![[Pasted image 20231208112530.png]]
 
 
 ### Step 6: Verify Connectivity with Ping Using Private IP Addresses
@@ -79,7 +79,7 @@ I'll SSH into the SouthIndiaVM and attempt to ping WestUSVM using its private IP
 - From the South India VM, I successfully ping the West US VM.
 
 > [!success]
-> ![[Pasted image 20231208110909.png]]
+> <br>![[Pasted image 20231208110909.png]]
 
 
 %%

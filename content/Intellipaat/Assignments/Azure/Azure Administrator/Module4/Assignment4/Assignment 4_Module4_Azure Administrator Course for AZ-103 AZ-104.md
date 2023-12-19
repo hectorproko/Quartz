@@ -28,7 +28,7 @@ sudo systemctl enable apache2
 ```
 
 I obtain its public IP to test it
-![[Pasted image 20231207154128.png]]
+<br>![[Pasted image 20231207154128.png]]
 
 
 ### Step 3: Create an Image of the VM
@@ -47,7 +47,7 @@ I obtain its public IP to test it
     
     - After the VM is deallocated, I return to the Azure Portal.
     - On the VM's page, I click on "Capture" to create an image of the VM.
-      ![[Pasted image 20231207175428.png]]
+      <br>![[Pasted image 20231207175428.png]]
     - I fill in the required details, such as the name for the image and the resource group where I want to store it.
     - Had to create a "Target Azure compute gallery" and "Target VM Image definition".
     - Gave it "Version number" and left only one Target region
@@ -55,7 +55,7 @@ I obtain its public IP to test it
     - If I go to "Azure compute galleries" I can see the one I just created with the image inside
 
 > [!success]
-> ![[Pasted image 20231207181430.png]]
+> <br>![[Pasted image 20231207181430.png]]
 
 
 %%By following this corrected sequence, you first prepare the VM by generalizing it while it's running, then deallocate the VM, and finally capture the image. This ensures the VM is in a consistent state and ready to be used as a template for creating new VMs.%%

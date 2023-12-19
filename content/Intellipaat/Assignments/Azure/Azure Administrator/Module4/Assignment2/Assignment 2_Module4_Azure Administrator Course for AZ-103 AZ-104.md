@@ -45,7 +45,7 @@ tags:
 1. **I Review the Configuration**:
     - I go through the remaining settings and adjust them as necessary (such as networking, management, advanced settings, etc.).
     - Once I'm satisfied with the configuration, I click "Review + create", and then "Create" to deploy the VM.
-      ![[crate windows vm azure.png]]
+      <br>![[crate windows vm azure.png]]
 
 ### Step 3: Review and Create the VM
 
@@ -59,19 +59,19 @@ tags:
     
     - Once the VM is deployed, I go to the VM's overview page in the Azure Portal.
     - I find the public IP address of the VM displayed on this page.
-      ![[Pasted image 20231207112437.png]]
+      <br>![[Pasted image 20231207112437.png]]
 2. **I Use Remote Desktop to Connect**:
     
     - I open the Remote Desktop Connection application on my Windows computer.
     - In the "Computer" field, I enter the public IP address of the VM and click "Connect".
-      ![[Pasted image 20231207112648.png]]
+      <br>![[Pasted image 20231207112648.png]]
     - When prompted, I enter the username and password I set up for the VM.
-      ![[Pasted image 20231207112727.png]]
+      <br>![[Pasted image 20231207112727.png]]
 3. **I Start the Remote Session**:
     
     - After entering my credentials, I may receive a warning about the certificate of the VM. As this is expected, I click "Yes" or "Continue" to proceed.
     - The Remote Desktop window opens, showing the desktop of the Windows VM.
-      ![[Pasted image 20231207112902.png]]
+      <br>![[Pasted image 20231207112902.png]]
 
 %%
 Linkedin

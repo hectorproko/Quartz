@@ -22,7 +22,7 @@ tags:
 
 ### Step 2: Mount the File Share on Windows and Linux
 
-![[Pasted image 20231206143016.png]]
+<br>![[Pasted image 20231206143016.png]]
 
 #### On Windows:
 **I Get the Access Credentials**: In the Azure Portal, within my file share, I click on "Connect". This opens a pane with scripts to mount the file share. I select the Windows option and copy the script.
@@ -43,10 +43,10 @@ if ($connectTestResult.TcpTestSucceeded) {
 **I Run the Script on My Windows Machine**: On my Windows computer, I open PowerShell as an Administrator and paste the script. This script mounts the Azure file share as a network drive.
 
 Script output:
-![[Pasted image 20231206143816.png]]
+<br>![[Pasted image 20231206143816.png]]
 
 I navigate to "This PC" and verify share drive
-![[Pasted image 20231206143917.png]]
+<br>![[Pasted image 20231206143917.png]]
 
 
 #### On Linux:
@@ -75,18 +75,18 @@ sudo mount -t cifs //hectorstorage12345.file.core.windows.net/myfileshare /mnt/m
 **I Mount the File Share on My Linux Machine**: On my Linux machine, I open the terminal and paste the script. This script will mount the Azure file share at a specified mount point in my Linux filesystem.
 
 I verify the mount with `df -h`
-![[Pasted image 20231206145148.png]]
+<br>![[Pasted image 20231206145148.png]]
 
 ### Verifying File Share
 
 **Linux:**
 From Linux machine I create a file inside `/mnt/myfileshare` named `file_created_in_linux`
-![[Pasted image 20231206145814.png]]
+<br>![[Pasted image 20231206145814.png]]
 
 **Windows:**
 I check in Windows VM and see the same file
-![[Pasted image 20231206145905.png]]
+<br>![[Pasted image 20231206145905.png]]
 
 **Azure Portal:**
 I check in the portal
-![[Pasted image 20231206150050.png]]
+<br>![[Pasted image 20231206150050.png]]

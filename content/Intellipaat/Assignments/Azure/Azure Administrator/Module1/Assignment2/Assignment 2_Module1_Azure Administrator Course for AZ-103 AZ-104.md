@@ -12,15 +12,15 @@ tags:
 Continuing from [[Assignment 1_Module1_Azure Administrator Course for AZ-103 AZ-104|Assignment 1: Module 1]]
 
 In the Azure Portal I navigate to the "Cloud Shell"  Icon in the upper right corner
-![[Pasted image 20231206090119.png]]
+<br>![[Pasted image 20231206090119.png]]
 I make sure to change the terminal to "PowerShell"
-![[azure cloud shell powershell bash.png]]
+<br>![[azure cloud shell powershell bash.png]]
 
 To create the resource group I run:
 ```powershell
 New-AzResourceGroup -Name rg-powershell -Location "South Central US"
 ```
-![[Pasted image 20231206093535.png]]
+<br>![[Pasted image 20231206093535.png]]
 
 I verify the resource group creation with:
 ```powershell

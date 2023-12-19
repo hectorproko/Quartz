@@ -11,17 +11,17 @@ tags:
 
 ### Step1: VMs
 To create the 2 VMs I follow steps in [[Assignment 1_Module4_Azure Administrator Course for AZ-103 AZ-104|Assignment 1: Module 4]] making sure to use different regions
-![[Pasted image 20231210123006.png]]
+<br>![[Pasted image 20231210123006.png]]
 
 I opened port 80 (HTTP) and installed Apache.
 
-![[Install Apache]]
+<br>![[Install Apache]]
 
 I tested the Apache service on both VMs using their respective Public IPs directly.
 
 > [!success] 
-> ![[Pasted image 20231210124037.png]]
-> ![[Pasted image 20231210124045.png]]
+> <br>![[Pasted image 20231210124037.png]]
+> <br>![[Pasted image 20231210124045.png]]
 > 
 
 ### Step 2: Set Up [[Azure Traffic Manager|Traffic Manager]]
@@ -36,24 +36,24 @@ I tested the Apache service on both VMs using their respective Public IPs direct
 3. **I Create the Profile**:
     
     - I review the settings and create the Traffic Manager profile.
-      ![[traffic manager profile.png]]
-      ![[traffic manager profile2.png]]
+      <br>![[traffic manager profile.png]]
+      <br>![[traffic manager profile2.png]]
 
 ### Step 3: Add Endpoints
 
 1. **I Add VMs as Endpoints**:
     - Within the Traffic Manager profile, I click on "Endpoints" and then "Add" to configure my VMs as endpoints.
     - I enter the details for each endpoint, including the name, target resource type, target resource, and the geographic location it serves.
-      ![[Pasted image 20231210124929.png]]
+      <br>![[Pasted image 20231210124929.png]]
 
 With second endpoint
-![[Pasted image 20231210125139.png]]
+<br>![[Pasted image 20231210125139.png]]
 fix 
-![[Pasted image 20231210125257.png]]
+<br>![[Pasted image 20231210125257.png]]
 
-![[Pasted image 20231210125444.png]]
+<br>![[Pasted image 20231210125444.png]]
 
-![[Pasted image 20231210130711.png]]
+<br>![[Pasted image 20231210130711.png]]
 
 ### Step 4: Configure DNS
 
@@ -68,10 +68,10 @@ fix
     - I can use various online tools to simulate requests from different geographic locations to ensure that the geographic routing is functioning as expected.
 
 used localbroswer.com to see how my page looks from another country "Spain" and it redirects to VM in North Europe since is closer to East US
-![[Pasted image 20231210130402.png]]
+<br>![[Pasted image 20231210130402.png]]
 
 Without simulating my location no matter how many times I refresh my page I get VM in East US cuse I'm located in the US
-![[Pasted image 20231210130840.png]]
+<br>![[Pasted image 20231210130840.png]]
 
 
 By following these steps, you will have configured Azure Traffic Manager to balance the load across VMs in different regions based on geography, ensuring users are directed to the VM that is geographically closest to them.

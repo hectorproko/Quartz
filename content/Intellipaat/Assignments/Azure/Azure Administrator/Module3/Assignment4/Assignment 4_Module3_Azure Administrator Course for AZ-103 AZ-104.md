@@ -23,14 +23,14 @@ I install it following the instructions on the [AzCopy v10 page](https://docs.mi
     - I log into the Azure Portal and navigate to the first storage account (the source).
     - I go to the "Shared access signature" section and generate a SAS token.
     - I copy this SAS token for later use.
-      ![[Pasted image 20231206224910.png]]
+      <br>![[Pasted image 20231206224910.png]]
       I make in "Allowed services" only "Blob" is selected and
       in "Allowed resource types" I select all of them
       
    - I click the button Generate
-      ![[Pasted image 20231206225038.png]]
+      <br>![[Pasted image 20231206225038.png]]
       
-      ![[Pasted image 20231206225138.png]]
+      <br>![[Pasted image 20231206225138.png]]
 
       I'll copy ''Blob service SAS URL''
       `https://hectorstorage12345.blob.core.windows.net/?sv=2022-11-02&ss=b&srt=sco&sp=rwdlaciytfx&se=2023-12-07T11:43:22Z&st=2023-12-07T03:43:22Z&spr=https&sig=65jplHCQ0zkeBkaZrnNIDOY9pLAWSx1vkEzjYii90dU%3D`
@@ -49,11 +49,11 @@ The whole command looks like this:
 ```
 
 I opened the command prompt (CMD) where the .exe file was located and run the command.
-![[Pasted image 20231206232538.png]]
+<br>![[Pasted image 20231206232538.png]]
 
 > [!success] I confirm the files from `mycontainer` in [[Assignment 2_Module3_Azure Administrator Course for AZ-103 AZ-104#^326ee1|Assignment 2]] were copied to `mycontainer2`
-> ![[Pasted image 20231206232746.png]]
+> <br>![[Pasted image 20231206232746.png]]
 
 > [!attention] The transfer of `chest.png` failed because we changed the tier to 'archive' in [[Assignment 5_Module2_Azure Administrator Course for AZ-103 AZ-104|Assignment 5: Module 2]].
-> ![[Pasted image 20231206191126.png]]
+> <br>![[Pasted image 20231206191126.png]]
 

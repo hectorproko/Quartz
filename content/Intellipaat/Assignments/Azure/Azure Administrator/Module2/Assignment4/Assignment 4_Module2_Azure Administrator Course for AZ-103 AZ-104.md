@@ -19,7 +19,7 @@ tags:
     - I create a new container by clicking "+ Container". I provide a name `mycontainer` and set the public access level "[[azure container access level blob.png|Blob]]".
     - After creating the container, I open it and click "Upload" to upload files from my computer to the Blob container.
     
-      ![[Pasted image 20231206181630.png]]
+      <br>![[Pasted image 20231206181630.png]]
 
 
 
@@ -27,8 +27,8 @@ tags:
 
 1. **Register CDN in subscription**:
    - To register a CDN in my subscription, I first go to the search bar and type 'subscriptions'. I then locate and select the subscription I am using. Next, I search for 'Resource Providers' and select it. After that, I search for 'CDN', where I'm likely to find an option like `Microsoft.CDN`. I select this option and then click 'Register'.
-     ![[Pasted image 20231206154841.png]]
-     ![[Pasted image 20231206163109.png]]
+     <br>![[Pasted image 20231206154841.png]]
+     <br>![[Pasted image 20231206163109.png]]
  ^af4473
 
 
@@ -42,7 +42,7 @@ tags:
 %%
 > [!question]- Issue
 > > [!fail]
-> > ![[Pasted image 20231206153957.png]]
+> > <br>![[Pasted image 20231206153957.png]]
 > 
 > > [!done] solution
 > > [[Assignment 4_Module2_Azure Administrator Course for AZ-103 AZ-104#^af4473|Register CDN in subscription]]
@@ -57,15 +57,15 @@ tags:
     - For the "Origin type," I select "Storage" and choose the `hectorstorage12345` storage account and the specific container I used or created.
     - I complete the setup
 
-![[Pasted image 20231206164021.png]]
+<br>![[Pasted image 20231206164021.png]]
 
 -  I click on the Endpoint to copy it's "Endpoint hostname"
-![[Pasted image 20231206183038.png]]
+<br>![[Pasted image 20231206183038.png]]
 
 - I take the "Endpoint hostname" + `/mycontainer/chest.png` and test in the browser
 
 > [!success]
->   ![[Pasted image 20231206183523.png]]
+>   <br>![[Pasted image 20231206183523.png]]
 
 
 
@@ -74,13 +74,13 @@ tags:
 > 
 > > [!fail]
 > > Grayed out
-> > ![[Pasted image 20231206164545.png]]
+> > <br>![[Pasted image 20231206164545.png]]
 > 
 > > [!done] Solution
 > > Need to enable anonymous access in storage account
-> > ![[Pasted image 20231206164742.png]]
+> > <br>![[Pasted image 20231206164742.png]]
 > > 
-> > ![[azure container access level blob.png]]
+> > <br>![[azure container access level blob.png]]
 > > 
 > 
 > 

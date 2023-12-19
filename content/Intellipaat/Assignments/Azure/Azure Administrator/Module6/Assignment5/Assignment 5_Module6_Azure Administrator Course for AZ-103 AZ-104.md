@@ -11,7 +11,7 @@ tags:
 ### Step 1: Use the Previously Created Apache2 VM
 - I use "StaticIPVM" from [[Assignment 4_Module6_Azure Administrator Course for AZ-103 AZ-104|Assignment 4: Module 6]] that has Apache2
 - I note down the VM's public IP address for future reference.
-  ![[staticipvm overview.png]]
+  <br>![[staticipvm overview.png]]
 ### Step 2: Obtain a Free Domain from Freenom.com
 
 Will reuse the subdomain from [[Assignment 3 – Route 53_Module4_AWS Weekday BC = 2301080808#Created a Hosted Zone in Route 53|Assignment 3 – Route 53]] above `temp.hectorproko.com`
@@ -23,14 +23,14 @@ Will reuse the subdomain from [[Assignment 3 – Route 53_Module4_AWS Weekday BC
     - I search for "DNS zones".
     - I create a new DNS zone, entering the domain name I acquired from IONOS.
     - I fill out the necessary information and create the zone.
-      ![[Pasted image 20231208171957.png]]
+      <br>![[Pasted image 20231208171957.png]]
 2. **I Set Up DNS Records**:
     
     - In the newly created DNS zone, I add an "A" record.
     - For the "A" record, I use "@" as the name (for the root domain) and enter the public IP address of my Apache2 VM as the value.
     - I save the record.
-      ![[Pasted image 20231208182346.png|350]]
-      ![[Pasted image 20231208184635.png]]
+      <br>![[Pasted image 20231208182346.png|350]]
+      <br>![[Pasted image 20231208184635.png]]
 1. **I Update the Domain's Nameservers**:
     
     - Azure provides me with a set of nameservers for my DNS zone. I note these down.
@@ -40,7 +40,7 @@ Will reuse the subdomain from [[Assignment 3 – Route 53_Module4_AWS Weekday BC
     
     - I wait for the DNS changes to propagate, which can take some time.
     - Once propagated, I navigate to my new domain in a web browser to see if it loads the Apache2 default page hosted on my Azure VM.
-      ![[Pasted image 20231208184406.png]]
+      <br>![[Pasted image 20231208184406.png]]
 
 
 %%Linkedin

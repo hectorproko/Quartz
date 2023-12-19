@@ -11,7 +11,7 @@ tags:
 
 ### Step 1: Previous VM
 Using `StaticIPVM` from [[Assignment 2_Module6_Azure Administrator Course for AZ-103 AZ-104|Assignment 2_Module 6]]
-![[staticipvm overview.png]]
+<br>![[staticipvm overview.png]]
 
 ### Step 2: Create a Network Interface Card (NIC)
 
@@ -24,7 +24,7 @@ Using `StaticIPVM` from [[Assignment 2_Module6_Azure Administrator Course for AZ
     - I fill in the necessary information like the name for the NIC, subscription, resource group (using the same one as the VM), and Region (which should match the VM's location).
     - I select the Virtual Network and Subnet where my existing VM resides.
     - I review all the settings and click "Create" to provision the new NIC.
-      ![[Pasted image 20231208121618.png]]
+      <br>![[Pasted image 20231208121618.png]]
 
 ### Step 3: Attach NIC to the Previously Created VM
 
@@ -37,15 +37,15 @@ Using `StaticIPVM` from [[Assignment 2_Module6_Azure Administrator Course for AZ
       %%
       Dont add to this picture it is shared on another note
       %%
-      ![[Pasted image 20231208115551.png]]
+      <br>![[Pasted image 20231208115551.png]]
     - I click "Attach network interface" and select the NIC I just created.
-      ![[Pasted image 20231208123149.png]]
+      <br>![[Pasted image 20231208123149.png]]
       
     - I click "Ok" to attach the NIC to the VM.
 3. **Verify the NIC Attachment**.
 
 > [!success]
->    ![[Pasted image 20231208123339.png]]
+>    <br>![[Pasted image 20231208123339.png]]
 
 
 

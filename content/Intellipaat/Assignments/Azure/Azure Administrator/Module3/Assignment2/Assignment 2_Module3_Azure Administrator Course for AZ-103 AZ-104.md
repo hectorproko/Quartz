@@ -11,31 +11,31 @@ tags:
 
 ### Step 1: Create a File Share
 Using "Storage Explorer" from [[Assignment 1_Module3_Azure Administrator Course for AZ-103 AZ-104|Assignment 1]]. I right click on "File Shares" and select "Create File Share"
-![[Pasted image 20231206201928.png]]
+<br>![[Pasted image 20231206201928.png]]
 I name the file share "demofileshare"
-![[Pasted image 20231206202028.png]]
+<br>![[Pasted image 20231206202028.png]]
 
 **Verifying:**
 In Azure Portal:
-![[Pasted image 20231206202238.png]]
+<br>![[Pasted image 20231206202238.png]]
 
 ### Step 2: Upload Files
 Click on "Uploads" and select "Upload Files"
-![[Pasted image 20231206202424.png]]
+<br>![[Pasted image 20231206202424.png]]
 Selecting file:
-![[Pasted image 20231206202518.png|400]]
+<br>![[Pasted image 20231206202518.png|400]]
 File uploaded:
-![[Pasted image 20231206202607.png]] ^326ee1
+<br>![[Pasted image 20231206202607.png]] ^326ee1
 
 ### Step 3: Create Table
 Right-Click on "Tables" and select "Create Table"
-![[Pasted image 20231206202805.png]]
+<br>![[Pasted image 20231206202805.png]]
 To insert a record I click on "+Add"
-![[Pasted image 20231206202928.png]]
+<br>![[Pasted image 20231206202928.png]]
 
 
 I create some "Property Names" and give it a value":
-![[Pasted image 20231206203231.png|480]]
+<br>![[Pasted image 20231206203231.png|480]]
 
 Now my table has a record:
-![[Pasted image 20231206203414.png]]
+<br>![[Pasted image 20231206203414.png]]

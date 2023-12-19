@@ -11,9 +11,9 @@ tags:
 Continuing from [[Assignment 2_Module1_Azure Administrator Course for AZ-103 AZ-104|Assignment  2:_Module1]]
 
 In order to use "Azure CLI" I make sure the terminal is set to "Bash"
-![[azure cloud shell powershell bash.png]]
+<br>![[azure cloud shell powershell bash.png]]
 
-![[Pasted image 20231206094413.png|400]]
+<br>![[Pasted image 20231206094413.png|400]]
 
 To create three new resource groups in the "West US" region, In the command-line interface I enter the following commands:
 ```bash
@@ -28,4 +28,4 @@ az group list --query "[?location=='westus']" --output table
 ```
 
 > [!success]
-> ![[Pasted image 20231206091725.png]]
+> <br>![[Pasted image 20231206091725.png]]

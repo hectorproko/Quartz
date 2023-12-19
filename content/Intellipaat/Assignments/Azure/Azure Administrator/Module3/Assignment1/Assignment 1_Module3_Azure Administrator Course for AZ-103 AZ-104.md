@@ -17,21 +17,21 @@ tags:
       
 2. **I get Access Keys**:
     - I select the Storage Account. I navigate "Security + networking" > "Access keys" and copy the "Connection string"
-      ![[Pasted image 20231206200142.png]]
+      <br>![[Pasted image 20231206200142.png]]
       
 
 3. **I Connect to My Azure Account**:
     - I open "Storage Explorer"
     - I click the connect icon
-      ![[Pasted image 20231206200332.png]]
+      <br>![[Pasted image 20231206200332.png]]
     - I select to connect to storage account
-      ![[Pasted image 20231206200529.png]]
+      <br>![[Pasted image 20231206200529.png]]
     - I select "Connection string (Key or SAS)"
-      ![[Pasted image 20231206200647.png]]![[Pasted image 20231206200901.png]]
-      ![[Pasted image 20231206200924.png]]
+      <br>![[Pasted image 20231206200647.png]]<br>![[Pasted image 20231206200901.png]]
+      <br>![[Pasted image 20231206200924.png]]
       I click "Connect"
 
 > [!success]
 > I can now see the container and the files I uploaded
-> ![[Pasted image 20231206201128.png]]
+> <br>![[Pasted image 20231206201128.png]]
 > 
