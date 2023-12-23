@@ -71,3 +71,8 @@ Here are some of the projects I've been working on, categorized by technology:
 
 
 
+
+![[job.png]] | ![[job.png]] 
+-- | -- 
+
+
