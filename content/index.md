@@ -71,10 +71,3 @@ Here are some of the projects I've been working on, categorized by technology:
 
 
 
-
-<iframe src="https://github.com/azcloudberg/azproject/blob/master/config.py"></iframe>
-<iframe src="https://raw.githubusercontent.com/azcloudberg/azproject/master/config.py"></iframe>
-
-
-<iframe src="https://raw.githubusercontent.com/azcloudberg/azproject/master/config.py" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>
-<iframe src="https://github.com/azcloudberg/azproject/blob/master/config.py" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>
