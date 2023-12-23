@@ -65,3 +65,16 @@ Here are some of the projects I've been working on, categorized by technology:
 - [[Packer_To_AMI|Packer to AMI]] ~~*(old [Packer To AMI (AWS)](https://github.com/hectorproko/Packer/blob/main/Packer_To_AMI.md) )*~~
     - Placeholder
 
+
+
+
+
+
+
+
+<iframe src="https://github.com/azcloudberg/azproject/blob/master/config.py"></iframe>
+<iframe src="https://raw.githubusercontent.com/azcloudberg/azproject/master/config.py"></iframe>
+
+
+<iframe src="https://raw.githubusercontent.com/azcloudberg/azproject/master/config.py" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>
+<iframe src="https://github.com/azcloudberg/azproject/blob/master/config.py" allow="fullscreen" allowfullscreen="" style="height:100%;width:100%; aspect-ratio: 16 / 9; "></iframe>
