@@ -101,7 +101,7 @@ https://hectorstorage12345.z1.web.core.windows.net/
 ### app-gate-west-us
 
 
-> [!summary]  Basics
+> [!tip]  Basics:
 > <br>![[Pasted image 20231218203526.png]]
 
 
