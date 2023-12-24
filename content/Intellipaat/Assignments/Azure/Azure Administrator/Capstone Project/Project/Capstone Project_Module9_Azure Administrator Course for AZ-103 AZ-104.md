@@ -73,11 +73,12 @@ VM2 <br>![[Pasted image 20231218170721.png]] | VM2 <br>![[Pasted image 202312181
 - I create a 'upload' container with blob access.
   <br>![[Pasted image 20231218172916.png]]
 
-> I download [error.html](https://github.com/azcloudberg/azproject/blob/master/error.html) file that renders
+>I download [error.html](https://github.com/azcloudberg/azproject/blob/master/error.html) file that renders
 > <br>![[Pasted image 20231218173452.png]]
 
 I upload [error.html](https://github.com/azcloudberg/azproject/blob/master/error.html) to "Static website"
 <br>![[Pasted image 20231218174417.png]]
+
 I click 'Save' and then receive the endpoints.  
 
 
