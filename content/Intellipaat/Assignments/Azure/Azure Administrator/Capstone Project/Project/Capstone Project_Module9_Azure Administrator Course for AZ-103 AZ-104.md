@@ -105,17 +105,17 @@ https://hectorstorage12345.z1.web.core.windows.net/
 > <br>![[Pasted image 20231218203526.png]]
 
 
-> [!summary]- Frontends:
+> [!tip]- Frontends:
 > I "Add new" Public IP
 > <br>![[Pasted image 20231218203502.png]]
 > 
 
 
-> [!summary]- Backends:
+> [!tip]- Backends:
 > <br>![[Pasted image 20231218203658.png]]
 
 
-> [!summary]- Configuration:
+> [!tip]- Configuration:
 > <br>![[Pasted image 20231218203753.png]]
 > 
 > I use the "Primary endpoint" with `/error.html` at the end
@@ -130,26 +130,26 @@ https://hectorstorage12345.z1.web.core.windows.net/
 >    <br>![[Pasted image 20231218205642.png]]
 
 
-> [!summary]- Review + create
+> [!tip]- Review + create
 > <br>![[Pasted image 20231218205938.png]]
 
 ### app-gate-east-us
 
 
-> [!summary]- Basics:
+> [!tip]- Basics:
 > <br>![[FireShot Capture 116 - Create application gateway - Microsoft Azure - portal.azure.com.png]]
 
 
-> [!summary]- Frontends:
+> [!tip]- Frontends:
 > I "Add new" Public IP
 <br>![[Pasted image 20231218210542.png]]
 
 
-> [!summary]- Backends:
+> [!tip]- Backends:
 <br>![[Pasted image 20231218210645.png]]
 
 
-> [!summary]- Configuration:
+> [!tip]- Configuration:
 > <br>![[Pasted image 20231218203753.png]]
 > 
 > I use the "Primary endpoint" with `/error.html` at the end
@@ -164,7 +164,7 @@ https://hectorstorage12345.z1.web.core.windows.net/
 >   <br>![[Pasted image 20231218205642.png]]
 
 
-> [!summary]- Review + create
+> [!tip]- Review + create
 > <br>![[Pasted image 20231218211700.png]]
 
 
