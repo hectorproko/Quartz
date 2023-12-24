@@ -1,3 +1,9 @@
+---
+tags:
+  - azure
+---
+
+
 > [!info]- Azure Administrator Capstone Project Az-104
 > You work as an Azure professional for a Corporation. You are assigned the task of implementing the below architecture for the company’s website. 
 > <br>![[Pasted image 20231210204021.png]]
@@ -30,11 +36,11 @@
 > 8. Finally, your Traffic Manager should be pointing to the application gateway of both the regions.
 
 ---
-%%https://drive.google.com/file/d/1XswCZKE8GtOOTW_sdoSp3rYVUna15vpZ/view%%
+
 
 %%[[Capstone video notes]]%%
 
-## Creating Vnets
+## Creating VNets
 
 Create two Virtual Networks (VNets), one in the East US region (Vnet 1) and one in the West US region (Vnet 2).
   
@@ -115,16 +121,20 @@ https://hectorstorage12345.z1.web.core.windows.net/
 
 ### app-gate-west-us
 
+
 > [!summary]- Basics:
 > <br>![[Pasted image 20231218203526.png]]
+
 
 > [!summary]- Frontends:
 > I "Add new" Public IP
 > <br>![[Pasted image 20231218203502.png]]
 > 
 
+
 > [!summary]- Backends:
 > <br>![[Pasted image 20231218203658.png]]
+
 
 > [!summary]- Configuration:
 > <br>![[Pasted image 20231218203753.png]]
@@ -140,20 +150,25 @@ https://hectorstorage12345.z1.web.core.windows.net/
 >    Pool2 contains VM2, which hosts the home page, positioned at the top.
 >    <br>![[Pasted image 20231218205642.png]]
 
+
 > [!summary]- Review + create
 > <br>![[Pasted image 20231218205938.png]]
 
 ### app-gate-east-us
 
+
 > [!summary]- Basics:
 > <br>![[FireShot Capture 116 - Create application gateway - Microsoft Azure - portal.azure.com.png]]
+
 
 > [!summary]- Frontends:
 > I "Add new" Public IP
 <br>![[Pasted image 20231218210542.png]]
 
+
 > [!summary]- Backends:
 <br>![[Pasted image 20231218210645.png]]
+
 
 > [!summary]- Configuration:
 > <br>![[Pasted image 20231218203753.png]]
@@ -169,8 +184,10 @@ https://hectorstorage12345.z1.web.core.windows.net/
 >   Pool2 contains VM2, which hosts the home page, positioned at the top.
 >   <br>![[Pasted image 20231218205642.png]]
 
+
 > [!summary]- Review + create
 > <br>![[Pasted image 20231218211700.png]]
+
 
 > [!done] Gateways
 > <br>![[Pasted image 20231218212050.png]]
