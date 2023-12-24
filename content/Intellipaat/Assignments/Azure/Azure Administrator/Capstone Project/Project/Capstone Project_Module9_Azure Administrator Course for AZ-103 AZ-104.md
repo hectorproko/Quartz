@@ -1,8 +1,4 @@
----
-tags:
-  - azure
----
-> [!info] Azure Administrator Capstone Project Az-104
+> [!info]- Azure Administrator Capstone Project Az-104
 > You work as an Azure professional for a Corporation. You are assigned the task of implementing the below architecture for the company’s website. 
 > <br>![[Pasted image 20231210204021.png]]
 > There are three web pages to be deployed: 
@@ -34,223 +30,279 @@ tags:
 > 8. Finally, your Traffic Manager should be pointing to the application gateway of both the regions.
 
 ---
+%%https://drive.google.com/file/d/1XswCZKE8GtOOTW_sdoSp3rYVUna15vpZ/view%%
 
-==PENDING CLEANUP==
+%%[[Capstone video notes]]%%
 
+## Creating Vnets
 
----
+Create two Virtual Networks (VNets), one in the East US region (Vnet 1) and one in the West US region (Vnet 2).
+  
+<br>![[Pasted image 20231214155942.png]]
+<br>![[Pasted image 20231214160004.png]]
+While creating the VPC, I enable the option to create a Bastion host.
+<br>![[Pasted image 20231214150852.png]]
 
+> [!done]
+> <br>![[Pasted image 20231214160407.png]]
+> 
 
-Regions to use "West US 3" and "East US"
+----
+## Creating VMs
 
-1. **[[Set Up Virtual Networks and VM]]s:**
-2. **[[Clone the GitHub Repository]]:**
-3. **[[Configure VMs]]:**
+In each VNet, deploy two Virtual Machines (VMs) - VM1 and VM2.
 
+West US | East US
+-- | -- 
+VM1 <br>![[Pasted image 20231218170259.png]] | VM1 <br>![[Pasted image 20231218171008.png]] 
+VM2 <br>![[Pasted image 20231218170721.png]] | VM2 <br>![[Pasted image 20231218171350.png]]
 
----
-
-I already have the same Virtual Network
-
-VM1, West
-<br>![[Pasted image 20231218170259.png]]
-VM2, West
-<br>![[Pasted image 20231218170721.png]]
-
-VM1, East
-<br>![[Pasted image 20231218171008.png]]
-
-VM2, East
-<br>![[Pasted image 20231218171350.png]]
-
+%%
 I created the VMs with open HTTPS, HTTP, need to rest it by removing it and applying it as subnet
 
-<br>![[Pasted image 20231218171833.png]]
+Edited the above "Public inbound ports" to delete HTTPS, HTTP cuse we don't want them to accept connections directly
+%%
+
+> [!done]
+> <br>![[Pasted image 20231218171833.png]]
+
+%%We dont yet have subnet for the app gateway%%
 
 ---
-We dont yet have subnet for the app gateway
+**Using "storage account" `hectorstorage12345`**
+- I create a 'upload' container with blob access.
+  <br>![[Pasted image 20231218172916.png]]
 
----
+> [!example] I download [error.html](https://github.com/azcloudberg/azproject/blob/master/error.html) file that renders
+> <br>![[Pasted image 20231218173452.png]]
 
-Using "storage account" `hectorstorage12345`
-
-<br>![[Pasted image 20231218172916.png]]
-I create container "upload" with blob access
-
-We create error.html file
-which i get from https://github.com/azcloudberg/azproject
-
-w3school output
-<br>![[Pasted image 20231218173452.png]]
-
-
-I download it and uploaded to "Static website"
+I upload [error.html](https://github.com/azcloudberg/azproject/blob/master/error.html) to "Static website"
 <br>![[Pasted image 20231218174417.png]]
-I click Save and i get the endpoints
+I click 'Save' and then receive the endpoints.  
 
+
+I click `$web`
 <br>![[Pasted image 20231218174537.png]]
+
+I make note of the "Primary endpoint"
 ```bash
 https://hectorstorage12345.z1.web.core.windows.net/
 ```
-I click $web
-
-<br>![[Pasted image 20231218175139.png]]
-
---- 
-Creating App Gateways
 
 
-Lets start with east us
+> [!success]
+> <br>![[Pasted image 20231218175139.png]]
 
 ---
-ISSUE:
-<br>![[WhatsApp Image 2023-12-18 at 19.33.48_180e2bd4.jpg]]
-
-Bypass:
-Instead of using `+ Gateway` subnet use `+ Subnet`
-Seems like i can use whatever name bu
-
-has something to do with the "availability dependent on dynamic use"
-<br>![[Pasted image 20231218202600.png]]
-
----
-
-### Creating gateways
-
-> "app-gate-west-us"
-> <br>![[Pasted image 20231218203526.png]]
+%%
+> [!question]- ISSUE:
 > 
-> Frontends: 
-> I create new Public IP
+> > [!fail]
+> > <br>![[WhatsApp Image 2023-12-18 at 19.33.48_180e2bd4.jpg]]
+> > 
+> 
+> Issue has something to do with the "availability dependent on dynamic use"
+> <br>![[Pasted image 20231218202600.png]]
+> 
+> > [!tip]
+> > Instead of using `+ Gateway` subnet use `+ Subnet`
+> > Seems like i can use whatever name.
+> > 
+
+%%
+
+## Creating gateways
+
+### app-gate-west-us
+
+> [!summary]- Basics:
+> <br>![[Pasted image 20231218203526.png]]
+
+> [!summary]- Frontends:
+> I "Add new" Public IP
 > <br>![[Pasted image 20231218203502.png]]
 > 
-> Backend:
+
+> [!summary]- Backends:
 > <br>![[Pasted image 20231218203658.png]]
-> 
-> Configuration:
+
+> [!summary]- Configuration:
 > <br>![[Pasted image 20231218203753.png]]
 > 
-> <br>![[Pasted image 20231218174537.png]]
-> ```bash
-> https://hectorstorage12345.z1.web.core.windows.net/
-> ```
-> I use the endpoint making sure to add `error.html` at the end
+> I use the "Primary endpoint" with `/error.html` at the end
+> - Listener
+>   <br>![[Pasted image 20231218204429.png]]
+> - Backend targets
 > 
-> <br>![[Pasted image 20231218204429.png]]
+>    Pool1 is created with VM1 added as a node.
+>    <br>![[Pasted image 20231218205456.png]]
 > 
-> Backend targets:
-> Pool2 has VM2 which is home page so on top
-> 
-> 
-> Pool1 with VM1 added as a path
-> <br>![[Pasted image 20231218205456.png]]
-> <br>![[Pasted image 20231218205642.png]]
-> 
+>    Pool2 contains VM2, which hosts the home page, positioned at the top.
+>    <br>![[Pasted image 20231218205642.png]]
+
+> [!summary]- Review + create
 > <br>![[Pasted image 20231218205938.png]]
-> 
 
+### app-gate-east-us
 
+> [!summary]- Basics:
+> <br>![[FireShot Capture 116 - Create application gateway - Microsoft Azure - portal.azure.com.png]]
 
-
-"app-gate-east-us"
-<br>![[FireShot Capture 116 - Create application gateway - Microsoft Azure - portal.azure.com.png]]
-
+> [!summary]- Frontends:
+> I "Add new" Public IP
 <br>![[Pasted image 20231218210542.png]]
 
+> [!summary]- Backends:
 <br>![[Pasted image 20231218210645.png]]
 
-copy from top
-<br>![[Pasted image 20231218203753.png]]
+> [!summary]- Configuration:
+> <br>![[Pasted image 20231218203753.png]]
+> 
+> I use the "Primary endpoint" with `/error.html` at the end
+> - Listener
+>   <br>![[Pasted image 20231218204429.png]]
+> - Backend targets
+> 
+>   Pool1 is created with VM1 added as a node.
+>   <br>![[Pasted image 20231218205456.png]]
+> 
+>   Pool2 contains VM2, which hosts the home page, positioned at the top.
+>   <br>![[Pasted image 20231218205642.png]]
 
-copy from top cuse is extaclty the same anyway
-<br>![[Pasted image 20231218204429.png]]
+> [!summary]- Review + create
+> <br>![[Pasted image 20231218211700.png]]
 
-The pictures end up the same here also
-
-<br>![[Pasted image 20231218205456.png]]
-
-<br>![[Pasted image 20231218205642.png]]
-
-<br>![[Pasted image 20231218211700.png]]
-
-<br>![[Pasted image 20231218212050.png]]
+> [!done] Gateways
+> <br>![[Pasted image 20231218212050.png]]
 
 
 ---
+## Configure VMs
+
+%%
 Running the vm1.sh and vm2.sh scripts
+ - On both VM1 and VM2 in each region, clone the repository `https://github.com/azcloudberg/azproject`.
 
-I clone https://github.com/azcloudberg/azproject
+- On VM1, run the script `vm1.sh` from the cloned GitHub directory to deploy the upload page.
+    - On VM2, run the script `VM2.sh` to install the home page.
+    - On VM1, edit the `config.py` file to include the details of your storage account where the files will be uploaded.
+    - After configuration, execute `sudo python3 app.py` on VM1.
 
-cd azproject
+[[app.py]]
+[[config.py]] 
+[vm1.sh](https://github.com/hectorproko/azproject/blob/master/vm1.sh)
+[wm2.sh](https://github.com/hectorproko/azproject/blob/master/vm2.sh)
+%%
 
----
-Edit the file `config.py` and replace the key and accout name
+### VM1
 
-<br>![[Pasted image 20231218215826.png]]
+> [!attention] Prerequisite: before running [vm1.sh](https://github.com/hectorproko/azproject/blob/master/vm1.sh)
+> ```bash
+> sudo apt remove python3-blinker -y
+> sudo apt autoremove -y
+> ```
 
+
+I run the script [vm1.sh](https://github.com/hectorproko/azproject/blob/master/vm1.sh)
 ```bash
-+gUKWA3UnIjAFv1u/xfV4cRNvCGbBS6H1SEVK54X9EPr1vELLpGQm2j3uYb1cefZnY/X5bYwPng/+AStbD71PA==
+git clone https://github.com/hectorproko/azproject.git
+cd azproject
+bash vm1.sh
 ```
 
 
-looks like
-```
+Inside my local repo `azproject` I edit file `config.py`
+```bash
 [DEFAULT]
 # Account name
-account =hectorstorage12345
+account =accountname
 # Azure Storage account access key
-key =XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+key =storageaccountkey
 # Container name
 container =upload
 ```
 
+I replace account name and key with the following commands:
+```bash
+sed -i "s|accountname|hectorstorage12345|" config.py
+sed -i "s|storageaccountkey|*********|" config.py
+```
+`*********` represents my storage account key
 
-the we run app.py
+<br>![[Pasted image 20231215092722.png]]
+
+I execute the Flask application [[app.py]]:
+```bash
+sudo python3 app.py
+```
+
 <br>![[Pasted image 20231218220802.png]]
+<br>![[Pasted image 20231215095439.png]]
+
+%%Seems like like picked one of the VMs public IP to test
+<br>![[Pasted image 20231215095800.png]]%%
+%%after opening port 80 in NIC%%
+### VM2
+I run the script [vm2.sh](https://github.com/hectorproko/azproject/blob/master/vm2.sh) 
+```bash
+git clone https://github.com/azcloudberg/azproject
+cd azproject
+bash vm2.sh
+```
+
 
 ---
-I create traffic manager
+## I create traffic manager
 
 <br>![[Pasted image 20231218221252.png]]
 
 <br>![[Pasted image 20231218221508.png]]
 
-I go to my Traffic Manager and nagivate to "Endpoints" where I click "+ Add"
 
-Yes the the gateway IP will we asked to ahve DNS
+## Traffic Manager Endpoints
+I go to my Traffic Manager and navigate to "Endpoints" where I click "+ Add"
+
+At some point, the public IP of the gateway will need to be assigned a DNS name.
 <br>![[Pasted image 20231218222011.png]]
 <br>![[Pasted image 20231218222118.png]]
 
-<br>![[Pasted image 20231218222306.png]]
+<br>![[Pasted image 20231218222306.png]] | <br>![[Pasted image 20231218222413.png]]
+-- | -- 
 
-<br>![[Pasted image 20231218222413.png]]
 
-
-<br>![[Pasted image 20231218222607.png]]
-
+Traffic Manager with endpoints I make note of the "DNS name"
 <br>![[Pasted image 20231218222636.png]]
 
-
+## Verify
+I use the "DNS name" from above
 <br>![[Pasted image 20231218222729.png]]
-
+I test the path `/upload`
 <br>![[Pasted image 20231218222743.png]]
 
+I upload a file and click "Upload" button
 <br>![[Pasted image 20231218223243.png]]
 
-If i navigate to my container `upload` I see the file i just uploaded
-<br>![[Pasted image 20231218223459.png]]
+If I navigate to my `upload` container, I see the file I just uploaded.
 
-Going to remove rules HTTP and HTTPS from all NICs and put them as subnet
+> [!success]
+> <br>![[Pasted image 20231218223459.png]]
 
-After removing all of that and leaving only SSH, it still worked, no need 
+%%
+> [!attention]
+> I remove the HTTP and HTTPS rules from all NICs and instead apply them at the subnet level. 
+> 
+> "After removing all those rules and leaving only SSH, everything still worked fine" - I think here I meant that there was no need for subnet level
 
+%%
+## Create VNet peering 
 
-
-Create VNet peering just like in [[Assignment 1_Module6_Azure Administrator Course for AZ-103 AZ-104#Step 5 Create VNet-to-VNet Peering|Assignment 1: Module 6]]
+I follow the same steps as in [[Assignment 1_Module6_Azure Administrator Course for AZ-103 AZ-104#Step 5 Create VNet-to-VNet Peering|Assignment 1: Module 6]]
 
 <br>![[FireShot Capture 117 - Add peering - Microsoft Azure - portal.azure.com.png]]
 
 <br>![[Pasted image 20231218225520.png]]
 
 
-<br>![[Pasted image 20231218225754.png]]
+> [!success]
+> I ping each VM in different regions to each other.
+> <br>![[Pasted image 20231218225754.png]]
