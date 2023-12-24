@@ -38,8 +38,6 @@ tags:
 ---
 
 
-%%[[Capstone video notes]]%%
-
 ## Creating VNets
 
 Create two Virtual Networks (VNets), one in the East US region (Vnet 1) and one in the West US region (Vnet 2).
