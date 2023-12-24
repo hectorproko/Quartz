@@ -73,7 +73,7 @@ VM2 <br>![[Pasted image 20231218170721.png]] | VM2 <br>![[Pasted image 202312181
 - I create a 'upload' container with blob access.
   <br>![[Pasted image 20231218172916.png]]
 
-> [!example] I download [error.html](https://github.com/azcloudberg/azproject/blob/master/error.html) file that renders
+> I download [error.html](https://github.com/azcloudberg/azproject/blob/master/error.html) file that renders
 > <br>![[Pasted image 20231218173452.png]]
 
 I upload [error.html](https://github.com/azcloudberg/azproject/blob/master/error.html) to "Static website"
@@ -146,7 +146,7 @@ https://hectorstorage12345.z1.web.core.windows.net/
 
 
 > [!tip]- Backends:
-<br>![[Pasted image 20231218210645.png]]
+><br>![[Pasted image 20231218210645.png]]
 
 
 > [!tip]- Configuration:
