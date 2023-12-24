@@ -63,16 +63,12 @@ West US | East US
 VM1 <br>![[Pasted image 20231218170259.png]] | VM1 <br>![[Pasted image 20231218171008.png]] 
 VM2 <br>![[Pasted image 20231218170721.png]] | VM2 <br>![[Pasted image 20231218171350.png]]
 
-%%
-I created the VMs with open HTTPS, HTTP, need to rest it by removing it and applying it as subnet
 
-Edited the above "Public inbound ports" to delete HTTPS, HTTP cuse we don't want them to accept connections directly
-%%
 
 > [!done]
 > <br>![[Pasted image 20231218171833.png]]
 
-%%We dont yet have subnet for the app gateway%%
+
 
 ---
 **Using "storage account" `hectorstorage12345`**
@@ -100,29 +96,14 @@ https://hectorstorage12345.z1.web.core.windows.net/
 > <br>![[Pasted image 20231218175139.png]]
 
 ---
-%%
-> [!question]- ISSUE:
-> 
-> > [!fail]
-> > <br>![[WhatsApp Image 2023-12-18 at 19.33.48_180e2bd4.jpg]]
-> > 
-> 
-> Issue has something to do with the "availability dependent on dynamic use"
-> <br>![[Pasted image 20231218202600.png]]
-> 
-> > [!tip]
-> > Instead of using `+ Gateway` subnet use `+ Subnet`
-> > Seems like i can use whatever name.
-> > 
 
-%%
 
 ## Creating gateways
 
 ### app-gate-west-us
 
 
-> [!summary]  Basics:
+> [!summary]  Basics
 > <br>![[Pasted image 20231218203526.png]]
 
 
@@ -196,21 +177,6 @@ https://hectorstorage12345.z1.web.core.windows.net/
 ---
 ## Configure VMs
 
-%%
-Running the vm1.sh and vm2.sh scripts
- - On both VM1 and VM2 in each region, clone the repository `https://github.com/azcloudberg/azproject`.
-
-- On VM1, run the script `vm1.sh` from the cloned GitHub directory to deploy the upload page.
-    - On VM2, run the script `VM2.sh` to install the home page.
-    - On VM1, edit the `config.py` file to include the details of your storage account where the files will be uploaded.
-    - After configuration, execute `sudo python3 app.py` on VM1.
-
-[[app.py]]
-[[config.py]] 
-[vm1.sh](https://github.com/hectorproko/azproject/blob/master/vm1.sh)
-[wm2.sh](https://github.com/hectorproko/azproject/blob/master/vm2.sh)
-%%
-
 ### VM1
 
 > [!attention] Prerequisite: before running [vm1.sh](https://github.com/hectorproko/azproject/blob/master/vm1.sh)
@@ -256,9 +222,6 @@ sudo python3 app.py
 <br>![[Pasted image 20231218220802.png]]
 <br>![[Pasted image 20231215095439.png]]
 
-%%Seems like like picked one of the VMs public IP to test
-<br>![[Pasted image 20231215095800.png]]%%
-%%after opening port 80 in NIC%%
 ### VM2
 I run the script [vm2.sh](https://github.com/hectorproko/azproject/blob/master/vm2.sh) 
 ```bash
@@ -304,13 +267,7 @@ If I navigate to my `upload` container, I see the file I just uploaded.
 > [!success]
 > <br>![[Pasted image 20231218223459.png]]
 
-%%
-> [!attention]
-> I remove the HTTP and HTTPS rules from all NICs and instead apply them at the subnet level. 
-> 
-> "After removing all those rules and leaving only SSH, everything still worked fine" - I think here I meant that there was no need for subnet level
 
-%%
 ## Create VNet peering 
 
 I follow the same steps as in [[Assignment 1_Module6_Azure Administrator Course for AZ-103 AZ-104#Step 5 Create VNet-to-VNet Peering|Assignment 1: Module 6]]
