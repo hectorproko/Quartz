@@ -18,13 +18,13 @@ First, I'll find the container ID of the container I used:
 ```
 docker ps -a
 ```
-![[Pasted image 20231031000228.png]]
+<br>![[Pasted image 20231031000228.png]]
 
 With the container ID in hand, I commit it as an image. Let's name it `ubuntu_apache`:
 ```
 docker commit eb2219bab5ad ubuntu_apache
 ```
-![[Pasted image 20231031000424.png]]
+<br>![[Pasted image 20231031000424.png]]
 *Confirming image was created*
 
 ---
@@ -56,4 +56,4 @@ service apache2 start
 By navigating to `http://localhost:81`, I should see the Apache2 Ubuntu default page.
 
 > [!success]
-> ![[Pasted image 20231031000835.png]]
+> <br>![[Pasted image 20231031000835.png]]

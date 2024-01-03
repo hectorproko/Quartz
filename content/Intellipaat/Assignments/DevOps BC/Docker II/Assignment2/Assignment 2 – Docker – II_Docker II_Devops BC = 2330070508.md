@@ -21,7 +21,7 @@ This command recreates a container with bind mounts, linking specific source and
 ```bash
 docker run -it --mount type=bind,source=/c/Users/Hecti/Desktop/docker_vol,target=/var/www/html -p 8080:80 -d hectorproko/my_docker_image:my_apache_image2
 ```
-![[Pasted image 20231116160144.png]]
+<br>![[Pasted image 20231116160144.png]]
 
 
 ### Step 2:
@@ -51,4 +51,4 @@ docker restart 0f3ceee8c91693
 Verifying the the `index.html` is being hosted by accessing the container/Apache Server 
 
 > [!success]
-> ![[Pasted image 20231116160825.png]]
+> <br>![[Pasted image 20231116160825.png]]

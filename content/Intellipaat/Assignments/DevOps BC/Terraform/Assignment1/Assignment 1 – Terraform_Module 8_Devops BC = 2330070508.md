@@ -10,7 +10,7 @@ tags:
 
 ### Step 1: Terraform Setup
 
-<br>![[Installing Terraform#Windows]]
+<br><br>![[Installing Terraform#Windows]]
 ### Step 2:  A way to for Terraform to authenticate with AWS
 
 I will be using the same AWS CLI setup from [[Assignment 2 – AWS Migration_Module11_AWS Weekday BC = 2301080808#**Using AWS CLI **|Assignment 2 – AWS Migration]]
@@ -53,9 +53,9 @@ $ nano main.tf
 Hecti@DESKTOP-7SBLCCA MINGW64 ~/Desktop
 ```
 
-<br>![[Pasted image 20231115132535.png]]
+<br><br>![[Pasted image 20231115132535.png]]
 
-<br>![[Pasted image 20231115133155.png]]
+<br><br>![[Pasted image 20231115133155.png]]
 
 Terraform plan
 
@@ -65,9 +65,9 @@ Terraform plan
 > 
 
 `terraform apply`
-<br>![[Pasted image 20231115133459.png]]
+<br><br>![[Pasted image 20231115133459.png]]
 
-<br>![[Pasted image 20231115140546.png]]
-<br>![[Pasted image 20231115140913.png]]
-<br>![[Pasted image 20231115140622.png]]
+<br><br>![[Pasted image 20231115140546.png]]
+<br><br>![[Pasted image 20231115140913.png]]
+<br><br>![[Pasted image 20231115140622.png]]
 

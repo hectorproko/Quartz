@@ -49,13 +49,13 @@ Merge public1 branch into master branch
 git checkout master
 git merge public1
 ```
-![[Pasted image 20231027232406.png]]
+<br>![[Pasted image 20231027232406.png]]
 ### Step 5: 
 Public2 has no contents:
 ```
 git merge public2
 ```
-![[Pasted image 20231027232350.png]]
+<br>![[Pasted image 20231027232350.png]]
 ### Step 6: 
 Edit master.txt on private branch, stage, and commit
 ```
@@ -89,5 +89,5 @@ git merge private
 git checkout private
 git merge master
 ```
-![[Pasted image 20231027233312.png]]
+<br>![[Pasted image 20231027233312.png]]
 The `Fast-forward` indicates that `private` simply moved forward to the latest commit of `master`. As a result, the file `public1.txt` was added to the `private` branch.

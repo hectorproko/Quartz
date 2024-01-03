@@ -5,7 +5,7 @@ https://us02web.zoom.us/rec/play/y_BJeclALkYmHGx-WbJ3Ia3o22PpY33wVg-03bRcCp9bgut
 
 3hours
 
-![[Pasted image 20231130143657.png]]'
+<br>![[Pasted image 20231130143657.png]]'
 
 
 Creating instances 3
@@ -16,7 +16,7 @@ Project-prod
 
 ### Project-M
 googles how to install ansible
-![[Pasted image 20231130152141.png]]
+<br>![[Pasted image 20231130152141.png]]
 Security Group All traffic
 
 create key pair in M
@@ -29,7 +29,7 @@ In the slaves key paste the contents of the public key id_rasa.pub inside the sl
 Now master can connect to slaves
 
 adding the IPs of slaves in ansible test and prod, file hosts
-![[Pasted image 20231130153457.png]]
+<br>![[Pasted image 20231130153457.png]]
 
 testing connections
 `ansible -m ping all`
@@ -37,17 +37,17 @@ testing connections
 ---
 Create playbook that installs the require softare
 
-![[Pasted image 20231130154643.png]]
+<br>![[Pasted image 20231130154643.png]]
 
 createas scripts
 jenkins.io docs, weekly release code,
 master.sh
-![[Pasted image 20231130154901.png]]
+<br>![[Pasted image 20231130154901.png]]
 
 salves, difference is instead of jenkins, docker
-![[Pasted image 20231130154946.png]]
+<br>![[Pasted image 20231130154946.png]]
 
-![[Pasted image 20231130155404.png]]
+<br>![[Pasted image 20231130155404.png]]
 
 `ansible-playbook play.yaml --syntax-check`
 
@@ -69,8 +69,8 @@ slave2 we use copy existing node
 Forked repo
 
 Creates Docker file in the repo folder website
-![[Pasted image 20231130193329.png]]
-![[Pasted image 20231130193348.png]]
+<br>![[Pasted image 20231130193329.png]]
+<br>![[Pasted image 20231130193348.png]]
 
 
 Creates new branch
@@ -78,7 +78,7 @@ Creates new branch
 ---
 Creating Jobs in Jenkins
 
-![[Pasted image 20231130202539.png]]
+<br>![[Pasted image 20231130202539.png]]
 job1 is for slave1 using develop
 
 Job1
@@ -89,31 +89,31 @@ Branch Scpeifier: Develop
 
 
 location of docker file, in Project test
-![[Pasted image 20231130203505.png]]
-![[Pasted image 20231130212925.png]]
+<br>![[Pasted image 20231130203505.png]]
+<br>![[Pasted image 20231130212925.png]]
 This fails if there is no container to delete, so job needs to run at least one without first command
 
 Runs the job check website
-![[Pasted image 20231130212618.png]]
+<br>![[Pasted image 20231130212618.png]]
 
 He says all jobs are the same only which slave it is running on and what branch
 
 enables webhook
-![[Pasted image 20231130213203.png]]
+<br>![[Pasted image 20231130213203.png]]
 
 ---
 Job2
 
 Master branch
 adds commands
-![[Pasted image 20231130212925.png]]
+<br>![[Pasted image 20231130212925.png]]
 comments out the first command
 Port 83 changed to 82, c1 changed to c2, and job1 to job2
 
 ---
 Job3
 changed to port 80
-![[Pasted image 20231130214404.png]]
+<br>![[Pasted image 20231130214404.png]]
 
 Complete 
-![[godno.gif|200]]
+<br>![[godno.gif|200]]

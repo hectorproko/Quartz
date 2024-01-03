@@ -22,15 +22,15 @@ sudo systemctl enable jenkins
 ```
 [Jenkins Install Document](https://www.jenkins.io/doc/book/installing/linux/)
 
-![[Pasted image 20231104201931.png]]
+<br>![[Pasted image 20231104201931.png]]
 Getting "Initial Admin Password"
-![[Pasted image 20231104210115.png]]
+<br>![[Pasted image 20231104210115.png]]
 We input the "Initial Admin Password"
-![[Pasted image 20231104210148.png|470]]
+<br>![[Pasted image 20231104210148.png|470]]
 We install the suggested plugins
-![[Pasted image 20231104210426.png|400]]
+<br>![[Pasted image 20231104210426.png|400]]
 Creating our first user
-![[Pasted image 20231104211939.png|400]]![[Pasted image 20231104212351.png]] ^80125f
+<br>![[Pasted image 20231104211939.png|400]]<br>![[Pasted image 20231104212351.png]] ^80125f
 
 %%Add credentials or ssh key to Jenkins to connect to my GitHub account. 
 In our assignments we used public Repos so was not needed%%
@@ -43,7 +43,7 @@ Need to setup **ssh** credentials to be able to connect to salve nodes (EC2s) us
 
 1. I navigate to `Manage Jenkins > Credentials > System > Global credentials (unrestricted)`
 2. Click button "Add Credentials"
-   ![[Pasted image 20231105151726.png]]
+   <br>![[Pasted image 20231105151726.png]]
    
    
 1. Select **SSH Username with private key**.
@@ -51,10 +51,10 @@ Need to setup **ssh** credentials to be able to connect to salve nodes (EC2s) us
 3. In the **Username** field, enter the username of the SSH user `ubuntu` on the slave node.
 4. In the **Private Key** field, enter the contents of the `.pem` key file. You can copy and paste the contents of the file, or you can upload the file.
 5. Click **Create** to create the credentials.
-   ![[newcredentials.png]]
+   <br>![[newcredentials.png]]
 
 > [!done]
->    ![[daro.io ubuntu ssh credentials.png]]
+>    <br>![[daro.io ubuntu ssh credentials.png]]
 
 %%Basically connection is made with user ubuntu and contents of daro.io.pem private key (specify when EC2 was created)
 %%
@@ -65,15 +65,15 @@ Need to setup **ssh** credentials to be able to connect to salve nodes (EC2s) us
 
 Manage Jenkins > Security
 Make sure we select Random and save
-![[Pasted image 20231108091839.png]]
+<br>![[Pasted image 20231108091839.png]]
 
 
 #### To add agent
 Manage Jenkins > Nodes
 Click button "New Node"
-![[Pasted image 20231105110505.png]]
+<br>![[Pasted image 20231105110505.png]]
 
-![[Pasted image 20231108093020.png]]
+<br>![[Pasted image 20231108093020.png]]
 
 
 In the configuration, I focus on the following settings:
@@ -83,16 +83,16 @@ In the configuration, I focus on the following settings:
     - Host: The private IP of the EC2 instance.
     - Credentials: [[daro.io ubuntu ssh credentials.png|previously created]]
     - Host Key Verification Strategy: Set to 'Non-verifying Verification Strategy.'"
-![[slavenode.png]]
+<br>![[slavenode.png]]
 
 
 I have installed Java on 'Slave1' as it is a prerequisite for operation.
-![[Pasted image 20231108094344.png]] ^7992da
+<br>![[Pasted image 20231108094344.png]] ^7992da
 
 
 Now we have an **In sync** `Slave1` Agent
 
 > [!done]
-> ![[Pasted image 20231108094036.png]]
+> <br>![[Pasted image 20231108094036.png]]
 
 

@@ -83,7 +83,7 @@ I edit the `tasks/main.yml` file to incorporate the task that will substitute th
 %%
 > [!attention]- Issue
 > > [!fail] The condition `when:` is returns false and skipping task even though you know it is true
-> > ![[Pasted image 20231106163245.png]]
+> > <br>![[Pasted image 20231106163245.png]]
 > 
 > > [!done] Add `service_facts:`
 > > ```yaml
@@ -128,7 +128,7 @@ I'll run the same playbook from [[Assignment 3 – Ansible_Module 5_Devops BC = 
 ```
 ansible-playbook -i inventory.ini install_web_servers.yml 
 ```
-![[Pasted image 20231106165755.png]]
+<br>![[Pasted image 20231106165755.png]]
 
 From the terminal on Slave2 EC2, I utilize the text-based web browser Lynx to confirm the successful deployment.
 ```
@@ -136,4 +136,4 @@ lynx localhost
 ```
 
 > [!success]
-> ![[Pasted image 20231106171216.png]]
+> <br>![[Pasted image 20231106171216.png]]

@@ -8,11 +8,11 @@ I spine another EC2 instance `000`
 follow the [[Installing Puppet#Agent|same steps previously]] for agents
 
 Back in the master we sign certificate:
-![[Pasted image 20231127204406.png]]
+<br>![[Pasted image 20231127204406.png]]
 
 
 I check agent `sudo systemctl status puppet`
-![[Pasted image 20231127192945.png]]
+<br>![[Pasted image 20231127192945.png]]
 
 In master I create a new module to install nginx like i did with apache
 
@@ -38,14 +38,14 @@ In agent3 our latest
 ```
 sudo /opt/puppetlabs/puppet/bin/puppet agent --test
 ```
-![[Pasted image 20231127204529.png]]
+<br>![[Pasted image 20231127204529.png]]
 
 
-![[Pasted image 20231127204700.png]]
+<br>![[Pasted image 20231127204700.png]]
 
 We try in agent2
 ```
 sudo /opt/puppetlabs/puppet/bin/puppet agent --test
 ```
-![[Pasted image 20231127205027.png]]
+<br>![[Pasted image 20231127205027.png]]
 was nto installed in agent2 cuse it already had apche2 not meeting the conditions

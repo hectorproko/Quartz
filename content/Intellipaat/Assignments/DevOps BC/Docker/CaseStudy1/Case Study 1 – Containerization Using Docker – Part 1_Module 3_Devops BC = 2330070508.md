@@ -20,7 +20,7 @@ tags:
 and then push to DockerHub?
 
 
-![[Assignment 5 – Docker – I_Module 3_Devops BC = 2330070508#Steps]]
+<br>![[Assignment 5 – Docker – I_Module 3_Devops BC = 2330070508#Steps]]
 
 When the developer provides the code, which will likely consist of multiple files, I can update the Dockerfile to incorporate this new code. Then, I'll rebuild the image.
 ```Dockerfile
@@ -29,7 +29,7 @@ COPY website/ /var/www/html/
 ```
 
 Similarly to what I did in [[Assignment 3 – Docker – I_Module 3_Devops BC = 2330070508|Assignment 3 – Docker – I]], I'll then upload the rebuilt image to DockerHub.
-![[Pasted image 20231031195354.png]]
+<br>![[Pasted image 20231031195354.png]]
 
 
 I tag the image with my Docker Hub username and desired repository name (I'll use ```my_docker_image``` as an example):
@@ -41,6 +41,6 @@ Now, I push the tagged image to Docker Hub:
 ```
 docker push hectorproko/my_docker_image:my_apache_image2
 ```
-![[Pasted image 20231031194208.png]]
+<br>![[Pasted image 20231031194208.png]]
 
-![[my_apache_image2 in dockerhub.png]]
+<br>![[my_apache_image2 in dockerhub.png]]

@@ -29,7 +29,7 @@ docker pull ubuntu
 ```
 docker run -it -p 80:80 ubuntu
 ```
-![[Pasted image 20231030233016.png]]
+<br>![[Pasted image 20231030233016.png]]
 
 ==Once executed, I am inside the container's shell.==
 
@@ -55,7 +55,7 @@ To ensure Apache2 is actively running, I check its status:
 ```
 service apache2 status
 ```
-![[Pasted image 20231030233321.png]]
+<br>![[Pasted image 20231030233321.png]]
 
 ---
 
@@ -63,7 +63,7 @@ service apache2 status
 
 > [!success]
 > By navigating to `http://localhost`, I  see the Apache2 Ubuntu default page.
-> ![[Pasted image 20231030233510.png]]
+> <br>![[Pasted image 20231030233510.png]]
 > 
 
 ---

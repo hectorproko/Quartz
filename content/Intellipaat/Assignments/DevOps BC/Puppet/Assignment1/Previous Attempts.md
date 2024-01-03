@@ -20,7 +20,7 @@ Installting 17.0.8
 ```
 sudo apt install openjdk-17-jre-headless -y
 ```
-![[Pasted image 20231123092900.png]]
+<br>![[Pasted image 20231123092900.png]]
 
 ```
 sudo apt-get install puppetserver -y
@@ -67,8 +67,8 @@ source ~/.bashrc
 
 - Alternatively, the changes will apply the next time you log in or open a new terminal session.
 verify
-![[Pasted image 20231123121236.png]]
-![[Pasted image 20231123121929.png]]
+<br>![[Pasted image 20231123121236.png]]
+<br>![[Pasted image 20231123121929.png]]
 
 
 
@@ -156,23 +156,23 @@ Need to edit `/etc/hosts` in agent to find the master node
 We dont have DNS running to resolved hostnames, ==on both== 
 
 I think we see the issue here of agent looking for hostname puppet
-![[Pasted image 20231123115057.png]]
+<br>![[Pasted image 20231123115057.png]]
 Make the entry, choose any
-![[Pasted image 20231123115730.png]]
-![[Pasted image 20231123115605.png]]
+<br>![[Pasted image 20231123115730.png]]
+<br>![[Pasted image 20231123115605.png]]
 
 Restart the service `sudo systemctl restart puppet`
 Now I can see connection error is gone
-![[Pasted image 20231123120052.png]]
+<br>![[Pasted image 20231123120052.png]]
 
 
 
 #### Issue:
 Staring puppet server
-![[Pasted image 20231123094711.png]]
+<br>![[Pasted image 20231123094711.png]]
 moving from t2.micro to t2.small, i think is the JAVA_ARGS
-![[Pasted image 20231123102742.png]]
-![[Pasted image 20231123102907.png]]
+<br>![[Pasted image 20231123102742.png]]
+<br>![[Pasted image 20231123102907.png]]
 
 File located in `/etc/default/puppetserver`
 
@@ -209,7 +209,7 @@ wonder if its a permission issue
 
 > [!success]
 > Seems like was  indeed a permission thing
-> ![[Pasted image 20231125192357.png]]
+> <br>![[Pasted image 20231125192357.png]]
 > but i cant use sudo puppetserver, need to use the full path
 > 
 
@@ -298,8 +298,8 @@ sudo vi /etc/default/puppet-master
 sudo systemctl restart puppet-master
 ```
 
-![[Pasted image 20231125112944.png]]
-![[Pasted image 20231125113102.png]]
+<br>![[Pasted image 20231125112944.png]]
+<br>![[Pasted image 20231125113102.png]]
 Step 2: Next open port 8140 on the Puppet Master’s firewall
 
 ```bash
@@ -323,7 +323,7 @@ sudo systemctl restart puppet-master
 Step 3: Make changes to the hosts file which exists in /etc/hosts. And add the Puppet Master IP address along with the name “puppet” on all nodes
 
 Master and slave:
-![[Pasted image 20231125124608.png]]
+<br>![[Pasted image 20231125124608.png]]
 
 Step 4: Create the following directory path:
 In master:
@@ -334,7 +334,7 @@ sudo mkdir -p /etc/puppet/code/environments/production/manifests
 
 **Configuring Puppet Slave:** 
 Step 1: Add the entry for Puppet Master in /etc/hosts
-![[Pasted image 20231125124608.png]]
+<br>![[Pasted image 20231125124608.png]]
 
 Step 2: Finally start the Puppet agent by using the following command. Also, enable the service, so that it starts when the computer starts.
 

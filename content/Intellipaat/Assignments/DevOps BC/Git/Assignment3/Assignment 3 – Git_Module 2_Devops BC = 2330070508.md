@@ -85,6 +85,6 @@ Delete the f2 branch on GitHub
 git push origin --delete f2
 ```
 
-![[Pasted image 20231027225915.png]]
+<br>![[Pasted image 20231027225915.png]]
 In GitHub
-![[Pasted image 20231027230027.png|400]]
+<br>![[Pasted image 20231027230027.png|400]]

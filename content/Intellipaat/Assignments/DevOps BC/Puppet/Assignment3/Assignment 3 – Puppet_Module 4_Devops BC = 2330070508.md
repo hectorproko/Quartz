@@ -30,9 +30,9 @@ node default {
 sudo systemctl restart puppetserver
 ```
 
-![[Pasted image 20231127220332.png]]
+<br>![[Pasted image 20231127220332.png]]
 
-![[Pasted image 20231127220312.png]]
+<br>![[Pasted image 20231127220312.png]]
 
 Issue:
 Not having correct `path` made it not not work

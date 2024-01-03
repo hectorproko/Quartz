@@ -13,7 +13,7 @@
 
 %%
 ### Step 1: Deploying Kubernetes
- ![[Installing Kubernetes (Kubeadm)]]
+ <br>![[Installing Kubernetes (Kubeadm)]]
 
 ---
 ### Step 2:  NGINX Deployment
@@ -63,10 +63,10 @@ kubectl get pods
 ```
 
 > [!success]
-> ![[Pasted image 20231113173344.png]]
+> <br>![[Pasted image 20231113173344.png]]
 
 Alternatively, instead of using a `.yaml` file, I can quickly create a deployment directly from the command line. The following one-liner command sets up a deployment named `nginx-deployment-1` using the `nginx` image and specifies that there should be three replicas:
 ```bash
 kubectl create deployment nginx-deployment-1 --image=nginx --replicas=3
 ```
-![[Pasted image 20231113173555.png]]
+<br>![[Pasted image 20231113173555.png]]

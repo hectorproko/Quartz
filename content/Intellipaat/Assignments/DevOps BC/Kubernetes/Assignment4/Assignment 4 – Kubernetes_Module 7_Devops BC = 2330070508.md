@@ -15,7 +15,7 @@ Continuing from [[Assignment 3 – Kubernetes_Module 7_Devops BC = 2330070508|As
 
 ### Step 2: Changing Service
 Currently, I have a NodePort service set up for my deployment. I'll modify this service to be a ClusterIP type, which is only accessible within the Kubernetes cluster.
-![[nodePort service created.png]]
+<br>![[nodePort service created.png]]
    
 I use the `kubectl edit` command to modify the service configuration directly:
 ```bash
@@ -27,16 +27,16 @@ This command opens the service's configuration in an editor. Within the editor, 
 2. Set the `nodePort` field to `null` or remove it entirely, as ClusterIP services do not require an external port.
 
 Before:
-![[Pasted image 20231113192859.png]]
+<br>![[Pasted image 20231113192859.png]]
 After:
-![[Pasted image 20231113192816.png|222]]
+<br>![[Pasted image 20231113192816.png|222]]
 
 I verify the change by inspecting the list of services with the command `kubectl get svc`. In the output, I confirm that my service, `my-nginx-service`, now shows `ClusterIP` in the `TYPE` column. %%[[nodePort service created.png|previous]]%%
 
 > [!success]
-> ![[Pasted image 20231113193027.png]]
+> <br>![[Pasted image 20231113193027.png]]
 
 To quickly test the ClusterIP service, I use the `curl` command to send a request to the service's IP address from within the cluster (master node) :
 
 > [!done] Successfully returns the webpage
-> ![[Pasted image 20231114091431.png]]
+> <br>![[Pasted image 20231114091431.png]]

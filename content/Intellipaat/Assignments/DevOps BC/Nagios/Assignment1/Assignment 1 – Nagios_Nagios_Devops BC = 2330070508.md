@@ -84,12 +84,12 @@ sudo systemctl start nagios.service
 
 
 I verify that the Nagios server is up and running by accessing its GUI from the browser using the following URL: `<Public IP>/nagios`.
-![[Pasted image 20231121194952.png|]]
+<br>![[Pasted image 20231121194952.png|]]
 We login with the `nagiosadmin` we previously created
-![[Pasted image 20231121195047.png]]
+<br>![[Pasted image 20231121195047.png]]
 
 Since we haven't installed Nagios Plugins yet, An error is displayed in the 'Status Information' of **Hosts** and **Services**.
-![[Pasted image 20231121195659.png]]
+<br>![[Pasted image 20231121195659.png]]
 
 
 ## Installing The Nagios Plugins
@@ -121,7 +121,7 @@ sudo make install
 Now the [[Pasted image 20231121195659.png|previous error]] disappears
 
 > [!success]
-> ![[Pasted image 20231121201229.png]]
+> <br>![[Pasted image 20231121201229.png]]
 
 We are all set with the Nagios installation on Master
 
@@ -139,7 +139,7 @@ sudo /etc/init.d/nagios-nrpe-server restart
 ```
 
 I edited the file `/etc/nagios/nrpe.cfg` to add the Nagios (master) [[Assignment 1 – Nagios_Nagios_Devops BC = 2330070508#^aa7b48|private IP address]].
-![[Pasted image 20231122094504.png]]
+<br>![[Pasted image 20231122094504.png]]
 
 %%
 Correction to below: ==localhost.cfg== is the file with a sample you an copy
@@ -194,7 +194,7 @@ define host {
 Now, I will modify the main configuration file, `nagios.cfg`, to include the configuration files I just created, `host1.cfg` and `host2.cfg`.
 
 `sudo vi /usr/local/nagios/etc/nagios.cfg`
-![[Pasted image 20231122104010.png]]
+<br>![[Pasted image 20231122104010.png]]
 
 I restart Nagios service
 ```bash
@@ -204,17 +204,17 @@ sudo systemctl restart nagios
 In Nagios GUI I navigate to `Current Status > Hosts` and confirm newly added hosts
 
 > [!success]
-> ![[Pasted image 20231122110846.png]]
+> <br>![[Pasted image 20231122110846.png]]
 
 
 %%
 > [!question]- Issue: Hosts DOWN
 > 
 > > [!fail]
-> > ![[Pasted image 20231122110211.png]]
+> > <br>![[Pasted image 20231122110211.png]]
 > 
 > > [!done] Solution
 > > Need to open [[ICMP (Internet Control Message Protocol)|ICMP]] Protocol because it relies on **ping**
-> > ![[Pasted image 20231122110846.png]]
+> > <br>![[Pasted image 20231122110846.png]]
 
 %%

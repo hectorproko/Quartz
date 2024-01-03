@@ -74,7 +74,7 @@ I run the playbook with the following command:
 ansible-playbook -i inventory.ini setup.yml
 ```
 This will apply the Java installation tasks to the test nodes and the MySQL installation tasks to the prod nodes.
-![[Pasted image 20231106210807.png]]
+<br>![[Pasted image 20231106210807.png]]
 ### Step 4: Verify the Installations
 ```bash
 #I verify Java installation on test nodes:
@@ -85,7 +85,7 @@ ansible prod -i inventory.ini -m shell -a "mysql --version"
 ```
 
 > [!success]
-> ![[Pasted image 20231106211340.png]]
+> <br>![[Pasted image 20231106211340.png]]
 
 These commands will give me the version output for Java and MySQL, confirming that the installations are successful on the respective nodes.
 

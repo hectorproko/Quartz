@@ -48,14 +48,14 @@ git checkout feature1
 ```
 git merge master
 ```
-![[Pasted image 20231030120431.png]]
+<br>![[Pasted image 20231030120431.png]]
 8. If any merge conflicts arise, I resolve them manually in the `main.c` file, save the changes, then stage and commit the resolved file:
 
 Open text editor
-![[Pasted image 20231030122332.png]]
+<br>![[Pasted image 20231030122332.png]]
 
-![[Pasted image 20231030122308.png]]
-![[Pasted image 20231030122813.png]]
+<br>![[Pasted image 20231030122308.png]]
+<br>![[Pasted image 20231030122813.png]]
 
 ```
 git add main.c 
@@ -82,7 +82,7 @@ git checkout master
 ```
 git merge feature1
 ```
-![[Pasted image 20231030125711.png]]
+<br>![[Pasted image 20231030125711.png]]
 *No conflicts*
 
 12. If any conflicts were to arise, I resolve them manually and commit the changes.
@@ -94,11 +94,11 @@ git merge feature1
 ```
 git merge feature2
 ```
-![[Pasted image 20231030125838.png]]
+<br>![[Pasted image 20231030125838.png]]
 Conflicts found
 
 I open `main.c` with Visual Studio Code to solved the conflicts
-![[Pasted image 20231030130028.png]]
+<br>![[Pasted image 20231030130028.png]]
 I resolve the conflicts, add and commit the changes
 
 

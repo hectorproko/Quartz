@@ -19,7 +19,7 @@ sudo systemctl status apache2
 ```
 
 In my Nagios setup, the `Current Status > Services` section currently only displays information about the localhost. To expand this, I aim to monitor the Apache service on both of our hosts, `host1` and `host2`.
-![[Pasted image 20231122113226.png]]
+<br>![[Pasted image 20231122113226.png]]
 
 
 ### Creating A Monitoring Service
@@ -58,4 +58,4 @@ sudo systemctl restart nagios
 Now, if I [[Pasted image 20231122113226.png|return]] to Nagios and navigate to `Current Status > Services`, it now displays two new services being monitored, each on their respective host, `my-linux-host1` and `my-linux-host2`.
 
 > [!success]
-> ![[Pasted image 20231122123057.png]]
+> <br>![[Pasted image 20231122123057.png]]

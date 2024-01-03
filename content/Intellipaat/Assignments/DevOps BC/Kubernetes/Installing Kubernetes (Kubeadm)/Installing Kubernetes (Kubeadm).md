@@ -43,7 +43,7 @@ kubectl version --client
 kubeadm version
 kubelet --version
 ```
-![[Pasted image 20231113111114.png]]
+<br>![[Pasted image 20231113111114.png]]
 > **Note:** As of the current date, the latest version installed is 1.28.
 
 #### Initializing kubeadm
@@ -53,14 +53,14 @@ sudo kubeadm init --pod-network-cidr=192.168.0.0/16
 ```
 > This command sets up the pod networking configuration necessary for the Calico plugin to operate properly within the cluster.
 
-%%#question why here we had to specify advertise ![[Pasted image 20231107230634.png]]
-![[Pasted image 20231215211736.png]]
+%%#question why here we had to specify advertise <br>![[Pasted image 20231107230634.png]]
+<br>![[Pasted image 20231215211736.png]]
 added `--ignore-preflight-errors=NumCPU,Mem` not sure what I did the first time when I did not use the ignore thing
 i think i just provision a large enought EC2
 
 %%
 
-![[initialization output.png]]
+<br>![[initialization output.png]]
 
 The output tells us we need to run additional commands:
 ```bash
@@ -92,7 +92,7 @@ kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
 > sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 > sudo chown $(id -u):$(id -g) $HOME/.kube/config
 > ```
-> ![[couldn't get current server API group list.png]]
+> <br>![[couldn't get current server API group list.png]]
 > 
 > 
 
@@ -132,7 +132,7 @@ kubeadm join 10.0.1.82:6443 --token kou2h9.2j7chwdfbddi0ch8 --discovery-token-ca
 ### Step3: Verification
 After the setup, I verify the cluster by running the command `kubectl get nodes`. This command outputs the [[Installing Kubernetes (Kubeadm)#^b8d759||expected IP addresses]] of the nodes, confirming their statuses as 'Ready'. The output indicates that each node is successfully connected to the cluster and is operational, including the master node labeled as the 'control-plane'.
 
-![[Pasted image 20231113170903.png]]
+<br>![[Pasted image 20231113170903.png]]
 %%Had I not installed a network plugin (ex Calico) I would get [[show NotReady without network plugin.png|not ready]]%%
 
 
@@ -221,7 +221,7 @@ sudo kubeadm init --apiserver-advertise-address=10.0.1.47 --pod-network-cidr=192
 > 3. `--pod-network-cidr=192.168.0.0/16`: This flag specifies the range of IP addresses for the pod network. If you’re using a networking plugin which requires a CIDR notation IP range (like Calico, for example), you must set this parameter.
 
 The output
-![[Pasted image 20231112202131.png]]
+<br>![[Pasted image 20231112202131.png]]
 ```bash
 kubeadm join 10.0.1.47:6443 --token 3h2db8.nqirfc3sjwx4klum \
         --discovery-token-ca-cert-hash sha256:111cde88e502e0ef12563cf60b765763467718bff8b1e1383da9fabdb97fb95a 
@@ -232,7 +232,7 @@ kubeadm join 10.0.1.47:6443 --token 3h2db8.nqirfc3sjwx4klum \
 ```bash
 
 ```
-![[Pasted image 20231112183738.png|300]]
+<br>![[Pasted image 20231112183738.png|300]]
 
 
 ### In [[Installing Kubernetes (Kubeadm)#^936bcc|master]]
@@ -242,7 +242,7 @@ kubectl get nodes
 ```
 
 ISSUE:
-![[Pasted image 20231112184058.png]]
+<br>![[Pasted image 20231112184058.png]]
 
 ```bash
 mkdir -p $HOME/.kube
@@ -253,14 +253,14 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ^7c1098
 
 Issue still present
-![[Pasted image 20231112184058.png]]
+<br>![[Pasted image 20231112184058.png]]
 
 After the [[Installing Kubernetes (Kubeadm)#^7c1098|step above]] i restart and <mark style="background: #BBFABBA6;">works</mark>
 ```bash
 sudo systemctl restart kubelet
 ```
 
-![[Pasted image 20231112185933.png]]
+<br>![[Pasted image 20231112185933.png]]
 
 The status shows Not Ready cuse we dont have a network plugin. I'll install Calico the reason we used the specific CDIR earlier
 

@@ -13,7 +13,7 @@ tags:
 
 Step1.
 Destroy [[Assignment 4 – Terraform_Module 8_Devops BC = 2330070508|Assignment 4 – Terraform]]
-<br>![[Pasted image 20231115212716.png]]
+<br><br>![[Pasted image 20231115212716.png]]
 
 Step2:
 ```bash
@@ -155,14 +155,14 @@ resource "aws_instance" "example_instance" {
 }
 ```
 
-<br>![[Pasted image 20231115222703.png]]
+<br><br>![[Pasted image 20231115222703.png]]
 
-<br>![[Pasted image 20231115222727.png]]
+<br><br>![[Pasted image 20231115222727.png]]
 
 
 ```
 terraform output instance_ip_address > instance_ip.txt
 ```
-<br>![[Pasted image 20231115222818.png]]
+<br><br>![[Pasted image 20231115222818.png]]
 
 

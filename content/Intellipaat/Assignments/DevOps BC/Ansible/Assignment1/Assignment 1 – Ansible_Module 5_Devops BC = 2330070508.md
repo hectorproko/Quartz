@@ -24,7 +24,7 @@ sudo apt update -y
 sudo apt install ansible -y
 ```
 
-![[Pasted image 20231106085216.png]]
+<br>![[Pasted image 20231106085216.png]]
 %%Notice no default config file present, this installation did not created `/etc/ansible/[hosts,ansible.cfg]` as its usually the case
 %%
 
@@ -66,7 +66,7 @@ ubuntu@ip-10-0-1-223:~$ ssh-add -l
 ```
 
 Tested connection to one of the slaves `Slave1` 
-![[Pasted image 20231106092328.png]]
+<br>![[Pasted image 20231106092328.png]]
 
 
 2. **I set up the inventory file**:
@@ -90,7 +90,7 @@ ansible all -m ping -i inventory.ini
 ^c4a4b0
 
 > [!success]
-> ![[Pasted image 20231106105936.png]]
+> <br>![[Pasted image 20231106105936.png]]
 
 
 3. **I create the Ansible playbook**:
@@ -140,4 +140,4 @@ ansible-playbook -i inventory.ini myplaybook.yml
 ```
 
 > [!success]
-> ![[Pasted image 20231106114821.png]]
+> <br>![[Pasted image 20231106114821.png]]

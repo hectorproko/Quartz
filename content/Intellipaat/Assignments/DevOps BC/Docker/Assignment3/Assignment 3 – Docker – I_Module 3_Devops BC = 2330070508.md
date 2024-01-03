@@ -17,7 +17,7 @@ First, I ensure that the image ```ubuntu_apache``` is present:
 ```
 docker images
 ```
-![[Pasted image 20231031000424.png]]
+<br>![[Pasted image 20231031000424.png]]
 
 ---
 
@@ -27,23 +27,23 @@ Before uploading, I need to log in to Docker Hub:
 ```
 docker login
 ```
-![[Pasted image 20231031100200.png]]
+<br>![[Pasted image 20231031100200.png]]
 *I had a [DockerHub](https://hub.docker.com/) account already*
 
 Then, I tag the image with my Docker Hub username and desired repository name (I'll use ```my_docker_image``` as an example):
 ```
 docker tag ubuntu_apache:latest hectorproko/my_docker_image:latest
 ```
-![[Pasted image 20231031101414.png]]
+<br>![[Pasted image 20231031101414.png]]
 
-![[Pasted image 20231031100952.png|400]]
+<br>![[Pasted image 20231031100952.png|400]]
 *Created repo before upload*
 
 Now, I push the tagged image to Docker Hub:
 ```
 docker push hectorproko/my_docker_image:latest
 ```
-![[Pasted image 20231031102311.png|420]]
+<br>![[Pasted image 20231031102311.png|420]]
 
 ---
 
@@ -53,7 +53,7 @@ First, I pull the image:
 ```
 docker pull hectorproko/my_docker_image:latest
 ```
-![[Pasted image 20231031104337.png]]
+<br>![[Pasted image 20231031104337.png]]
 
 Then, I run the container, mapping port 80:
 ```
@@ -74,6 +74,6 @@ service apache2 start
 **I verify if I can access the Apache2 service.**
 
 I open my web browser and navigate to ```http://localhost```. I should see the Apache2 Ubuntu default page.
-![[Pasted image 20231031104820.png|400]]
+<br>![[Pasted image 20231031104820.png|400]]
 
 ---

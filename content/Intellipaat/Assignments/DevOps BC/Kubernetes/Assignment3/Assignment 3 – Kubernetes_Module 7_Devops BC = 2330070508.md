@@ -16,14 +16,14 @@ Continuing from [[Assignment 2 – Kubernetes_Module 7_Devops BC = 2330070508|As
 
 ### Step 2: Change Replicas
 At the moment our deployments have 3 replicas each. 
-![[Pasted image 20231113173555.png]]
+<br>![[Pasted image 20231113173555.png]]
    
 I run the command `kubectl edit deploy` which opens the deployment configuration in a command-line editor. Within this editor, which operates similarly to Vim, I modify the number of `replicas` to scale the deployment.
-![[Pasted image 20231113190534.png]]
-![[Pasted image 20231113190649.png|260]]
+<br>![[Pasted image 20231113190534.png]]
+<br>![[Pasted image 20231113190649.png|260]]
 After editing, I save the changes using the editor's save and exit commands `:wq`
 
 After saving the updated deployment configuration, I confirm the changes by checking the status of deployments 
 
 > [!success]
-> ![[Pasted image 20231113191119.png]]
+> <br>![[Pasted image 20231113191119.png]]

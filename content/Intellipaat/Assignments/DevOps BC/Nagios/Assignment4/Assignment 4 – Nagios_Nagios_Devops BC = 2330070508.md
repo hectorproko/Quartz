@@ -45,4 +45,4 @@ sudo systemctl restart nagios
 ```
 
 Now, the 'Current Load' service appears as a monitored service for both `my-linux-host1` and `my-linux-host2` in the Nagios interface.
-![[Pasted image 20231122152746.png]]
+<br>![[Pasted image 20231122152746.png]]

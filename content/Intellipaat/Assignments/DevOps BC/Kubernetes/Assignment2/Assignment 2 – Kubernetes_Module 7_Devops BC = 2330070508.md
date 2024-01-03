@@ -57,7 +57,7 @@ I check to ensure the service is running with:
 kubectl get svc
 ```
 
-![[nodePort service created.png]]
+<br>![[nodePort service created.png]]
 > We've confirmed that the NodePort service is actively routing traffic. The defined NodePort of `30008` is set up to forward to the internal port `80` of the Nginx pods
 
 %%we defined the port in the .yaml%%
@@ -67,4 +67,4 @@ kubectl get svc
 I retrieve the public IP address of one of the worker nodes in the cluster to test the Nginx service externally. By entering `http://<Worker_Node_Public_IP>:30008` into a web browser, I can access the Nginx landing page served through the NodePort, verifying that the service is correctly exposed.
 
 > [!success]
-> ![[Pasted image 20231113182315.png]]
+> <br>![[Pasted image 20231113182315.png]]

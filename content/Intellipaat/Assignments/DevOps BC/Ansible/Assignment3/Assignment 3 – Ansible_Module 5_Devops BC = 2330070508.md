@@ -22,7 +22,7 @@ ansible-galaxy init apache_role
 ansible-galaxy init nginx_role
 ```
 This will create two directories with subdirectories and files needed for each role.
-![[Pasted image 20231106140400.png]]
+<br>![[Pasted image 20231106140400.png]]
 
 ### Step 2: Configure the Apache2 Role
 
@@ -81,7 +81,7 @@ I will execute my playbook with the following command:
 ```bash
 ansible-playbook -i inventory.ini install_web_servers.yml 
 ```
-![[Pasted image 20231106142220.png]]
+<br>![[Pasted image 20231106142220.png]]
 
 ### Step 6: Verify the Installations
 
@@ -103,5 +103,5 @@ ansible slave2 -m shell -a "systemctl status nginx" -i inventory.ini --become
 %%
 
 > [!success]
-> ![[Pasted image 20231106143527.png]]
+> <br>![[Pasted image 20231106143527.png]]
 

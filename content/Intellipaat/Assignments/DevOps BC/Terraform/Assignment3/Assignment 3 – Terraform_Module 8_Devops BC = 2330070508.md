@@ -14,7 +14,7 @@ tags:
 Destroyed deployment [[Assignment 2 – Terraform_Module 8_Devops BC = 2330070508|Assignment 2 – Terraform]]
 
 `terraform destroy`
-<br>![[Pasted image 20231115143815.png]]
+<br><br>![[Pasted image 20231115143815.png]]
 
 ### Step 2-3:
 
@@ -61,5 +61,5 @@ In this configuration:
 - The `ami` and `subnet_id` for each instance should be appropriate for their respective regions. You need to replace the placeholders with the actual AMI IDs and subnet IDs for each region.
 - The `tags` for each instance are set to `hello-ohio` and `hello-virginia`, respectively.
 
-<br>![[Pasted image 20231115153825.png]]
+<br><br>![[Pasted image 20231115153825.png]]
 

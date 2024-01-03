@@ -84,17 +84,17 @@ Now, when I build and run a container from this Dockerfile, it will display my c
 To check the results, I can:
 
 - Build the Docker image: `docker build -t my_apache_image2 .`
-  ![[Pasted image 20231031131233.png]]
+  <br>![[Pasted image 20231031131233.png]]
   
-  ![[Pasted image 20231031142318.png]]
+  <br>![[Pasted image 20231031142318.png]]
   
 - Run the container: `docker run -d -p 80:80 my_apache_image`
-  ![[Pasted image 20231031142654.png]]
+  <br>![[Pasted image 20231031142654.png]]
 - Access the browser and navigate to `http://localhost`.
 
 > [!success]
 > I see "Welcome to My Sample Docker Page!" displayed.
->   ![[Pasted image 20231031142735.png]]
+>   <br>![[Pasted image 20231031142735.png]]
 
 
 

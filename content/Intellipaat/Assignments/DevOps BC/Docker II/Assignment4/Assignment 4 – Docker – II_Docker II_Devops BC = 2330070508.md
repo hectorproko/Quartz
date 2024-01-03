@@ -21,7 +21,7 @@ tags:
 3. **Service Published Ports:**
     - In my Swarm setup, I have a web service running so I need to open the specific port configured for this service `80`.
 
-![[dockerswarm security group.png]]
+<br>![[dockerswarm security group.png]]
 SSH access is set to allow connections from any source (`0.0.0.0`), for remote access to perform the activities I'm documenting. Additionally, to enhance security, all ports related to Docker are confined within the VPC CIDR range (`10.0.0.0/16`). Furthermore, HTTP connections are permitted from any source (`0.0.0.0`).
 
 ### Step 2: EC2 Instances
@@ -55,7 +55,7 @@ docker swarm init --advertise-addr=10.0.1.199
 ```
 *This command initializes the Swarm and designates `10.0.1.199` as the advertised address, which is the address that other nodes in the Swarm will use to connect to the master node for management and coordination.*
 
-![[Pasted image 20231117120103.png]]
+<br>![[Pasted image 20231117120103.png]]
 *Additionally, it outputs a Docker Swarm join token, which is used by worker nodes to join the Swarm.*
 
 
@@ -68,7 +68,7 @@ docker swarm join --token SWMTKN-1-57n206fb6tainmxdd8okzegjn70afvoyomi32o4dntg9b
 
 
 I verify the nodes in the swarm by using the `docker node ls` command.
-![[Pasted image 20231117120824.png]]
+<br>![[Pasted image 20231117120824.png]]
 
 
 
@@ -93,17 +93,17 @@ docker stack deploy -c docker-compose.yml my-apache-stack
 ```
 
 This configuration will create 4 replicas of the Apache container and distribute them across the Swarm nodes.
-![[Pasted image 20231117121847.png]]
+<br>![[Pasted image 20231117121847.png]]
 
 
 I check the container distribution:
 ```bash
 docker service ps my-apache-stack_apache
 ```
-![[Pasted image 20231117122941.png]]
+<br>![[Pasted image 20231117122941.png]]
 
 To verify that the Apache page is up and running, I will use the public IP addresses of worker2 and the master node and access it through a web browser.
 
 > [!success]
-> ![[Pasted image 20231117123423.png]]
-> ![[Pasted image 20231117123438.png]]
+> <br>![[Pasted image 20231117123423.png]]
+> <br>![[Pasted image 20231117123438.png]]

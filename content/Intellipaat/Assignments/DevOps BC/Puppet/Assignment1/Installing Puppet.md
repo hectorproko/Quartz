@@ -30,7 +30,7 @@ Installting 17.0.8
 ```bash
 sudo apt install openjdk-17-jre-headless -y
 ```
-![[Pasted image 20231125200130.png]]
+<br>![[Pasted image 20231125200130.png]]
 
 ```
 sudo apt-get install puppetserver -y
@@ -39,15 +39,15 @@ sudo systemctl enable puppetserver
 So before this works need to solve the [[Assignment 1 – Puppet_Module 4_Devops BC = 2330070508#Issue|issue]]. But we need to install it so the config file appears and we can edit it
 
 I edit file located in `/etc/default/puppetserver`
-![[Pasted image 20231123102742.png]]
-![[Pasted image 20231123102907.png]]
+<br>![[Pasted image 20231123102742.png]]
+<br>![[Pasted image 20231123102907.png]]
 
 ```bash
 sudo systemctl start puppetserver
 sudo systemctl status puppetserver
 ```
 
-![[Pasted image 20231125210610.png]]
+<br>![[Pasted image 20231125210610.png]]
 
 Used `find` instead of `which` not sure why did [[Assignment 1 – Puppet_Module 4_Devops BC = 2330070508#^b68c6d|work this time]]
 ```bash
@@ -59,15 +59,15 @@ ubuntu@ip-10-0-1-249:~$ sudo find / -type f -name puppetserver
 /opt/puppetlabs/server/apps/puppetserver/bin/puppetserver
 ```
 
-![[Pasted image 20231125203855.png]]
+<br>![[Pasted image 20231125203855.png]]
 Maybe not even mention this part
 The env variable we create does not registe with sudo need to keep this in mind when we need to run it with sudo
-![[Pasted image 20231125204737.png]]
+<br>![[Pasted image 20231125204737.png]]
 
 ```bash
 sudo apt policy puppetserver
 ```
-![[Pasted image 20231125205102.png]]
+<br>![[Pasted image 20231125205102.png]]
 
 No need to run `sudo ufw allow 8140/tcp `. I have firewall disabled in OS, need to open in security Group
 ```
@@ -76,18 +76,18 @@ Status: inactive
 ```
 
 Need to have DNS for hostname puppet
-![[Pasted image 20231125205611.png]]
+<br>![[Pasted image 20231125205611.png]]
 
 trying this the command we need to use full path with sudo. As expected there are no certificate request cuse we have not agents yet
 ```
 sudo /opt/puppetlabs/server/apps/puppetserver/bin/puppetserver ca list
 ```
-![[Pasted image 20231125205759.png]]
+<br>![[Pasted image 20231125205759.png]]
 
 ## Agent
 
 First we add DNS to resovle puppet to master IP. `/etc/hosts`
-![[Pasted image 20231125210340.png]]
+<br>![[Pasted image 20231125210340.png]]
 
 [Enable the Puppet platform on Apt](https://www.puppet.com/docs/puppet/8/install_puppet#enable_the_puppet_platform_apt)
 ```
@@ -103,13 +103,13 @@ sudo systemctl enable puppet
 sudo systemctl start puppet
 sudo systemctl status puppet
 ```
-![[Pasted image 20231125210429.png]]
+<br>![[Pasted image 20231125210429.png]]
 
 
 Will  navigate to the directory of `puppetserver` so when i run it with sudo dont have to specify the full path.
 With puppet ca list i see the certifacte requests of my 2 agents
 Then we sign the certificate we can sign indidivual certifacates i opted out for `--all`
-![[Pasted image 20231125214041.png]]
+<br>![[Pasted image 20231125214041.png]]
 Here appears old agent1
 
 > [!tip] when calling agent need to use sudo

@@ -181,7 +181,7 @@ Error: The certificate for 'CN=ip-10-0-1-7.ec2.internal' does not match its priv
 Error: The certificate for 'CN=ip-10-0-1-7.ec2.internal' does not match its private key
 ubuntu@ip-10-0-1-7:~$
 ```
-![[Pasted image 20231127094333.png]]
+<br>![[Pasted image 20231127094333.png]]
 used sudo, got new error
 
 > [!tip] correct command with sudo
@@ -227,9 +227,9 @@ sudo /opt/puppetlabs/bin/puppet parser validate /etc/puppetlabs/code/environment
 New error from stuff  in `init.pp`
 
 finally works
-![[Pasted image 20231127124114.png]]
-![[Pasted image 20231127124356.png]]![[Pasted image 20231127124448.png]]
-![[Pasted image 20231127124545.png]]
+<br>![[Pasted image 20231127124114.png]]
+<br>![[Pasted image 20231127124356.png]]<br>![[Pasted image 20231127124448.png]]
+<br>![[Pasted image 20231127124545.png]]
 
 
 ### Lets try agent1

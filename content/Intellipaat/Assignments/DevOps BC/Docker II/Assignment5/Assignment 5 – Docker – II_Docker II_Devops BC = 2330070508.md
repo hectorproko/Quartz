@@ -32,7 +32,7 @@ docker service create --name container-1 --network my-overlay-network alpine pin
 docker service create --name container-2 --network my-overlay-network alpine ping 8.8.8.8
 ```
 
-![[Pasted image 20231117145641.png]]
+<br>![[Pasted image 20231117145641.png]]
 
 
 ### Step 3: Ping Containers from Within Containers
@@ -44,19 +44,19 @@ I find out which node I need to ssh into
 docker service ps <container-1>
 ```
 
-![[Pasted image 20231117150323.png]]
-![[Pasted image 20231117154014.png]]
+<br>![[Pasted image 20231117150323.png]]
+<br>![[Pasted image 20231117154014.png]]
 So the containers are in worker1 `10.0.1.176` and worker2 `10.0.1.38`  
 
 
 I SSH into worker1  and subsequently log into 'container-1,' enabling me to ping 'container-2'.
 
 > [!success]
-> ![[Pasted image 20231117153511.png]]
+> <br>![[Pasted image 20231117153511.png]]
 
 This time, I SSH into worker2, which allows me to log into 'container-2.' From within 'container-2,' I execute a ping command to reach 'container-1'.
 
 > [!success]
-> ![[Pasted image 20231117154220.png]]
+> <br>![[Pasted image 20231117154220.png]]
 
 

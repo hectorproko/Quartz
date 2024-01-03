@@ -252,9 +252,9 @@ ansible-playbook -i hosts.ini site.yml
 > [!attention]- Issue
 > > [!fail]
 > > Playbook output
-> > ![[Pasted image 20231107121243.png]]
+> > <br>![[Pasted image 20231107121243.png]]
 > > Output when trying to start Apache manually
-> > ![[Pasted image 20231107121149.png]]
+> > <br>![[Pasted image 20231107121149.png]]
 > > 
 > 
 > > [!done] Solution
@@ -269,8 +269,8 @@ I re-run the playbook after stopping the nginx
 I've executed the playbook multiple times already *(troubleshooting an issue)*, resulting in all tasks being marked green. This indicates that the current state matches the desired state, and no changes were required. In addition, the appearance of our custom message confirms the successful execution of the playbook.
 
 > [!success]
-> ![[Pasted image 20231107122739.png]]
-> ![[Pasted image 20231107122817.png]]
-> ![[Pasted image 20231107122856.png]]
+> <br>![[Pasted image 20231107122739.png]]
+> <br>![[Pasted image 20231107122817.png]]
+> <br>![[Pasted image 20231107122856.png]]
 
 

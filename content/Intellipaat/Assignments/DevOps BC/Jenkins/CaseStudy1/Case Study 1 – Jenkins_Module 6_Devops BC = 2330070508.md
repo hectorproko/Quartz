@@ -33,32 +33,32 @@ In our Prod node we need to install docker
 sudo apt update -y 
 sudo apt install docker.io -y
 ```
-![[Pasted image 20231108153326.png]]
+<br>![[Pasted image 20231108153326.png]]
 
 We create a Freestyle project named 'Develop Job.' This job is configured only to build (clone repo) and its not meant to publish the output.
 
 %%[[Develop Job config.png]]%%
-![[Pasted image 20231108154808.png|330]]
-![[prod node restriction.png|330]]
-![[branch specifier develop.png|330]]
-![[GitHub hook trigger for GITScm polling.png|330]]
+<br>![[Pasted image 20231108154808.png|330]]
+<br>![[prod node restriction.png|330]]
+<br>![[branch specifier develop.png|330]]
+<br>![[GitHub hook trigger for GITScm polling.png|330]]
 
 In our new repository, we need to configure Webhooks as we did for [[Assignment 1 – Jenkins_Module 6_Devops BC = 2330070508|Assignment 1 – Jenkins]].
-![[webhook payload URL.png|450]]
+<br>![[webhook payload URL.png|450]]
 %%This is from Asig1, by the time we got to this step i had restarted server and had a new public ip%%
 
 
 Then, we create a 'Master Job' identical to the 'Develop Job' but with a different Branch Specifier.
-![[branch specifier main.png]]
+<br>![[branch specifier main.png]]
 
 
 We execute the job to verify that the files are correctly appearing in the Prod node.
-![[Pasted image 20231108173633.png]]
+<br>![[Pasted image 20231108173633.png]]
 
 I add 'Build Steps' configured to execute shell commands.
-![[Pasted image 20231108174132.png]]
+<br>![[Pasted image 20231108174132.png]]
 Then, I insert the commands into the designated section.
-![[Pasted image 20231108185028.png]]
+<br>![[Pasted image 20231108185028.png]]
 
 > [!NOTE] Commands explained: 
 > Removes a specific container (if it exists):
@@ -68,7 +68,7 @@ Then, I insert the commands into the designated section.
 > *The `|| true` part ensures that the command will not fail if th container does not exist (which would otherwise stop the Jenkins job if set to fail on any error).*  
 > 
 > > [!attention]
-> > If we do not include a cleanup step, running the job multiple times can lead to conflicts due to the presence of a previously running container with the same name. ![[Pasted image 20231107214943.png]]
+> > If we do not include a cleanup step, running the job multiple times can lead to conflicts due to the presence of a previously running container with the same name. <br>![[Pasted image 20231107214943.png]]
 > 
 > Builds the new Docker image:
 > ```bash
@@ -86,7 +86,7 @@ Then, I insert the commands into the designated section.
 ^77e322
 
 I "Build Now" the job and it success
-![[Pasted image 20231108180221.png]]
+<br>![[Pasted image 20231108180221.png]]
 
 We verify the hosted page by accessing the Prod node's public IP address through port 82. 
 
@@ -94,13 +94,13 @@ We verify the hosted page by accessing the Prod node's public IP address through
 > An inbound rule was added to the Security Group to allow traffic on port 82.
 
 > [!success]
-> ![[Pasted image 20231108183535.png]]
+> <br>![[Pasted image 20231108183535.png]]
 
 
 Now, let's test the webhook functionality. To do this, I will edit the 'index.html'. The changes will be made directly on GitHub, followed by committing the update to the repository.
 
 Job successfully triggered and built
-![[Pasted image 20231108184259.png|500]]
+<br>![[Pasted image 20231108184259.png|500]]
 
 > [!success]
-> ![[Pasted image 20231108184333.png|500]]
+> <br>![[Pasted image 20231108184333.png|500]]

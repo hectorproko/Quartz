@@ -12,7 +12,7 @@ tags:
 
 ### Step 1:
 I will use the Apache2 container that we pushed to DockerHub in [[Case Study 1 – Containerization Using Docker – Part 1_Module 3_Devops BC = 2330070508|Case Study 1 – Containerization Using Docker – Part 1]]
-![[my_apache_image2 in dockerhub.png|500]]
+<br>![[my_apache_image2 in dockerhub.png|500]]
 
 ### Step 2:
 
@@ -27,7 +27,7 @@ Then, I verify its creation by running:
 docker volume ls
 ```
 
-![[Pasted image 20231116130344.png]]
+<br>![[Pasted image 20231116130344.png]]
 
 Now, I run a container from the image that was [[my_apache_image2 in dockerhub.png|pushed]] to DockerHub in [[Case Study 1 – Containerization Using Docker – Part 1_Module 3_Devops BC = 2330070508|Case Study 1 – Containerization Using Docker – Part 1]], and I attach the newly created Docker volume named `volume-sample`.
 
@@ -41,10 +41,10 @@ docker run -it --mount source="volume-sample",destination="/var/www/html" -p 808
 
 <!--
 Big messup here, see like you attached a wrong volume, that i dont think even existed in your environemnt it was from the lesson
-![[Pasted image 20231116155033.png]]
+<br>![[Pasted image 20231116155033.png]]
 -->
 I verify the container works by `curl`ing the page from localhost
-![[Pasted image 20231116155018.png]]
+<br>![[Pasted image 20231116155018.png]]
 
 
 

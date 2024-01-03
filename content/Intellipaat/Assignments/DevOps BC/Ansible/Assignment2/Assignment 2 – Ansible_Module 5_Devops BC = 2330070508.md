@@ -54,7 +54,7 @@ ansible-playbook run_script.yml -i inventory.ini
 ```
 
 This command tells Ansible to run my playbook on all the hosts listed in my inventory, copying my script to each one and then executing it, thereby appending the text to `/tmp/1.txt` on each host.
-![[Pasted image 20231106133516.png]]
+<br>![[Pasted image 20231106133516.png]]
 
 ### Step 4: Verify the Changes
 
@@ -67,4 +67,4 @@ ansible all -m shell -a 'cat /tmp/1.txt' -i inventory.ini
 This command connects to all the hosts in my inventory and outputs the contents of `/tmp/1.txt`, allowing me to ensure that "This text has been added by custom script" has been appended successfully.
 
 > [!success]
-> ![[Pasted image 20231106133654.png]]
+> <br>![[Pasted image 20231106133654.png]]

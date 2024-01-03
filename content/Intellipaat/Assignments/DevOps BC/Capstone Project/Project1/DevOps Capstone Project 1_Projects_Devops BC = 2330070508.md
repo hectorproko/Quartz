@@ -30,8 +30,8 @@ I create three Ubuntu 22.04 EC2 instances, each located in a public subnet and c
 > 
 
 ### Master
-Installing Ansible![[Assignment 1 – Ansible_Module 5_Devops BC = 2330070508#^aa5175]]
-![[Pasted image 20231205121617.png]]
+Installing Ansible<br>![[Assignment 1 – Ansible_Module 5_Devops BC = 2330070508#^aa5175]]
+<br>![[Pasted image 20231205121617.png]]
 *This is a more updated version than [[Assignment 1 – Ansible_Module 5_Devops BC = 2330070508|Assignment 1 – Ansible]]*
 
 
@@ -42,7 +42,7 @@ Installing Ansible![[Assignment 1 – Ansible_Module 5_Devops BC = 2330070508#^a
 
 
 I generate the key by accepting the default options, simply pressing 'Enter' at each prompt.
-![[Pasted image 20231205123901.png]]
+<br>![[Pasted image 20231205123901.png]]
 
 I copy the contents of the public key
 ```bash
@@ -68,16 +68,16 @@ Prod ansible_host=10.0.1.218 ansible_user=ubuntu
 
 > [!help] `ansible -m ping` fail
 > > [!fail]
-> > ![[ansible -m ping all fail.png]]
+> > <br>![[ansible -m ping all fail.png]]
 > 
 > > [!done] Solution: `authorized_keys` can NOT have space
-> > ![[authorize_keys can not have space.png]]
+> > <br>![[authorize_keys can not have space.png]]
 > 
 
 ^061158
 
 I verify the node connection once again.
-![[Pasted image 20231205131501.png]]
+<br>![[Pasted image 20231205131501.png]]
 
 ---
 
@@ -138,20 +138,20 @@ I create playbook `play.yaml`
 ```
 
 Before I check syntax
-![[Pasted image 20231205143354.png]]
+<br>![[Pasted image 20231205143354.png]]
 
 
 We successfully ran the command `ansible-playbook play.yaml` with 0 failures.
-![[Pasted image 20231205144134.png]]
+<br>![[Pasted image 20231205144134.png]]
 
 
 **Verifying installations**
 
 master:
-![[Pasted image 20231205144439.png]]
+<br>![[Pasted image 20231205144439.png]]
 slaves:
-![[Pasted image 20231205144336.png]]
-![[Pasted image 20231205144358.png]]
+<br>![[Pasted image 20231205144336.png]]
+<br>![[Pasted image 20231205144358.png]]
 
 
 ---
@@ -161,10 +161,10 @@ In addition to getting Jenkins ready, I add SSH credentials and configure agents
 
 %%[[Pasted image 20231104211939.png|Creating admin user]]
 [[Installing Jenkins On AWS#Create credentials|Creating credentials]]%%
-![[Pasted image 20231205184831.png]]
+<br>![[Pasted image 20231205184831.png]]
 
 %%[[Installing Jenkins On AWS#Setting up slaves|adding agents]]%%
-![[Pasted image 20231205190333.png]]
+<br>![[Pasted image 20231205190333.png]]
 
 ---
 I'm using the [HelloWorld_website](https://github.com/hectorproko/HelloWorld_website) repository, the same one used in [[Case Study 1 – Jenkins_Module 6_Devops BC = 2330070508|Case Study 1 – Jenkins]]. This repository includes a Dockerfile and the website's components, such as 'index.html' and image files.
@@ -181,58 +181,58 @@ Install apache and hosts the page in Github
 This Dockerfile creates a Docker image based on Ubuntu that installs and runs the Apache web server, serving the contents of [HelloWorld_website](https://github.com/hectorproko/HelloWorld_website) from the `/var/www/html` directory within the container.
 
 ---
-![[Pasted image 20231130202539.png]]
+<br>![[Pasted image 20231130202539.png]]
 
 ### Job1
 I have configured Job1 as a Freestyle Project. This job is designed to run in the "Test" environment using the "Develop" branch of the [HelloWorld_website](https://github.com/hectorproko/HelloWorld_website) repository.
-![[Pasted image 20231205192552.png|330]]
-![[Pasted image 20231205192807.png|450]]
-![[GitHub hook trigger for GITScm polling.png|330]]
+<br>![[Pasted image 20231205192552.png|330]]
+<br>![[Pasted image 20231205192807.png|450]]
+<br>![[GitHub hook trigger for GITScm polling.png|330]]
 
 I insert the commands into "Execute shell" as I did in [[Case Study 1 – Jenkins_Module 6_Devops BC = 2330070508#^77e322|Case Study 1 – Jenkins]]
-![[Pasted image 20231205194113.png|500]]
+<br>![[Pasted image 20231205194113.png|500]]
 
 In the "Test" environment, I observe that within the workspace, **Job1** is present, and additionally, there's a container actively running.
-![[Pasted image 20231205194659.png]]
+<br>![[Pasted image 20231205194659.png]]
 
 I test this container by using the Public IP of the 'Test' server and directing traffic to port 83, which is mapped to the container.
 
 > [!success]
-> ![[Pasted image 20231205195704.png]]
+> <br>![[Pasted image 20231205195704.png]]
 
 ---
 ### Job2
 Job2 is configured as a Freestyle Project in the Jenkins setup. It is designed to run in the "Test" environment using the "main" branch.
 
-![[Pasted image 20231205203034.png]]
-![[Pasted image 20231205203336.png]]
+<br>![[Pasted image 20231205203034.png]]
+<br>![[Pasted image 20231205203336.png]]
 
 Once again I check the "Test" environment, I observe that within the workspace, **Job2** is present, and now there is a second container .
-![[Pasted image 20231205210203.png]]
+<br>![[Pasted image 20231205210203.png]]
 
 I test this container by using the Public IP of the 'Test' server and directing traffic this time to port 82, which is mapped to the container.
 
 > [!success]
-> ![[Pasted image 20231205210514.png]]
+> <br>![[Pasted image 20231205210514.png]]
 
 
 ---
 ### Job 3
 Job3 is configured as a Freestyle Project in the Jenkins setup. It is designed to run in the "Prod" environment using the "main" branch.
 
-![[Pasted image 20231205203034.png]]
+<br>![[Pasted image 20231205203034.png]]
 
-![[Pasted image 20231205202852.png]]
+<br>![[Pasted image 20231205202852.png]]
 
-![[Pasted image 20231205211700.png]]
+<br>![[Pasted image 20231205211700.png]]
 
 In the "Prod" environment, I observe that within the workspace, **Job3** is present, and additionally, there's a container actively running.
-![[Pasted image 20231205211852.png]]
+<br>![[Pasted image 20231205211852.png]]
 
 I test this container by using the Public IP of the "Prod" server and directing traffic this time to port 80 (default), which is mapped to the container.
 
 > [!success]
-> ![[Pasted image 20231205212855.png]]
+> <br>![[Pasted image 20231205212855.png]]
 
 
 

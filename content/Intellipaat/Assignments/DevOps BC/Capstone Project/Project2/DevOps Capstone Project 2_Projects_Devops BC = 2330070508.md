@@ -21,9 +21,9 @@
 > 	**Worker3:** Java, Docker, Kubernetes 
 > 	**Worker4:** Docker, Kubernetes 
 > 
-> ![[Pasted image 20231124221734.png]]
+> <br>![[Pasted image 20231124221734.png]]
 > 
-> ![[Pasted image 20231124221811.png|397]]
+> <br>![[Pasted image 20231124221811.png|397]]
 
 
 %%[[video steps]]%%
@@ -43,7 +43,7 @@ wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/sha
 echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
 sudo apt update && sudo apt install terraform -y
 ```
-![[Pasted image 20231215145002.png]]
+<br>![[Pasted image 20231215145002.png]]
 
 For Terraform to authenticate with AWS, I will create a file named `~/.aws/credentials` that contains my AWS access key and secret key. The AWS provider will automatically pick up the credentials from this shared credentials file.
 
@@ -98,10 +98,10 @@ terraform init
 terraform plan
 terraform apply
 ```
-![[Pasted image 20231215165557.png]]
+<br>![[Pasted image 20231215165557.png]]
 
 My 3 new instances are "Kmaster", "Kslave1" and "Kslave2"
-![[Pasted image 20231215165658.png]]
+<br>![[Pasted image 20231215165658.png]]
 
 ---
 ### Ansible
@@ -113,7 +113,7 @@ sudo apt install software-properties-common
 sudo add-apt-repository --yes --update ppa:ansible/ansible
 sudo apt install ansible -y
 ```
-![[Pasted image 20231215170036.png]]
+<br>![[Pasted image 20231215170036.png]]
 
 **Creating an Inventory**
 I create a file `inventory.ini`
@@ -149,7 +149,7 @@ ssh-add -l
 ```bash
 ansible all -m ping -i inventory.ini
 ```
-![[Pasted image 20231215174935.png]]
+<br>![[Pasted image 20231215174935.png]]
 
 
 ### Playbook and scripts
@@ -162,13 +162,13 @@ playbook.yaml -- on Kmaster --> Kmaster.sh
 class playbook.yaml,Jenkins_terraform_ansible.sh,Kmaster.sh internal-link; 
 ```
 
-![[playbook.yaml]]
+<br>![[playbook.yaml]]
 
 ---
 
-![[Kmaster.sh]]
+<br>![[Kmaster.sh]]
 
-![[Jenkins_terraform_ansible.sh]]
+<br>![[Jenkins_terraform_ansible.sh]]
 
 ---
 
@@ -176,7 +176,7 @@ class playbook.yaml,Jenkins_terraform_ansible.sh,Kmaster.sh internal-link;
 ansible-playbook -i inventory.ini playbook.yaml --check
 ansible-playbook -i inventory.ini playbook.yaml
 ```
-![[Pasted image 20231215183050.png]]
+<br>![[Pasted image 20231215183050.png]]
 
 --- 
 ### Repo
@@ -201,12 +201,12 @@ ENTRYPOINT apachectl -D FOREGROUND
 This Dockerfile creates a Docker image based on Ubuntu that installs and runs the Apache web server, serving the contents of [website](https://github.com/hectorproko/website.git) from the `/var/www/html` directory within the container.
 
 
-![[deploy.yml]]
+<br>![[deploy.yml]]
 
 
 
 
-![[svc.yml]]
+<br>![[svc.yml]]
 
 ---
 **Incorporate files to remote repo**
@@ -299,23 +299,23 @@ I access Jenkins through the browser using to set it up with default plugins, us
 
 **Created "docker" and "ssh" credentials**
 
-![[Pasted image 20231216153802.png]]
+<br>![[Pasted image 20231216153802.png]]
 
 
 For docker I use a "token" generated in dockerhub.io
-![[Pasted image 20231216122501.png|500]]
-![[Pasted image 20231216122728.png|500]]
+<br>![[Pasted image 20231216122501.png|500]]
+<br>![[Pasted image 20231216122728.png|500]]
 
 **Added Agent "Kmaster"**
 %%[[Installing Jenkins On AWS#To add agent|add agents]]%%
-![[Pasted image 20231216155924.png]]
+<br>![[Pasted image 20231216155924.png]]
 
 
 I create a job of type "Pipeline"
 
-![[Pasted image 20231216160311.png]]
+<br>![[Pasted image 20231216160311.png]]
 
-![[Pasted image 20231217162933.png]]
+<br>![[Pasted image 20231217162933.png]]
 
 ```bash
 pipeline {
@@ -373,27 +373,27 @@ The script leverages an environment variable for Docker Hub credentials and spec
 3. **Docker**: Builds a Docker image from the workspace, logs into Docker Hub using stored credentials, tags the image with the build number, and pushes it to a Docker repository.
 4. **Kubernetes**: Deploys the application to Kubernetes using `kubectl` commands, referencing deployment and service configuration files.
 
-![[Pasted image 20231217162830.png]]
+<br>![[Pasted image 20231217162830.png]]
 
 Once the job runs successfully it creates the repo in dockerhub.io
-![[Pasted image 20231216164247.png|620]]
+<br>![[Pasted image 20231216164247.png|620]]
 Once we open we see the different version of the image. With `${env.BUILD_NUMBER}` I change the tag of the image to reflect the build number before uploading it
-![[Pasted image 20231216165402.png|500]]
+<br>![[Pasted image 20231216165402.png|500]]
 
 
   
 In Kmaster: 
 I see two pod replicas as specified in [[deploy.yml]] and the service as defined in [[svc.yml]].
 
-![[Pasted image 20231216171207.png]]
+<br>![[Pasted image 20231216171207.png]]
 
 
 To verify that the service is accessible through the NodePort, I attempt to reach the service using the public IP address of any node in the Kubernetes cluster, which includes `Kmaster`, `Kslave1`, and `Kslave2`, followed by the NodePort number.
 
 > [!success]
-> ![[Pasted image 20231216171605.png\|500]]
-> ![[Pasted image 20231216171556.png\|500]]
-> ![[Pasted image 20231216171548.png\|500]]
+> <br>![[Pasted image 20231216171605.png\|500]]
+> <br>![[Pasted image 20231216171556.png\|500]]
+> <br>![[Pasted image 20231216171548.png\|500]]
 > 
 
 

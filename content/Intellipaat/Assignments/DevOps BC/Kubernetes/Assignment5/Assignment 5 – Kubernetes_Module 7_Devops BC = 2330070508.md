@@ -40,20 +40,20 @@ This command fetches the deployment YAML file from the official GitHub repositor
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.8.2/deploy/static/provider/baremetal/deploy.yaml
 ```
 
-![[Pasted image 20231113204441.png]]
+<br>![[Pasted image 20231113204441.png]]
 
 We can confirm that the Nginx Ingress Controller is successfully running within our Kubernetes cluster as a pod
-![[Pasted image 20231113204642.png]]
+<br>![[Pasted image 20231113204642.png]]
 
 We have an ingress service configured with NodePort types on the following ports:
 - HTTP: 80, mapped to 30426
 - HTTPS: 443, mapped to 31013"
-![[nodeport ports.png]]
+<br>![[nodeport ports.png]]
 %%
 The Public IP that worked was worker2
 Need to find 
-![[Pasted image 20231113210305.png]]
-![[Pasted image 20231113210403.png]]
+<br>![[Pasted image 20231113210305.png]]
+<br>![[Pasted image 20231113210403.png]]
 Seem like this works with the Public IP of the node that runs at least one pod
 kubectl get pods -o wide
 #question
@@ -122,26 +122,26 @@ kubectl apply -f ingress.yaml
 > > ingressClassName: nginx
 > > ```
 > > Log when working
-> > ![[success after fixing ingress rule, pod log ingress controller.png]]
+> > <br>![[success after fixing ingress rule, pod log ingress controller.png]]
 > 
 
 When the ingress wasn't working ADDRESS was empty
-![[Pasted image 20231114093204.png]]
+<br>![[Pasted image 20231114093204.png]]
 %%
 
 I verify the ingress was created:
 
 > [!success]
-> ![[Pasted image 20231114112947.png]]
+> <br>![[Pasted image 20231114112947.png]]
 
 
 I test the ingress path `/nginx` using both the public IP addresses of worker nodes 1 and 2, along with the NodePort `30426`.
-![[Pasted image 20231114113302.png|500]]
-![[Pasted image 20231114113359.png|500]]
+<br>![[Pasted image 20231114113302.png|500]]
+<br>![[Pasted image 20231114113359.png|500]]
 
 I will now create an Apache deployment along with a corresponding ClusterIP service to further test our Ingress.
-![[Pasted image 20231114115621.png]]
-![[Pasted image 20231114114823.png]]
+<br>![[Pasted image 20231114115621.png]]
+<br>![[Pasted image 20231114114823.png]]
 
 I have updated `ingress.yaml` to include an additional path `/apache` with the following configuration.
 ```yaml
@@ -158,7 +158,7 @@ I will now apply it again:
 ```
 kubectl apply -f ingress.yaml
 ```
-![[Pasted image 20231114120015.png]]
+<br>![[Pasted image 20231114120015.png]]
 
 
 
@@ -169,11 +169,11 @@ We can also try with the NodePort for https [[nodeport ports.png|as per]]
 Now, I will test both paths with both NodePorts mapped to port 80 for HTTP and port 443 for HTTPS.
 > [!success] 
 > Using 80(HTTP) : NodePort `30426`
-> ![[testingNginxApacheIngressBrowser.gif]]
+> <br>![[testingNginxApacheIngressBrowser.gif]]
 
 > [!success] 
 > Using 443(HTTPS) : NodePort `31013`
-> ![[testingNginxApacheIngressBrowserHTTPS.gif]]
+> <br>![[testingNginxApacheIngressBrowserHTTPS.gif]]
 
 > [!attention]
 > The ingress rule is configured with `pathType: Prefix`. This means that, for example, both `/nginx` and `/nginx123` will match the rule, but `/123nginx` will not be a match.

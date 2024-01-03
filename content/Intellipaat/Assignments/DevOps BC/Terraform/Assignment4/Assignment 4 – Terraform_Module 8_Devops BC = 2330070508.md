@@ -11,7 +11,7 @@ tags:
 
 ### Step 1
 Destroying infrastructure from [[Assignment 3 – Terraform_Module 8_Devops BC = 2330070508|Assignment 3 – Terraform]]
-<br>![[Pasted image 20231115195447.png]]
+<br><br>![[Pasted image 20231115195447.png]]
 
 ### Step 2-3
 
@@ -110,10 +110,10 @@ In this configuration:
 - An EC2 instance is deployed within the created subnet and attached to the security group.
 
 `terraform apply`
-<br>![[Pasted image 20231115205049.png]]
+<br><br>![[Pasted image 20231115205049.png]]
 
 
 
 Just to test the instance i try to ssh into it
-<br>![[Pasted image 20231115211158.png]]
-<br>![[Pasted image 20231115210936.png]]''
+<br><br>![[Pasted image 20231115211158.png]]
+<br><br>![[Pasted image 20231115210936.png]]''

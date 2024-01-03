@@ -75,5 +75,5 @@ git push -u origin main
 > [!success]
 > Now, I've successfully added my files to the GitHub repository.
 > 
-> ![[Pasted image 20231027214429.png]]
-> ![[Pasted image 20231027214512.png|300]]
+> <br>![[Pasted image 20231027214429.png]]
+> <br>![[Pasted image 20231027214512.png|300]]
