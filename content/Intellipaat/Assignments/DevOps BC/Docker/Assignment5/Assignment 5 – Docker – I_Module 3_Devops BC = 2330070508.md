@@ -1,3 +1,7 @@
+---
+tags:
+  - docker
+---
 
 > [!info] Module 3: Docker Part 1 Assignment - 5
 > **Training Tasks To Be Performed:** 

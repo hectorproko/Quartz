@@ -1,3 +1,7 @@
+---
+tags:
+  - docker
+---
 > [!info] Docker Part 2 Assignment - 3
 > **Tasks To Be Performed:**
 > 1. Create 5 custom container with 5 different default pages 

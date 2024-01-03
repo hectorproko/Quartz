@@ -1,3 +1,7 @@
+---
+tags:
+  - docker
+---
 
 > [!info] Docker Part 2 Assignment - 5
 > **Tasks To Be Performed:** 

@@ -1,3 +1,7 @@
+---
+tags:
+  - docker
+---
 > [!info] Docker Part 2 Assignment - 2
 > **Tasks To Be Performed:** 
 > 1. Use the Apache2 container created in previous module 

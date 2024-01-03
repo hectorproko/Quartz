@@ -1,3 +1,7 @@
+---
+tags:
+  - docker
+---
 
 > [!NOTE] Module 3: Case Study - Containerization using Docker Part 1 
 > **Problem Statement:** 
