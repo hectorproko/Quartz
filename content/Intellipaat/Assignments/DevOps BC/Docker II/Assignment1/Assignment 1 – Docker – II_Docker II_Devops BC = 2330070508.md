@@ -15,8 +15,6 @@ I will use the Apache2 container that we pushed to DockerHub in [[Case Study 1 �
 ![[my_apache_image2 in dockerhub.png|500]]
 
 ### Step 2:
-%%Referecing [[Devops BC = 2330070508#Lecture 1 – Docker Storage|Lecture 1 – Docker Storage]]
-%%
 
 
 First, I create a volume: `volume-sample`
@@ -33,28 +31,7 @@ docker volume ls
 
 Now, I run a container from the image that was [[my_apache_image2 in dockerhub.png|pushed]] to DockerHub in [[Case Study 1 – Containerization Using Docker – Part 1_Module 3_Devops BC = 2330070508|Case Study 1 – Containerization Using Docker – Part 1]], and I attach the newly created Docker volume named `volume-sample`.
 
-%%
 
-> [!question]- **Issue:** `invalid mount`
-> > [!fail]
-> > ```bash
-> > $ docker run -it --mount source="demo-vol",destination="/var/www/html" -d hectorproko/my_docker_image:my_apache_image2
-> > docker: Error response from daemon: invalid mount config for type "volume": invalid mount path: 'C:/Program Files/Git/var/www/html' mount path must be absolute.
-> > See 'docker run --help'.
-> > ```
-> > 
-> 
-> > [!done] Solution
-> > The error you're encountering, `invalid mount path: 'C:/Program Files/Git/var/www/html'`, suggests that Docker is interpreting the mount path in a Windows-specific context, likely because you're running the command in a Git Bash or similar shell on Windows.
-> > 
-> > In Git Bash, paths starting with `/` are automatically translated to Windows paths, which leads to this confusion. To prevent this translation and use the Unix-style absolute path as intended, you can prefix the path with an extra `/`, like this:
-> > ```bash
-> > docker run -it --mount source="demo-vol",destination="//var/www/html" -p 8080:80 -d hectorproko/my_docker_image:my_apache_image2
-> > ```
-> > 
-> 
-
-%%
 
 I run a Docker container and attached the newly created volume to it
 ```bash

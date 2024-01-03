@@ -12,12 +12,6 @@ tags:
 ### Step 1: 
 Using container `ID: cbda67fd188b` from [[Assignment 1 – Docker – II_Docker II_Devops BC = 2330070508|Assignment 1 – Docker – II]] 
 
-%%I think i meesed up here, since it sounds like the container need to be running
-
-I'll stop and remove previous container
-![[Pasted image 20231116155033.png]]
-%%
-
 Removing container
 ```
 docker rm -f cbda67fd188b
@@ -29,7 +23,6 @@ docker run -it --mount type=bind,source=/c/Users/Hecti/Desktop/docker_vol,target
 ```
 ![[Pasted image 20231116160144.png]]
 
-%%When you bind mount the destination gets replace with source so if source is empty destination gets deleted%%
 
 ### Step 2:
 Created file `/index.html` inside folder nano `docker_vol`

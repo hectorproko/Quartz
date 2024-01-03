@@ -64,5 +64,5 @@ I test one of the ports to access the custom page hosted by one of the container
 > [!success]
 > ![[Pasted image 20231117101002.png]]
 
-%%Testing the rest
-![[5containers.gif]]%%
+Testing the rest
+![[5containers.gif]]

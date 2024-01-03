@@ -33,15 +33,11 @@ docker service create --name container-2 --network my-overlay-network alpine pin
 ```
 
 ![[Pasted image 20231117145641.png]]
-%%seems like we need a program to run inside, why we running ping%%
-%%  
-> Yes, in a Docker Swarm cluster, it's common to create containers as services using the `docker service create` command rather than using `docker run`. When you create containers as services in a Swarm, they benefit from features like automatic load balancing, high availability, and easy scaling.
 
-%%
 
 ### Step 3: Ping Containers from Within Containers
 
-%%I first locate the Pods that are associated with the services named 'Container-1' and 'Container-2' using the following command:%%
+
 
 I find out which node I need to ssh into
 ```bash
@@ -50,25 +46,8 @@ docker service ps <container-1>
 
 ![[Pasted image 20231117150323.png]]
 ![[Pasted image 20231117154014.png]]
-So the containers are in worker1 `10.0.1.176` and worker2 `10.0.1.38`
-%%
-We see the node that the container is in
+So the containers are in worker1 `10.0.1.176` and worker2 `10.0.1.38`  
 
-> [!attention]
-> The reason the `docker ps` command doesn't show the container with the ID `3kpp0efxbkcg` is because it's a container managed by a Docker Swarm service, and `docker ps` typically only lists containers that are running directly on the Docker host where you run the command.
-
-%%
-%%
-Once we have `ssh` into each node we run the following commands:
-
-```bash
-# Execute a shell inside container-1
-docker exec -it container-1.1 sh
-
-# Inside container-1, ping container-2 by its service name
-ping container-2
-```
-%%
 
 I SSH into worker1  and subsequently log into 'container-1,' enabling me to ping 'container-2'.
 

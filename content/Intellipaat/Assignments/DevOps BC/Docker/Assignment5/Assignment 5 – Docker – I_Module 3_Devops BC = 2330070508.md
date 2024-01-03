@@ -98,10 +98,3 @@ To check the results, I can:
 
 
 
-%%
-# Issue
-![[Pasted image 20231031130803.png]]
-```
-docker pull ubuntu
-```
-%%

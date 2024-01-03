@@ -30,22 +30,7 @@ COPY website/ /var/www/html/
 
 Similarly to what I did in [[Assignment 3 – Docker – I_Module 3_Devops BC = 2330070508|Assignment 3 – Docker – I]], I'll then upload the rebuilt image to DockerHub.
 ![[Pasted image 20231031195354.png]]
-%%
-```
-C:\Users\Hecti>docker images
-REPOSITORY         TAG       IMAGE ID       CREATED       SIZE
-my_apache_image2   latest    79f2dbe4e0f0   6 hours ago   231MB
-ubuntu             latest    e4c58958181a   3 weeks ago   77.8MB
 
-C:\Users\Hecti>docker login
-Authenticating with existing credentials...
-Login Succeeded
-
-Logging in with your password grants your terminal complete access to your account.
-For better security, log in with a limited-privilege personal access token. Learn more at https://docs.docker.com/go/access-tokens/
-```
-
-%%
 
 I tag the image with my Docker Hub username and desired repository name (I'll use ```my_docker_image``` as an example):
 ```
