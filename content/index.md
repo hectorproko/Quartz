@@ -65,6 +65,9 @@ Here are some of the projects I've been working on, categorized by technology:
 - [[Packer_To_AMI|Packer to AMI]] ~~*(old [Packer To AMI (AWS)](https://github.com/hectorproko/Packer/blob/main/Packer_To_AMI.md) )*~~
     - Placeholder
 
+### Course Work:
+![[IntelliPaat_Index]]
+
 
 
 
