@@ -1,5 +1,5 @@
 **Module 2:**
-[[Assignment 1 – EC2_Module2_AWS Weekday BC = 2301080808|Launching and Configuring an Ubuntu EC2 Instance with Nginx on AWS]]
+1. [[Assignment 1 – EC2_Module2_AWS Weekday BC = 2301080808|Launching and Configuring an Ubuntu EC2 Instance with Nginx on AWS]]
 
 
 <!--
