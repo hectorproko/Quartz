@@ -9,7 +9,7 @@
 > - [x] [[Assignment 1 – EC2_Module2_AWS Weekday BC = 2301080808|Assignment 1 – EC2]]
 > -  Friday 1/5/2024
 > - [x] [[Assignment 2 – EBS_Module2_AWS Weekday BC = 2301080808|Assignment 2 – EBS]]
->     Sabado 1/6/2024
+> -  Sabado 1/6/2024
 > - [x] [[Assignment 3 – EC2 And EFS_Module2_AWS Weekday BC = 2301080808|Assignment 3 – EC2 And EFS]]
 > - [ ] [[Assignment 4 – FSx_Module2_AWS Weekday BC = 2301080808|Assignment 4 – FSx]] <mark style="background: #FFB8EBA6;">Pending</mark> ^fe039a
 > - [x] [[Case Study – EC2, EBS And EFS_Module2_AWS Weekday BC = 2301080808|Case Study – EC2, EBS And EFS]]
