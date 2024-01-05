@@ -19,15 +19,16 @@ I'll log in to my AWS account and go to **EC2 Dashboard** and click **Launch ins
 
 I'll name my instance **Web_Server**
 Pick Ubuntu:
-<br>![[Pasted image 20230822213106.png]]
+<br>![[Pasted image 20230822213106.png]]  
+
 Instance type:
-<br>![[Pasted image 20230822213124.png]]
+<br>![[Pasted image 20230822213124.png]]  
 
 I'll make sure to **Allow** HTTP, HTTPS 
-<br>![[Pasted image 20230822213324.png]]
+<br>![[Pasted image 20230822213324.png]]  
 
 In **Advanced details** I'll run some commands in **User data** to make some changes to the page
-<br>![[Pasted image 20230822214313.png]]
+<br>![[Pasted image 20230822214313.png]]  
 
 The full script:
 ```bash
@@ -60,11 +61,9 @@ systemctl reload nginx
 
 
 I'll wait for instance to be ready  
-<br>![[Pasted image 20230822213658.png]]
+<br>![[Pasted image 20230822213658.png]]  
 
 I'll get the instance's **Public IP**    
-<br> ![[Pasted image 20230822213826.png]]
-
 <br> ![[Pasted image 20230822213826.png]]
 
 When I check in the browser the expected page appears:  
