@@ -1,9 +1,9 @@
 ---
 tags:
   - AWS
+title: Launching a Linux EC2 Instance with Attached and Resized EBS Storage
 ---
-==PENDING CLEANUP==
- 
+
 > [!NOTE]
 > **Problem Statement:** 
 > You work for XYZ Corporation. Your tnrporation wants to launch a new web-based appliætion using AWS Virtual Machines. Configure the resources accMdingly with appropriate storage for the tasks. 
