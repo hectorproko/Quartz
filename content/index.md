@@ -67,11 +67,20 @@ Here are some of the projects I've been working on, categorized by technology:
 
 
 
-<!--
-### Course Work:
-[[IntelliPaat_Index]]
--->
 
+### Course Work:
+[[AWS Weekday BC = 2301080808|AWS]]
+
+
+<!--
+[[Azure Administrator Course for AZ-103 AZ-104|Azure Administrator]]
+[[Azure Devops BC = 2322102810|Azure DevOps]]
+[[Devops BC = 2330070508]]
+
+
+[[IntelliPaat_Index]]
+
+-->
 
 
 

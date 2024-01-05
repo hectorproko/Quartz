@@ -1,8 +1,9 @@
 ---
 tags:
   - AWS
+title: Launching and Configuring an Ubuntu EC2 Instance with Nginx on AWS
 ---
-==PENDING CLEANUP==
+
  
 
 > [!NOTE]
