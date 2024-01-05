@@ -58,8 +58,6 @@ echo '<!DOCTYPE html>
 systemctl reload nginx
 ```
 
-^022e1c
-
 
 I'll wait for instance to be ready
 <br>![[Pasted image 20230822213658.png]]
