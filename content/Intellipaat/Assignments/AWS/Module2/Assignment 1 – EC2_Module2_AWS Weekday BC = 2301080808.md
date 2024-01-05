@@ -64,7 +64,7 @@ I'll wait for instance to be ready
 <br>![[Pasted image 20230822213658.png]]  
 
 I'll get the instance's **Public IP**    
-<br> ![[Pasted image 20230822213826.png]]
+<br> ![[Pasted image 20230822213826.png|250]]
 
 When I check in the browser the expected page appears:  
 <br> ![[Pasted image 20230822213731.png]]
