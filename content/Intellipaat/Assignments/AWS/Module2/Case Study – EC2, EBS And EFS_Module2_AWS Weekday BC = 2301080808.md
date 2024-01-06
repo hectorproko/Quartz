@@ -35,7 +35,7 @@ title: Securing and Managing Linux Web Servers with EBS Operations on AWS
 ### Task 2: Replicate the instance in the US-West-2 (Oregon) region
 
 1. **Create AMI**: I'll navigate to the instance I created and create an AMI of it.
-   <br>![[Actions-CreateImage.png]]
+   <br>![[Actions-CreateImage.png]]  
    Image name: `ImageFromUS-east-1`
 2. **Copy to US-West-2**: Once the AMI is ready, I'll copy it to the `US-West-2 (Oregon)` region.
    <br>![[actions-copyAMI.png]]
