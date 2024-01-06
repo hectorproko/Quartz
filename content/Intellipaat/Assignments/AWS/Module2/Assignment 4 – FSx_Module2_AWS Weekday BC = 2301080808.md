@@ -70,7 +70,7 @@ net use Z: \\fs-045731302b7827386.corp.example.com\share
 
 #### Part 3.0: Create EC2 Instance with Windows OS
 **EC2 Dashboard** and click **Launch instance**. 
-<br>![[Launch instance Button.png]]
+<br>![[LaunchinstanceButton.png]]
 I'll name my instance **Windows** and pick:
 <br>![[Pasted image 20230823170454.png]]
 *Left the rest as defaults*

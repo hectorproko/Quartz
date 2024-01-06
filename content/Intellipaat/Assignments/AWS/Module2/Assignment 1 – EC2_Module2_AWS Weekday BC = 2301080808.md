@@ -14,7 +14,7 @@ title: Launching and Configuring an Ubuntu EC2 Instance with Nginx on AWS
 
 
 I'll log in to my AWS account and go to **EC2 Dashboard** and click **Launch instance**. 
-<br>![[Launch instance Button.png]]
+<br>![[LaunchinstanceButton.png]]
 *I happen to be in the correct Region (N. Virginia)*
 
 I'll name my instance **Web_Server**

@@ -15,7 +15,7 @@ title: Launching a Linux EC2 Instance with Attached and Resized EBS Storage
 
 
 I'll log in to my AWS account and go to **EC2 Dashboard** and click **Launch instance**. 
-<br>![[Launch instance Button.png]]
+<br>![[LaunchinstanceButton.png]]
 
 I'll named the instance **Assig2** and keep the defaults
 <br>![[Pastedimage20230822221059.png]]

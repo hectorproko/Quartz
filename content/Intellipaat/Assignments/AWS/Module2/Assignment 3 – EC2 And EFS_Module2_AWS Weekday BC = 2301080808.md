@@ -11,7 +11,7 @@ title: Integrating Multi-OS EC2 Instances with Elastic File System (EFS) on AWS
 > 
 
 First I'll create 2 **Security Groups**
-<br>![[Pasted image 20230823102350.png]]
+<br>![[Pastedimage20230823102350.png]]
 **SSH** - Allows SSH connection from anywhere
 **EFS/NFS** - Allows NFS traffic (typically on port 2049) from default VPC's CIDR `172.31.0.0/16`. This is aimed at enabling the instance to communicate with the EFS **mount target**.
 <!-- 
@@ -19,13 +19,13 @@ Since this is only for allowing NFS traffic, it should have an outbound rule tha
 
 So in EC2 allow outboud but in mount target allow inboud?
 -->
-<br>![[Pasted image 20230823083807.png]]
+<br>![[Pastedimage20230823083807.png]]
 
 I'll create an **EFS** filesystem called **EFS_for3Instance** at `Amazon EFS > Filesystems > Create file system`
-<br>![[Pasted image 20230823103312.png]]
+<br>![[Pastedimage20230823103312.png]]
 
 I'll click on **EFS_for3Instance** and navigate to **Network** tab to replace the **Security Group** associated with **Mount Targets** with the one I create **EFS/NFS**
-<br>![[Pasted image 20230823111350.png]]
+<br>![[Pastedimage20230823111350.png]]
 
 I click the button **Attach** to get the **EFS**'s mount command. In this case is the following:
 ```
@@ -35,7 +35,7 @@ sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,ret
 
 I will now create 3 EC2 Instances Ubuntu, Red Hat and Amazon Linux. 
 They will all have the same **Security Groups** that I created attached
-<br>![[Pasted image 20230823112024.png]]
+<br>![[Pastedimage20230823112024.png]]
 
 For the EC2 instance to work I need to install **Amazon EFS client** in them. Sense all 3 instances have different OS the commands are different
 
@@ -44,7 +44,7 @@ For the EC2 instance to work I need to install **Amazon EFS client** in them. Se
 
 
 I'll do this installation at the time I launch the Instance through Advance details - User data
-<br>![[Pasted image 20230823112643.png]]
+<br>![[Pastedimage20230823112643.png]]
 
 Ubuntu's - *User data*
 ```bash
@@ -95,19 +95,19 @@ sudo mkdir /efs
 sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,retrans=2,noresvport fs-035a12e0097bf3b55.efs.us-east-1.amazonaws.com:/ /efs
 ```
 
-<br>![[Pasted image 20230823114001.png]]
+<br>![[Pastedimage20230823114001.png]]
 
 Now I'll connect to each instance to check:
 
 **Ubuntu:**
-<br>![[Pasted image 20230823113731.png]]
+<br>![[Pastedimage20230823113731.png]]
 I see the mounted EFS and create a test file `fromUbuntu` inside
 
 **Amazon Linux:**
-<br>![[Pasted image 20230823113844.png]]
+<br>![[Pastedimage20230823113844.png]]
 
 **Red Hat:**
-<br>![[Pasted image 20230823114135.png]]
+<br>![[Pastedimage20230823114135.png]]
 
 
 Everything works as expected
