@@ -1,9 +1,9 @@
 ---
 tags:
   - AWS
+title: Integrating Multi-OS EC2 Instances with Elastic File System (EFS) on AWS
 ---
-==PENDING CLEANUP==
- 
+
 
 > [!NOTE]
 > **Tasks To Be Performed:**
@@ -99,14 +99,14 @@ sudo mount -t nfs4 -o nfsvers=4.1,rsize=1048576,wsize=1048576,hard,timeo=600,ret
 
 Now I'll connect to each instance to check:
 
-Ubuntu:
+**Ubuntu:**
 <br>![[Pasted image 20230823113731.png]]
 I see the mounted EFS and create a test file `fromUbuntu` inside
 
-Amazon Linux:
+**Amazon Linux:**
 <br>![[Pasted image 20230823113844.png]]
 
-Red Hat:
+**Red Hat:**
 <br>![[Pasted image 20230823114135.png]]
 
 

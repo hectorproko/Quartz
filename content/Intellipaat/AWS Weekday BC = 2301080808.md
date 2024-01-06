@@ -1,6 +1,9 @@
 **Module 2:**
 1. [[Assignment 1 – EC2_Module2_AWS Weekday BC = 2301080808|Launching and Configuring an Ubuntu EC2 Instance with Nginx on AWS]]
 2. [[Assignment 2 – EBS_Module2_AWS Weekday BC = 2301080808|Launching a Linux EC2 Instance with Attached and Resized EBS Storage]]
+3. [[Assignment 3 – EC2 And EFS_Module2_AWS Weekday BC = 2301080808|Integrating Multi-OS EC2 Instances with Elastic File System (EFS) on AWS]]
+4. [[Placeholder]]
+5. [[Case Study – EC2, EBS And EFS_Module2_AWS Weekday BC = 2301080808|Case Study – EC2, EBS And EFS]]
 
 
 <!--
@@ -11,8 +14,11 @@
 > - [x] [[Assignment 2 – EBS_Module2_AWS Weekday BC = 2301080808|Assignment 2 – EBS]]
 > -  Sabado 1/6/2024
 > - [x] [[Assignment 3 – EC2 And EFS_Module2_AWS Weekday BC = 2301080808|Assignment 3 – EC2 And EFS]]
-> - [ ] [[Assignment 4 – FSx_Module2_AWS Weekday BC = 2301080808|Assignment 4 – FSx]] <mark style="background: #FFB8EBA6;">Pending</mark> ^fe039a
+> -  Sunday 1/7/2024
+> - [ ] [[Assignment 4 – FSx_Module2_AWS Weekday BC = 2301080808|Assignment 4 – FSx]] <mark style="background: #FFB8EBA6;">Pending</mark>
+> -  Pending x/x/xxxx
 > - [x] [[Case Study – EC2, EBS And EFS_Module2_AWS Weekday BC = 2301080808|Case Study – EC2, EBS And EFS]]
+> -  Monday 1/8/2024
 
 > [!Done]- Module 3
 > - [x] [[Assignment 1 – IAM Users_Module3_AWS Weekday BC = 2301080808|Assignment 1 – IAM Users]]
