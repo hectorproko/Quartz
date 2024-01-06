@@ -3,7 +3,9 @@ tags:
   - AWS
 title: Securing and Managing Linux Web Servers with EBS Operations on AWS
 ---
-
+<!--
+In this project, I created and managed a Linux EC2 instance, replicated it across regions, and worked extensively with EBS volumes—creating, attaching, resizing, and taking backups. This task highlighted my ability to manage and secure cloud-based web servers, showcasing my skills in complex AWS environment management. Dive into the details here:
+-->
 
 > [!info]
 > **Problem Statement:** 

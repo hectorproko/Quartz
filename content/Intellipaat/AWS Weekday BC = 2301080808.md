@@ -5,8 +5,10 @@
 4. [[Placeholder]]
 5. [[Case Study – EC2, EBS And EFS_Module2_AWS Weekday BC = 2301080808|Securing and Managing Linux Web Servers with EBS Operations on AWS]]
 
+**Module 3:**
+1. 
 
-<!-
+<!--
 
 > [!quote] **Module 2:**
 > - [x] [[Assignment 1 – EC2_Module2_AWS Weekday BC = 2301080808|Assignment 1 – EC2]]

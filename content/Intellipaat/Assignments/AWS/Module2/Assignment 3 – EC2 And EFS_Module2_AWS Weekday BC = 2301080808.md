@@ -3,7 +3,9 @@ tags:
   - AWS
 title: Integrating Multi-OS EC2 Instances with Elastic File System (EFS) on AWS
 ---
-
+<!--
+Just completed a mini-project on AWS, focusing on integrating multi-OS EC2 instances with Elastic File System (EFS). I successfully connected an EFS to three different EC2 instances running Ubuntu, Red Hat Linux, and Amazon Linux 2, demonstrating the versatility and scalability of AWS services. This project was a valuable exercise in managing complex cloud environments and deepening my understanding of AWS storage solutions.
+-->
 
 > [!NOTE]
 > **Tasks To Be Performed:**

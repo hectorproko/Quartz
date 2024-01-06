@@ -3,7 +3,9 @@ tags:
   - AWS
 title: Launching and Configuring an Ubuntu EC2 Instance with Nginx on AWS
 ---
-
+<!--
+As part of my continuous learning and hands-on practice in cloud computing, I successfully completed a #miniproject where I demonstrated the ability to launch and configure an Ubuntu #EC2 instance on #AWS and set up an #Nginx web server.
+-->
  
 
 > [!NOTE]

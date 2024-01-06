@@ -3,6 +3,9 @@ tags:
   - AWS
 title: Launching a Linux EC2 Instance with Attached and Resized EBS Storage
 ---
+<!--
+**Recently completed a mini-project on AWS where I launched a Linux EC2 instance and managed Elastic Block Store (EBS) volumes. I successfully attached and resized an EBS volume, enhancing my practical skills in cloud storage solutions. This task was a great way to deepen my understanding of resource management in AWS.**
+-->
 
 > [!NOTE]
 > **Problem Statement:** 
