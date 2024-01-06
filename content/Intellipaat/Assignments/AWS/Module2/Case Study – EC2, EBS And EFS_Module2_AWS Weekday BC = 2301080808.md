@@ -1,9 +1,9 @@
 ---
 tags:
   - AWS
+title: Securing and Managing Linux Web Servers with EBS Operations on AWS
 ---
-==PENDING CLEANUP==
- 
+
 
 > [!info]
 > **Problem Statement:** 

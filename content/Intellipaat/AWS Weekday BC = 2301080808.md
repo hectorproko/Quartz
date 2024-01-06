@@ -3,7 +3,7 @@
 2. [[Assignment 2 – EBS_Module2_AWS Weekday BC = 2301080808|Launching a Linux EC2 Instance with Attached and Resized EBS Storage]]
 3. [[Assignment 3 – EC2 And EFS_Module2_AWS Weekday BC = 2301080808|Integrating Multi-OS EC2 Instances with Elastic File System (EFS) on AWS]]
 4. [[Placeholder]]
-5. [[Case Study – EC2, EBS And EFS_Module2_AWS Weekday BC = 2301080808|Case Study – EC2, EBS And EFS]]
+5. [[Case Study – EC2, EBS And EFS_Module2_AWS Weekday BC = 2301080808|Securing and Managing Linux Web Servers with EBS Operations on AWS]]
 
 
 <!--
