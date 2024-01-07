@@ -2,10 +2,12 @@
 tags:
   - AWS
   - CloudFormation
+title: Enhancing CloudFormation Deployments with SNS Notifications in AWS
 ---
-==PENDING CLEANUP==
+<!--
+**Mini-Project: Enhancing AWS Deployments with CloudFormation and SNS!** In this project, I deepened my AWS expertise by integrating CloudFormation with Simple Notification Service (SNS) to automate infrastructure deployment and receive real-time notifications. I created a standard SNS topic, subscribed to it via email, and linked it to my CloudFormation stack for ongoing updates. This allowed me to efficiently monitor the stack creation process and receive immediate alerts on every step, ensuring a smooth and informed deployment workflow. This practical project was a great exercise in combining various AWS services for enhanced operational efficiency.
+-->
  
-
 > [!info] Module 8: CloudFormation Assignment - 3 
 > **Problem Statement:** 
 > You work for XYZ Corporation. Your team is asked to deploy similar architecture multiple times for testing, development, and production purposes. Implement CloudFormation for the tasks assigned to you below. 

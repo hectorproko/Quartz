@@ -1,9 +1,11 @@
 ---
 tags:
   - AWS
+title: Establishing and Querying a Redshift Data Warehouse in AWS
 ---
-==PENDING CLEANUP==
- 
+<!--
+**Mini-Project: Exploring Data Warehousing with Amazon Redshift!** I recently embarked on a hands-on project to master Amazon Redshift, AWS's fully managed data warehousing service. My objective was to set up a Redshift cluster, load data effectively using an S3 bucket, and then utilize the query editor to perform various data analyses. This project allowed me to experience firsthand the power and scalability of Redshift, understanding its role in handling large-scale data and performing complex queries. This endeavor has significantly advanced my data warehousing and analytics skills.
+-->
 
 > [!info] Module 7: Redshift Assignment
 > **Problem Statement:** 

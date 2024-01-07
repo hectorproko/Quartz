@@ -2,8 +2,11 @@
 tags:
   - AWS
   - CloudFormation
+title: Integrating SQS and SES for Messaging and Email Services in AWS
 ---
-==PENDING CLEANUP==
+<!--
+**Mini-Project: Streamlining Communication and Queue Management with AWS SQS and SES!** In a focused hands-on project, I ventured into automating message queuing and email services using AWS Simple Queue Service (SQS) and Simple Email Service (SES). I utilized CloudFormation to deploy a FIFO SQS queue, ensuring ordered message handling and no duplicates. Following this, I registered and verified my email with SES to send out a test email, marking a successful implementation. This project allowed me to practically implement these services, enhancing operational communication
+-->
  
 
 > [!info] Module 8: SQS and SES Assignment

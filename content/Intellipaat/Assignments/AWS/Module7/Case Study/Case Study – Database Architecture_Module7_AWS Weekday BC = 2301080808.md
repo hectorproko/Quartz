@@ -1,8 +1,11 @@
 ---
 tags:
   - AWS
+title: Architecting Robust Database Solutions on AWS
 ---
-==PENDING CLEANUP==
+<!--
+**Mini-Project: Architecting Robust Database Solutions on AWS!** I completed a comprehensive project involving the deployment and optimization of database architectures on AWS. The case study required me to create a scalable Aurora DB for high availability, set up cross-region data access to minimize latency, and leverage Amazon Redshift for near real-time data analysis. This endeavor not only improved my database management skills but also taught me to address latency issues and ensure seamless data flow across branches. My approach included meticulous planning, configuration, and testing to meet the demands of a growing user base and ensure efficient data handling.
+-->
  
 
 > [!info] Module 7: Case Study - 1

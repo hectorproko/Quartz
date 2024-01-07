@@ -2,8 +2,11 @@
 tags:
   - AWS
   - CloudFormation
+title: Designing a Scalable Multi-Tier Architecture on AWS
 ---
-==PENDING CLEANUP==
+<!--
+**Mini-Project: Designing a Scalable Multi-Tier Architecture on AWS!** I've completed an extensive project using AWS CloudFormation to deploy a scalable and secure multi-tier web application. This case study involved setting up a VPC with distinct public and private subnets, launching an EC2 instance as a web tier with Apache2, an application tier with MySQL in a private subnet, and an RDS MySQL instance as a database tier. Additionally, I integrated Route 53 for domain name management. This project allowed me to practically apply concepts of network segmentation, security, and infrastructure automation, providing a comprehensive understanding of deploying resilient and efficient cloud architectures.
+-->
  
 
 > [!info] Module 8: Case Study - 1

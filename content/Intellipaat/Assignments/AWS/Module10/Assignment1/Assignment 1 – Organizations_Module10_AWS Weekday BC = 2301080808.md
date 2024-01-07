@@ -1,9 +1,11 @@
 ---
 tags:
   - AWS
+title: Optimizing Resource Management with AWS Organizations
 ---
-==PENDING CLEANUP==
- 
+<!--
+**Mini-Project: Optimizing Resource Management with AWS Organizations!** I've taken a significant step in cloud resource management by diving into AWS Organizations for this project. I created an AWS Organization and structured it into three organizational units—OU1, OU2, and OU3—to manage resources more efficiently and implement centralized governance. Furthermore, I attached a service control policy to restrict access to only EC2 services across these units, enhancing security and specificity of roles and permissions. This project was instrumental in understanding and utilizing AWS Organizations for improved control and operational efficiency.
+-->
 
 > [!info] Module 10: Organizations Assignment
 > **Tasks To Be Performed:** 

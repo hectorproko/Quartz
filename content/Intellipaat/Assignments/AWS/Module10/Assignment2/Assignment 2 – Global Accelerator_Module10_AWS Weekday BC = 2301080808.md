@@ -1,10 +1,12 @@
 ---
 tags:
   - AWS
+title: Enhancing Performance with AWS Global Accelerator Endpoints
 ---
-==PENDING CLEANUP==
+<!--
+**Mini-Project: Enhancing Network Performance with AWS Global Accelerator!** In this project, I delved into AWS Global Accelerator to optimize network performance. My task involved creating a Global Accelerator with two endpoints: an EC2 instance in the "us-east-1" region and a Load Balancer in the "us-west-2" region. I configured the accelerator to route traffic based on geographic proximity and health checks, ensuring efficient and reliable access to my test page hosted on the EC2 instance. This project was a valuable exercise in improving application availability and performance across global AWS regions.
+-->
  
-
 > [!info] Module 10: Global Accelerator Assignment
 > **Tasks To Be Performed:** 
 > 1. Create a Global Accelerator: 

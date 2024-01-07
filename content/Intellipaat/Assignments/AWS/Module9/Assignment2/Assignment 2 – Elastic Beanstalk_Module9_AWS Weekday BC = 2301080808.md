@@ -1,7 +1,11 @@
 ---
 tags:
   - AWS
+title: Deploying and Managing a PHP Application with AWS Elastic Beanstalk
 ---
+<!--
+**Mini-Project: Deploying Web Applications with AWS Elastic Beanstalk!** In this hands-on project, I explored the capabilities of AWS Elastic Beanstalk for deploying and managing web applications. I created an Elastic Beanstalk environment configured for PHP, where I deployed a simple PHP application to demonstrate the service's ease of use and scalability. This project involved configuring various environment settings and understanding the automated deployment and scaling mechanisms of Elastic Beanstalk. It was a great exercise in learning how to quickly deploy web applications in a managed environment, streamlining the development process.
+-->
 
 > [!info] Module 9: Elastic Beanstalk Assignment
 > **Problem Statement:** 

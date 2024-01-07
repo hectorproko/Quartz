@@ -2,10 +2,11 @@
 tags:
   - AWS
   - CloudFormation
+title: Streamlining VPC and EC2 Deployment with CloudFormation in AWS
 ---
-==PENDING CLEANUP==
- 
-
+<!--
+**Mini-Project: Streamlining Network Deployment with AWS CloudFormation!** In this project, I leveraged AWS CloudFormation to automate the creation of a robust VPC and a public subnet, culminating in the deployment of an Amazon Linux EC2 instance. The entire infrastructure setup was defined in a CloudFormation template, ensuring a repeatable and efficient deployment process. By completing this project, I've reinforced my skills in using infrastructure as code to create secure and scalable network architectures, a vital component in efficient cloud management.
+-->
 > [!info] Module 8: CloudFormation Assignment - 2 
 > **Problem Statement:** 
 > You work for XYZ Corporation. Your team is asked to deploy similar architecture multiple times for testing, development, and production purposes. Implement CloudFormation for the tasks assigned to you below. 

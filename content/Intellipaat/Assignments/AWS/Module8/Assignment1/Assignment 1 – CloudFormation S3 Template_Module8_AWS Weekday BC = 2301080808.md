@@ -2,9 +2,11 @@
 tags:
   - AWS
   - CloudFormation
+title: Automating S3 Bucket Deployment and Versioning with CloudFormation in AWS
 ---
-==PENDING CLEANUP==
- 
+<!--
+**Mini-Project: Automating S3 Bucket Deployment with AWS CloudFormation!** In this project, I used AWS CloudFormation to automate the deployment of an S3 bucket, named “intellipaat-hector”, specifically focusing on enabling versioning for enhanced data management and security. I wrote a YAML CloudFormation template to define the bucket's properties and configurations. Upon deploying the template, I successfully created the bucket with versioning enabled, demonstrating my capability in using infrastructure as code to streamline AWS resource deployment. This project was a practical exercise in enhancing operational efficiency using AWS CloudFormation.
+-->
 
 > [!info] Module 8: CloudFormation Assignment - 1 
 > **Training Problem Statement:** 

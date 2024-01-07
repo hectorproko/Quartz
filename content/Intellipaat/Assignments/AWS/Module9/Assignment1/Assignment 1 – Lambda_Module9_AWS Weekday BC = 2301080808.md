@@ -2,9 +2,11 @@
 tags:
   - AWS
   - CloudWatch
+title: Implementing Serverless Architecture with AWS Lambda and SQS Triggers
 ---
-==PENDING CLEANUP==
- 
+<!--
+**Mini-Project: Automating Processes with AWS Lambda and SQS!** In this project, I successfully harnessed the power of AWS Lambda and Simple Queue Service (SQS) to automate message processing. I created a Python-based Lambda function to process messages from an SQS queue, deploying this serverless architecture to handle tasks efficiently and on-demand. This involved tackling challenges such as setting up the right execution roles and ensuring seamless integration between Lambda and SQS. This exercise not only strengthened my skills in AWS serverless computing but also provided a deeper insight into building scalable, event-driven solutions.
+-->
 
 > [!info] Module 9: Lambda Assignment
 > **Problem Statement:** 

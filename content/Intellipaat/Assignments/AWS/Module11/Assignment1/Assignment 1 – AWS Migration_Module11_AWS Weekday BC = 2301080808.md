@@ -1,10 +1,12 @@
 ---
 tags:
   - AWS
+title: Establishing a Local Ubuntu Server VM for Cloud Migration
 ---
-==PENDING CLEANUP==
- 
-``
+<!--
+**Mini-Project: Streamlining Infrastructure with AWS Migration!** I've embarked on a project to migrate a local infrastructure to the cloud, improving performance and availability for XYZ Corporation. This task involved setting up an Ubuntu server VM using Oracle VirtualBox and performing necessary configurations to prepare it for migration to AWS. By successfully transferring a local environment to a scalable, cloud-based infrastructure, I've demonstrated my proficiency in cloud migration strategies and AWS services. This practical project allowed me to understand the complexities and methodologies of effective cloud migration.
+-->
+
 > [!info] Module 11: Migration Assignment - 1
 > **Problem Statement:** 
 > You work for XYZ Corporation. Your corporation wants to move their infrastructure to the cloud to improve the performance and availability of the application hosted. You are given the opportunity to accomplish the tasks for successful migration. 

@@ -41,33 +41,33 @@ Module 7:
 1. [[Assignment 1 – MariaDB_Module7_AWS Weekday BC = 2301080808|Deploying and Connecting to a MariaDB RDS Database in AWS]] 
 2. [[Assignment 2 – Aurora_Module7_AWS Weekday BC = 2301080808|Setting Up AuroraDB with Read Replicas for High Availability in AWS]]
 3. [[Assignment 3 – DynamoDB_Module7_AWS Weekday BC = 2301080808|Managing Data with DynamoDB: Creation, Backup, and Deletion in AWS]]
-4. [[Assignment 4 – Redshift_Module7_AWS Weekday BC = 2301080808|Assignment 4 – Redshift]] 
-5. [[Case Study – Database Architecture_Module7_AWS Weekday BC = 2301080808|Case Study – Database Architecture]]
+4. [[Assignment 4 – Redshift_Module7_AWS Weekday BC = 2301080808|Establishing and Querying a Redshift Data Warehouse in AWS]] 
+5. [[Case Study – Database Architecture_Module7_AWS Weekday BC = 2301080808|Architecting Robust Database Solutions on AWS]]
  
 
 Module 8:  
-1. [[Assignment 1 – CloudFormation S3 Template_Module8_AWS Weekday BC = 2301080808|Assignment 1 – CloudFormation S3 Template]] 
-2. [[Assignment 2 – CloudFormation VPC Template_Module8_AWS Weekday BC = 2301080808|Assignment 2 – CloudFormation VPC Template]] 
-3. [[Assignment 3 – CloudFormation SNS_Module8_AWS Weekday BC = 2301080808|Assignment 3 – CloudFormation SNS]] 
-4. [[Assignment 4 – SQS And SES_Module8_AWS Weekday BC = 2301080808|Assignment 4 – SQS And SES]]
-5. [[Case Study – Multi-Tier Architecture_Module8_AWS Weekday BC = 2301080808|Case Study – Multi-Tier Architecture]]
+1. [[Assignment 1 – CloudFormation S3 Template_Module8_AWS Weekday BC = 2301080808|Automating S3 Bucket Deployment and Versioning with CloudFormation in AWS]] 
+2. [[Assignment 2 – CloudFormation VPC Template_Module8_AWS Weekday BC = 2301080808|Streamlining VPC and EC2 Deployment with CloudFormation in AWS]] 
+3. [[Assignment 3 – CloudFormation SNS_Module8_AWS Weekday BC = 2301080808|Enhancing CloudFormation Deployments with SNS Notifications in AWS]] 
+4. [[Assignment 4 – SQS And SES_Module8_AWS Weekday BC = 2301080808|Integrating SQS and SES for Messaging and Email Services in AWS]]
+5. [[Case Study – Multi-Tier Architecture_Module8_AWS Weekday BC = 2301080808|Designing a Scalable Multi-Tier Architecture on AWS]]
 
 Module 9:   
-1. [[Assignment 1 – Lambda_Module9_AWS Weekday BC = 2301080808|Assignment 1 – Lambda]]
-2. [[Assignment 2 – Elastic Beanstalk_Module9_AWS Weekday BC = 2301080808|Assignment 2 – Elastic Beanstalk]] 
+1. [[Assignment 1 – Lambda_Module9_AWS Weekday BC = 2301080808|Implementing Serverless Architecture with AWS Lambda and SQS Triggers]]
+2. [[Assignment 2 – Elastic Beanstalk_Module9_AWS Weekday BC = 2301080808|Deploying and Managing a PHP Application with AWS Elastic Beanstalk]] 
 
 Module 10:  
-1. [[Assignment 1 – Organizations_Module10_AWS Weekday BC = 2301080808|Assignments 1 – Organizations]]
-2. [[Assignment 2 – Global Accelerator_Module10_AWS Weekday BC = 2301080808|Assignment 2 – Global Accelerator]] 
+1. [[Assignment 1 – Organizations_Module10_AWS Weekday BC = 2301080808|Optimizing Resource Management with AWS Organizations]]
+2. [[Assignment 2 – Global Accelerator_Module10_AWS Weekday BC = 2301080808|Enhancing Performance with AWS Global Accelerator Endpoints]] 
  
 Module 11:  
-1. [[Assignment 1 – AWS Migration_Module11_AWS Weekday BC = 2301080808|Assignment 1 – AWS Migration]]
+1. [[Assignment 1 – AWS Migration_Module11_AWS Weekday BC = 2301080808|Establishing a Local Ubuntu Server VM for Cloud Migration]]
 2. [[Assignment 2 – AWS Migration_Module11_AWS Weekday BC = 2301080808|Assignment 2 – AWS Migration]] 
 3. [[Assignment 3 – AWS Migration_Module11_AWS Weekday BC = 2301080808|Assignment 3 – AWS Migration]] 
 
 
 
-<!-
+<!--
 
 > [!quote] **Module 2:**
 > - [x] [[Assignment 1 – EC2_Module2_AWS Weekday BC = 2301080808|Assignment 1 – EC2]]
