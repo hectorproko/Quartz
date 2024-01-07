@@ -1,9 +1,11 @@
 ---
 tags:
   - AWS
+title: Implementing IAM User and Group Management for Enhanced Security in AWS
 ---
-==PENDING CLEANUP==
- 
+<!--
+**Mastering AWS Identity and Access Management!** I've recently completed an assignment focused on enhancing security and organization in AWS through IAM. My task involved creating and managing users and groups, specifically creating four IAM users named Dev1, Dev2, Test1, and Test2, and organizing them into DevTeam and OpsTeam groups. This exercise strengthened my ability to structure access and roles effectively, ensuring a secure and efficient AWS environment.
+-->  
 > [!info] Module 3: IAM Users Assignment
 > **Problem Statement:** 
 > You work for XYZ Corporation. To maintain the security of the AWS account and the resources you have been asked to implement a solution that can help easily recognize and monitor the different users. 
