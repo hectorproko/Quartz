@@ -1,8 +1,11 @@
 ---
 tags:
   - AWS
+title: Securing Access to S3 Resources with VPC Endpoints in AWS
 ---
-==PENDING CLEANUP==
+<!--
+**Mini-Project: Streamlining AWS Services with VPC Endpoints!** In a recent practical project, I focused on enhancing network efficiency by setting up VPC Endpoints in AWS. The task involved creating a secure and direct connection to an S3 bucket via a VPC Endpoint, bypassing the public internet. This involved configuring a gateway endpoint, setting up appropriate route tables, and testing connectivity and functionality from an EC2 instance within a private subnet. This project was instrumental in deepening my understanding of AWS VPC Endpoints and their role in optimizing the performance and security of cloud resources.
+-->
  
 > [!info] Module 5: VPC Endpoints Assignment
 > **Problem Statement:** 

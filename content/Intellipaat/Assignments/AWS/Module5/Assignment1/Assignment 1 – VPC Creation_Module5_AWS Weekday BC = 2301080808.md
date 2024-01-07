@@ -1,10 +1,12 @@
 ---
 tags:
   - AWS
+title: Constructing a Secure VPC with Public and Private Subnets in AWS
 ---
-==PENDING CLEANUP==
- 
+<!--
+**Mini-Project: Architecting a Custom AWS Virtual Private Cloud!** I embarked on a hands-on project to design and implement a custom Virtual Private Cloud (VPC) in AWS. My mission was to architect a robust network environment, complete with a main VPC, a public subnet for web access, and two private subnets for secure operations, all interconnected seamlessly. By setting up a NAT gateway and configuring route tables, I ensured efficient and secure internet connectivity. This project was a significant step in mastering cloud network architecture, demonstrating the power of AWS in creating scalable and secure environments.
 
+--> 
 > [!info] Module 5: VPC Creation Assignment
 > **Problem Statement:** 
 > Working for an organization, you are required to provide them a safe and secure environment for the deployment of their resources. They might require different types of connectivity. Implement the following to fulfill the requirements of the company. 

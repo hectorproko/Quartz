@@ -1,8 +1,11 @@
 ---
 tags:
   - AWS
+title: Implementing Auto-Scaling for Optimized Resource Management on AWS
 ---
-
+<!--
+**Automating Scalability with AWS Auto-Scaling!** In this hands-on, I immersed myself in the dynamic world of AWS Auto-Scaling. I created a Web Server AMI, established a launch template, and configured an Auto Scaling group to ensure optimal performance and cost-efficiency. By simulating various loads, I mastered auto-scaling's power to maintain application stability and adaptability, a critical skill in today's ever-changing digital landscape.
+-->
 > [!info] Module 4: Auto-Scaling Assignment
 > **Problem Statement:** 
 > You work for XYZ Corporation that uses on premise solutions and some limited number of systems. With the increase in requests in their application, the load also increases. So, to handle the load the corporation has to buy more systems almost on a regular basis. Realizing the need to cut down the expenses on systems, they decided to move their infrastructure to AWS. 

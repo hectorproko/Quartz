@@ -2,9 +2,11 @@
 tags:
   - AWS
   - CloudWatch
+title: Integrating ELB, ASG, and Route 53 for Scalable AWS Solutions
 ---
-==PENDING CLEANUP==
- 
+<!--
+**Integrating ELB, ASG, and Route 53 for Scalable AWS Solutions!** In an in-depth case study for Module 4, I harnessed the power of AWS Elastic Load Balancing (ELB), Auto Scaling Groups (ASG), and Route 53 to build a robust, scalable web application infrastructure. The challenge involved managing scaling requirements, distributing loads effectively, and routing traffic to the domain—all while ensuring optimal performance and cost-effectiveness. This hands-on learning experience was a pivotal moment in understanding how these AWS services interconnect to provide a seamless, efficient user experience.
+-->
 
 > [!NOTE] Module 4: Case Study - 1
 > **Problem Statement:** 

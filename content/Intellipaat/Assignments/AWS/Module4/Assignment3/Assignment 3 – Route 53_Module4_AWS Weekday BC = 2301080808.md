@@ -1,12 +1,11 @@
 ---
 tags:
   - AWS
+title: Configuring Traffic Management with Route 53 in AWS
 ---
-==PENDING CLEANUP==
- 
-
-
-
+<!--
+**Navigating DNS with AWS Route 53 for Robust Web Solutions!** I've completed an engaging hands-on assignment focusing on AWS Route 53 for domain name system management. I set up an EC2 instance running Apache web server and created a hosted zone in Route 53, successfully routing traffic to my instance using a domain name. This task strengthened my grasp on managing DNS records and integrating AWS services for a scalable and reliable web solution.
+-->
 
 > [!info] Module 4: Route 53 Assignment
 > **Problem Statement:** 

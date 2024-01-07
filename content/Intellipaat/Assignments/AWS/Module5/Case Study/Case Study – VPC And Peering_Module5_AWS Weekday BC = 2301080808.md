@@ -1,9 +1,11 @@
 ---
 tags:
   - AWS
+title: Streamlining Connectivity with VPC and Peering
 ---
-==PENDING CLEANUP==
- 
+<!--
+**Mini-Project: Streamlining Connectivity with VPC and Peering!** In a comprehensive hands-on project, I designed and established a secure and efficient network architecture using AWS VPC and Peering. The project involved creating two distinct VPC environments for production and development, each with tailored subnets and security configurations. I successfully implemented VPC peering between these networks, facilitating seamless and secure intercommunication, especially for database connectivity. This endeavor enhanced my skills in advanced AWS networking, highlighting the importance of thoughtful design in cloud-based infrastructures.
+-->
 
 > [!info] Module 5: Case Study - 1
 > **Problem Statement:** 

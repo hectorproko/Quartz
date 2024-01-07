@@ -1,10 +1,11 @@
 ---
 tags:
   - AWS
+title: Establishing Secure EC2 Communications with VPC Security Groups in AWS
 ---
-==PENDING CLEANUP==
- 
-
+<!--
+**Mini-Project: Implementing Robust Security with AWS VPC Security Groups!** I recently completed a hands-on project where I set up and configured security groups within a VPC to establish a secure network environment. The project involved creating two EC2 instances, named Master and Client, in a public subnet and configuring security groups to ensure that the Client instance could only be accessed via SSH through the Master instance. This task underscored the importance of precise security configurations in cloud environments and enhanced my skills in crafting secure, efficient AWS networks.
+--> 
 > [!info] Module 5: VPC Security Groups Assignment
 >  **Problem Statement:** 
 >  Working for an organization, you are required to provide them a safe and secure environment for the deployment of their resources. They might require different types of connectivity. Implement the following to fulfill the requirements of the company. 

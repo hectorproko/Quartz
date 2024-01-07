@@ -1,10 +1,12 @@
 ---
 tags:
   - AWS
+title: Implementing VPC Peering for Enhanced Connectivity Across Regions in AWS
 ---
-==PENDING CLEANUP==
+<!--
+**Mini-Project: Mastering VPC Peering on AWS!** I embarked on a project to engineer a seamless network architecture using AWS VPC Peering. I created and configured peering connections between three VPCs across different regions, ensuring secure and efficient inter-VPC communication. This task involved detailed network planning, route table updates, and connectivity testing to guarantee flawless traffic flow between the resources. It was an insightful journey into advanced AWS networking, bolstering my capabilities in creating interconnected and secure cloud environments.
+--> 
  
-
 > [!info] Module 5: VPC Peering Assignment
 > **Problem Statement:** 
 > Working for an organization, you are required to provide them a safe and secure environment for the deployment of their resources. They might require different types of connectivity. Implement the following to fulfill the requirements of the company. 

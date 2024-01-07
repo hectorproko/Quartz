@@ -1,10 +1,12 @@
 ---
 tags:
   - AWS
+title: Setting Up and Migrating Load Balancers for Efficient Traffic Management on AWS
 ---
-==PENDING CLEANUP==
+<!--
+**Optimizing Web Traffic with AWS Elastic Load Balancer!** In a hands-on learning assignment, I mastered using AWS ELB by creating three EC2 instances, each hosting a simple web page. I initially set up a Classic Load Balancer to manage traffic among these instances and then successfully migrated it to an Application Load Balancer for more efficient, feature-rich handling. This experience has significantly improved my ability to implement scalable and reliable traffic management solutions in AWS.
+-->
  
-
 > [!info] Assignment 1 – ELB Assignment
 > **Problem Statement:** 
 > You work for XYZ Corporation that uses on premise solutions and some limited number of systems. With the increase in requests in their application, the load also increases. So, to handle the load the corporation has to buy more systems almost on a regular basis. Realizing the need to cut down the expenses on systems, they decided to move their infrastructure to AWS. 
