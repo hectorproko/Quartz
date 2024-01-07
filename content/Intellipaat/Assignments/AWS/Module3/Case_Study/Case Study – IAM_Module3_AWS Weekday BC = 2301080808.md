@@ -29,7 +29,7 @@ tags:
 
 1. I provided a suitable group name `User4Group`.
 2. I attached permissions by choosing `Create policy`. In the JSON editor, I input the policy to allow launching and stopping EC2 instances.
-   ![[Pasted image 20230922142242.png]]
+   <br>![[Pasted image 20230922142242.png]]
    
 ```json
 {
@@ -49,7 +49,7 @@ tags:
 
 3. I reviewed and created the policy `RunStopEC2`
 4. I attached this policy to the group as I created it.
-   ![[Pasted image 20230922142537.png]]
+   <br>![[Pasted image 20230922142537.png]]
 
 > [!summary]
 > I created a new user named `User4`. During this process, I was prompted to attach `User4` to a group. Instead of choosing an existing group, I created `User4Group`. While setting up `User4Group`, I was given the option to attach a policy. Instead of selecting a pre-existing one, I created a new policy named `RunStopEC2`. Finally, the `User4Group` was created with `User4` in it and the `RunStopEC2` policy attached to it.
@@ -87,7 +87,7 @@ tags:
 7. I navigated to `User groups` and selected `User4Group` the group  associated with `User4`.
 8. In `Permissions` tab I clicked `Add permissions`.
 9. I attached  `VPC_Sub_NACL_SG` policy to the group.
-   ![[Pasted image 20230922152608.png]]
+   <br>![[Pasted image 20230922152608.png]]
 
 ### Part 2-B
 **I added the permission so that `User4` can create an RDS instance:**
@@ -111,7 +111,7 @@ tags:
 **I explored security options to protect the AWS resources and secure the permissions for the group:**
 
 1. **MFA**: I enabled MFA for `User4`, adding an additional layer of security for console logins.
-   ![[Pasted image 20230922155152.png|300]]
-   ![[Pasted image 20230922155023.png|300]]
+   <br>![[Pasted image 20230922155152.png|300]]
+   <br>![[Pasted image 20230922155023.png|300]]
 2. **Fine-grained Policies**: I ensured that the policies I created granted only necessary permissions to avoid excessive privileges.
     
