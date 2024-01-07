@@ -1,8 +1,11 @@
 ---
 tags:
   - AWS
+title: Configuring an S3 Bucket for Versatile File Storage and Sharing in AWS
 ---
-==PENDING CLEANUP==
+<!--
+**Mini-Project: Implementing AWS S3 for Efficient File Storage and Sharing!** I recently completed a practical project focused on Amazon S3, a key AWS service for object storage. My goal was to set up an S3 bucket tailored for XYZ Corporation's needs, capable of storing various file types and allowing public sharing when necessary. I successfully created the bucket, uploaded different file formats (documents, images, videos, etc.), and configured the settings for optimal use. This project not only enhanced my skills in using S3 but also underscored its versatility in handling diverse storage requirements.
+-->
  
 > [!info] Module 6: S3 Bucket Creation
 > **Problem Statement:** 

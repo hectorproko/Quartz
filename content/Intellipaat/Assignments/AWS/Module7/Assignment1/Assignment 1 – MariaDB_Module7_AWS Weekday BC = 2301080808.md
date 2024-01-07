@@ -1,9 +1,11 @@
 ---
 tags:
   - AWS
+title: Deploying and Connecting to a MariaDB RDS Database in AWS
 ---
-==PENDING CLEANUP==
- 
+<!--
+**Mini-Project: Setting Up and Connecting to MariaDB on AWS!** I've recently completed a practical project on AWS, focusing on the implementation of a MariaDB-based RDS database. My objective was to create a robust SQL service for data storage and retrieval. I successfully set up the MariaDB RDS instance, ensured proper configuration, and established secure connections from both a SQL client on Windows and a Linux-based EC2 instance. This project not only honed my database management skills but also showcased my ability to integrate different platforms and services for efficient data handling.
+--> 
 
 > [!info] Module 7: MariaDB Assignment
 > **Problem Statement:** 

@@ -30,16 +30,40 @@ Module 5:
 4. [[Assignment 4 – VPC Endpoints_Module5_AWS Weekday BC = 2301080808|Securing Access to S3 Resources with VPC Endpoints in AWS]]<!--1/23/24--> 
 5. [[Case Study – VPC And Peering_Module5_AWS Weekday BC = 2301080808|Streamlining Connectivity with VPC and Peering]] <!--1/24/24--> 
 
-
-
-
- 
+<!--Sunday 2/4,11,18,25--> 
 Module 6:  
+1. [[Assignment 1 – S3 Bucket Creation_Module6_AWS Weekday BC = 2301080808|Configuring an S3 Bucket for Versatile File Storage and Sharing in AWS]] <!--1/25/24-->
+2. [[Assignment 2 – S3 Bucket Versioning_Module6_AWS Weekday BC = 2301080808|Implementing Version Control in S3 Bucket]] <!--1/26/24-->
+3. [[Assignment 3 – S3 Website Hosting_Module6_AWS Weekday BC = 2301080808|Hosting Static Websites and Managing Lifecycle Policies in S3 Buckets on AWS]] <!--1/27/24-->
+4. [[Case Study – S3 Versioning And Website Hosting_Module6_AWS Weekday BC = 2301080808|Data Storage, Retrieval, and Website Hosting in S3 on AWS]] <!--1/29/24-->
+
 Module 7:  
+1. [[Assignment 1 – MariaDB_Module7_AWS Weekday BC = 2301080808|Deploying and Connecting to a MariaDB RDS Database in AWS]] 
+2. [[Assignment 2 – Aurora_Module7_AWS Weekday BC = 2301080808|Assignment 2 – Aurora]]
+3. [[Assignment 3 – DynamoDB_Module7_AWS Weekday BC = 2301080808|Assignment 3 – DynamoDB]]
+4. [[Assignment 4 – Redshift_Module7_AWS Weekday BC = 2301080808|Assignment 4 – Redshift]] 
+5. [[Case Study – Database Architecture_Module7_AWS Weekday BC = 2301080808|Case Study – Database Architecture]]
+ 
+
 Module 8:  
-Module 9:  
+1. [[Assignment 1 – CloudFormation S3 Template_Module8_AWS Weekday BC = 2301080808|Assignment 1 – CloudFormation S3 Template]] 
+2. [[Assignment 2 – CloudFormation VPC Template_Module8_AWS Weekday BC = 2301080808|Assignment 2 – CloudFormation VPC Template]] 
+3. [[Assignment 3 – CloudFormation SNS_Module8_AWS Weekday BC = 2301080808|Assignment 3 – CloudFormation SNS]] 
+4. [[Assignment 4 – SQS And SES_Module8_AWS Weekday BC = 2301080808|Assignment 4 – SQS And SES]]
+5. [[Case Study – Multi-Tier Architecture_Module8_AWS Weekday BC = 2301080808|Case Study – Multi-Tier Architecture]]
+
+Module 9:   
+1. [[Assignment 1 – Lambda_Module9_AWS Weekday BC = 2301080808|Assignment 1 – Lambda]]
+2. [[Assignment 2 – Elastic Beanstalk_Module9_AWS Weekday BC = 2301080808|Assignment 2 – Elastic Beanstalk]] 
+
 Module 10:  
+1. [[Assignment 1 – Organizations_Module10_AWS Weekday BC = 2301080808|Assignments 1 – Organizations]]
+2. [[Assignment 2 – Global Accelerator_Module10_AWS Weekday BC = 2301080808|Assignment 2 – Global Accelerator]] 
+ 
 Module 11:  
+1. [[Assignment 1 – AWS Migration_Module11_AWS Weekday BC = 2301080808|Assignment 1 – AWS Migration]]
+2. [[Assignment 2 – AWS Migration_Module11_AWS Weekday BC = 2301080808|Assignment 2 – AWS Migration]] 
+3. [[Assignment 3 – AWS Migration_Module11_AWS Weekday BC = 2301080808|Assignment 3 – AWS Migration]] 
 
 
 
@@ -59,51 +83,6 @@ Module 11:
 
 
 
-
-> [!done]- Module 6
-> 
-> - [x] [[Assignment 1 – S3 Bucket Creation_Module6_AWS Weekday BC = 2301080808|Assignment 1 – S3 Bucket Creation]]
-> - [x] [[Assignment 2 – S3 Bucket Versioning_Module6_AWS Weekday BC = 2301080808|Assignment 2 – S3 Bucket Versioning]]
-> - [x] [[Assignment 3 – S3 Website Hosting_Module6_AWS Weekday BC = 2301080808|Assignment 3 – S3 Website Hosting]]
-> - [x] [[Case Study – S3 Versioning And Website Hosting_Module6_AWS Weekday BC = 2301080808|Case Study – S3 Versioning And Website Hosting]]
-
-> [!done]- Module 7
-> 
-> - [x] [[Assignment 1 – MariaDB_Module7_AWS Weekday BC = 2301080808|Assignment 1 – MariaDB]] 
-> - [x] [[Assignment 2 – Aurora_Module7_AWS Weekday BC = 2301080808|Assignment 2 – Aurora]]
-> - [x] [[Assignment 3 – DynamoDB_Module7_AWS Weekday BC = 2301080808|Assignment 3 – DynamoDB]]
-> - [x] [[Assignment 4 – Redshift_Module7_AWS Weekday BC = 2301080808|Assignment 4 – Redshift]] 
-> - [x] [[Case Study – Database Architecture_Module7_AWS Weekday BC = 2301080808|Case Study – Database Architecture]]
-> 
-
-> [!done]- Module 8
-> 
-> - [x] [[Assignment 1 – CloudFormation S3 Template_Module8_AWS Weekday BC = 2301080808|Assignment 1 – CloudFormation S3 Template]] 
-> - [x] [[Assignment 2 – CloudFormation VPC Template_Module8_AWS Weekday BC = 2301080808|Assignment 2 – CloudFormation VPC Template]] 
-> - [x] [[Assignment 3 – CloudFormation SNS_Module8_AWS Weekday BC = 2301080808|Assignment 3 – CloudFormation SNS]] 
-> - [x] [[Assignment 4 – SQS And SES_Module8_AWS Weekday BC = 2301080808|Assignment 4 – SQS And SES]]
-> - [x] [[Case Study – Multi-Tier Architecture_Module8_AWS Weekday BC = 2301080808|Case Study – Multi-Tier Architecture]]
-
-> [!done]- Module 9
-> 
-> - [x] [[Assignment 1 – Lambda_Module9_AWS Weekday BC = 2301080808|Assignment 1 – Lambda]]
-> - [x] [[Assignment 2 – Elastic Beanstalk_Module9_AWS Weekday BC = 2301080808|Assignment 2 – Elastic Beanstalk]] 
-> - [ ] [[Assignment 3 – OpsWorks_Module9_AWS Weekday BC = 2301080808#^19081a|Assignment 3 – OpsWorks]] <mark style="background: #FF5582A6;">Deprecated</mark>
-> - [ ] [[Case Study – Automation And Configuration Management_Module9_AWS Weekday BC = 2301080808|Case Study – Automation And Configuration Management]] <mark style="background: #FF5582A6;">Uses OpsWorks</mark>
-
-> [!done]- Module 10:
-> Module 10: 
-> - [x] [[Assignment 1 – Organizations_Module10_AWS Weekday BC = 2301080808|Assignments 1 – Organizations]]
-> - [x] [[Assignment 2 – Global Accelerator_Module10_AWS Weekday BC = 2301080808|Assignment 2 – Global Accelerator]] 
->       
-> - [ ] ==Optional== [[Case Study – AWS Organizations_Module10_AWS Weekday BC = 2301080808|Case Study – AWS Organizations]] <mark style="background: #FF5582A6;">Issues with lustre</mark>  #skipped[[0_main_IntelliPaat#^fe039a|Related to]]
-> 
-
-> [!done]- Module 11
-> - [x] [[Assignment 1 – AWS Migration_Module11_AWS Weekday BC = 2301080808|Assignment 1 – AWS Migration]]
-> - [x] [[Assignment 2 – AWS Migration_Module11_AWS Weekday BC = 2301080808|Assignment 2 – AWS Migration]] 
-> - [x] [[Assignment 3 – AWS Migration_Module11_AWS Weekday BC = 2301080808|Assignment 3 – AWS Migration]] 
-> 
 
 > [!done]- AWS DevOps
 > - [x] [[Assignment 1 – AWS DevOps_AWS DevOps_AWS Weekday BC = 2301080808|Assignment 1 – AWS DevOps]]

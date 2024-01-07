@@ -1,8 +1,11 @@
 ---
 tags:
   - AWS
+title: Data Storage, Retrieval, and Website Hosting in S3 on AWS
 ---
-==PENDING CLEANUP==
+<!--
+**Mini-Project: Implementing S3 Versioning and Static Website Hosting on AWS!** In this comprehensive project, I tackled two crucial aspects of AWS S3: versioning for data integrity and static website hosting. I created an S3 bucket with enabled versioning, allowing for the safe storage and retrieval of file versions. Additionally, I configured this bucket to host a static website, complete with custom `index.html` and `error.html` pages, and integrated it with a custom domain via Route 53. This endeavor not only demonstrated my technical prowess in utilizing S3's versatile features but also highlighted the importance of reliable data management and web hosting in cloud environments.
+-->
  
 
 > [!info] Module 6: Case Study - 1 

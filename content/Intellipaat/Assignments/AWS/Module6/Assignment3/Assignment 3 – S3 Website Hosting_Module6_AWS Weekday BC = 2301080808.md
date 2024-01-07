@@ -1,10 +1,11 @@
 ---
 tags:
   - AWS
+title: Hosting Static Websites and Managing Lifecycle Policies in S3 Buckets on AWS
 ---
-==PENDING CLEANUP==
- 
-
+<!--
+**Mini-Project: S3 Website Hosting Mastery!** In my latest endeavor, I dived into the realm of static website hosting using Amazon S3. This project involved setting up an S3 bucket to serve as a web host, configuring it to deliver a static website, and ensuring public accessibility through careful permission settings. I uploaded custom `index.html` and `error.html` pages, and implemented a lifecycle rule for efficient object management. This hands-on task allowed me to practically explore the seamless and scalable web hosting capabilities of S3, furthering my cloud expertise.
+-->
 > [!NOTE] Module 6: S3 Website Hosting Assignment 
 > **Problem Statement:** 
 > You work for XYZ Corporation. Their application requires a storage service that can store files and publicly share them if required. Implement S3 for the same.

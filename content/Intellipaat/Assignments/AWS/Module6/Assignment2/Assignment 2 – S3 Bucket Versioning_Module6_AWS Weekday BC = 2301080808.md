@@ -1,8 +1,11 @@
 ---
 tags:
   - AWS
+title: Implementing Version Control in S3 Bucket
 ---
-==PENDING CLEANUP==
+<!--
+**Mastering S3 Bucket Versioning on AWS!** I've advanced my AWS skills with a project on S3 Bucket Versioning, crucial for data integrity and version control. The task involved enabling versioning on an existing S3 bucket and re-uploading files to test the functionality. Through this, I effectively managed multiple file versions, ensuring data reliability and retrievability. This project was a valuable exercise in understanding AWS's robust storage capabilities and their practical applications in real-world scenarios.
+-->
  
 > [!info] Module 6: S3 Bucket Versioning
 > **Problem Statement:** 
