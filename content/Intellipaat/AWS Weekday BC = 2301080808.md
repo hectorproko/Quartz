@@ -5,10 +5,19 @@
 4. [[Placeholder]]
 5. [[Case Study – EC2, EBS And EFS_Module2_AWS Weekday BC = 2301080808|Securing and Managing Linux Web Servers with EBS Operations on AWS]]
 
-**Module 3:**
+**Module 3:**  
 1. 
 
-<!--
+
+> - [x] [[Assignment 1 – IAM Users_Module3_AWS Weekday BC = 2301080808|Assignment 1 – IAM Users]]
+> - [x] [[Assignment 2 – IAM Policies_Module3_AWS Weekday BC = 2301080808|Assignment 2 – IAM Policies]]
+> - [x] [[Assignment 3 – IAM Roles_Module3_AWS Weekday BC = 2301080808|Assignment 3 – IAM Roles]] 
+> - [x] [[Assignment 4 – CloudWatch Dashboard_Module3_AWS Weekday BC = 2301080808|Assignment 4 – CloudWatch Dashboard]]
+> - [x] [[Assignment 5 – CloudWatch Alarms_Module3_AWS Weekday BC = 2301080808|Assignment 5 – CloudWatch Alarms]]
+> - [x] [[Case Study – IAM_Module3_AWS Weekday BC = 2301080808|Case Study – IAM]] 
+
+
+<!-
 
 > [!quote] **Module 2:**
 > - [x] [[Assignment 1 – EC2_Module2_AWS Weekday BC = 2301080808|Assignment 1 – EC2]]
