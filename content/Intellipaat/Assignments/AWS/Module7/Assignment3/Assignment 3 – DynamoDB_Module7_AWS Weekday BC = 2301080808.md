@@ -1,10 +1,12 @@
 ---
 tags:
   - AWS
+title: "Managing Data with DynamoDB: Creation, Backup, and Deletion in AWS"
 ---
-==PENDING CLEANUP==
+<!--
+**Mini-Project: Mastering Data Storage with DynamoDB on AWS!** I recently embarked on a project to utilize Amazon DynamoDB, a fully managed NoSQL database service. My task was to create a DynamoDB table with a partition key, populate it with various items, ensure the data's durability by taking a backup, and then restore it as needed. The process involved understanding DynamoDB's capabilities in storing and retrieving data efficiently and securely, with a focus on scalability and performance. This project significantly improved my skills in database management and understanding of AWS's powerful NoSQL solutions.
+-->
  
-
 > [!info] Module 7: DynamoDB Assignment
 > **Problem Statement:** 
 > You work for XYZ Corporation. Their application requires a database service that can store data which can be retrieved if required. Implement a suitable service for the same. 

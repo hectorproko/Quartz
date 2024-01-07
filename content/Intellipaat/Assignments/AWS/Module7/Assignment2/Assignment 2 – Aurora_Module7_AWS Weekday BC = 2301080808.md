@@ -1,8 +1,11 @@
 ---
 tags:
   - AWS
+title: Setting Up AuroraDB with Read Replicas for High Availability in AWS
 ---
-==PENDING CLEANUP==
+<!--
+**Mini-Project: Deploying High Availability Databases with Amazon Aurora!** In this hands-on mini-project, I delved into setting up a highly available, scalable SQL database using Amazon Aurora. The task involved creating an AuroraDB cluster with MySQL compatibility, setting up a primary instance, and adding two read replicas in different availability zones for fault tolerance and load balancing. This experience allowed me to deeply understand the capabilities of Aurora for enterprise-level database solutions, highlighting the importance of reliability and scalability in database management.
+-->
  
 
 > [!info] Module 7: Aurora Assignment

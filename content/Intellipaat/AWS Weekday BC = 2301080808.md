@@ -39,8 +39,8 @@ Module 6:
 
 Module 7:  
 1. [[Assignment 1 – MariaDB_Module7_AWS Weekday BC = 2301080808|Deploying and Connecting to a MariaDB RDS Database in AWS]] 
-2. [[Assignment 2 – Aurora_Module7_AWS Weekday BC = 2301080808|Assignment 2 – Aurora]]
-3. [[Assignment 3 – DynamoDB_Module7_AWS Weekday BC = 2301080808|Assignment 3 – DynamoDB]]
+2. [[Assignment 2 – Aurora_Module7_AWS Weekday BC = 2301080808|Setting Up AuroraDB with Read Replicas for High Availability in AWS]]
+3. [[Assignment 3 – DynamoDB_Module7_AWS Weekday BC = 2301080808|Managing Data with DynamoDB: Creation, Backup, and Deletion in AWS]]
 4. [[Assignment 4 – Redshift_Module7_AWS Weekday BC = 2301080808|Assignment 4 – Redshift]] 
 5. [[Case Study – Database Architecture_Module7_AWS Weekday BC = 2301080808|Case Study – Database Architecture]]
  
