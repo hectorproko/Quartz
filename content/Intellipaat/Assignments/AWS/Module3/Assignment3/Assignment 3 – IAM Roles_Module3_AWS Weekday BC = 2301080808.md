@@ -1,8 +1,11 @@
 ---
 tags:
   - AWS
+title: Configuring IAM Roles for Targeted VPC and DynamoDB Access in AWS
 ---
-==PENDING CLEANUP==
+<!--
+**Enhancing Security with AWS IAM Roles!** In a recent assignment, I delved into IAM roles within AWS, creating a custom role that provided specific users complete access to VPCs and DynamoDB. I crafted a custom policy, attached it to a new role, and modified trust relationships to ensure secure, exclusive access for selected users. This task reinforced my understanding of role-based access control and the importance of precise permission management in maintaining a secure cloud environment.
+-->  
  
 > [!info] Module 3: IAM Roles Assignment
 > **Problem Statement:** 

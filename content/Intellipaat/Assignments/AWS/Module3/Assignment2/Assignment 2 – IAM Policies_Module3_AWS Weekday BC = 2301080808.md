@@ -2,9 +2,11 @@
 tags:
   - AWS
   - CloudWatch
+title: Crafting and Managing IAM Policies for User Access Control in AWS
 ---
-==PENDING CLEANUP==
- 
+<!--
+**Diving Deeper into AWS IAM Policies!** In my latest assignment, I crafted and managed IAM policies to bolster security and efficiency within AWS. I created two distinct policies; the first providing comprehensive access to S3, permission to create EC2 instances, and full RDS access. The second policy focused on complete CloudWatch and billing access, along with limited listing capabilities for EC2 and S3. Successfully attaching these policies to respective user groups, I've enhanced my grasp on fine-tuning access controls and security measures in cloud environments.
+-->  
 > [!info] Module 3: IAM Policies Assignment
 > **Problem Statement:** 
 > You work for XYZ Corporation. To maintain the security of the AWS account and the resources you have been asked to implement a solution that can help easily recognize and monitor the different users. 
@@ -78,7 +80,7 @@ Continuing in the IAM dashboard, I clicked on the `Policies` tab again and then 
 <br>![[PolicyNumber1-2.png]]
 ### Task 3: Attaching Policy Number 1 to the `DevTeam`
 
-Next, I moved on to attaching `PolicyNumber1` to the `DevTeam`. I clicked on the `User groups` tab on the left sidebar and selected the `DevTeam` group by clicking its name. 
+Next, I moved on to attaching `PolicyNumber1` to the `DevTeam`. I clicked on the `User groups` tab on the left sidebar and selected the `D evTeam` group by clicking its name. 
 
 Within the `DevTeam` group interface, I clicked the `Permissions` tab, `Add permissions` button and `Attach policies`. 
 <br>![[attach policies.png]]

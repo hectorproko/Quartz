@@ -2,8 +2,11 @@
 tags:
   - AWS
   - CloudWatch
+title: Creating a CloudWatch Dashboard for Monitoring EC2 Instances in AWS
 ---
-==PENDING CLEANUP==
+<!--
+**Leveraging AWS CloudWatch for Enhanced Monitoring!** In my latest endeavor, I focused on creating a custom CloudWatch dashboard to monitor EC2 instances. The task involved tracking CPU utilization and networking metrics for specific instances. By simulating load on one instance and observing the real-time metrics, I honed my skills in performance monitoring and operational management within AWS. This assignment not only enhanced my technical acumen but also underlined the importance of proactive monitoring in cloud infrastructure.
+-->
  
 > [!Info] Module 3: CloudWatch Dashboard Assignment
 > **Problem Statement:** 

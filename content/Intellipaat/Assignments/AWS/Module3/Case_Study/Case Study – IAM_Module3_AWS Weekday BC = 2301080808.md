@@ -1,8 +1,11 @@
 ---
 tags:
   - AWS
+title: Transitioning to AWS for Scalable Infrastructure Management
 ---
-
+<!--
+**Exploring IAM in Depth: AWS Case Study!** I completed a hands-on case study on AWS Identity and Access Management (IAM), designed to enhance security and efficiency for a hypothetical XYZ Corporation moving to AWS. My tasks included creating a user and group with specific EC2 instance access, granting permissions for VPC, Subnets, NACLs, RDS instance creation, and exploring security options like MFA and fine-grained policies. This exercise was an excellent opportunity to apply IAM best practices and deepen my understanding of managing secure access in cloud environments.
+-->
 > [!info] Module 3: Case Study - 1
 > Problem Statement: 
 > You work for XYZ Corporation that uses on premise solutions and a limited number of systems. With the increase in requests in their application, the load also increases. So, to handle the load the corporation has to buy more systems almost on a regular basis. Realizing the need to cut down the expenses on systems, they decided to move their infrastructure to AWS. 
@@ -51,7 +54,7 @@ tags:
 4. I attached this policy to the group as I created it.
    <br>![[Pasted image 20230922142537.png]]
 
-> [!summary]
+> [!tip] Summary
 > I created a new user named `User4`. During this process, I was prompted to attach `User4` to a group. Instead of choosing an existing group, I created `User4Group`. While setting up `User4Group`, I was given the option to attach a policy. Instead of selecting a pre-existing one, I created a new policy named `RunStopEC2`. Finally, the `User4Group` was created with `User4` in it and the `RunStopEC2` policy attached to it.
 
 
@@ -114,4 +117,4 @@ tags:
    <br>![[Pasted image 20230922155152.png|300]]
    <br>![[Pasted image 20230922155023.png|300]]
 2. **Fine-grained Policies**: I ensured that the policies I created granted only necessary permissions to avoid excessive privileges.
-    
+

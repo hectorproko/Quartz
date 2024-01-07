@@ -6,15 +6,14 @@
 5. [[Case Study – EC2, EBS And EFS_Module2_AWS Weekday BC = 2301080808|Securing and Managing Linux Web Servers with EBS Operations on AWS]]
 
 **Module 3:**  
-1. [[Assignment 1 – IAM Users_Module3_AWS Weekday BC = 2301080808|Implementing IAM User and Group Management for Enhanced Security in AWS]] <!--1/9/24--> 
+1. [[Assignment 1 – IAM Users_Module3_AWS Weekday BC = 2301080808|Implementing IAM User and Group Management for Enhanced Security in AWS]] <!--1/9/24-->
+2. [[Assignment 2 – IAM Policies_Module3_AWS Weekday BC = 2301080808|Crafting and Managing IAM Policies for User Access Control in AWS]] <!--1/10/24-->
+3. [[Assignment 3 – IAM Roles_Module3_AWS Weekday BC = 2301080808|Configuring IAM Roles for Targeted VPC and DynamoDB Access in AWS]] <!--1/11/24-->
+4. [[Assignment 4 – CloudWatch Dashboard_Module3_AWS Weekday BC = 2301080808|Creating a CloudWatch Dashboard for Monitoring EC2 Instances in AWS]] <!--1/12/24-->
+5. [[Assignment 5 – CloudWatch Alarms_Module3_AWS Weekday BC = 2301080808|Implementing CloudWatch Alarms for Cost Management and EC2 Monitoring in AWS]] <!--1/13/24-->
+6. [[Case Study – IAM_Module3_AWS Weekday BC = 2301080808|Transitioning to AWS for Scalable Infrastructure Management]] <!--1/14/24-->
 
 
-> 
-> - [x] [[Assignment 2 – IAM Policies_Module3_AWS Weekday BC = 2301080808|Assignment 2 – IAM Policies]]
-> - [x] [[Assignment 3 – IAM Roles_Module3_AWS Weekday BC = 2301080808|Assignment 3 – IAM Roles]] 
-> - [x] [[Assignment 4 – CloudWatch Dashboard_Module3_AWS Weekday BC = 2301080808|Assignment 4 – CloudWatch Dashboard]]
-> - [x] [[Assignment 5 – CloudWatch Alarms_Module3_AWS Weekday BC = 2301080808|Assignment 5 – CloudWatch Alarms]]
-> - [x] [[Case Study – IAM_Module3_AWS Weekday BC = 2301080808|Case Study – IAM]] 
 
 
 <!-

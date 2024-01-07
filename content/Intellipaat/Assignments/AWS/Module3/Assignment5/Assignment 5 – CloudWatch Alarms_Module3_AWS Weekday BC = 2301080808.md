@@ -2,10 +2,11 @@
 tags:
   - AWS
   - CloudWatch
+title: Implementing CloudWatch Alarms for Cost Management and EC2 Monitoring in AWS
 ---
-==PENDING CLEANUP==
- 
-Module 3: CloudWatch Alarms Assignment
+<!--
+**Hands-On Learning with AWS CloudWatch Alarms!** In my latest hands-on learning exercise, I navigated AWS CloudWatch to set up two alarms: one for monitoring unexpected billing charges and another for high CPU utilization on an EC2 instance. While configuring these alarms and linking them to SNS notifications, I gained practical experience in setting up proactive monitoring and alerts within a cloud environment. This assignment was an enriching opportunity to deepen my understanding of AWS's monitoring tools and enhance my cloud management skills.
+-->
 
 > [!info] Module 3: CloudWatch Alarms Assignment
 > **Problem Statement:** 
