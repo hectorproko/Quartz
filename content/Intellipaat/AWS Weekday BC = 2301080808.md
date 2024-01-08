@@ -25,8 +25,6 @@
 3. [[Assignment 3 – VPC Security Groups_Module5_AWS Weekday BC = 2301080808|Establishing Secure EC2 Communications with VPC Security Groups in AWS]]<!--1/22/24 Done--> 
 4. [[Assignment 4 – VPC Endpoints_Module5_AWS Weekday BC = 2301080808|Securing Access to S3 Resources with VPC Endpoints in AWS]]<!--1/23/24 Done--> 
 5. [[Case Study – VPC And Peering_Module5_AWS Weekday BC = 2301080808|Streamlining Connectivity with VPC and Peering]] <!--1/24/24--> 
-
-<!--Sunday 2/4,11,18,25--> 
 ### Module  6:  
 1. [[Assignment 1 – S3 Bucket Creation_Module6_AWS Weekday BC = 2301080808|Configuring an S3 Bucket for Versatile File Storage and Sharing in AWS]] <!--1/25/24-->
 2. [[Assignment 2 – S3 Bucket Versioning_Module6_AWS Weekday BC = 2301080808|Implementing Version Control in S3 Bucket]] <!--1/26/24-->
@@ -58,8 +56,8 @@
  
 ### Module  11:  
 1. [[Assignment 1 – AWS Migration_Module11_AWS Weekday BC = 2301080808|Establishing a Local Ubuntu Server VM for Cloud Migration]] <!--2/15/24-->
-2. [[Assignment 2 – AWS Migration_Module11_AWS Weekday BC = 2301080808|Assignment 2 – AWS Migration]] <!--2/16/24-->
-3. [[Assignment 3 – AWS Migration_Module11_AWS Weekday BC = 2301080808|Assignment 3 – AWS Migration]] <!--2/17/24-->
+2. [[Assignment 2 – AWS Migration_Module11_AWS Weekday BC = 2301080808|Transferring and Deploying a Local Ubuntu Server to AWS EC2]] <!--2/16/24-->
+3. [[Assignment 3 – AWS Migration_Module11_AWS Weekday BC = 2301080808|Migrating MySQL to PostgreSQL using AWS Database Migration Service]] <!--2/17/24-->
 
 
 

@@ -1,7 +1,11 @@
 ---
 tags:
   - AWS
+title: Transferring and Deploying a Local Ubuntu Server to AWS EC2
 ---
+<!--
+**Mini-Project: Advanced AWS Migration and VM Import/Export!** In a step further into AWS migration, I tackled the challenge of transferring a virtual machine to AWS, converting it into an Amazon Machine Image (AMI) for scalability and flexibility. Starting with exporting an Ubuntu server VM, I uploaded it to an S3 bucket, then used the AWS VM Import/Export service to create an AMI. Subsequently, I launched an EC2 instance using the new AMI, demonstrating the seamless transition from on-premise to cloud. This project provided practical experience in cloud migration strategies, enhancing my ability to manage and execute complex migrations efficiently.
+-->
 
 > [!info] Module 11: Migration Assignment - 2
 > **Problem Statement:**

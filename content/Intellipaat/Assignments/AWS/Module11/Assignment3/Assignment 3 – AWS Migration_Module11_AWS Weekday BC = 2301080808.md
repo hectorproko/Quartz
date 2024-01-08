@@ -1,8 +1,11 @@
 ---
 tags:
   - AWS
+title: Migrating MySQL to PostgreSQL using AWS Database Migration Service
 ---
-==PENDING CLEANUP==
+<!--
+**Mini-Project: Streamlined Data Migration with AWS Database Migration Service!** In this hands-on project, I ventured into the realm of database migration using AWS's Database Migration Service (DMS). My task was to migrate a MySQL database to a PostgreSQL database hosted on RDS, ensuring a seamless transfer of data. The process involved setting up an RDS MySQL database, creating a replication instance, configuring source and target endpoints, executing the migration task, and verifying the integrity of the migrated data. This project allowed me to practically implement and understand the intricacies of migrating databases across different DBMS, enhancing my proficiency in AWS DMS and cloud migration strategies.
+-->
  
 
 > [!info] Module 11: Migration Assignment - 3
