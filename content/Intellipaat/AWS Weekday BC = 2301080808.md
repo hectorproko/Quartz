@@ -14,16 +14,16 @@
 6. [[Case Study – IAM_Module3_AWS Weekday BC = 2301080808|Transitioning to AWS for Scalable Infrastructure Management]] <!--1/14/24 Sun Done--> 
 
 ### Module  4:  
-1. [[Assignment 1 – ELB_Module4_AWS Weekday BC = 2301080808|Setting Up and Migrating Load Balancers for Efficient Traffic Management on AWS]] <!--1/15/24-->
-2. [[Assignment 2 – Auto Scaling_Module4_AWS Weekday BC = 2301080808|Implementing Auto-Scaling for Optimized Resource Management on AWS]] <!--1/16/24-->
-3. [[Assignment 3 – Route 53_Module4_AWS Weekday BC = 2301080808|Configuring Traffic Management with Route 53 in AWS]]  <!--1/17/24-->
-4. [[Case Study – ELB, ASG And Route 53_Module4_AWS Weekday BC = 2301080808|Integrating ELB, ASG, and Route 53 for Scalable AWS Solutions]] <!--1/18/24--> 
+1. [[Assignment 1 – ELB_Module4_AWS Weekday BC = 2301080808|Setting Up and Migrating Load Balancers for Efficient Traffic Management on AWS]] <!--1/15/24 Done-->
+2. [[Assignment 2 – Auto Scaling_Module4_AWS Weekday BC = 2301080808|Implementing Auto-Scaling for Optimized Resource Management on AWS]] <!--1/16/24 Done-->
+3. [[Assignment 3 – Route 53_Module4_AWS Weekday BC = 2301080808|Configuring Traffic Management with Route 53 in AWS]]  <!--1/17/24 Done-->
+4. [[Case Study – ELB, ASG And Route 53_Module4_AWS Weekday BC = 2301080808|Integrating ELB, ASG, and Route 53 for Scalable AWS Solutions]] <!--1/18/24 Done--> 
 
 ### Module  5: 
-1. [[Assignment 1 – VPC Creation_Module5_AWS Weekday BC = 2301080808|Constructing a Secure VPC with Public and Private Subnets in AWS]]<!--1/19/24--> 
-2. [[Assignment 2 – VPC Peering_Module5_AWS Weekday BC = 2301080808|Implementing VPC Peering for Enhanced Connectivity Across Regions in AWS]]<!--1/20/24--> 
-3. [[Assignment 3 – VPC Security Groups_Module5_AWS Weekday BC = 2301080808|Establishing Secure EC2 Communications with VPC Security Groups in AWS]]<!--1/22/24--> 
-4. [[Assignment 4 – VPC Endpoints_Module5_AWS Weekday BC = 2301080808|Securing Access to S3 Resources with VPC Endpoints in AWS]]<!--1/23/24--> 
+1. [[Assignment 1 – VPC Creation_Module5_AWS Weekday BC = 2301080808|Constructing a Secure VPC with Public and Private Subnets in AWS]]<!--1/19/24 Done--> 
+2. [[Assignment 2 – VPC Peering_Module5_AWS Weekday BC = 2301080808|Implementing VPC Peering for Enhanced Connectivity Across Regions in AWS]]<!--1/20/24 Done--> 
+3. [[Assignment 3 – VPC Security Groups_Module5_AWS Weekday BC = 2301080808|Establishing Secure EC2 Communications with VPC Security Groups in AWS]]<!--1/22/24 Done--> 
+4. [[Assignment 4 – VPC Endpoints_Module5_AWS Weekday BC = 2301080808|Securing Access to S3 Resources with VPC Endpoints in AWS]]<!--1/23/24 Done--> 
 5. [[Case Study – VPC And Peering_Module5_AWS Weekday BC = 2301080808|Streamlining Connectivity with VPC and Peering]] <!--1/24/24--> 
 
 <!--Sunday 2/4,11,18,25--> 
@@ -63,7 +63,7 @@
 
 
 
-<!-
+<!-- 
 
 > [!quote] ### Module 2:
 > - [x] [[Assignment 1 – EC2_Module2_AWS Weekday BC = 2301080808|Assignment 1 – EC2]]

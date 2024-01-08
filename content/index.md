@@ -26,6 +26,7 @@ Here are some of the projects I've been working on, categorized by technology:
 
 ### AWS:
 - [[Project15 AWS CLOUD SOLUTION FOR 2 COMPANY WEBSITES USING A REVERSE PROXY TECHNOLOGY|AWS Solution for 2 Company Websites using a Reverse Proxy]] ~~*(old [Project 15](https://github.com/hectorproko/AWS-CLOUD-SOLUTION-FOR-2-COMPANY-WEBSITES-USING-A-REVERSE-PROXY-TECHNOLOGY/blob/main/Project15_Steps.md))*~~
+- [[AWS Weekday BC = 2301080808|Additional AWS Course Work]]
 
 ### Terraform:
 - [[AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM]] ==Pending==
@@ -68,8 +69,7 @@ Here are some of the projects I've been working on, categorized by technology:
 
 
 
-### Course Work:
-[[AWS Weekday BC = 2301080808|AWS]]
+
 
 
 <!--
