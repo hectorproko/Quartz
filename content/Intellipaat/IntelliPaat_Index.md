@@ -13,7 +13,7 @@
 
 ## 2. Elective Courses
 
-> [!Done]- ### [[Linux Training]] 
+> [!Done]- [[Linux Training]] 
 > - [x] Assignments 
 > 	- [x] [[Linux Training_Module 1 – Assignment|Module 1 – Assignment]]
 > 	- [x] [[Linux Training_Module 2 – Assignment|Module 2 – Assignment]]

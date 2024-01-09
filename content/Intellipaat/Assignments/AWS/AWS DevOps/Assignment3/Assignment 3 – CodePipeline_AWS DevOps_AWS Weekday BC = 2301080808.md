@@ -2,8 +2,11 @@
 tags:
   - AWS
   - CodePipeline
+title: Building a CI/CD Pipeline with CodePipeline for PHP Applications
 ---
-==PENDING CLEANUP==
+<!--
+**Mini-Project: Enhancing CI/CD Workflows with AWS CodePipeline!** I completed a project focusing on the implementation of AWS CodePipeline, a core component of DevOps practices. This task involved setting up an automated continuous integration and continuous delivery pipeline, linking code from a repository to deployment on an EC2 instance. This practical application of CodePipeline emphasized its efficiency in streamlining development and deployment processes, solidifying my skills in AWS-based CI/CD strategies.
+-->
  
 > [!info] AWS DevOps Assignment - 3
 > **Training Problem Statement:**

@@ -1,7 +1,12 @@
 ---
 tags:
   - azure
+title: Efficient Deletion of Resource Groups with Azure CLI and PowerShell
 ---
+<!--
+**Gaining Proficiency in Azure: Mastering Resource Group Management!** In my latest assignment for the Azure Administrator course, I focused on enhancing my Azure CLI and PowerShell skills, particularly in managing resource groups. The task involved using Azure CLI to delete all resource groups in the West US region with a single command. This exercise not only tested my command-line proficiency but also deepened my understanding of efficient resource management in Azure. Successfully executing this task has further solidified my capabilities in Azure's environment, proving essential for any aspiring Azure Administrator.
+-->
+
 > [!info] Module 1: Assignment - 4
 > **Tasks To Be Performed:** 
 > Use Azure CLI and Azure PowerShell to: 

@@ -1,7 +1,12 @@
 ---
 tags:
   - azure
+title: Creating a Resource Group Using Azure Cloud Shell
 ---
+<!--
+**Exploring Azure Cloud: Azure Administrator Module 1 Assignment!** I've just completed an engaging assignment as part of the Azure Administrator course. The task involved connecting to Azure Cloud Shell and creating a resource group named "new-rg" in the South Central US region. This exercise not only familiarized me with Azure's interface and Cloud Shell but also deepened my understanding of resource group management in Azure. Successfully executing these tasks has bolstered my confidence in navigating and managing resources in the Azure cloud environment. This assignment marks an important step in my journey towards becoming an Azure Administrator.
+-->
+
 > [!info] Module 1: Assignment - 1
 > **Tasks To Be Performed:** 
 > 1. Connect to Azure Cloud Shell 

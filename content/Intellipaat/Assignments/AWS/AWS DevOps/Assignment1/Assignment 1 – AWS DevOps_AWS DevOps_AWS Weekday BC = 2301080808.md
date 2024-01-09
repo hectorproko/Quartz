@@ -1,8 +1,11 @@
 ---
 tags:
   - AWS
+title: Setting Up a CodeCommit Repository and Migrating Data from GitHub
 ---
-==PENDING CLEANUP==
+<!--
+**Mini-Project: Streamlining DevOps Workflows with AWS CodeCommit!** In this project, I embraced the role of a DevOps engineer at XYZ Corporation, tackling the challenge of migrating repository content from GitHub to AWS CodeCommit. This involved creating an IAM user, uploading SSH keys, setting up a CodeCommit repository, and executing a seamless repository transfer. This task not only demonstrated my skills in repository management using AWS services but also highlighted the practical aspects of DevOps workflows in a cloud environment.
+-->
  
 > [!info] AWS DevOps Assignment - 1
 > **Problem Statement:**

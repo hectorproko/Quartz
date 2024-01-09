@@ -1,7 +1,12 @@
 ---
 tags:
   - azure
+title: Architecting Robust Database Solutions on AWS
 ---
+<!--
+**Project Showcase: Implementing Azure CDN with Blob Storage!** In a recent project for my Azure Administrator course, I demonstrated the integration of Azure Content Delivery Network (CDN) with Azure Blob Storage. The task involved creating a storage account, uploading files to Blob storage, setting up a CDN profile, and connecting it to the Blob to access the uploaded files. This project allowed me to explore the efficiency of Azure CDN in delivering content globally and its seamless integration with Azure Storage solutions. Successfully completing this task enhanced my understanding of Azure's capabilities in optimizing content delivery and storage management in a cloud environment.
+-->
+
 > [!info] Module 2: Assignment - 4
 > **Tasks To Be Performed:** 
 > 1. Create a Storage account, and upload some files in Blob storage 

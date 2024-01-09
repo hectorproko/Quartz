@@ -3,10 +3,12 @@ tags:
   - AWS
   - CloudFormation
   - CloudWatch
+title: Implementing Secure Amazon SNS Messaging in a Private AWS Environment
 ---
-==PENDING CLEANUP==
+<!--
+**Mini-Project: Implementing Secure Amazon SNS Messaging in a Private AWS Environment!** I've just completed a fascinating project that involved setting up a private environment within AWS to securely publish and deliver messages via Amazon SNS. The project required creating a VPC and an EC2 instance without internet access, establishing a VPC endpoint for Amazon SNS, and then using AWS CLI to publish messages to an SNS topic securely. This task not only honed my skills in AWS networking and security but also demonstrated the practical use of SNS in private networks, enhancing message security and delivery. It was a great exercise in integrating various AWS services for a secure and efficient cloud infrastructure.
+-->
  
-
 > [!info] Project - 3: Publishing Amazon SNS Messages Privately
 > **Industry:** Healthcare 
 > 

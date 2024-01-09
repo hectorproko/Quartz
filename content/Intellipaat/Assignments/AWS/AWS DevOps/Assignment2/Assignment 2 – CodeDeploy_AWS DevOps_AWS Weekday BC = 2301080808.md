@@ -2,8 +2,11 @@
 tags:
   - AWS
   - CodeDeploy
+title: Implementing Automated Deployments with CodeDeploy and EC2
 ---
-==PENDING CLEANUP==
+<!--
+**Mini-Project: Streamlining Deployment Processes with AWS CodeDeploy!** I've successfully completed a project on AWS CodeDeploy, aiming to automate and simplify deployment tasks for XYZ Corporation. The project involved creating a CodeDeploy application for an EC2 instance and setting up a deployment group. This practical exercise deepened my understanding of AWS deployment services and their crucial role in efficient DevOps practices. It was a valuable opportunity to apply theoretical knowledge in a real-world scenario, enhancing my skills in automated deployment strategies.
+-->
  
 > [!info] AWS DevOps Assignment - 2
 > **Training Problem Statement:**

@@ -1,3 +1,7 @@
+---
+title: AWS Course Work
+---
+
 ### Module 2:
 1. [[Assignment 1 – EC2_Module2_AWS Weekday BC = 2301080808|Launching and Configuring an Ubuntu EC2 Instance with Nginx on AWS]]
 2. [[Assignment 2 – EBS_Module2_AWS Weekday BC = 2301080808|Launching a Linux EC2 Instance with Attached and Resized EBS Storage]]
@@ -60,14 +64,14 @@
 3. [[Assignment 3 – AWS Migration_Module11_AWS Weekday BC = 2301080808|Migrating MySQL to PostgreSQL using AWS Database Migration Service]] <!--2/17/24-->
 
 ### AWS DevOps
-1. [[Assignment 1 – AWS DevOps_AWS DevOps_AWS Weekday BC = 2301080808|Assignment 1 – AWS DevOps]]
-2. [[Assignment 2 – CodeDeploy_AWS DevOps_AWS Weekday BC = 2301080808|Assignment 2 – CodeDeploy]] 
-3. [[Assignment 3 – CodePipeline_AWS DevOps_AWS Weekday BC = 2301080808|Assignment 3 – CodePipeline]]
-4. [[Case Study – AWS DevOps_AWS DevOps_AWS Weekday BC = 2301080808|Case Study – AWS DevOps]] 
+1. [[Assignment 1 – AWS DevOps_AWS DevOps_AWS Weekday BC = 2301080808|Setting Up a CodeCommit Repository and Migrating Data from GitHub]]
+2. [[Assignment 2 – CodeDeploy_AWS DevOps_AWS Weekday BC = 2301080808|Implementing Automated Deployments with CodeDeploy and EC2]] 
+3. [[Assignment 3 – CodePipeline_AWS DevOps_AWS Weekday BC = 2301080808|Building a CI/CD Pipeline with CodePipeline for PHP Applications]]
+4. [[Case Study – AWS DevOps_AWS DevOps_AWS Weekday BC = 2301080808|Streamlining Development Workflow with CodeCommit, CodeDeploy, and CodePipeline for Multi-Stage Deployments]] 
 
 ### Projects
-1. [[Project 1 – Deploying A Multi-Tier Website Using AWS EC2_Projects_AWS Weekday BC = 2301080808|Project 1 – Deploying A Multi-Tier Website Using AWS EC2]] 
-2. [[Project 3 – Publishing Amazon SNS Messages Privately_Projects_AWS Weekday BC = 2301080808|Project 3 – Publishing Amazon SNS Messages Privately]] 
+1. [[Project 1 – Deploying A Multi-Tier Website Using AWS EC2_Projects_AWS Weekday BC = 2301080808|Implementing a Scalable, Multi-Tier Web Architecture on AWS with EC2 and RDS]] 
+2. [[Project 3 – Publishing Amazon SNS Messages Privately_Projects_AWS Weekday BC = 2301080808|Implementing Secure Amazon SNS Messaging in a Private AWS Environment]] 
 
 
 <!--

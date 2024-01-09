@@ -1,7 +1,12 @@
 ---
 tags:
   - azure
+title: Utilizing Azure Storage Explorer for File Share Creation, Blob Uploads, and Azure Table Management
 ---
+<!--
+**Enhancing Azure Proficiency: Exploring File Share and Table Storage!** I've just completed a practical assignment in the Azure Administrator course, where I delved into Azure's storage capabilities. The task involved using the Storage Explorer to create a file share, upload files to the blob service, and create an Azure Table with a record. This assignment was instrumental in enhancing my understanding of Azure storage services, including file sharing and table storage features. It allowed me to gain hands-on experience in managing different types of cloud storage and deepened my skills in Azure's comprehensive storage solutions.
+-->
+
 > [!info] Module 3: Assignment - 2
 > **Tasks To Be Performed:** 
 > Do the following using the Storage explorer: 

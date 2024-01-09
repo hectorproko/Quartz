@@ -1,7 +1,12 @@
 ---
 tags:
   - azure
+title: Managing Azure Storage Accounts Across Resource Groups
 ---
+<!--
+**Enhancing Azure Management Skills: Resource Group and Storage Account Handling!** In the latest assignment of my Azure Administrator course, I focused on mastering resource groups and storage accounts in Azure. The task involved creating two resource groups (rg-1 and rg-2) and a storage account within rg-1. I then successfully moved the storage account from rg-1 to rg-2, showcasing my proficiency in managing Azure resources via Azure CLI. This exercise was instrumental in enhancing my understanding of Azure's resource management capabilities, particularly in organizing and reallocating cloud resources effectively. It's another step forward in my journey to mastering Azure cloud services.
+_-->
+
 > [!info] Module 2: Assignment - 1
 > **Tasks To Be Performed:**
 > 1. Create 2 resource groups rg-1 and rg-2 

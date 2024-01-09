@@ -1,7 +1,12 @@
 ---
 tags:
   - azure
+title: Data Management with Azure Storage and Data Factory for Efficient Data Transfer
 ---
+<!--
+**Advancing in Azure: Data Management and Transfer with Azure Storage and Data Factory!** I've recently completed an assignment in the Azure Administrator course that involved sophisticated data management tasks. The project required me to create two Azure storage accounts, upload data to a Blob service in the first account, and then use Azure Data Factory to transfer this data to the second account's container. This exercise provided hands-on experience with Azure's storage solutions and data transfer capabilities, enhancing my understanding of managing and moving data within the Azure ecosystem. Successfully completing these tasks has deepened my expertise in Azure's data services, a critical skill for cloud administrators.
+-->
+
 > [!info] Module 3: Assignment - 3
 > **Tasks To Be Performed:** 
 > 1. Create two storage accounts and create a container inside it 

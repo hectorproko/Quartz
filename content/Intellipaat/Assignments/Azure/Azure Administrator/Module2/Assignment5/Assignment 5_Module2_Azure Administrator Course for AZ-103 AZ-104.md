@@ -1,7 +1,12 @@
 ---
 tags:
   - azure
+title: Managing File Storage and Access Tiers in Azure Blob Service
 ---
+<!--
+**Project Focus: Azure Storage and Data Lifecycle Management!** I've completed an engaging assignment in the Azure Administrator course where I delved into Azure Storage account management. The task involved creating a storage account, utilizing the Blob service to upload files, and then modifying their access tier to archive. This exercise provided practical experience in managing storage accounts and understanding data lifecycle in Azure. It was particularly insightful to see how different access tiers can be leveraged for cost-effective data storage and management, enhancing my skills in Azure's comprehensive cloud storage solutions.
+-->
+
 > [!info] Module 2: Assignment - 5
 > **Tasks To Be Performed:** 
 > 1. Create a storage account 

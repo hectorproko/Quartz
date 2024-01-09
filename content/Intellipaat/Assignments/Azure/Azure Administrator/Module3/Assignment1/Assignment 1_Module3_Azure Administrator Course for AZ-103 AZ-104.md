@@ -1,7 +1,12 @@
 ---
 tags:
   - azure
+title: Setting Up a Storage Account and Integrating with Azure Storage Explorer
 ---
+<!--
+**Progressing in Azure Administration: Mastering Storage Account Management!** As part of Module 3 in the Azure Administrator course, I completed an assignment that further developed my skills in Azure Storage. This involved creating a new storage account and connecting it with Azure Storage Explorer. The process required navigating through Azure's interface to set up the storage account and integrating it with Storage Explorer, enhancing my proficiency in Azure storage solutions. This practical task was an excellent exercise in managing cloud storage resources, providing valuable hands-on experience with Azure's storage services.
+-->
+
 > [!info] Module 3: Assignment - 1
 > **Tasks To Be Performed:** 
 > 1. Create a storage account 

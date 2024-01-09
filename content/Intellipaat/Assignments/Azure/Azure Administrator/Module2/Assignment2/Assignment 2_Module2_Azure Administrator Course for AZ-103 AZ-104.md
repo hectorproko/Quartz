@@ -1,7 +1,12 @@
 ---
 tags:
   - azure
+title: Organizing Azure Storage Accounts Using Tags for Team-Based Management
 ---
+<!--
+**Project Insight: Effective Use of Azure Tags for Resource Management!** In a recent assignment from my Azure Administrator course, I successfully demonstrated the power of Azure tags for efficient resource management. The task involved creating three storage accounts, each tagged with different team names: Team1, Team2, and Team3. I then added another storage account for Team2 and utilized Azure CLI commands to list all resources tagged for Team2. This assignment deepened my understanding of Azure's tagging capabilities, highlighting how tags can streamline resource organization and accessibility. It was a practical exercise in optimizing resource management in a cloud environment.
+-->
+
 > [!info] Module 2: Assignment - 2
 > **Tasks To Be Performed:**
 > 1. Create 3 storage accounts with “Team” tags: team1, team2 and team3 respectively 

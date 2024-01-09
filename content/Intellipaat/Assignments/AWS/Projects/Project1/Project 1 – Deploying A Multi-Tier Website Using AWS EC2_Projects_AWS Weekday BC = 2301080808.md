@@ -1,8 +1,11 @@
 ---
 tags:
   - AWS
+title: Implementing a Scalable, Multi-Tier Web Architecture on AWS with EC2 and RDS
 ---
-==PENDING CLEANUP==
+<!--
+**Major Project: Deploying a Multi-Tier Website on AWS EC2!** I'm thrilled to share my experience with a significant project where I deployed a multi-tier website using Amazon EC2. The project involved setting up an EC2 instance, configuring auto-scaling for high availability, creating an RDS instance for database management, and ensuring seamless connectivity between the EC2 instance and the RDS. My tasks included launching the instance, enabling auto-scaling, establishing database connections, and transferring the website's files using FileZilla. This project was an excellent opportunity to apply and deepen my knowledge in AWS services, demonstrating the practicality and efficiency of AWS for scalable web hosting solutions.
+-->
  
 
 > [!info] Project - 1: Deploying a Multi-Tier Website Using AWS EC2

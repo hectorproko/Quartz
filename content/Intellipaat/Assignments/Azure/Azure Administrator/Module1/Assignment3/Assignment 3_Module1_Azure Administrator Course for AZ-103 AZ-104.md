@@ -1,7 +1,12 @@
 ---
 tags:
   - azure
+title: Resource Group Management with Azure CLI and PowerShell
 ---
+<!--
+**Advancing Azure Skills: Azure CLI for Resource Group Management!** I recently completed an insightful assignment in the Azure Administrator course, where I used Azure CLI to create and manage resource groups. The task involved creating three new resource groups in the "West US" region and then listing all resource groups in that region using specific Azure CLI commands. This exercise not only bolstered my command-line skills but also deepened my understanding of Azure's resource management capabilities. Successfully executing these tasks has furthered my proficiency in Azure's diverse cloud services, a crucial step in my journey as an Azure Administrator.
+-->
+
 > [!info] Module 1: Assignment - 3
 > **Tasks To Be Performed:**
 > Use Azure CLI and Azure PowerShell to: 

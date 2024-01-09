@@ -1,7 +1,12 @@
 ---
 tags:
   - azure
+title: Setting Up Azure File Shares on Windows and Linux Systems
 ---
+<!--
+**Project Highlight: Azure File Share Creation and Mounting!** I've just completed an insightful assignment in the Azure Administrator course, focusing on Azure Storage. My task was to create a file share in Azure Storage and then mount it on both Windows and Linux systems. This assignment involved navigating the Azure portal to set up the file share, obtaining access credentials, and executing mount commands on different operating systems. Successfully completing this task has enhanced my understanding of Azure's file services and cross-platform integration, showcasing the versatility and practicality of Azure Storage solutions in a multi-environment setup.
+-->
+
 > [!info] Module 2: Assignment - 3
 > **Tasks To Be Performed:** 
 > 1. Create a file share in Azure Storage 

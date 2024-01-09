@@ -4,8 +4,11 @@ tags:
   - CodePipeline
   - CodeBuild
   - CodeDeploy
+title: Streamlining Development Workflow with CodeCommit, CodeDeploy, and CodePipeline for Multi-Stage Deployments
 ---
-==PENDING CLEANUP==
+<!--
+**Comprehensive Case Study: Full-Cycle AWS DevOps Implementation!** I'm excited to share my recent case study where I leveraged a suite of AWS DevOps tools to build, deploy, and automate a web application. This multi-faceted project involved migrating a repository to AWS CodeCommit, automating deployments using CodeDeploy, and orchestrating the entire process with CodePipeline, culminating in the app's deployment on Elastic Beanstalk. It was a rich learning experience that provided deep insights into AWS's integrated DevOps capabilities, from code management to continuous integration and delivery. This end-to-end project has significantly enhanced my expertise in cloud-based DevOps practices.
+-->
  
 > [!info] AWS DevOps Case Study - 1
 > **Training Problem Statement:**
