@@ -59,9 +59,18 @@
 2. [[Assignment 2 – AWS Migration_Module11_AWS Weekday BC = 2301080808|Transferring and Deploying a Local Ubuntu Server to AWS EC2]] <!--2/16/24-->
 3. [[Assignment 3 – AWS Migration_Module11_AWS Weekday BC = 2301080808|Migrating MySQL to PostgreSQL using AWS Database Migration Service]] <!--2/17/24-->
 
+### AWS DevOps
+1. [[Assignment 1 – AWS DevOps_AWS DevOps_AWS Weekday BC = 2301080808|Assignment 1 – AWS DevOps]]
+2. [[Assignment 2 – CodeDeploy_AWS DevOps_AWS Weekday BC = 2301080808|Assignment 2 – CodeDeploy]] 
+3. [[Assignment 3 – CodePipeline_AWS DevOps_AWS Weekday BC = 2301080808|Assignment 3 – CodePipeline]]
+4. [[Case Study – AWS DevOps_AWS DevOps_AWS Weekday BC = 2301080808|Case Study – AWS DevOps]] 
+
+### Projects
+1. [[Project 1 – Deploying A Multi-Tier Website Using AWS EC2_Projects_AWS Weekday BC = 2301080808|Project 1 – Deploying A Multi-Tier Website Using AWS EC2]] 
+2. [[Project 3 – Publishing Amazon SNS Messages Privately_Projects_AWS Weekday BC = 2301080808|Project 3 – Publishing Amazon SNS Messages Privately]] 
 
 
-<!-- 
+<!--
 
 > [!quote] ### Module 2:
 > - [x] [[Assignment 1 – EC2_Module2_AWS Weekday BC = 2301080808|Assignment 1 – EC2]]
@@ -76,18 +85,4 @@
 > -  Monday 1/8/2024
 
 
-
-
-> [!done]- AWS DevOps
-> - [x] [[Assignment 1 – AWS DevOps_AWS DevOps_AWS Weekday BC = 2301080808|Assignment 1 – AWS DevOps]]
-> - [x] [[Assignment 2 – CodeDeploy_AWS DevOps_AWS Weekday BC = 2301080808|Assignment 2 – CodeDeploy]] 
-> - [x] [[Assignment 3 – CodePipeline_AWS DevOps_AWS Weekday BC = 2301080808|Assignment 3 – CodePipeline]]
-> - [x] [[Case Study – AWS DevOps_AWS DevOps_AWS Weekday BC = 2301080808|Case Study – AWS DevOps]] 
-> 
-
-> [!done]- Projects
-> - [x] [[Project 1 – Deploying A Multi-Tier Website Using AWS EC2_Projects_AWS Weekday BC = 2301080808|Project 1 – Deploying A Multi-Tier Website Using AWS EC2]] 
-> - [x] [[Project 2 – Website Orchestration_Projects_AWS Weekday BC = 2301080808|Project 2 – Website Orchestration]] <mark style="background: #FF5582A6;">Deprecated</mark>
-> - [x] [[Project 3 – Publishing Amazon SNS Messages Privately_Projects_AWS Weekday BC = 2301080808|Project 3 – Publishing Amazon SNS Messages Privately]] 
-> 
 
