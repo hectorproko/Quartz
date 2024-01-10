@@ -1,7 +1,14 @@
 ---
 tags:
   - azure
+title: Setting Up Docker on a VM and Managing a Web Application Repository
 ---
+<!--
+**Project Discovery: Docker Utilization in Azure VMs!** I'm excited to share my latest achievement from the Azure Administrator course, where I successfully installed Docker on a Linux VM and utilized it to manage a web application. The assignment involved creating a VM, installing Docker, pulling the 'hshar/webapp' repository, and making modifications to the Docker image. This exercise provided me with valuable hands-on experience in using Docker within Azure, highlighting the integration of container technology with cloud services. It was an insightful exploration into managing web applications in a containerized environment, enhancing my skills in Azure and Docker.
+
+#Azure #Docker #VirtualMachine #ContainerTechnology #WebApplicationManagement #AzureAdministrator #ProfessionalDevelopment
+-->
+
 > [!info] Module 5: Assignment - 1
 > **Tasks To Be Performed:** 
 > 1. Install a Docker using VM 

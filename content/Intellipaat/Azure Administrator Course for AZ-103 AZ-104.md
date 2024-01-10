@@ -13,18 +13,18 @@
 1. [[Assignment 1_Module3_Azure Administrator Course for AZ-103 AZ-104|Setting Up a Storage Account and Integrating with Azure Storage Explorer]] 
 2. [[Assignment 2_Module3_Azure Administrator Course for AZ-103 AZ-104|Utilizing Azure Storage Explorer for File Share Creation, Blob Uploads, and Azure Table Management]] 
 3. [[Assignment 3_Module3_Azure Administrator Course for AZ-103 AZ-104|Data Management with Azure Storage and Data Factory for Efficient Data Transfer]] 
-4. [[Assignment 4_Module3_Azure Administrator Course for AZ-103 AZ-104|Assignment 4]] 
+4. [[Assignment 4_Module3_Azure Administrator Course for AZ-103 AZ-104|Employing AzCopy for Efficient Data Transfer Between Azure Storage Containers]] 
 
 ---
 ###  Module 4:
-1. [[Assignment 1_Module4_Azure Administrator Course for AZ-103 AZ-104|Assignment 1]] 
-2. [[Assignment 2_Module4_Azure Administrator Course for AZ-103 AZ-104|Assignment 2]] 
-3. [[Assignment 3_Module4_Azure Administrator Course for AZ-103 AZ-104|Assignment 3]] 
-4. [[Assignment 4_Module4_Azure Administrator Course for AZ-103 AZ-104|Assignment 4]]
-5. [[Assignment 5_Module4_Azure Administrator Course for AZ-103 AZ-104|Assignment 5]] 
+1. [[Assignment 1_Module4_Azure Administrator Course for AZ-103 AZ-104|Setting Up and Accessing an Ubuntu Virtual Machine in Azure]] 
+2. [[Assignment 2_Module4_Azure Administrator Course for AZ-103 AZ-104|Deploying and Connecting to a Windows VM in Azure via Remote Desktop]] 
+3. [[Assignment 3_Module4_Azure Administrator Course for AZ-103 AZ-104|Configuring an Ubuntu VM Scale Set in Azure with Auto-Scaling Parameters]] 
+4. [[Assignment 4_Module4_Azure Administrator Course for AZ-103 AZ-104|Building and Imaging a Linux VM with Ubuntu and Apache2 on Azure]]
+5. [[Assignment 5_Module4_Azure Administrator Course for AZ-103 AZ-104|Deploying a VM from a Custom Image and Configuring Apache2 Web Service on Azure]] 
 ### Module 5:
-1. [[Assignment 1_Module5_Azure Administrator Course for AZ-103 AZ-104|Assignment 1]] 
-2. [[Assignment 2_Module5_Azure Administrator Course for AZ-103 AZ-104|Assignment 2]] 
+1. [[Assignment 1_Module5_Azure Administrator Course for AZ-103 AZ-104|Setting Up Docker on a VM and Managing a Web Application Repository]] 
+2. [[Assignment 2_Module5_Azure Administrator Course for AZ-103 AZ-104|Integrating Azure Container Registry with Docker and Deploying Images via Azure App Service]] 
 ### Module 6:
 1. [[Assignment 1_Module6_Azure Administrator Course for AZ-103 AZ-104|Assignment 1]] 
 2. [[Assignment 2_Module6_Azure Administrator Course for AZ-103 AZ-104|Assignment 2]] 

@@ -1,7 +1,14 @@
 ---
 tags:
   - azure
+title: Building and Imaging a Linux VM with Ubuntu and Apache2 on Azure
 ---
+<!--
+**Project Experience: Implementing Azure Traffic Manager for Geographic Load Balancing!** I have successfully completed an assignment in the Azure Administrator course, where I focused on deploying and configuring Azure Traffic Manager. The task involved creating two VMs in different Azure regions, setting up a Traffic Manager profile, and configuring it for geographic load balancing. This meant that user traffic was intelligently routed to the nearest VM based on their location, optimizing response times and resource utilization. The project provided hands-on experience with Azure's global traffic orchestration service, enhancing my skills in building efficient, geographically distributed applications.
+
+#Azure #TrafficManager #LoadBalancing #CloudComputing #AzureAdministrator #GeographicDistribution #ProfessionalDevelopment
+-->
+
 > [!info] Module 4: Assignment - 4
 > **Tasks To Be Performed:** 
 > 1. Create a Linux VM with Ubuntu OS 

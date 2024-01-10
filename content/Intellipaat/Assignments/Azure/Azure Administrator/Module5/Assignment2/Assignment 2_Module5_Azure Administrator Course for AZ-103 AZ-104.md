@@ -1,7 +1,15 @@
 ---
 tags:
   - azure
+title: Integrating Azure Container Registry with Docker and Deploying Images via Azure App Service
 ---
+<!--
+**Project Insight: Integrating Azure Container Registry with App Service!** In a recent assignment from my Azure Administrator course, I successfully demonstrated the integration of Azure Container Registry (ACR) with Azure App Service. The task involved creating an Azure Container Registry, connecting it to Docker in a VM, uploading a Docker image to ACR, and then deploying this image using Azure App Service. This comprehensive exercise provided practical experience in managing containerized applications in Azure, highlighting the seamless workflow from image creation to deployment. It was a valuable opportunity to deepen my understanding of Azure's container services and their application in a real-world scenario.
+
+#Azure #ContainerRegistry #AppService #Docker #CloudComputing #AzureAdministrator #Containerization #ProfessionalDevelopment
+-->
+
+
 > [!info] Module 5: Assignment - 2
 > **Tasks To Be Performed:** 
 > 1. Create an Azure Container Registry and connect it to Docker running in VM 

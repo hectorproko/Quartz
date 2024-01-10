@@ -1,7 +1,14 @@
 ---
 tags:
   - azure
+title: Deploying a VM from a Custom Image and Configuring Apache2 Web Service on Azure
 ---
+<!--
+ **Project Completion: Deploying and Managing a VM with Azure!** I'm excited to share my experience with the latest assignment in my Azure Administrator course, where I successfully deployed a virtual machine from a previously created image. The project involved setting up the VM, opening port 80 in the network security group (NSG), starting the Apache2 service, and ensuring the website was accessible via the VM's public IP. This assignment was a practical exercise in Azure VM deployment, network configuration, and service management, enhancing my skills in setting up and managing web services in Azure's cloud environment.
+
+#Azure #VirtualMachine #NetworkSecurity #CloudComputing #AzureAdministrator #WebServices #ProfessionalDevelopment
+-->
+
 > [!info] Module 4: Assignment - 5
 > **Tasks To Be Performed:** 
 > 1. Deploy a VM from the previously created image 

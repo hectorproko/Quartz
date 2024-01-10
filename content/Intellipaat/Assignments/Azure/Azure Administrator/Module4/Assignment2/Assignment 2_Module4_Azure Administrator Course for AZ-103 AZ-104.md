@@ -1,7 +1,12 @@
 ---
 tags:
   - azure
+title: Deploying and Connecting to a Windows VM in Azure via Remote Desktop
 ---
+<!--
+**Expanding Azure Expertise: Deploying and Connecting to a Windows VM!** I've just completed an enriching assignment in my Azure Administrator course, focusing on deploying a Windows virtual machine in Azure. The task involved creating the VM in the West US region, configuring it with the necessary specifications, and setting up Remote Desktop Protocol (RDP) access. Successfully deploying and connecting to the VM using Windows Remote Desktop was a practical demonstration of my growing skills in Azure VM management. This assignment provided valuable hands-on experience in Azure’s virtualization capabilities, enhancing my ability to deploy and manage Windows-based environments in the cloud.
+-->
+
 > [!info] Module 4: Assignment - 2
 > **Tasks To Be Performed:** 
 > 1. Create a Windows VM in west US region 

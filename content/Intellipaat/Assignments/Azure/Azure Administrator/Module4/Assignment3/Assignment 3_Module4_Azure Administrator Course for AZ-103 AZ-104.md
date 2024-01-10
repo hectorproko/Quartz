@@ -1,7 +1,14 @@
 ---
 tags:
   - azure
+title: Configuring an Ubuntu VM Scale Set in Azure with Auto-Scaling Parameters
 ---
+<!--
+**Project Focus: Mastering VM Scale Sets and Auto-Scaling in Azure!** In an engaging assignment from my Azure Administrator course, I successfully created and managed a Virtual Machine Scale Set (VMSS) in Azure. The task involved deploying a VMSS with Ubuntu OS, configuring minimum and maximum VM limits, and setting up auto-scaling based on CPU usage thresholds. This practical experience in configuring and managing auto-scaling in a VMSS environment allowed me to explore the dynamic scalability of Azure, enhancing my ability to optimize resources for changing load requirements. It was a valuable exercise in mastering Azure's VMSS capabilities and auto-scaling features.
+
+#Azure #VMSS #AutoScaling #CloudComputing #AzureAdministrator #PerformanceOptimization #ProfessionalGrowth
+-->
+
 > [!info] Module 4: Assignment - 3
 > **Tasks To Be Performed:** 
 > 1. Create a VM scale set with Ubuntu as OS 

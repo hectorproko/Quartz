@@ -1,7 +1,12 @@
 ---
 tags:
   - azure
+title: Employing AzCopy for Efficient Data Transfer Between Azure Storage Containers
 ---
+<!--
+**Enhancing Cloud Skills: Data Transfer with Azure's AzCopy Utility!** For my latest Azure Administrator course assignment, I delved into using Azure's AzCopy utility to efficiently transfer data between storage containers. This involved generating SAS tokens for source and destination storage accounts and executing the AzCopy command to copy data. The task provided hands-on experience with Azure's data transfer tools and deepened my understanding of managing cloud storage and data accessibility. Successfully completing this assignment enhanced my capability in Azure storage management and data transfer, key skills for any cloud professional.
+-->
+
 > [!info] Module 3: Assignment - 4
 > **Tasks To Be Performed:** 
 > 1. Use the same storage accounts from previous assignment 

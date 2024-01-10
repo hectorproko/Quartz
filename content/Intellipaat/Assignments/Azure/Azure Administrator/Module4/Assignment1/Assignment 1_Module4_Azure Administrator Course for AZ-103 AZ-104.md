@@ -1,7 +1,12 @@
 ---
 tags:
   - azure
+title: Setting Up and Accessing an Ubuntu Virtual Machine in Azure
 ---
+<!--
+**Project Insights: Deploying and Managing a Linux VM on Azure!** I've successfully completed an assignment as part of the Azure Administrator course, where I focused on deploying a Linux virtual machine in Azure. The task involved creating a VM in the West US region using an Ubuntu image, configuring the VM settings, and establishing SSH connectivity for remote management. This exercise was crucial in enhancing my skills in Azure VM deployment and management, providing hands-on experience with Azure's virtualization capabilities. It was a valuable opportunity to apply Azure best practices in a real-world scenario, furthering my expertise in cloud-based infrastructure solutions.
+-->
+
 > [!info] Module 4: Assignment - 1
 > **Tasks To Be Performed:** 
 > 1. Create a VM in the west US region 
