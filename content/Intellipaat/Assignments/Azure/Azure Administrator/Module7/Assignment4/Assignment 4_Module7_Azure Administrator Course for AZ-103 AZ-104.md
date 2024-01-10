@@ -1,13 +1,9 @@
 ---
 tags:
   - azure
-title: Geo-Load Balancing with Azure Traffic Manager for Multi-Region VMs
 ---
-<!--
-**Project Showcase: Optimizing Traffic Management with Azure Traffic Manager!** I've completed an engaging assignment in my Azure Administrator course, where I set up Azure Traffic Manager to balance load across VMs in different regions. This task involved deploying two VMs, configuring them with Apache2, and establishing Traffic Manager with geographic routing. The assignment was a practical exercise in ensuring optimal traffic distribution and accessibility, demonstrating the power of Azure Traffic Manager in directing users to the nearest regional VM. It was an invaluable experience in leveraging Azure's advanced networking features for efficient traffic management and user experience enhancement.
 
-#Azure #TrafficManager #VirtualMachines #GeographicRouting #AzureAdministrator #Networking #CloudComputing
--->
+
 > [!info] Module 7: Assignment - 4
 > **Tasks To Be Performed:** 
 > 1. Deploy 2 VMs in different regions 
@@ -16,14 +12,14 @@ title: Geo-Load Balancing with Azure Traffic Manager for Multi-Region VMs
 > To accomplish this please use Azure Traffic Manager
 
 ### Step1: VMs
-To create the 2 VMs I follow steps in [[Assignment 1_Module4_Azure Administrator Course for AZ-103 AZ-104|Assignment 1: Module 4]] making sure to use different regions
+To create the 2 VMs I follow steps in [[Assignment 1_Module4_Azure Administrator Course for AZ-103 AZ-104|Assignment 1: Module 4]] (I make sure to use different regions)
 <br>![[Pasted image 20231210123006.png]]
 
 I opened port 80 (HTTP) and installed Apache.
 
-<br>![[Install Apache]]
+![[Install Apache]]
 
-I tested the Apache service on both VMs using their respective Public IPs directly.
+I tested the Apache service on both VMs using their respective "Public IPs" directly.
 
 > [!success] 
 > <br>![[Pasted image 20231210124037.png]]
@@ -51,13 +47,9 @@ I tested the Apache service on both VMs using their respective Public IPs direct
     - Within the Traffic Manager profile, I click on "Endpoints" and then "Add" to configure my VMs as endpoints.
     - I enter the details for each endpoint, including the name, target resource type, target resource, and the geographic location it serves.
       <br>![[Pasted image 20231210124929.png]]
+      <br>![[Pasted image 20231210125444.png]]
 
-With second endpoint
-<br>![[Pasted image 20231210125139.png]]
-fix 
-<br>![[Pasted image 20231210125257.png]]
 
-<br>![[Pasted image 20231210125444.png]]
 
 <br>![[Pasted image 20231210130711.png]]
 
@@ -69,15 +61,20 @@ fix
 
 ### Step 5: Test the Configuration
 
-1. **I Test the Traffic Manager Setup**:
-    - I access the Traffic Manager DNS name from different geographic locations to verify that it routes to the closest regional VM.
-    - I can use various online tools to simulate requests from different geographic locations to ensure that the geographic routing is functioning as expected.
+**I Test the Traffic Manager Setup**:
 
-used localbroswer.com to see how my page looks from another country "Spain" and it redirects to VM in North Europe since is closer to East US
-<br>![[Pasted image 20231210130402.png]]
-
-Without simulating my location no matter how many times I refresh my page I get VM in East US cuse I'm located in the US
-<br>![[Pasted image 20231210130840.png]]
+I access the Traffic Manager DNS name from different geographic locations to verify that it routes to the closest regional VM.
 
 
-By following these steps, you will have configured Azure Traffic Manager to balance the load across VMs in different regions based on geography, ensuring users are directed to the VM that is geographically closest to them.
+I used `localbrowser.com` to see how my page looks from another country, specifically Spain, and it redirected to my VM in "North Europe" as expected since it is closer than "East US".
+
+> [!success]
+> <br>![[Pasted image 20231210130402.png]]
+
+Without simulating my location, no matter how many times I refresh my page, I am directed to the VM in "East US" because I am located in the US.
+
+> [!success]
+> <br>![[Pasted image 20231210130840.png]]
+
+
+%%By following these steps, you will have configured Azure Traffic Manager to balance the load across VMs in different regions based on geography, ensuring users are directed to the VM that is geographically closest to them.%%
