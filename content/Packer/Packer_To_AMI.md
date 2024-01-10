@@ -166,7 +166,7 @@ packer build vm.pkr.hcl
 
 After a successful build, the **AMI** is created in **AWS**:  
 
-![AMI AWS](images/Packer_To_AMI/AMI_Created.png)
+![[AMICreated.png]]
 
 
 ---
