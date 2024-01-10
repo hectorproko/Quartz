@@ -4,11 +4,7 @@
 
 ---
 ## Using Kubeadm
-%%
-1. [[Hands-On-–-Kubernetes-Installation.pdf]] ==borrowed some commands==
-2. [[zoom video]] ==borrowed some commands==
-3. Need to compare also to [[Devops BC = 2330070508#Lecture 4 – Kubernetes Installation|Lecture 4 – Kubernetes Installation]]
-%%
+
 
 > [!tip] Resulting Instances and Their Private IP Addresses
 > k-master: `10.0.1.82`
@@ -77,26 +73,6 @@ To enable communication between pods in my Kubernetes cluster, I'm installing th
 kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
 ```
 
-%%
-> [!tip]
-> got the network pod install from [[Hands-On-–-Kubernetes-Installation.pdf]]
-> ```bash
-> kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml 
-> ```
-> 
-
-> [!tip]
-> This is the error if you dont run
-> ```
-> mkdir -p $HOME/.kube
-> sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
-> sudo chown $(id -u):$(id -g) $HOME/.kube/config
-> ```
-> <br>![[couldn't get current server API group list.png]]
-> 
-> 
-
-%%
 
 ### Step 2: Worker
 I will launch two EC2 worker instances simultaneously by adjusting the "Number of Instances" field during the launch process. The specifications for these instances are as follows:
@@ -133,8 +109,6 @@ kubeadm join 10.0.1.82:6443 --token kou2h9.2j7chwdfbddi0ch8 --discovery-token-ca
 After the setup, I verify the cluster by running the command `kubectl get nodes`. This command outputs the [[Installing Kubernetes (Kubeadm)#^b8d759||expected IP addresses]] of the nodes, confirming their statuses as 'Ready'. The output indicates that each node is successfully connected to the cluster and is operational, including the master node labeled as the 'control-plane'.
 
 <br>![[Pasted image 20231113170903.png]]
-%%Had I not installed a network plugin (ex Calico) I would get [[show NotReady without network plugin.png|not ready]]%%
-
 
 
 
