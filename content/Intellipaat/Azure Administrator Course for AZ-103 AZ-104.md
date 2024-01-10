@@ -34,10 +34,10 @@
 
 ---
 ### Module 7: 
-1. [[Assignment 1_Module7_Azure Administrator Course for AZ-103 AZ-104|Assignment 1]] 
-2. [[Assignment 2_Module7_Azure Administrator Course for AZ-103 AZ-104|Assignment 2]] 
-3. [[Assignment 3_Module7_Azure Administrator Course for AZ-103 AZ-104|Assignment 3]] 
-4. [[Assignment 4_Module7_Azure Administrator Course for AZ-103 AZ-104|Assignment 4]] 
+1. [[Assignment 1_Module7_Azure Administrator Course for AZ-103 AZ-104|Configuring Azure Load Balancer for Two Apache2 Ubuntu VMs]] 
+2. [[Assignment 2_Module7_Azure Administrator Course for AZ-103 AZ-104|Implementing an Application Gateway with Path-Based Routing in Azure]] 
+3. [[Assignment 3_Module7_Azure Administrator Course for AZ-103 AZ-104|Configuring DNS for Public IPs of Azure VMs]] 
+4. [[Assignment 4_Module7_Azure Administrator Course for AZ-103 AZ-104|Geo-Load Balancing with Azure Traffic Manager for Multi-Region VMs]] 
 5. [[Assignment 5_Module7_Azure Administrator Course for AZ-103 AZ-104|Assignment 5]] 
 ### Module 8:
 1. [[Assignment 1_Module8_Azure Administrator Course for AZ-103 AZ-104|Assignment 1]]

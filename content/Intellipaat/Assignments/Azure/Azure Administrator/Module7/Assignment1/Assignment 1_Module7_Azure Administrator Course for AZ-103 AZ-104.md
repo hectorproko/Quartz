@@ -1,7 +1,12 @@
 ---
 tags:
   - azure
+title: Configuring Azure Load Balancer for Two Apache2 Ubuntu VMs
 ---
+<!--
+**Project Achievement: Implementing a Load-Balanced Web Service on Azure!** I've just completed a challenging assignment as part of the Azure Administrator course, where I successfully created and managed a load-balanced web service. The project involved deploying two VMs with Ubuntu and Apache2, customizing their `index.html` to display unique messages, and then configuring an Azure Load Balancer to distribute incoming traffic between them. This hands-on experience was invaluable in understanding the setup and management of load balancers in Azure, ensuring high availability and efficiency of web services. It was a great opportunity to apply Azure networking concepts in a practical scenario.
+-->
+
 > [!info] Module 7: Assignment - 1
 > **Tasks To Be Performed:** 
 > 1. Deploy 2 VMs with Ubuntu and Apache2 installed 

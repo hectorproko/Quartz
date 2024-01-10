@@ -1,7 +1,14 @@
 ---
 tags:
   - azure
+title: Implementing an Application Gateway with Path-Based Routing in Azure
 ---
+<!--
+**Project Mastery: Implementing Azure Application Gateway for URL-Based Routing!** In this advanced assignment from my Azure Administrator course, I successfully set up and configured an Azure Application Gateway. The task involved creating an application gateway with specific configurations to route traffic to different VMs based on URL paths. This required meticulous setup of backend pools, listeners, and routing rules, providing a hands-on experience in managing traffic distribution in Azure. Successfully implementing URL path-based routing using the Application Gateway was a significant achievement that showcased my ability to optimize network traffic management in complex cloud environments.
+
+#Azure #ApplicationGateway #TrafficManagement #URLRouting #AzureAdministrator #CloudNetworking #ProfessionalDevelopment
+-->
+
 > [!info] Module 7: Assignment - 2
 > **Tasks To Be Performed:** 
 > Create an application gateway with the following configuration: 

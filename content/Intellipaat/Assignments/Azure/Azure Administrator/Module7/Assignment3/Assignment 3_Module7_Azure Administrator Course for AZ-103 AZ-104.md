@@ -1,13 +1,21 @@
 ---
 tags:
   - azure
+title: Configuring DNS for Public IPs of Azure VMs
 ---
+<!--
+**Project Breakthrough: Configuring DNS for Azure VMs!** In my Azure Administrator course, I've completed an assignment that involved setting up DNS names for two previously deployed virtual machines (VMs) in Azure. This task required configuring DNS names for the public IPs of these VMs, providing them with easily identifiable and accessible URLs. I successfully completed this by navigating to the public IP addresses in Azure, setting unique DNS name labels, and testing the configuration. This project was vital in understanding the nuances of DNS management in Azure, demonstrating my ability to efficiently manage and access cloud resources.
+
+#Azure #DNSManagement #VirtualMachines #AzureAdministrator #CloudNetworking #ProfessionalDevelopment
+-->
+
+
 > [!info] Module 7: Assignment - 3
 > **Tasks To Be Performed:** 
 > 1. For the two VMs deployed previously configure DNS for the public IPs of the VM
 
-[[Assignment 5_Module6_Azure Administrator Course for AZ-103 AZ-104]]
 
+ Using **VM**s previously deployed in [[Assignment 1_Module7_Azure Administrator Course for AZ-103 AZ-104|Module7: Assignment 1]]
 
 ### Step 1: Configure DNS Name for the Public IP of VM1
 

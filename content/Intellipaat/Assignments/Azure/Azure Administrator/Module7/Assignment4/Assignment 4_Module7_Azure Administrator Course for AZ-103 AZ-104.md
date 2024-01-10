@@ -1,7 +1,13 @@
 ---
 tags:
   - azure
+title: Geo-Load Balancing with Azure Traffic Manager for Multi-Region VMs
 ---
+<!--
+**Project Showcase: Optimizing Traffic Management with Azure Traffic Manager!** I've completed an engaging assignment in my Azure Administrator course, where I set up Azure Traffic Manager to balance load across VMs in different regions. This task involved deploying two VMs, configuring them with Apache2, and establishing Traffic Manager with geographic routing. The assignment was a practical exercise in ensuring optimal traffic distribution and accessibility, demonstrating the power of Azure Traffic Manager in directing users to the nearest regional VM. It was an invaluable experience in leveraging Azure's advanced networking features for efficient traffic management and user experience enhancement.
+
+#Azure #TrafficManager #VirtualMachines #GeographicRouting #AzureAdministrator #Networking #CloudComputing
+-->
 > [!info] Module 7: Assignment - 4
 > **Tasks To Be Performed:** 
 > 1. Deploy 2 VMs in different regions 
