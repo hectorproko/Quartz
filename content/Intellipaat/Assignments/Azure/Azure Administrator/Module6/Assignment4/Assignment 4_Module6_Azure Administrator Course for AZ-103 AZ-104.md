@@ -1,7 +1,14 @@
 ---
 tags:
   - azure
+title: Apache2 Installation and NSG Configuration on Azure Linux VM
 ---
+<!--
+**Practical Project: Configuring Azure VM for Web Hosting!** As part of my Azure Administrator training, I successfully completed an assignment that involved setting up a Linux VM to host a web service. The project required installing Apache2 on the VM, creating a Network Security Group (NSG) for the subnet, and opening port 80 for internet access. This hands-on experience was crucial in understanding how to configure and secure VMs for web hosting in Azure. By successfully deploying the Apache2 web server and ensuring it was accessible via the VM's public IP, I gained valuable insights into network security and VM management in a cloud environment.
+
+#Azure #VirtualMachine #Apache2 #Networking #NSG #WebHosting #AzureAdministrator #ProfessionalDevelopment
+-->
+
 > [!info] Module 6: Assignment - 4
 > **Tasks To Be Performed:** 
 > 1. Use the previously created Linux VM 

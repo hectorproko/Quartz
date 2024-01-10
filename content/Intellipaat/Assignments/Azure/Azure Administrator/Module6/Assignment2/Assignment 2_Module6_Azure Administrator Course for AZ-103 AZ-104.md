@@ -1,7 +1,14 @@
 ---
 tags:
   - azure
+title: Configuring a VM with a Static IP Address in Azure
 ---
+<!--
+**Skill Enhancement: Assigning Static IP to Azure VMs!** In a recent assignment for my Azure Administrator course, I focused on the crucial task of assigning a static IP address to a virtual machine in Azure. The process involved creating a VM in the West US region, navigating to its network settings, and configuring the network interface to use a static IP. This task sharpened my understanding of Azure networking features and the importance of IP address management in cloud environments. Successfully completing this assignment reinforced my abilities in configuring and managing virtual network settings, a fundamental skill for any cloud administrator.
+
+#Azure #VirtualMachine #Networking #StaticIP #AzureAdministrator #CloudComputing #ProfessionalDevelopment
+-->
+
 > [!info] Module 6: Assignment - 2
 > **Tasks To Be Performed:** 
 > 1. Create a VM in West US 

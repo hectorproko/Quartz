@@ -1,7 +1,14 @@
 ---
 tags:
   - azure
+title: Integrating Azure DNS with a Domain for an Apache2 VM
 ---
+<!--
+**Project Breakthrough: Linking Azure VM with a Custom Domain!** In the latest assignment of my Azure Administrator course, I successfully linked an Azure Virtual Machine running Apache2 with a custom domain name. The process involved obtaining a free domain from Freenom, creating an Apache2 VM, and using Azure DNS to point the domain to the VM's IP address. This task not only provided hands-on experience with Azure DNS but also showcased the practical application of linking a custom domain to a cloud-hosted service. It was an enlightening experience in understanding the nuances of domain management and DNS configuration in Azure.
+
+#Azure #DNS #VirtualMachine #CustomDomain #Apache2 #AzureAdministrator #CloudComputing #ProfessionalDevelopment
+-->
+
 > [!info] Module 6: Assignment - 5
 > **Tasks To Be Performed:** 
 > 1. Use the previously created Apache2 VM 

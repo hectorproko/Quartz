@@ -1,7 +1,14 @@
 ---
 tags:
   - azure
+title: Adding and Attaching a Network Interface Card (NIC) to an Existing Azure VM
 ---
+<!--
+**Advancing Azure Skills: Network Interface Card Management and VM Configuration!** In a recent assignment from my Azure Administrator course, I focused on enhancing my networking skills within Azure. The task involved using an existing VM, creating a new Network Interface Card (NIC), and then attaching this NIC to the VM. This exercise was critical in deepening my understanding of Azure's networking components and their integration with virtual machines. Successfully completing this assignment showcased my ability to manage network interfaces in Azure, reinforcing my skills in configuring and optimizing cloud-based network infrastructure for better performance and connectivity.
+
+#Azure #Networking #AzureAdministrator #VirtualMachine #NIC #CloudComputing #ProfessionalDevelopment
+-->
+
 > [!info] Module 6: Assignment - 3
 >  **Tasks To Be Performed:** 
 > 1. Use the previously created VM 

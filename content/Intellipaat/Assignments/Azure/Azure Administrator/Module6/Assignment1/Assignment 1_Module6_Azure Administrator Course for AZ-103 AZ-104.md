@@ -1,7 +1,14 @@
 ---
 tags:
   - azure
+title: Establishing Cross-Region Virtual Network Peering in Azure
 ---
+<!--
+**Project Accomplishment: Virtual Network Creation and VM Deployment in Azure!** In the latest assignment of my Azure Administrator course, I successfully established a virtual network infrastructure across different regions. The project involved creating virtual networks in the West US and South India regions, deploying VMs in each, and then setting up VNet-to-VNet peering to ensure connectivity. This task allowed me to apply practical skills in Azure networking, demonstrating the ability to manage and connect resources across multiple regions effectively. It was a valuable exercise in building and configuring a geographically distributed network in Azure, enhancing my expertise in cloud network management.
+
+#Azure #VirtualNetworking #VNetPeering #CloudComputing #AzureAdministrator #NetworkManagement #ProfessionalDevelopment
+-->
+
 > [!info] Module 6: Assignment - 1
 > **Tasks To Be Performed:** 
 > 1. Create a virtual network in West US 

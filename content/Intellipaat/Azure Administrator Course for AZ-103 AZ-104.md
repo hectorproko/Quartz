@@ -26,11 +26,11 @@
 1. [[Assignment 1_Module5_Azure Administrator Course for AZ-103 AZ-104|Setting Up Docker on a VM and Managing a Web Application Repository]] 
 2. [[Assignment 2_Module5_Azure Administrator Course for AZ-103 AZ-104|Integrating Azure Container Registry with Docker and Deploying Images via Azure App Service]] 
 ### Module 6:
-1. [[Assignment 1_Module6_Azure Administrator Course for AZ-103 AZ-104|Assignment 1]] 
-2. [[Assignment 2_Module6_Azure Administrator Course for AZ-103 AZ-104|Assignment 2]] 
-3. [[Assignment 3_Module6_Azure Administrator Course for AZ-103 AZ-104|Assignment 3]] 
-4. [[Assignment 4_Module6_Azure Administrator Course for AZ-103 AZ-104|Assignment 4]] 
-5. [[Assignment 5_Module6_Azure Administrator Course for AZ-103 AZ-104|Assignment 5]] 
+1. [[Assignment 1_Module6_Azure Administrator Course for AZ-103 AZ-104|Establishing Cross-Region Virtual Network Peering in Azure]] 
+2. [[Assignment 2_Module6_Azure Administrator Course for AZ-103 AZ-104|Configuring a VM with a Static IP Address in Azure]] 
+3. [[Assignment 3_Module6_Azure Administrator Course for AZ-103 AZ-104|Adding and Attaching a Network Interface Card (NIC) to an Existing Azure VM]] 
+4. [[Assignment 4_Module6_Azure Administrator Course for AZ-103 AZ-104|Apache2 Installation and NSG Configuration on Azure Linux VM]] 
+5. [[Assignment 5_Module6_Azure Administrator Course for AZ-103 AZ-104|Integrating Azure DNS with a Domain for an Apache2 VM]] 
 
 ---
 ### Module 7: 
