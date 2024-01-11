@@ -4,7 +4,6 @@
 > 2. Create a service of type NodePort for NGINX deployment 
 > 3. Check the NodePort service on a browser to verify
 
-%%Followed steps from [[zoom video#assignment 2]]%%
 
 ### Step 1:
 Previous deployment [[Assignment 1 – Kubernetes_Module 7_Devops BC = 2330070508|Assignment 1 – Kubernetes]]
@@ -60,7 +59,6 @@ kubectl get svc
 <br>![[nodePort service created.png]]
 > We've confirmed that the NodePort service is actively routing traffic. The defined NodePort of `30008` is set up to forward to the internal port `80` of the Nginx pods
 
-%%we defined the port in the .yaml%%
 
 ### Step 3: Verification
 

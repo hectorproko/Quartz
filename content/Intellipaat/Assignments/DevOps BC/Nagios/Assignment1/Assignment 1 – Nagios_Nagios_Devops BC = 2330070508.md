@@ -141,32 +141,6 @@ sudo /etc/init.d/nagios-nrpe-server restart
 I edited the file `/etc/nagios/nrpe.cfg` to add the Nagios (master) [[Assignment 1 – Nagios_Nagios_Devops BC = 2330070508#^aa7b48|private IP address]].
 <br>![[Pasted image 20231122094504.png]]
 
-%%
-Correction to below: ==localhost.cfg== is the file with a sample you an copy
-
-First I'll check `/usr/local/nagios/etc/objects/templates.cfg` to look host definition template
-
-> [!question]- Purpose of  templates
-> That's correct. The provided host template does not include values for `address` and `hostname` because it is meant to be a template that defines general settings for monitoring Linux hosts. The specific values for `address` and `hostname` would be defined in individual host definition files that inherit from this template.
-> 
-> For instance, if you have a Linux host named `my-linux-host` with an IP address of `192.168.1.100`, you would create a separate host definition file that inherits from the `linux-server` template:
-> 
-> ```
-> define host {
->   use linux-server
->   host_name my-linux-host
->   alias My Linux Host
->   address 192.168.1.100
-> }
-> ```
-> 
-> This host definition would inherit all of the settings from the `linux-server` template, and it would also specify the specific values for `host_name` and `address`. This way, you can define a common set of monitoring settings for Linux hosts and then apply those settings to individual hosts without having to repeat the same information each time.
-> 
-> > [!attention]
-> > Yes, one of the primary purposes of templates in Nagios is to define default values that can be inherited by other objects.
-> 
-
-%%
 
 Now, on the Nagios server, I need to configure it to interact with that client. To facilitate this, I will add a host file for each host. Consequently, I created `host1.cfg` and `host2.cfg`."
 
@@ -206,15 +180,3 @@ In Nagios GUI I navigate to `Current Status > Hosts` and confirm newly added hos
 > [!success]
 > <br>![[Pasted image 20231122110846.png]]
 
-
-%%
-> [!question]- Issue: Hosts DOWN
-> 
-> > [!fail]
-> > <br>![[Pasted image 20231122110211.png]]
-> 
-> > [!done] Solution
-> > Need to open [[ICMP (Internet Control Message Protocol)|ICMP]] Protocol because it relies on **ping**
-> > <br>![[Pasted image 20231122110846.png]]
-
-%%

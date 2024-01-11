@@ -4,20 +4,20 @@
 > 1. Deploy a Kubernetes cluster for 3 nodes 
 > 2. Create a NGINX deployment of 3 replicas
 
-%% For site
+
 > [!tip] Instances and Their Private IP Addresses
 > k-master: `10.0.1.82`
 > worker1: `10.0.1.57`
 > worker2: `10.0.1.119`
 > 
 
-%%
+
 ### Step 1: Deploying Kubernetes
  <br>![[Installing Kubernetes (Kubeadm)]]
 
 ---
 ### Step 2:  NGINX Deployment
-%%Used as reference [[zoom video#assignment 1|zoom video notes: assignment 1]]%%
+
 I will create a YAML file named `nginx-deployment.yaml` to define my Nginx deployment in Kubernetes.
 > [Kubernetes Docs](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#creating-a-deployment)
 

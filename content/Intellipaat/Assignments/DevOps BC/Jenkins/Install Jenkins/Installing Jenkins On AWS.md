@@ -56,11 +56,8 @@ Need to setup **ssh** credentials to be able to connect to salve nodes (EC2s) us
 > [!done]
 >    <br>![[daro.io ubuntu ssh credentials.png]]
 
-%%Basically connection is made with user ubuntu and contents of daro.io.pem private key (specify when EC2 was created)
-%%
 
 ### Setting up slaves
-%%[[Hands-On_Jenkins.pdf]] Deprecated%%
 
 
 Manage Jenkins > Security

@@ -25,8 +25,7 @@ sudo apt install ansible -y
 ```
 
 <br>![[Pasted image 20231106085216.png]]
-%%Notice no default config file present, this installation did not created `/etc/ansible/[hosts,ansible.cfg]` as its usually the case
-%%
+
 
 > [!attention] Another install option
 > This method adds the Ansible PPA (Personal Package Archive) to your system and install Ansible from that source:
@@ -37,20 +36,10 @@ sudo apt install ansible -y
 > ```
 > This method will install the latest version of Ansible from the Ansible PPA, which is often more recent than the version available in the default repositories.
 
-^aa5175
+
 
 2. Setup SSH `.pem` 
-   %%ssh-agent lifespan is until you close instance%%
-%%
-```
-eval $(ssh-agent -s)
-ssh-add daro.io.pem
-ssh-add -l
-```
 
-%%
-
-^be0450
 
 In order to establish a temporary and secure connection to slave instances for inspection purposes, I load the key into the session once at the start using `ssh-agent` utility. ^1cba58
 ```bash
@@ -120,16 +109,7 @@ nano myplaybook.yml
         name: mysql-server
         state: present
 ```
- %% 
-> [!question]- Issue: Installing mysql-server
-> > [!fail] 
-> > Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
-> 
-> > [!success]
-> > Needs `apt-get update`, playbook equivalent `update_cache: yes`
-> 
 
-%%
 
 4. **I execute the Ansible playbook**:
 
