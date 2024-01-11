@@ -46,7 +46,8 @@ First, I started by creating a custom policy that grants complete access to VPCs
 }
 ```
 
-<br>![[VPCAndDynamoDBFullAccess.png]]
+<br>![[VPCAndDynamoDBFullAccess.png]]  
+
 I reviewed the policy, named it `VPCAndDynamoDBFullAccess`, and then clicked `Create policy`.
 
 #### Create the Role and Attach Policy
@@ -86,7 +87,8 @@ Original: `"AWS": "arn:aws:iam::838427752759:root"`
 ```
 
 ### Task 2: Login into  `User1` and Assume the Role
-<br>![[Pasted image 20230922104310.png]]
+<br>![[Pasted image 20230922104310.png]]  
+
 To test the role, I logged in as  `User1`. 
 
 I tried to create a VPC and a DynamoDB table. However, as **expected**, I could not.
