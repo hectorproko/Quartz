@@ -1,7 +1,13 @@
 ---
 tags:
   - azure
+title: Assigning a Custom VM Management Role to a New Azure User
 ---
+<!--
+**Advancing Azure Skills: Custom Role Assignment for Azure VM Management!** I've recently completed an assignment in my Azure Administrator course focusing on Azure role-based access control (RBAC). The task involved creating a new user in Azure Active Directory, assigning a custom role named "VM Operator" specifically designed to manage virtual machines, and confirming the role assignment. This exercise provided practical insights into Azure's RBAC capabilities, enhancing my skills in customizing access controls and improving security for cloud resources.
+
+#Azure #RBAC #AzureActiveDirectory #CloudSecurity #AzureAdministrator #AccessControl #ProfessionalDevelopment
+-->
 > [!info] Module 8: Assignment - 2
 > **Tasks To Be Performed:** 
 > 1. Create a new user 

@@ -1,7 +1,15 @@
 ---
 tags:
   - azure
+title: Integrating Azure Log Analytics with Previously Configured VMs
 ---
+<!--
+**Project Achievement: Mastering Azure Log Analytics Integration!** I've completed an insightful assignment from my Azure Administrator course where I connected Azure Log Analytics to a VM. This project involved setting up a Log Analytics workspace, linking VMs for data monitoring, and configuring optimal data collection settings. It was an enriching experience to delve into Azure's monitoring tools, gaining practical skills in operational analytics and diagnostics. This task has significantly enhanced my understanding of Azure's capabilities in cloud analytics and performance monitoring.
+
+#Azure #LogAnalytics #CloudMonitoring #AzureAdministrator #DataAnalytics #ProfessionalDevelopment
+-->
+
+
 > [!info] Module 9: Assignment - 2
 > **Tasks To Be Performed:** 
 > 1. Use the [[Assignment 1_Module9_Azure Administrator Course for AZ-103 AZ-104|previously connected VMs]] 

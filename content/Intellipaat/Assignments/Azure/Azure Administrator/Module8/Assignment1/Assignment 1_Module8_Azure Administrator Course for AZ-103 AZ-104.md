@@ -1,7 +1,14 @@
 ---
 tags:
   - azure
+title: Creating a Custom Azure Role for Restricted VM Management
 ---
+<!--
+**Expanding Azure Skillset: Custom Role Creation for VM Management!** In a recent assignment for my Azure Administrator course, I was tasked with creating a custom role in Azure. This role was designed specifically to view, start, and stop VMs but not perform any other actions. The process involved defining the role in a JSON file with precise permissions, using Azure Cloud Shell for role creation, and verifying the role's functionality. This assignment was a valuable exercise in understanding and implementing Azure's role-based access control (RBAC), enhancing my skills in customizing security and access within the Azure environment.
+
+#Azure #RBAC #VirtualMachineManagement #AzureAdministrator #CloudSecurity #ProfessionalDevelopment
+-->
+
 > [!info] Module 8: Assignment - 1
 > **Tasks To Be Performed:** 
 > 1. Create a custom role which can view, start and stop VMs 

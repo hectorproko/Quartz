@@ -1,8 +1,13 @@
 ---
 tags:
   - azure
+title: Implementing a Distributed, Multi-Regional Web Architecture on Azure
 ---
+<!--
+**Capstone Project Achievement: Building a Comprehensive Azure Infrastructure!** I'm thrilled to share my Capstone Project experience from the Azure Administrator course. The project encompassed creating and configuring a multi-tier architecture, including VNets, VMs, Application Gateway, and Traffic Manager. I successfully deployed a web application with geographic load balancing, set up storage accounts for error handling and file uploads, and ensured optimal traffic distribution between regions. This comprehensive project not only reinforced my Azure skills but also demonstrated my ability to implement a robust and scalable cloud solution.
 
+#Azure #CloudArchitecture #AzureAdministrator #CapstoneProject #CloudComputing #ProfessionalDevelopment
+-->
 
 > [!info]- Azure Administrator Capstone Project Az-104
 > You work as an Azure professional for a Corporation. You are assigned the task of implementing the below architecture for the company’s website. 

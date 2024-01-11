@@ -1,7 +1,12 @@
 ---
 tags:
   - azure
+title: Accessing a Private Azure VM via Bastion Host
 ---
+<!--
+**Project Insight: Enhancing VM Security with Azure Bastion!** I've recently completed an assignment in the Azure Administrator course, focusing on securing VM access using Azure Bastion. The task involved creating a VM without a public IP address and setting up Azure Bastion for secure and private connectivity. This assignment was crucial for understanding how to protect Azure VMs from public exposure while maintaining accessibility through secure channels. Successfully configuring and using Azure Bastion deepened my knowledge of cloud security and VM management in Azure, adding another layer of expertise to my cloud administration skills.
+-->
+
 > [!info] Module 7: Assignment - 5
 > **Tasks To Be Performed:** 
 > 1. Create a VM without public IP address 

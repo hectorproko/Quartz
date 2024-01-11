@@ -1,7 +1,13 @@
 ---
 tags:
   - azure
+title: Setting Up an Alert for VM Deletion in Azure
 ---
+<!--
+**Proficiency in Azure Monitoring: Setting Up VM Deletion Alerts!** I've completed an assignment in the Azure Administrator course, which involved using the previously deployed VM to create an alert rule for its deletion. This task allowed me to explore Azure's alerting mechanisms, focusing on detecting and responding to specific activities like VM deletion. The process involved configuring the alert condition, creating an action group with email notifications, and testing the alert by deleting the VM. Successfully implementing this alert system demonstrated my growing skills in Azure's monitoring and notification capabilities, an essential part of managing cloud resources.
+
+#Azure #CloudMonitoring #AzureAdministrator #VMManagement #AlertSystem #ProfessionalDevelopment
+-->
 > [!info] Module 9: Assignment - 3
 > **Tasks To Be Performed:** 
 > 1. Use the previous VM deployment 

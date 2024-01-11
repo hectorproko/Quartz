@@ -1,7 +1,13 @@
 ---
 tags:
   - azure
+title: Establishing a User Group with Role-Based Access Control in Azure
 ---
+<!--
+**Skill Advancement in Azure: Group-Based Access Control!** I've completed a key assignment in my Azure Administrator course, focusing on creating and managing user groups for access control. This involved establishing a new user group in Azure Active Directory, attaching a custom role to the group, and adding users to assess the effectiveness of the assigned permissions. This practical task enhanced my understanding of Azure Active Directory and role-based access control, reinforcing my ability to manage and secure cloud resources effectively through group-based permissions.
+
+#Azure #ActiveDirectory #RBAC #CloudSecurity #AzureAdministrator #AccessManagement #ProfessionalDevelopment
+-->
 > [!info] Module 8: Assignment - 3
 > **Tasks To Be Performed:** 
 >  1. Create a user group 

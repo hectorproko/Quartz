@@ -1,7 +1,13 @@
 ---
 tags:
   - azure
+title: Deploying a Linux VM with Apache2 and Configuring VM Backup in Azure
 ---
+<!--
+**Enhancing Azure Recovery Skills: VM Backup and Recovery Services Vault!** I've successfully completed an assignment in my Azure Administrator course that focused on critical data protection strategies. The task involved creating a Linux VM with Apache2, setting up an Azure Recovery Services Vault, and configuring the backup of the VM. This project was crucial in understanding Azure's backup and recovery capabilities, providing me with hands-on experience in safeguarding cloud-based virtual machines. Successfully configuring and managing these vital recovery services has strengthened my proficiency in Azure's data protection and disaster recovery solutions.
+
+#Azure #DataProtection #RecoveryServices #VMBackup #AzureAdministrator #CloudComputing #ProfessionalDevelopment
+-->
 > [!info] Module 9: Assignment - 1
 > **Tasks To Be Performed:** 
 > 1. Create a Linux VM and install Apache2 on it 
