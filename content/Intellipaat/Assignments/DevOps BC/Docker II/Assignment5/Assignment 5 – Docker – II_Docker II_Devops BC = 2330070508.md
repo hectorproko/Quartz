@@ -1,7 +1,13 @@
 ---
 tags:
   - docker
+title: Creating Overlay Networks and Testing Container Connectivity
 ---
+<!--
+🚀 **Advancing in Docker Orchestration: Mastering Overlay Networks and Container Communication!** I've completed an intriguing assignment in my DevOps training, where I focused on Docker's overlay networks. The task involved deploying two containers within an overlay network in a Docker Swarm cluster and ensuring they could communicate with each other. This exercise was pivotal in understanding how overlay networks facilitate seamless container communication across different nodes, enhancing my skills in Docker Swarm management and network orchestration.
+
+#Docker #DevOps #OverlayNetworks #ContainerCommunication #ProfessionalDevelopment
+-->
 
 > [!info] Docker Part 2 Assignment - 5
 > **Tasks To Be Performed:** 

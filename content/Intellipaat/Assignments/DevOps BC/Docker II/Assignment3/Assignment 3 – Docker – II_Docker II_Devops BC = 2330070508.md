@@ -1,7 +1,14 @@
 ---
 tags:
   - docker
+title: Deploying Multiple Custom Containers with Docker Compose
 ---
+<!--
+🚀 **Expanding Docker Expertise: Deploying Multiple Containers with Docker Compose!** In an engaging assignment from my DevOps course, I mastered the use of Docker Compose to deploy multiple containers simultaneously. The task required creating five custom containers, each with a unique default page, and deploying them on different ports using Docker Compose. This exercise sharpened my skills in container orchestration, demonstrating my proficiency in managing multiple Dockerized applications with ease and efficiency.
+
+#Docker #DevOps #ContainerOrchestration #DockerCompose #ProfessionalDevelopment
+-->
+
 > [!info] Docker Part 2 Assignment - 3
 > **Tasks To Be Performed:**
 > 1. Create 5 custom container with 5 different default pages 

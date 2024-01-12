@@ -1,7 +1,14 @@
 ---
 tags:
   - docker
+title: Implementing Dynamic HTML File Replacement with Apache2 Container
 ---
+<!--
+🚀 **Enhancing Docker Skills: Bind Mounts and Dynamic Web Content!** I've recently tackled an interesting assignment in my DevOps course, focusing on Docker bind mounts. The task was to create a bind mount on an Apache2 container for dynamic HTML file updates. This involved running a container with a bind mount linked to a local directory, enabling real-time web content modifications. This exercise was pivotal in understanding the flexibility of Docker in web development scenarios, showcasing my ability to adapt web content dynamically in a containerized environment.
+
+#Docker #DevOps #BindMounts #WebDevelopment #ProfessionalDevelopment
+-->
+
 > [!info] Docker Part 2 Assignment - 2
 > **Tasks To Be Performed:** 
 > 1. Use the Apache2 container created in previous module 

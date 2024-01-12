@@ -1,7 +1,14 @@
 ---
 tags:
   - docker
+title: Managing Apache2 Containers and Creating Volumes
 ---
+<!--
+🚀 **Deepening Docker Expertise: Volume Management and Advanced Container Deployment!** I recently accomplished an exciting assignment in my DevOps course focused on Docker volume management. The project involved launching an Apache2 container from a previously created image and creating a Docker volume to manage web content. This exercise allowed me to explore Docker's volume capabilities, enhancing my skills in persistent data management within containers. The task underscored the importance of efficient container storage solutions in maintaining and scaling web applications.
+
+#Docker #DevOps #Containerization #VolumeManagement #DataPersistence #ProfessionalDevelopment
+-->
+
 > [!info] Docker Part 2 Assignment - 1
 > **Tasks To Be Performed:** 
 > 1. Launch the Apache2 container created in previous module 

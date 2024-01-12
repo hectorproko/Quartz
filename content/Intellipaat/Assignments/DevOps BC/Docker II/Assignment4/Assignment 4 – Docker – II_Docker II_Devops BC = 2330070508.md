@@ -1,7 +1,13 @@
 ---
 tags:
   - docker
+title: Building a Docker Swarm Cluster with Apache Container Replication
 ---
+<!--
+🚀 **Enhanced Docker Deployment: Creating a Docker Swarm Cluster!** I've completed an advanced assignment in my DevOps training focused on Docker Swarm. This involved setting up a Docker Swarm cluster with three nodes, deploying an Apache container with four replicas across the cluster, and managing network and security configurations. This project provided me with hands-on experience in orchestrating multi-container deployments using Docker Swarm, reinforcing my understanding of container orchestration and load balancing in a distributed environment.
+
+#Docker #DevOps #DockerSwarm #ContainerOrchestration #ProfessionalDevelopment
+-->
 
 > [!info] Docker Part 2 Assignment - 4
 > **Tasks To Be Performed:**
