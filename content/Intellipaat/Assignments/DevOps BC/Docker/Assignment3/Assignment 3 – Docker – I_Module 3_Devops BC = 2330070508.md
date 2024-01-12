@@ -2,7 +2,7 @@
 tags:
   - docker
 ---
-
+`
 > [!info] Module 3: Docker Part 1 Assignment - 3
 > **Tasks To Be Performed:** 
 > 1. Use the saved image in the [[Assignment 2 – Docker – I_Module 3_Devops BC = 2330070508|previous assignment]] 
@@ -10,7 +10,7 @@ tags:
 > 3. On a separate machine pull this Docker Hub image and launch it on port 80 
 > 4. Start the Apache2 service 
 > 5. Verify if you are able to see the Apache2 service
-
+`
 **I use the saved image from the previous assignment.**
 
 First, I ensure that the image ```ubuntu_apache``` is present:

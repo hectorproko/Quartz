@@ -1,7 +1,13 @@
 ---
 tags:
   - docker
+title: Saving and Running a Custom Docker Image with Apache2
 ---
+<!--
+🚀 **Advancing in Docker Skills: Building and Deploying a Customized Container!** I completed an exciting assignment in my DevOps course, where I deepened my Docker proficiency. The task involved saving a previously customized Docker image and launching a new container from it, mapped to a different port. This exercise not only reinforced my Docker image handling skills but also challenged me to manage container deployment effectively. Successfully completing this task demonstrated my growing expertise in Docker containerization, a key skill in modern software development.
+
+#Docker #DevOps #Containerization #SoftwareDevelopment #ProfessionalDevelopment
+-->
 
 > [!info] Module 3: Docker Part 1 Assignment - 2
 > **Tasks To Be Performed:** 

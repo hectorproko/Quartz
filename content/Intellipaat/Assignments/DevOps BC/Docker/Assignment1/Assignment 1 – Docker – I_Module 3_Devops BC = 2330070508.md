@@ -1,8 +1,13 @@
 ---
 tags:
   - docker
+title: Deploying an Ubuntu Container with Apache2 and Port Mapping
 ---
+<!--
+🚀 **Exploring Docker: Practical Assignment in Container Management!** I've recently accomplished an assignment in my DevOps training, centered on Docker. The task involved pulling an Ubuntu container, running it while mapping port 80, installing Apache2, and ensuring its accessibility via a browser. This hands-on experience was crucial in mastering Docker container management and deploying web services within a containerized environment. It demonstrated my ability to navigate Docker's capabilities, from container setup to web server installation, reinforcing my skills in modern DevOps practices.
 
+#Docker #DevOps #Containerization #Apache2 #CloudComputing #ProfessionalDevelopment
+-->
 > [!info] Module 3: Docker Part 1 Assignment - 1
 > **Training Tasks To Be Performed:** 
 > 1. Pull Ubuntu container 
