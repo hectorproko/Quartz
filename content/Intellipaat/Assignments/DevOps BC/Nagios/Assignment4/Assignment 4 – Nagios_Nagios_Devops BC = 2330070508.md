@@ -1,3 +1,9 @@
+---
+tags:
+  - nagios
+---
+
+
 > [!info] Nagios Assignment - 4
 > To Be Performed: 
 > 1. On both the slaves run a CPU checking service 

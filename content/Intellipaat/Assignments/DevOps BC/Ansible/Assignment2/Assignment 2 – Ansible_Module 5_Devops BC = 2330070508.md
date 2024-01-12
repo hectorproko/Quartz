@@ -1,3 +1,9 @@
+---
+tags:
+  - Ansible
+---
+
+
 
 > [!info] Module 5: Ansible Assignment - 2
 > **Tasks To Be Performed:** 

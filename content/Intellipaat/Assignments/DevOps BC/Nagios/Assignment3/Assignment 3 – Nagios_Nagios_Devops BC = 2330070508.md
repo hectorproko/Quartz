@@ -1,3 +1,9 @@
+---
+tags:
+  - nagios
+---
+
+
 > [!info] Nagios Assignment - 3
 > **To Be Performed:** 
 > 1. Use the previous deployment cluster 

@@ -1,3 +1,9 @@
+---
+tags:
+  - Jenkins
+---
+
+
 
 > [!info] Module 6: Case Study - Integration of DevOps Tools with Jenkins
 > **Problem Statement:** 

@@ -1,3 +1,8 @@
+---
+tags:
+  - Kubernetes
+---
+
 %%Date: 2023-11-13%%
 
 

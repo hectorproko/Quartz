@@ -1,3 +1,9 @@
+---
+tags:
+  - Jenkins
+---
+
+
 
 > [!info] Module 6: Jenkins Assignment - 1
 > **Tasks To Be Performed:** 

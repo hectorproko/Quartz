@@ -1,3 +1,9 @@
+---
+tags:
+  - Ansible
+---
+
+
 
 > [!info] Module 5: Case Study - Ansible
 > **Problem Statement:** 

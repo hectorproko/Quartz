@@ -1,3 +1,9 @@
+---
+tags:
+  - nagios
+---
+
+
 > [!info] Nagios Assignment - 1
 > **To Be Performed:** 
 > 1. Create a Nagios Master-Slave architecture and add 2 hosts

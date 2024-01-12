@@ -1,3 +1,9 @@
+---
+tags:
+  - Kubernetes
+---
+
+
 
 > [!info] Module 7: Kubernetes Assignment - 1
 > **Tasks To Be Performed:** 

@@ -1,3 +1,9 @@
+---
+tags:
+  - Jenkins
+---
+
+
 
 > [!info] Module 6: Jenkins Assignment - 2
 > **Training Tasks To Be Performed:** 

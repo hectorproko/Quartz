@@ -1,3 +1,9 @@
+---
+tags:
+  - nagios
+---
+
+
 > [!info] Nagios Assignment - 2
 > **To Be Performed:** 
 > 1. Create a monitoring service which will check whether Apache2 service is up or not

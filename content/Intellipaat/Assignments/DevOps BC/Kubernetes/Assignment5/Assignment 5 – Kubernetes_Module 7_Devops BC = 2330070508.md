@@ -1,3 +1,9 @@
+---
+tags:
+  - Kubernetes
+---
+
+
 > [!info] Module 7: Kubernetes Assignment - 5
 > **Tasks To Be Performed:** 
 > 1. Use the previous deployment 
