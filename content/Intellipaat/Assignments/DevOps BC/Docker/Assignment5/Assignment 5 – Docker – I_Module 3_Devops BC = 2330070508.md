@@ -1,7 +1,14 @@
 ---
 tags:
   - docker
+title: Integrating a Custom HTML File into an Ubuntu-Apache Docker Container
 ---
+<!--
+🚀 **Deep Dive into Docker: Creating Custom Web Pages in Containers!** In the latest assignment of my DevOps training, I enhanced my Docker skills by customizing a web service inside a Docker container. The task involved creating a custom HTML page and integrating it into a Dockerized Apache2 web server. This hands-on exercise deepened my understanding of Docker image customization, including crafting Dockerfiles and managing web content within containers. Successfully implementing this showcased my ability to tailor containerized applications for specific needs, a crucial skill in modern web development.
+
+#Docker #DevOps #Containerization #WebDevelopment #ProfessionalDevelopment
+-->
+
 
 > [!info] Module 3: Docker Part 1 Assignment - 5
 > **Training Tasks To Be Performed:** 

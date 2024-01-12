@@ -1,7 +1,13 @@
 ---
 tags:
   - docker
+title: Containerizing Apache on Ubuntu
 ---
+<!--
+🚀 **Case Study Achievement: Docker Containerization for Production Environment!** In a comprehensive case study for my DevOps training, I successfully Dockerized a custom software application for a production server. The task involved creating an Ubuntu container with Apache installed, managing the Dockerfile for code integration, and pushing the custom container to Docker Hub. This assignment provided me with in-depth exposure to Docker in a real-world application scenario, enhancing my skills in containerization and deployment of custom software solutions using Docker.
+
+#Docker #DevOps #Containerization #CustomSoftware #ProfessionalDevelopment
+-->
 
 > [!NOTE] Module 3: Case Study - Containerization using Docker Part 1 
 > **Problem Statement:** 
@@ -16,10 +22,7 @@ tags:
 > 2. The developers will not be working with Docker, hence from their side you will just get the code. Write a Dockerfile which could put the code in the custom image that you have built.
 
 
-[[Assignment 5 – Docker – I_Module 3_Devops BC = 2330070508|Assignment 5 – Docker – I]]
-and then push to DockerHub?
-
-
+I'll use [[Assignment 5 – Docker – I_Module 3_Devops BC = 2330070508|Assignment 5 – Docker – I]] with the additional step of pushing to DockerHub.
 <br>![[Assignment 5 – Docker – I_Module 3_Devops BC = 2330070508#Steps]]
 
 When the developer provides the code, which will likely consist of multiple files, I can update the Dockerfile to incorporate this new code. Then, I'll rebuild the image.

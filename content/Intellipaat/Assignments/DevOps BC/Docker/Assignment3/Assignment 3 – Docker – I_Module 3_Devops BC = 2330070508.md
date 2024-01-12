@@ -1,8 +1,14 @@
 ---
 tags:
   - docker
+title: Uploading a Docker Image to Docker Hub and Deploying on a Separate Machine
 ---
-`
+<!--
+🚀 **Mastering Docker: Image Management and Deployment!** I've just completed an enlightening Docker assignment as part of my DevOps training. The task revolved around uploading a custom Docker image to Docker Hub, then pulling and running it on a different machine. This exercise deepened my understanding of Docker image distribution and version control, showcasing my ability to manage and deploy containerized applications efficiently. It was a practical demonstration of how Docker Hub can be leveraged for image sharing and deployment in different environments.
+
+#Docker #DevOps #Containerization #DockerHub #CloudComputing #ProfessionalDevelopment
+-->
+
 > [!info] Module 3: Docker Part 1 Assignment - 3
 > **Tasks To Be Performed:** 
 > 1. Use the saved image in the [[Assignment 2 – Docker – I_Module 3_Devops BC = 2330070508|previous assignment]] 

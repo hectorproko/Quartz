@@ -1,7 +1,13 @@
 ---
 tags:
   - docker
+title: Crafting a Dockerfile
 ---
+<!--
+🚀 **Docker Assignment Mastery: Crafting a Custom Dockerfile!** In my latest DevOps training, I completed an assignment that involved creating a Dockerfile to build a custom Docker image. The task required setting up an Ubuntu container with Apache2 installed and ensuring Apache2 runs automatically when the container starts. This exercise enhanced my Dockerfile crafting skills, teaching me efficient image building practices and the nuances of container configuration. Successfully completing this task demonstrated my growing proficiency in Docker, a critical tool in the DevOps toolkit.
+
+#Docker #DevOps #Containerization #Dockerfile #Apache2 #ProfessionalDevelopment
+-->
 
 > [!info] Module 3: Docker Part 1 Assignment - 4
 > **Tasks To Be Performed:** 
