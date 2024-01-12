@@ -1,9 +1,14 @@
 ---
 tags:
   - Ansible
+title: Setting up a Cluster and Installing Software with Ansible Playbooks
 ---
 
+<!--
+🚀 **Enhancing DevOps Skills with Ansible: Efficient Cluster and Software Management!** I've accomplished an important assignment in my DevOps course, focusing on Ansible for automated configuration management. The task included setting up an Ansible cluster with three nodes, installing Java on one and MySQL server on another using Ansible playbooks. This assignment was a practical dive into Ansible’s capabilities for automating and streamlining software installations across multiple nodes, enhancing my understanding of efficient and scalable configuration management in DevOps.
 
+#Ansible #DevOps #ConfigurationManagement #Automation #ProfessionalDevelopment
+-->
 
 > [!info] Module 5: Ansible Assignment - 1
 > Tasks To Be Performed:** 

@@ -1,8 +1,13 @@
 ---
 tags:
   - Ansible
+title: Deploying a Multi-Node Ansible Cluster and Grouping Hosts
 ---
+<!--
+🚀 **Ansible Proficiency: Advanced Cluster Management and Software Installation!** My latest assignment in the DevOps course involved an in-depth use of Ansible for complex cluster and software management. I created a new deployment of an Ansible cluster with multiple nodes, labeling them as 'test' and 'prod'. The assignment included installing Java on the test nodes and MySQL server on the prod nodes, using Ansible roles for efficient management and grouping. This task enhanced my understanding of Ansible's robust capabilities in handling diverse environments and software configurations.
 
+#Ansible #DevOps #ClusterManagement #SoftwareInstallation #ProfessionalDevelopment
+-->
 
 
 > [!info] Module 5: Ansible Assignment - 5

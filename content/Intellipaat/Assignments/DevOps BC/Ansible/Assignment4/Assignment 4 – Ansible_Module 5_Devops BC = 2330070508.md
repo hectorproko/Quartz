@@ -1,8 +1,13 @@
 ---
 tags:
   - Ansible
+title: Configuring Files on NGINX Host in an Ansible Cluster
 ---
+<!--
+🚀 **Mastering Ansible: Advanced Playbook Execution and Role Customization!** In a recent assignment for my DevOps training, I enhanced my Ansible expertise by customizing roles and playbooks for specific deployment tasks. The project focused on updating a web server's content using an Ansible role, demonstrating my ability to manage and automate complex configurations. This exercise provided in-depth experience in utilizing Ansible for efficient and precise server updates, reinforcing my skills in automation and configuration management.
 
+#Ansible #DevOps #Automation #ConfigurationManagement #ProfessionalDevelopment
+-->
 
 
 > [!info] Module 5: Ansible Assignment - 4

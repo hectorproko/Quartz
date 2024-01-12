@@ -1,8 +1,13 @@
 ---
 tags:
   - Ansible
+title: Installing Apache2 and NGINX on Different Hosts Using Ansible Roles
 ---
+<!--
+🚀 **Expanding DevOps Capabilities with Ansible: Role-Based Automation!** I've recently completed an enriching assignment in my DevOps training, focusing on advanced Ansible role creation and management. The task required developing two distinct Ansible roles for installing Apache2 and NGINX on separate nodes. This assignment honed my skills in modularizing configurations and automating complex deployments, showcasing the flexibility and power of Ansible in managing diverse server environments efficiently.
 
+#Ansible #DevOps #Automation #ConfigurationManagement #ProfessionalDevelopment
+-->
 
 
 > [!info] Module 5: Ansible Assignment - 3
@@ -12,7 +17,7 @@ tags:
 > 3. Above should be implemented using different Ansible roles
 
 Using the same setup from [[Assignment 1 – Ansible_Module 5_Devops BC = 2330070508#^a2c939|Assignment 1 – Ansible]]
-%%[[Assignment 1 – Ansible_Module 5_Devops BC = 2330070508#^be0450|ssh agent stuff]]%%
+
 > [!NOTE] EC2 instances
 > Ansible Control Machine `10.0.1.223`
 > Slave1 `10.0.1.65`
@@ -75,7 +80,7 @@ I will create a playbook called `install_web_servers.yml`. In this playbook, I w
     - nginx_role
 ```
 
-^54a359
+
 
 This playbook runs the `apache_role` on `slave1` and the `nginx_role` on `slave2`.
 
@@ -97,16 +102,6 @@ ansible slave1 -m shell -a "systemctl status apache2" -i inventory.ini --become
 ansible slave2 -m shell -a "systemctl status nginx" -i inventory.ini --become
 ```
 
-%%
-> [!note]- Tried module service but output has too much information 
-> ```bash
-> ansible slave1 -m service -a "name=apache2 state=started" -i inventory.ini
-> ansible slave2 -m service -a "name=nginx state=started" -i inventory.ini
-> 
-> ```
-> *The `service` module is specifically designed to control the state of services on a host. The `state=started` parameter not only checks if the service is running but will also start the service if it's not already running.*
-
-%%
 
 > [!success]
 > <br>![[Pasted image 20231106143527.png]]

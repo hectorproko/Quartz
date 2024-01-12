@@ -1,9 +1,13 @@
 ---
 tags:
   - Ansible
+title: Streamlining Web Server Management with Ansible
 ---
+<!--
+🚀 **Case Study Mastery: Streamlining Web Server Management with Ansible!** I've accomplished a comprehensive case study in my DevOps training, which involved using Ansible to manage Apache and NGINX server groups. The project required creating custom HTML files, setting up two server groups, and configuring the servers with Ansible roles. This assignment provided an in-depth experience in using Ansible for complex configuration management tasks, enhancing my proficiency in automating server setup and maintenance.
 
-
+#Ansible #DevOps #ServerManagement #Automation #ProfessionalDevelopment
+-->
 
 > [!info] Module 5: Case Study - Ansible
 > **Problem Statement:** 

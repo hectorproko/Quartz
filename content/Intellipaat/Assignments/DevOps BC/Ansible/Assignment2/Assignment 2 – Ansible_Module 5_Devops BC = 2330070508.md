@@ -1,8 +1,13 @@
 ---
 tags:
   - Ansible
+title: Executing a Custom Script to Add Text to Files on Multiple Hosts
 ---
+<!--
+🚀 **Expanding Automation Skills with Ansible: Script Execution Across Nodes!** I've completed an assignment in my DevOps training focusing on using Ansible to run custom scripts across multiple nodes. The task was to create a script that adds specific text to a file and then use Ansible to execute this script on all host machines. This exercise was crucial in understanding Ansible’s power in automating tasks over various systems, reinforcing my proficiency in widespread script deployment and execution in a networked environment.
 
+#Ansible #DevOps #Automation #Scripting #ProfessionalDevelopment
+-->
 
 
 > [!info] Module 5: Ansible Assignment - 2
