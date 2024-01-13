@@ -3,6 +3,7 @@ title: Kubernetes cluster from scratch
 tags:
   - Kubernetes
 ---
+*~~(old [Project 21](https://github.com/hectorproko/PROJECT-21-Orchestrating-containers-across-multiple-Virtual-Servers-with-Kubernetes/blob/main/Project21_Steps.md))~~*
 
 ## Description
 This project showcases a demonstration of setting up a Kubernetes cluster from scratch, aiming to exhibit a comprehensive understanding of the technology. The project encompasses the installation and configuration of Kubernetes control plane components, worker nodes, and networking. The instructions provided are designed for a Linux-based environment.

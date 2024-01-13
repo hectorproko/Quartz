@@ -26,9 +26,6 @@
 > <br>![[Pasted image 20231124221811.png|397]]
 
 
-%%[[video steps]]%%
-
-
 %%
 I installed Jenkins on the `Jenkins_Terraform_Ansible` EC2 instance using the script [[Jenkins_terraform_ansible.sh]] (==updated it== ). However, I encountered an issue with Jenkins freezing. To resolve this, I set up a new EC2 instance with Ubuntu 22 and installed the newest version of Jenkins, following the [official documentation](https://pkg.jenkins.io/debian-stable/).
 Keep in mind the Java version in Jenkins Host and Agent need to be the same%%
@@ -222,50 +219,6 @@ git branch
 ### Kubernetes
 I install Kubeadm *(just like in [[Assignment 1 – Kubernetes_Module 7_Devops BC = 2330070508|Assignment 1 – Kubernetes]])* in the instances that will compose my Kubernetes cluster (`Kmaster`, `Kslave1`, `Kslave2`)
 
-
-%%
-slaves:
-```bash
-ssh ubuntu@10.0.1.67 'bash -s' < kubeadm.sh
-ssh ubuntu@10.0.1.119 'bash -s' < kubeadm.sh
-```
-
-master:
-```bash
-ssh ubuntu@10.0.1.52 'bash -s' < kubeadm.sh
-```
-
-```bash
-ssh ubuntu@10.0.1.52 'sudo kubeadm init --pod-network-cidr=192.168.0.0/16'
-```
-
-```bash
-kubeadm join 10.0.1.52:6443 --token o1bptn.i5hxzoybbhrxaom3 \
-        --discovery-token-ca-cert-hash sha256:763f323cdd6a3613d7baa6c17955b285081d436f0ffe837a005b702ef11d501c
-```
-
-```bash
-mkdir -p $HOME/.kube
-sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
-sudo chown $(id -u):$(id -g) $HOME/.kube/config
-```
-same 
-```bash
-ssh ubuntu@10.0.1.52 'mkdir -p $HOME/.kube && sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config && sudo chown $(id -u):$(id -g) $HOME/.kube/config'
-```
-
-slaves:
-```bash
-ssh ubuntu@10.0.1.67 'sudo kubeadm join 10.0.1.52:6443 --token o1bptn.i5hxzoybbhrxaom3 \
-        --discovery-token-ca-cert-hash sha256:763f323cdd6a3613d7baa6c17955b285081d436f0ffe837a005b702ef11d501c' 
-```
-
-```bash
-ssh ubuntu@10.0.1.119 'sudo kubeadm join 10.0.1.52:6443 --token o1bptn.i5hxzoybbhrxaom3 \
-        --discovery-token-ca-cert-hash sha256:763f323cdd6a3613d7baa6c17955b285081d436f0ffe837a005b702ef11d501c'
-```
-
-%%
 
 I run `kubectl get nodes` in `Kmaster` to verify the cluster. The following shows I still need a networking plugin
 ```bash

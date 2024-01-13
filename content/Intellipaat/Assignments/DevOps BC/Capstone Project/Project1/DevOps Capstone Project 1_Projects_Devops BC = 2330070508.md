@@ -15,7 +15,7 @@
 >    `b.` Job2 : test 
 >    `c.` Job3 : prod
 
-%%[[zoom Video explanation]]%%
+
 ### Provisioning Instances
 
 I create three Ubuntu 22.04 EC2 instances, each located in a public subnet and configured to have a public IP enabled. This setup ensures that the instances are accessible and can handle network traffic effectively.
@@ -31,6 +31,8 @@ I create three Ubuntu 22.04 EC2 instances, each located in a public subnet and c
 
 ### Master
 Installing Ansible<br>![[Assignment 1 – Ansible_Module 5_Devops BC = 2330070508#^aa5175]]
+[[Assignment 1 – Ansible_Module 5_Devops BC = 2330070508]]
+
 <br>![[Pasted image 20231205121617.png]]
 *This is a more updated version than [[Assignment 1 – Ansible_Module 5_Devops BC = 2330070508|Assignment 1 – Ansible]]*
 

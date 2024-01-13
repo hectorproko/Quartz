@@ -1,6 +1,7 @@
 ---
 title: Packer To AMI
 ---
+~~*(old [Packer To AMI (AWS)](https://github.com/hectorproko/Packer/blob/main/Packer_To_AMI.md) )*~~
 
 > [!info]
 > This project uses **Vagrant** as a test environment to run **Packer** within a virtual machine. The primary goal is to produce custom Amazon Machine Images (**AMI**s) for **AWS**. 

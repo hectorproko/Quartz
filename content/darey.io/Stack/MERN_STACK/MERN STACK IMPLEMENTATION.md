@@ -2,6 +2,7 @@
 tags:
   - Linux
 ---
+~~*(old [MERN](https://github.com/hectorproko/MERN_STACK))*~~
 
 > [!info]
 > A technology stack is a set of frameworks and tools used to develop a software product. Here we will implement a **MERN** which consits of:

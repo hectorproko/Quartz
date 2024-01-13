@@ -4,7 +4,6 @@
 > 2. Installing Apache on slaves using manifests 
 
 ---
-%%[[Previous Attempts]]%%
 ### Step 1:
 [[Installing Puppet]]
 

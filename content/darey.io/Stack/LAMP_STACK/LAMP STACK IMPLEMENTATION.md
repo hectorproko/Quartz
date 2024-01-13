@@ -2,7 +2,7 @@
 tags:
   - Linux
 ---
-
+~~*(old [LAMP](https://github.com/hectorproko/LAMP_STACK) )*~~  
 
 > [!info] LAMP STACK IMPLEMENTATION
 > A technology stack is a set of frameworks and tools used to develop a software product. Here we will implement a **LAMP** which consits of **L**inux, **A**pache, **M**ySQL, **P**HP|Python|Perl.

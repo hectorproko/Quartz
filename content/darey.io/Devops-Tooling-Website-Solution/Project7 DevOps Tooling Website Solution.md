@@ -4,7 +4,7 @@ tags:
   - Linux
   - EBS
 ---
-
+*~~(old [Project 7](https://github.com/hectorproko/Devops-Tooling-Website-Solution))~~*
 
 To start I will we using my AWS account to create an EC2 instance with Red-Hat as the OS. This will become my **NFS Server**.
 

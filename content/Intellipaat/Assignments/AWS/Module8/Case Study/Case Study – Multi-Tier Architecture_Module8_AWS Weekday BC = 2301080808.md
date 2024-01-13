@@ -2,6 +2,7 @@
 tags:
   - AWS
   - CloudFormation
+  - IaC
 title: Designing a Scalable Multi-Tier Architecture on AWS
 ---
 <!--

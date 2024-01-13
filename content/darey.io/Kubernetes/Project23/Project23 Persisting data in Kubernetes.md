@@ -4,7 +4,7 @@ tags:
   - Kubernetes
   - EKS
 ---
-
+*~~(old [Project 23](https://github.com/hectorproko/PERSISTING-DATA-IN-KUBERNETES/blob/main/Project23_Steps.md))~~*
 
 In PROJECT 23, I demonstrate the deployment of an **Nginx** web server using Kubernetes. I explore various concepts such as **ConfigMaps** for managing configuration data and **PersistentVolumes** for data persistence. 
 

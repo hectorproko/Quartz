@@ -5,7 +5,7 @@ tags:
   - LoadBalancer
   - "#Apache"
 ---
-
+*~~(old [Project 8](https://github.com/hectorproko/LOAD-BALANCER-SOLUTION-WITH-APACHE))~~*
 
 > [!Info]
 > Project 8: Adding Load Balancer to [**Project 7:** DevOps Tooling Website Solution](https://github.com/hectorproko/Devops-Tooling-Website-Solution/blob/main/Project7_Step.md)  

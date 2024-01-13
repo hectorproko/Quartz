@@ -6,6 +6,7 @@ tags:
   - Nginx
   - Linux
 ---
+*~~(old [Project 10](https://github.com/hectorproko/LOAD-BALANCER-SOLUTION-WITH-NGINX-AND-SSL-TLS)  )~~*
 
 > [!info]
 > PROJECT 10: LOAD BALANCER SOLUTION WITH NGINX AND SSL/TLS

@@ -3,6 +3,7 @@ title: Web Solution WordPress
 tags:
   - Linux
 ---
+*~~(old [Project 6](https://github.com/hectorproko/WEB-SOLUTION-WITH-WORDPRESS))~~*
 
 > [!info]
 > In this project we will prepare storage infrastructure on two Linux servers and implement a basic web solution using WordPress. This will be implemented based on what is called the **Three-tier Architecture**.

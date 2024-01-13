@@ -7,8 +7,7 @@ tags:
   - Ansible
 ---
 
-**PROJECT 14**
-
+==*~~(old [Project 14](https://github.com/hectorproko/EXPERIENCE-CONTINUOUS-INTEGRATION-WITH-JENKINS-ANSIBLE-ARTIFACTORY-SONARQUBE-PHP/blob/main/Steps_Project14.md))~~*==
 
 ### ANSIBLE ROLES FOR CI ENVIRONMENT
 <!--- Wrap text --->

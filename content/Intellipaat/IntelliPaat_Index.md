@@ -1,3 +1,7 @@
+---
+title: Intellipat
+---
+
 
 # [[Devops BC = 2330070508|Devops BC]]
 

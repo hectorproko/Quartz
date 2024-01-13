@@ -3,6 +3,7 @@ tags:
   - AWS
   - CloudFormation
   - CloudWatch
+  - IaC
 title: Implementing Secure Amazon SNS Messaging in a Private AWS Environment
 ---
 <!--

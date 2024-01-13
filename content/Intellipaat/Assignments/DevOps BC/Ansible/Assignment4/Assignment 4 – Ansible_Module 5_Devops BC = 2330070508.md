@@ -85,29 +85,6 @@ I edit the `tasks/main.yml` file to incorporate the task that will substitute th
   notify: reload nginx
 ```
 
-%%when using copy inside of role it assumes the files are in folder files
-
-> [!attention]
-> <mark style="background: #FFF3A3A6;">Handlers</mark> are used with `notify:` pay attention to when you started using handlers and the playbook has `notify:`
-
-%%
-%%
-> [!attention]- Issue
-> > [!fail] The condition `when:` is returns false and skipping task even though you know it is true
-> > <br>![[Pasted image 20231106163245.png]]
-> 
-> > [!done] Add `service_facts:`
-> > ```yaml
-> > - name: Gather the NGINX service facts
-> >   service_facts:
-> > ```
-> > 
-> 
-
-%%
-
-^3e4b13
-
 And the corresponding handler remains the same:
 ```yaml
 ---

@@ -2,6 +2,7 @@
 tags:
   - AWS
   - CloudFormation
+  - IaC
 title: Integrating SQS and SES for Messaging and Email Services in AWS
 ---
 <!--

@@ -3,6 +3,7 @@ title: AWS Solution for 2 Company Websites using a Reverse Proxy
 tags:
   - AWS
 ---
+~~*(old [Project 15](https://github.com/hectorproko/AWS-CLOUD-SOLUTION-FOR-2-COMPANY-WEBSITES-USING-A-REVERSE-PROXY-TECHNOLOGY/blob/main/Project15_Steps.md))*~~
 
 > [!NOTE]
 > PROJECT 15

@@ -2,6 +2,7 @@
 tags:
   - AWS
   - CloudFormation
+  - IaC
 title: Streamlining VPC and EC2 Deployment with CloudFormation in AWS
 ---
 <!--

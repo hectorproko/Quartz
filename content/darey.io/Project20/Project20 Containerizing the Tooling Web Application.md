@@ -3,6 +3,7 @@ title: Containerizing the Tooling Web Application
 tags:
   - Docker
 ---
+*~~(old [Project 20](https://github.com/hectorproko/MIGRATION-TO-THE-LOUD-WITH-CONTAINERIZATION---DOCKER-DOSECKER-COMPO/blob/main/Project20_Steps.md))~~*
 
 > [!info] PROJECT 20
 > In this project let us migrate the *Tooling Web Application* from a **VM-based** solution into a containerized one

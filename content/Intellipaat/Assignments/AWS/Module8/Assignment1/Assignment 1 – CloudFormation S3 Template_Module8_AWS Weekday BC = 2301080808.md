@@ -2,6 +2,7 @@
 tags:
   - AWS
   - CloudFormation
+  - IaC
 title: Automating S3 Bucket Deployment and Versioning with CloudFormation in AWS
 ---
 <!--

@@ -2,6 +2,7 @@
 tags:
   - Linux
 ---
+~~*(old [MEAN](https://github.com/hectorproko/MEAN_STACK))*~~
 
 > [!info]
 > A technology stack is a set of frameworks and tools used to develop a software product. Here we will implement a **MEAN** stack which consits of:

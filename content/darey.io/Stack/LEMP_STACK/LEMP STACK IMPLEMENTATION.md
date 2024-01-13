@@ -2,6 +2,7 @@
 tags:
   - Linux
 ---
+~~*(old [LEMP](https://github.com/hectorproko/LEMP_STACK) )*~~
 
 > [!info] LEMP STACK IMPLEMENTATION
 > A technology stack is a set of frameworks and tools used to develop a software product. Here we will implement a **LEMP** which consits of **L**inux, **E** is for Nginx (engine-x), **M**ySQL, **P**HP|Python|Perl.

@@ -2,6 +2,7 @@
 tags:
   - AWS
   - CloudFormation
+  - IaC
 title: Enhancing CloudFormation Deployments with SNS Notifications in AWS
 ---
 <!--
