@@ -50,11 +50,8 @@ Here are some of the projects I've been working on, categorized by technology:
 - [[Project24]] ==Pending==
 
 ### Linux (stacks):
-- [[LAMP STACK IMPLEMENTATION|LAMP]] 
-- [[LEMP STACK IMPLEMENTATION|LEMP]]  
-- [[MERN STACK IMPLEMENTATION|MERN]] 
-- [[MEAN STACK IMPLEMENTATION|MEAN]] 
-- [[Project6 Web Solution Wordpress]] 
+- [[LAMP STACK IMPLEMENTATION|LAMP]], [[LEMP STACK IMPLEMENTATION|LEMP]], [[MERN STACK IMPLEMENTATION|MERN]], [[MEAN STACK IMPLEMENTATION|MEAN]] 
+- [[Project6 Web Solution Wordpress|Web Solution Wordpress]] 
 - [[Project7 DevOps Tooling Website Solution|DevOps Tooling Website Solution]] 
 - [[Project 8 APACHE LOAD-BALANCER|Load Balancer Solution with Apache]] 
     - Adds Load Balancer to [[Project7 DevOps Tooling Website Solution|DevOps Tooling Website Solution]]
