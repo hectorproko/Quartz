@@ -11,7 +11,7 @@ tags:
  ==*~~(old [Project 9](https://github.com/hectorproko/CONTINOUS-INTEGRATION-PIPELINE-FOR-TOOLING-WEBSITE))~~*==
  
 > [!info]
-> In this project, we'll extend the architecture developed in [[Project 8 APACHE LOAD-BALANCER]] by integrating a Jenkins server. Our focus will be on automating routine tasks using Jenkins, a free and open-source automation tool. We'll set up a Jenkins job designed to automatically deploy any changes made to the source code in our GitHub repository, [tooling](https://github.com/hectorproko/tooling), directly to the Tooling Website via an NFS server.
+> In this project, we'll extend the architecture developed in [[Project_8_APACHE_LOAD-BALANCER]] by integrating a Jenkins server. Our focus will be on automating routine tasks using Jenkins, a free and open-source automation tool. We'll set up a Jenkins job designed to automatically deploy any changes made to the source code in our GitHub repository, [tooling](https://github.com/hectorproko/tooling), directly to the Tooling Website via an NFS server.
 > 
 > ![[darey.io/Project9/images/architecture.png]]
 > 
