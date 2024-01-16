@@ -10,7 +10,7 @@ You can find my professional profile on [LinkedIn](https://www.linkedin.com/in/
 You can find my GitHub profile on [GitHub](https://github.com/hectorproko).
 
 > [!attention] In Progress 🚀
-> I'm currently in the process of migrating documentation from GitHub to this site.
+> Some documentation on this site requires reorganizing and proofreading for greater clarity. Initially, the portfolio was intended to organize my work for personal use, and I am now in the process of refining it for public viewing..
 
 ## Projects
 Here are some of the projects I've been working on, categorized by technology:
