@@ -18,7 +18,7 @@ Here are some of the projects I've been working on, categorized by technology:
 
 > [!tip] Tags
 > *Hover over them to see related tasks*  
-> #AWS #Terraform #IaC #Bash #Ansible #Docker #Linux #CD/CD #Kubernetes #Jenkins #azure
+> #AWS #Terraform #IaC #Bash #Ansible #Docker #Linux #CD/CD #Kubernetes #Jenkins #azure #helm
    
 ### CI/CD Jenkins:
 - [[Project9 CONTINOUS-INTEGRATION-PIPELINE-FOR-TOOLING-WEBSITE|CI Pipeline for Tooling Website]]
