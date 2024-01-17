@@ -1,6 +1,7 @@
 ---
 tags:
   - AWS
+  - AWSDevOps
 title: Setting Up a CodeCommit Repository and Migrating Data from GitHub
 ---
 <!--

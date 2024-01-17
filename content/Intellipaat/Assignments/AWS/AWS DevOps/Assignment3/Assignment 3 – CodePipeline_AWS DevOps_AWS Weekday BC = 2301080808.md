@@ -2,6 +2,7 @@
 tags:
   - AWS
   - CodePipeline
+  - AWSDevOps
 title: Building a CI/CD Pipeline with CodePipeline for PHP Applications
 ---
 <!--

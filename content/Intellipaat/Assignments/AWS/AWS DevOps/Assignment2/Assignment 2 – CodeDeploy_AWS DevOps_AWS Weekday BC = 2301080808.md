@@ -2,6 +2,7 @@
 tags:
   - AWS
   - CodeDeploy
+  - AWSDevOps
 title: Implementing Automated Deployments with CodeDeploy and EC2
 ---
 <!--
