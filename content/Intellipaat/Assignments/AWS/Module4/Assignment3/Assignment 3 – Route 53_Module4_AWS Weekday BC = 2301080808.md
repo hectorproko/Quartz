@@ -59,7 +59,7 @@ After creating the hosted zone, Route 53 provides me with a set of **NS (Name Se
 > <br>![[Pasted image 20231004153525.png]]
 > 
 
-^c3e5c2
+
 
 
 
