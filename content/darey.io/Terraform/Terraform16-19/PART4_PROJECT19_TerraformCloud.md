@@ -6,6 +6,23 @@ title: Automating Infrastructure with IAC Using Terraform Cloud
 ---
 <!--# AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART4 -->
 
+<!-- THIS WAS NOT DONE, NEED TO REDO MAYBE
+Now it is time to run our Terrafrom scripts, but in our previous project which was [project 18](https://www.darey.io/docs/automate-infrastructure-with-iac-using-terraform-part-3-refactoring/), we talked about using Packer to build our images, and Ansible to configure the infrastructure, so for that we are going to make few changes to our our existing [respository](https://github.com/darey-devops/PBL-project-18.git) from Project 18.
+
+The files that would be Addedd is;
+
+- AMI: for building packer images
+- Ansible: for Ansible scripts to configure the infrastucture
+
+Before you proceed ensure you have the following tools installed on your local machine;
+
+- [packer](https://learn.hashicorp.com/tutorials/packer/get-started-install-cli)
+- [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
+
+Refer to this [repository](https://github.com/darey-devops/PBL-project-19.git) for guidiance on how to refactor your enviroment to meet the new changes above and ensure you go through the README.md file.
+
+-->
+
 
 **Introduction**
 
@@ -74,7 +91,6 @@ I'll change something in the README and look at "Runs" tab again – plan must
 > Since provisioning of new Cloud resources might incur significant costs. Even though we can configure "Auto apply", it is always a good idea to verify the plan results before pushing it to apply to avoid any misconfigurations that can cause ‘bill shock’.
 
 ![[terraform_cloud_autoPlanning.gif]]
-
 
 
 
