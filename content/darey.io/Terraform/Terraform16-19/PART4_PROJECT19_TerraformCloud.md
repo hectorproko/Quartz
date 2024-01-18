@@ -12,25 +12,28 @@ Created an account
 
 Start from scratch  
 
-![Markdown Logo](https://raw.githubusercontent.com/hectorproko/AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1-to-4/main/images/welcome.png)  
 
-![Markdown Logo](https://raw.githubusercontent.com/hectorproko/AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1-to-4/main/images/organization.png)  
-
-![Markdown Logo](https://raw.githubusercontent.com/hectorproko/AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1-to-4/main/images/workspace.png)  
+![[welcome.png]]
 
 
-![Markdown Logo](https://raw.githubusercontent.com/hectorproko/AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1-to-4/main/images/workspace2.png)  
+![[organization.png]]
 
 
-![Markdown Logo](https://raw.githubusercontent.com/hectorproko/AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1-to-4/main/images/permission.png)  
+![[workspace.png]]
+
+
+![[workspace2.png]]
+
+
+![[permission.png]]
 
 Lets created the repo to choose  
 
-![Markdown Logo](https://raw.githubusercontent.com/hectorproko/AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1-to-4/main/images/install.png)  
+![[install.png]]
 
-![Markdown Logo](https://raw.githubusercontent.com/hectorproko/AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1-to-4/main/images/cloud.png)  
+![[cloud.png]]
 
-![Markdown Logo](https://raw.githubusercontent.com/hectorproko/AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1-to-4/main/images/variables.png)  
+![[variables.png]]
 
 Make sure you select Environment variable  
 
@@ -39,22 +42,22 @@ Worspace name is terraform-cloud like the repo name is automatic
 
 
 This is how it looks if you navigate back  
-![Markdown Logo](https://raw.githubusercontent.com/hectorproko/AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1-to-4/main/images/workspaces.png)  
+![[workspaces.png]]
 
 
-![Markdown Logo](https://raw.githubusercontent.com/hectorproko/AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1-to-4/main/images/terraform_cloud_apply.gif)  
+![[terraform_cloud_apply.gif]]
 
 
-![Markdown Logo](https://raw.githubusercontent.com/hectorproko/AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1-to-4/main/images/created.png)  
+![[created.png]]  
 
 
-![Markdown Logo](https://raw.githubusercontent.com/hectorproko/AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1-to-4/main/images/terraform_cloud_destroyed.gif)  
+![[terraform_cloud_destroyed.gif]]
 
 
-![Markdown Logo](https://raw.githubusercontent.com/hectorproko/AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1-to-4/main/images/triggered.png)  
+![[triggered.png]]
 
 
-![Markdown Logo](https://raw.githubusercontent.com/hectorproko/AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1-to-4/main/images/terraform_cloud_autoPlanning.gif)  
+![[terraform_cloud_autoPlanning.gif]]
 
 
 Configure 3 branches in your `terraform-cloud` repository for `dev`, `test`, `prod` environments  

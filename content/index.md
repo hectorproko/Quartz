@@ -65,10 +65,6 @@ Here are some of the projects I've been working on, categorized by technology:
 
 
 
-![[roles.tf]]
-
-
-
 <!--
 [[Azure Administrator Course for AZ-103 AZ-104|Azure Administrator]]
 [[Azure Devops BC = 2322102810|Azure DevOps]]
