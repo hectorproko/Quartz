@@ -37,15 +37,15 @@ Terraform Cloud executes Terraform commands on disposable virtual machines, this
    ![[workspace2.png]]
    
    
-   ![[permission.png|300]]
-   ![[install.png|300]]
+   ![[permission.png|300]]  
+   ![[install.png|300]]  
 
-  ![[cloud.png]]
-
-
+  ![[cloud.png|600]]
 
 
-![[variables.png]]
+
+
+![[variables.png|200]]
 
 Make sure you select Environment variable  
 
