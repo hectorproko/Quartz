@@ -8,6 +8,9 @@ For reference
 https://github.com/darey-devops/PBL-project-18.git
 There are some .sh file that are empty
 -->
+
+==Pending Clean Up==
+
 # AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-3/4
 **Project 18 Terraform** 
 *==Now we will explore alternative **Terraform** [backends](https://www.terraform.io/language/settings/backends/configuration).*  ==

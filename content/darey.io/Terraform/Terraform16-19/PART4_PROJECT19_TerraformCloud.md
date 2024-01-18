@@ -2,36 +2,48 @@
 tags:
   - "#Terraform"
   - IaC
+title: Automating Infrastructure with IAC Using Terraform Cloud
 ---
-# AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1-4
-Project 16-19 Terraform
-*==TERRAFORM CLOUD* ==
-### AUTOMATE INFRASTRUCTURE WITH IAC USING TERRAFORM. PART 4 - TERRAFORM CLOUD  
-
-Created an account  
-
-Start from scratch  
+<!--# AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART4 -->
 
 
-![[welcome.png]]
+**Introduction**
+
+[Terraform Cloud](https://www.terraform.io/cloud) is a managed service that provides you with Terraform CLI to provision infrastructure, either on demand or in response to various events.
+
+By default, Terraform CLI performs operation on the server whenever it is invoked, it is perfectly fine if we have a dedicated role who can launch it, but if we have a team working with Terraform – we need a consistent remote environment with remote workflow and shared state to run Terraform commands.
+
+Terraform Cloud executes Terraform commands on disposable virtual machines, this remote execution is also called [remote operations](https://www.terraform.io/docs/cloud/run/index.html).
 
 
-![[organization.png]]
+### Migrate .tf codes to Terraform Cloud
+
+1. I create a new repository in my GitHub and call [terraform-cloud]([GitHub - hectorproko/terraform-cloud: Used by Project 19](https://github.com/hectorproko/terraform-cloud)) and push the Terraform codes developed in the [[AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM|previous projects]] to the repository.
+   
+2. Create a [Terraform Cloud](https://www.terraform.io/cloud) account
+
+3. Create an organization
+   Select "Start from scratch", choose a name for your organization and create it.
+   ![[welcome.png]]
+   ![[organization.png]]
+
+3. Configure a workspace
+   
+   We will use a `version control workflow`, which is the most common and recommended way to run Terraform commands triggered from our Git repository.
+   
+   ![[workspace.png]]
+   
+   We will be prompted to connect our GitHub account to our workspace – I follow the prompt and add our newly created repository [terraform-cloud]([GitHub - hectorproko/terraform-cloud: Used by Project 19](https://github.com/hectorproko/terraform-cloud))  to the workspace.
+   ![[workspace2.png]]
+   
+   
+   ![[permission.png|300]]
+   ![[install.png|300]]
+
+  ![[cloud.png]]
 
 
-![[workspace.png]]
 
-
-![[workspace2.png]]
-
-
-![[permission.png]]
-
-Lets created the repo to choose  
-
-![[install.png]]
-
-![[cloud.png]]
 
 ![[variables.png]]
 
@@ -60,20 +72,5 @@ This is how it looks if you navigate back
 ![[terraform_cloud_autoPlanning.gif]]
 
 
-Configure 3 branches in your `terraform-cloud` repository for `dev`, `test`, `prod` environments  
 
-Make necessary configuration to trigger runs automatically only for `dev` environment  
-
-Create an Email and Slack notifications for certain events (e.g. started `plan` or errored run) and test it  
-
-Settings > Notifications > Create a Notification  
-
-
-Create a new Workspace  
-	Workspace Name: terraform-cloud-dev  
-	Step 4: Configure settings  
-	Apply Method: Auto apply  
-	VCS branch: dev  
-	
-Need to create a new run  
 
