@@ -18,7 +18,7 @@ Terraform Cloud executes Terraform commands on disposable virtual machines, this
 
 ### Migrate .tf codes to Terraform Cloud
 
-1. I create a new repository in my GitHub and call [terraform-cloud]([GitHub - hectorproko/terraform-cloud: Used by Project 19](https://github.com/hectorproko/terraform-cloud)) and push the Terraform codes developed in the [[AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM|previous projects]] to the repository.
+1. I create a new repository in my GitHub and call [terraform-cloud](https://github.com/hectorproko/terraform-cloud) and push the Terraform codes developed in the [[AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM|previous projects]] to the repository.
    
 2. Create a [Terraform Cloud](https://www.terraform.io/cloud) account
 
@@ -33,7 +33,7 @@ Terraform Cloud executes Terraform commands on disposable virtual machines, this
    
    ![[workspace.png]]
    
-   We will be prompted to connect our GitHub account to our workspace – I follow the prompt and add our newly created repository [terraform-cloud]([GitHub - hectorproko/terraform-cloud: Used by Project 19](https://github.com/hectorproko/terraform-cloud))  to the workspace.
+   We will be prompted to connect our GitHub account to our workspace – I follow the prompt and add our newly created repository [terraform-cloud](https://github.com/hectorproko/terraform-cloud)  to the workspace.
    ![[workspace2.png]]
    
    
