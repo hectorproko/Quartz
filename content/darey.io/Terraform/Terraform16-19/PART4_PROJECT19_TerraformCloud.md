@@ -42,32 +42,36 @@ Terraform Cloud executes Terraform commands on disposable virtual machines, this
 
   ![[cloud.png|600]]
 
+4. Configure variables
+   Terraform Cloud supports two types of variables: environment variables and Terraform variables. Either type can be marked as sensitive, which prevents them from being displayed in the Terraform Cloud web UI and makes them write-only.
+   
+   I'll select Environment variable  
 
+   I set two environment variables: `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`, using the same values as in [[PART1_PROJECT_16]] . These credentials will be used to provision the AWS infrastructure by Terraform Cloud.
+   
+   ![[variables.png|200]]
 
+  After we set these 2 environment variables – Terraform Cloud is all set to apply the codes from GitHub and create all the necessary AWS resources.
 
-![[variables.png|200]]
+  The Workspace name, `terraform-cloud` was assigned automatically based on the repo name
 
-Make sure you select Environment variable  
+  ![[workspaces.png]]
 
-Worspace name is terraform-cloud like the repo name is automatic  
+5. Now it is time to run our Terraform scripts. I run `terraform plan` and `terraform apply` from web console
+   ![[terraform_cloud_apply.gif]]
+   
+   ![[created.png]]  
 
-
-
-This is how it looks if you navigate back  
-![[workspaces.png]]
-
-
-![[terraform_cloud_apply.gif]]
-
-
-![[created.png]]  
-
-
+Then I run `terraform destroy` to bring down the infrastructure
 ![[terraform_cloud_destroyed.gif]]
 
+![[triggered.png|300]]
 
-![[triggered.png]]
+So far I triggered the provisioning via UI. But since we have an integration with GitHub, the process can be triggered automatically.
 
+I'll change something in the README and look at "Runs" tab again – plan must be launched automatically, but to apply I still need to approve manually. 
+
+> Since provisioning of new Cloud resources might incur significant costs. Even though we can configure "Auto apply", it is always a good idea to verify the plan results before pushing it to apply to avoid any misconfigurations that can cause ‘bill shock’.
 
 ![[terraform_cloud_autoPlanning.gif]]
 
