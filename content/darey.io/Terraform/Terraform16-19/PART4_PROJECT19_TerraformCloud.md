@@ -60,7 +60,8 @@ Terraform Cloud executes Terraform commands on disposable virtual machines, this
   ![[cloud.png|600]]
 
 4. Configure variables
-   Terraform Cloud supports two types of variables: environment variables and Terraform variables. Either type can be marked as sensitive, which prevents them from being displayed in the Terraform Cloud web UI and makes them write-only.
+   
+   Terraform Cloud supports two types of variables: environment variables and Terraform variables. Either type can be marked as sensitive, which prevents them from being displayed in the Terraform Cloud web UI and makes them write-only.  
    
    I'll select Environment variable  
 
