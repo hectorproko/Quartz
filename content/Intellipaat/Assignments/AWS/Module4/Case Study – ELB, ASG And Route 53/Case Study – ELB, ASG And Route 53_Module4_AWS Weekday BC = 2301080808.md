@@ -48,8 +48,9 @@ Based on the steps from [[Assignment 2 – Auto Scaling_Module4_AWS Weekday BC =
 
 
 - To validate the setup, I tested the Load Balancer using the DNS link: `LoadBalancer-2130920093.us-east-1.elb.amazonaws.com`
-  
-  > [!success]
+
+
+> [!success]
 > <br>![[Pasted image 20231005170540.png]]
 
 **Testing Autoscaling group by making EC2 go over 80% utilization** 
