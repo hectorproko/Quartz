@@ -1,7 +1,7 @@
 ---
 title: AWS Course Work
 ---
-
+``
 ### Module 2:
 1. [[Assignment 1 – EC2_Module2_AWS Weekday BC = 2301080808|Launching and Configuring an Ubuntu EC2 Instance with Nginx on AWS]]
 2. [[Assignment 2 – EBS_Module2_AWS Weekday BC = 2301080808|Launching a Linux EC2 Instance with Attached and Resized EBS Storage]]
@@ -28,10 +28,10 @@ title: AWS Course Work
 17. [[Assignment 2 – VPC Peering_Module5_AWS Weekday BC = 2301080808|Implementing VPC Peering for Enhanced Connectivity Across Regions in AWS]]<!--1/20/24 Done--> 
 18. [[Assignment 3 – VPC Security Groups_Module5_AWS Weekday BC = 2301080808|Establishing Secure EC2 Communications with VPC Security Groups in AWS]]<!--1/22/24 Done--> 
 19. [[Assignment 4 – VPC Endpoints_Module5_AWS Weekday BC = 2301080808|Securing Access to S3 Resources with VPC Endpoints in AWS]]<!--1/23/24 Done--> 
-20. [[Case Study – VPC And Peering_Module5_AWS Weekday BC = 2301080808|Streamlining Connectivity with VPC and Peering]] <!--1/24/24--> 
+20. [[Case Study – VPC And Peering_Module5_AWS Weekday BC = 2301080808|Streamlining Connectivity with VPC and Peering]] <!--1/24/24 Done--> 
 ### Module  6:  
-21. [[Assignment 1 – S3 Bucket Creation_Module6_AWS Weekday BC = 2301080808|Configuring an S3 Bucket for Versatile File Storage and Sharing in AWS]] <!--1/25/24-->
-22. [[Assignment 2 – S3 Bucket Versioning_Module6_AWS Weekday BC = 2301080808|Implementing Version Control in S3 Bucket]] <!--1/26/24-->
+21. [[Assignment 1 – S3 Bucket Creation_Module6_AWS Weekday BC = 2301080808|Configuring an S3 Bucket for Versatile File Storage and Sharing in AWS]] <!--1/25/24 Done-->
+22. [[Assignment 2 – S3 Bucket Versioning_Module6_AWS Weekday BC = 2301080808|Implementing Version Control in S3 Bucket]] <!--1/26/24 Done-->
 23. [[Assignment 3 – S3 Website Hosting_Module6_AWS Weekday BC = 2301080808|Hosting Static Websites and Managing Lifecycle Policies in S3 Buckets on AWS]] <!--1/27/24-->
 24. [[Case Study – S3 Versioning And Website Hosting_Module6_AWS Weekday BC = 2301080808|Data Storage, Retrieval, and Website Hosting in S3 on AWS]] <!--1/29/24-->
 
