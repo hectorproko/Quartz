@@ -125,7 +125,7 @@ After creating the EC2 instances, I select them in the EC2 dashboard. Then, I cl
 	- Under "Application configuration", set the following:
 	    - Application name: XYZ-website
 	    - Compute platform: EC2/On-premises
-	<br>![[Pasted image 20231026102046.png|400]]
+	<br>![[Pasted image 20231026102046.png|500]]
 	
 	Deployment Groups: Create two deployment groups, namely QA and PROD.
 	- Role: `CodeDeployRole` *(with policies `AmazonEC2FullAccess` and `AWSCodeDeployRole`)*.
@@ -162,11 +162,11 @@ After creating the EC2 instances, I select them in the EC2 dashboard. Then, I cl
 	I start by naming my pipeline "Deploying_PHP" and selecting "V1" for the version. I use the default role.
 	
 	Next, for the source stage, I choose AWS CodeCommit as the source provider. I pick the repository "php_page" and set the branch to "php".
-	<br>![[Pasted image 20231026135039.png|400]]
+	<br>![[Pasted image 20231026135039.png|500]]
 	*I chose the "php" branch because that's where I stored the web pages and scripts*  
 	
 	In the "Add build stage", I selected AWS CodeBuild as my build provider. I set the region to "US East (N. Virginia)". When it came to selecting a project name, I realized I needed to create a new one. So, I opted to create "SimpleZIP" right there by clicking the "Create project" button. Once "SimpleZIP" was successfully created in the AWS CodeBuild console, I proceeded. I didn't add any environment variables at this stage. For the build type, I chose "Simple build" to trigger a single build.
-	<br>![[Pasted image 20231024145833.png|470]]
+	<br>![[Pasted image 20231024145833.png|550]]
 	*A BuildProject defines the environment in which you execute the build phase commands.*
 	
 	For the "Add deploy stage", I'll skip it for now. Once I edit the pipeline, I'll incorporate all the deploy stages.
