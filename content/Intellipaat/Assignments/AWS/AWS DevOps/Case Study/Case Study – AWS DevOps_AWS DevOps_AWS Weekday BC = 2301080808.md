@@ -172,7 +172,8 @@ After creating the EC2 instances, I select them in the EC2 dashboard. Then, I cl
 	For the "Add deploy stage", I'll skip it for now. Once I edit the pipeline, I'll incorporate all the deploy stages.
 	
 	Both stages have completed without any issues as indicated by the green checkmarks. Next, I'll proceed by clicking the "Edit" button to make necessary adjustments.
-	<br>![[IntelliPaat/Assignments/AWS/AWS DevOps/Case Study/pipeline.png]]
+	
+	<br>![[pipeline.png]]
 	
 	
 	I've added three new stages titled "QA", "PROD", and "Beanstalk" by clicking the "Add stage" button. For each stage, there's an option to include specific actions. 
