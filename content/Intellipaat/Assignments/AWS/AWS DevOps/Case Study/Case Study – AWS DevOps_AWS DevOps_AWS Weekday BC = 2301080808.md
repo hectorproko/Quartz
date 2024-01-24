@@ -202,9 +202,9 @@ After creating the EC2 instances, I select them in the EC2 dashboard. Then, I cl
 
 > [!Success]
 > **Beanstalk**
-> <br>![[Pasted image 20231026143451.png]]
+> <br>![[Pasted image 20231026143451.png]]  
 > **Server1 (QA)**
-> <br>![[Pasted image 20231026143556.png]]
+> <br>![[Pasted image 20231026143556.png]]  
 > **Server 2 (PROD)**
-> <br>![[Pasted image 20231026143634.png]]``
+> <br>![[Pasted image 20231026143634.png]]  
 
