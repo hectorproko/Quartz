@@ -182,12 +182,12 @@ After creating the EC2 instances, I select them in the EC2 dashboard. Then, I cl
 	To define actions for these stages, I'll proceed by clicking the "Add action group" button within each stage.
 	
 	For the "QA" stage, an action group named "Deploying-QA" has been set up. It utilizes AWS CodeDeploy as the action provider and targets the "US East (N. Virginia)" region. The input artifact selected is "BuildArtifact". Within this action, the application name defined is "QX-XYZ-Website" and the deployment group is "QA".
-	<br>![[QA Action Group.png|450]]
+	<br>![[QA Action Group.png|550]]
 	
 	Similarly, for the "PROD" stage, an [[PROD Action Group.png|action group]] has been created with settings that are largely consistent with the "QA" action group, but with a different deployment group specified.
 	
 	For the "Beanstalk" stage, an action group named "Deploying-Beanstalk" has been established. This action uses AWS Elastic Beanstalk as its provider and is directed at the "US East (N. Virginia)" region. The input artifact chosen is "BuildArtifact". The specified application within this action is "[[PHP Beanstalk app.png|PHP_app]]" and it targets the "[[PHP beanstalk env.png|PHPapp-env]]" environment in Elastic Beanstalk.
-	<br>![[Beanstalk Action Group.png|450]]
+	<br>![[Beanstalk Action Group.png|550]]
 	
 	
 	
