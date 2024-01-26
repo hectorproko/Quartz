@@ -3,10 +3,8 @@ tags:
   - "#Terraform"
   - IaC
 ---
-==Pending Clean Up==
-# AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1/4
-Project 16 Terraform
 
+# AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1/4
 
 After manually provisioning [[Project15 AWS CLOUD SOLUTION FOR 2 COMPANY WEBSITES USING A REVERSE PROXY TECHNOLOGY|AWS Solution for 2 Company Websites using a Reverse Proxy]] we'll provision it again this time automating the process with Infrastructure as Code (IaC) using Terraform.
 
@@ -359,7 +357,7 @@ resource "aws_subnet" "public" {
 
   
 <details close>
-<summary>Now the entire configuration looks like this</summary>
+<summary>Now the entire main.tf configuration looks like this</summary>
 
 ``` bash
 # Get list of availability zones
@@ -411,14 +409,12 @@ resource "aws_subnet" "public" {
 
 
 
-### INTRODUCING VARIABLES.TF &AMP; TERRAFORM.TFVARS
+### INTRODUCING `VARIABLES.TF` & `TERRAFORM.TFVARS`
 
 To make our code a lot more readable and better structured instead of having a long list of variables in `main.tf` file I'll move out some parts of the configuration content to other files.
 
-
-We will put all **variable declarations** in a separate file and provide non **default values** to each of them  
-* Created a new file `variables.tf` where I moved all the **variable declarations**  
-* Created another file `terraform.tfvars` where I **set values** for each of the variables  
+1. Created a new file named `variables.tf` to house all the **variable declarations**.
+2. Created another file named `terraform.tfvars` where I have **set values** for each of the variables."
 
 <details close>
 <summary>Maint.tf</summary>
@@ -494,7 +490,7 @@ preferred_number_of_public_subnets = 2
 </details>
 
 
-Now the file structure in the **PBL** folder look like this  
+Now the file structure in the **PBL** folder looks like this:
 ``` bash
 hector@hector-Laptop:~/Project16-17/PBL$ tree
 .
@@ -505,6 +501,5 @@ hector@hector-Laptop:~/Project16-17/PBL$ tree
 └── variables.tf
 
 0 directories, 5 files
-hector@hector-Laptop:~/Project16-17/PBL$
 ```
 We run `terraform plan` to ensure everything works  
