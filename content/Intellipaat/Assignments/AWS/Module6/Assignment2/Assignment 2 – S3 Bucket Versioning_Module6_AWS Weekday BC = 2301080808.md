@@ -28,7 +28,7 @@ title: Implementing Version Control in S3 Bucket
 **Step 3:** I then went to the "Properties" tab to adjust the settings.
 
 **Step 4:** I found the "Versioning" section and clicked on “Edit”.
-<br>![[Pasted image 20230927220740.png]]
+<br>![[Pasted image 20230927220740.png]]  
 **Step 5:** I saw the option to enable versioning, so I toggled the switch to "Enable".
 
 **Step 6:** After confirming the change, I saved it to activate versioning for my bucket.

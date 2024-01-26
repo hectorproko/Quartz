@@ -93,9 +93,8 @@ hector-dev-terraform-bucket #Returns the name of our bucket`
 [[Installing Terraform#Linux|Installing Terraform: Linux]]
 
 
-Our current directory structure consists of a folder called `PBL` with a file inside `main.tf`   
+Our current directory structure consists of a folder called `PBL` with a file named `main.tf` inside it. The `main.tf` file uses AWS as a provider and contains a resource configuration to create a VPC.
 
-`main.tf` **AWS** as a provider, and a resource to create a VPC  
 
 ``` bash
 #Provider block informs Terraform that we intend to build infrastructure within AWS.
@@ -112,6 +111,7 @@ resource "aws_vpc" "main" {
   enable_classiclink_dns_support = "false"
 }
 ```
+
 For Terraform to work we need to download the necessary **plugin**. **Plugins** are used by [providers](https://www.terraform.io/language/providers) and [provisioners](https://www.terraform.io/language/resources/provisioners/syntax). So far we only have a **provider** in our `main.tf` file. So, Terraform will just download **plugin** for **AWS** provider.  
 
 We accomplish this with `terraform init`  
@@ -153,9 +153,7 @@ commands will detect it and remind you to do so if necessary.
 </details>
 
 
-
-
-Notice that a new directory has been created: `.terraform` This is where **Terraform** keeps **plugins**. Generally, it is safe to delete this folder. You just have to execute `terraform init` again, to download them.  
+A new directory `.terraform` has been created along with :  This is where **Terraform** keeps **plugins**. Generally, it is safe to delete this folder. We just have to execute `terraform init` again, to download them.  
 
 ``` bash
 hector@hector-Laptop:~/Project16-17/PBL$ ls -a
@@ -163,22 +161,17 @@ hector@hector-Laptop:~/Project16-17/PBL$ ls -a
 ```
 *In addition, [.terraform.lock.hcl](https://www.terraform.io/language/files/dependency-lock) Dependency Lock File*
 
+Now, we will create the only resource we just defined, 'aws_vpc.' Before creating anything, we should check what Terraform intends to provision by running `terraform plan`. If we are satisfied with the planned changes, we can execute `terraform apply`.
 
-Now we create the only resource we just defined `aws_vpc`. Before creating anything we should check to see what **terraform** intends to provision with `terraform plan` 
-If we are happy with changes planned we execute `terraform apply`  
+Files generated after running **plan** and **apply**:
+- `terraform.tfstate`  is how **Terraform** keeps itself up to date with the exact **state** of the infrastructure. It reads this file to know what already exists, what should be added, or destroyed based on the entire terraform code that is being developed.  
 
-
-Files generated after running **plan** and **apply**  
+- `terraform.tfstate.lock.info` *(gets deleted immediately)* This is what **Terraform** uses to track, who is running its code against the infrastructure at any point in time. This is very important for teams working on the same Terraform repository at the same time. The lock prevents a user from executing **Terraform** configuration against the same infrastructure when another user is doing the same – it allows to avoid duplicates and conflicts.  
 ``` bash
 hector@hector-Laptop:~/Project16-17/PBL$ ls
 main.tf  terraform.tfstate  terraform.tfstate.backup
 hector@hector-Laptop:~/Project16-17/PBL$
 ```
-
-`terraform.tfstate`  is how **Terraform** keeps itself up to date with the exact **state** of the infrastructure. It reads this file to know what already exists, what should be added, or destroyed based on the entire terraform code that is being developed.  
-
-`terraform.tfstate.lock.info` *(gets deleted immediately)* This is what **Terraform** uses to track, who is running its code against the infrastructure at any point in time. This is very important for teams working on the same Terraform repository at the same time. The lock prevents a user from executing **Terraform** configuration against the same infrastructure when another user is doing the same – it allows to avoid duplicates and conflicts.  
-
 
 Lets create the first 2 **public subnets** by adding below configuration to the `main.tf` file:
 ``` bash
@@ -202,16 +195,15 @@ Lets create the first 2 **public subnets** by adding below configuration to the 
 
 Once again we run `terraform plan` and `terraform apply`  
 
-**Observations:**  *(Best Practices)*     
-*Hard coded values:*  
-`availability_zone` and `cidr_block` arguments are **hard coded** and our goal should always be to make our work **dynamic**  
-*Multiple Resource Blocks:*  
-We have declared multiple **resource blocks** for each subnet in the code. We need to create a single resource block that can **dynamically** create resources without specifying **multiple blocks**.  
+> **Observations:**  *(Best Practices)*     
+> *Hard coded values:*  
+> `availability_zone` and `cidr_block` arguments are **hard coded** and our goal should always be to make our work **dynamic**  
+> *Multiple Resource Blocks:*  
+> We have declared multiple **resource blocks** for each subnet in the code. We need to create a single resource block that can **dynamically** create resources without specifying **multiple blocks**.  
 
-### FIXING THE PROBLEMS BY CODE REFACTORING
+### CODE REFACTORING TO AVOID HARD CODED VALUES
 
-**Fixing Hard Coded Values:** We will introduce variables, and remove hard coding.  
-Starting with the *provider block*, we declare a **variable** named `region`, give it a default value, and update the provider section by referring to the declared variable.
+We will introduce variables starting with the *provider block*, we declare a **variable** named `region`, give it a default value, and update the provider section by referring to the declared variable.
 ``` bash
 variable "region" {
   default = "us-east-1"
@@ -222,8 +214,9 @@ provider "aws" {
 }
 ```
 
-Doing the same to `cidr` value in the vpc block, and all the other arguments.  
+Doing the same for all arguments in the `aws_vpc` block
 ``` bash
+#Variables
 variable "vpc_cidr" {
   default = "10.0.0.0/16"
 }
@@ -244,10 +237,6 @@ variable "enable_classiclink_dns_support" {
   default = "false"
 }
 
-provider "aws" {
-  region = var.region
-}
-
 # Create VPC
 resource "aws_vpc" "main" {
   cidr_block                     = var.vpc_cidr
@@ -257,9 +246,11 @@ resource "aws_vpc" "main" {
   enable_classiclink_dns_support = var.enable_classiclink
 }
 ```
-	
-**Fixing multiple resource blocks:** We are going to introduce **Loops** & **Data sources**  
-	
+
+> So far everything its in main.tf
+
+### Loops & **Data sources**  
+
 We will explore the use of Terraform’s **Data Sources** to fetch information outside of Terraform *(in this case, from AWS)*  
 
 Let us fetch Availability zones from AWS, and replace the hard coded value in the subnet’s availability_zone section.
