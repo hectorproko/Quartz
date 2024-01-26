@@ -37,7 +37,7 @@ Continuing from [[Assignment 1 – AWS Migration_Module11_AWS Weekday BC = 23010
    <br>![[Pasted image 20231015224130.png]]
    <br>![[Pasted image 20231015230609.png]]
    
-### **Creating the "MigrationRole" in AWS IAM**
+### Creating the "MigrationRole" in AWS IAM
 
 1. **Role Creation**:
     - I navigate to the AWS IAM console and select the option to create a new role.
@@ -68,10 +68,10 @@ Continuing from [[Assignment 1 – AWS Migration_Module11_AWS Weekday BC = 23010
 [[migration-role-review.png|Role Review]]
 
 
-### **Using AWS CLI:**
+### Using AWS CLI:
 
 1. **I've already installed the AWS CLI.**
-   [Installing intructions](https://aws.amazon.com/cli/)
+   [Installing instructions](https://aws.amazon.com/cli/)
 2. **Now, I'll generate an access key for AWS CLI use:**
     - I navigate to the AWS Management Console.
     - I click on my account (e.g., `hrodGmail`) at the top right.

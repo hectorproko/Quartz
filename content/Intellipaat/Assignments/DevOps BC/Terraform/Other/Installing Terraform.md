@@ -20,6 +20,40 @@ tags:
 
   
 ### Linux
-Same as [[Devops BC = 2330070508#Lecture 4 -Installing Terraform For AWS|Lecture 4 -Installing Terraform For AWS]]
 
-We had to install in [[PART1_PROJECT_16]]
+> From [[PART1_PROJECT_16]]
+
+
+Update the system packages:
+```bash
+sudo apt update
+```
+
+Install the `wget` and `unzip` packages to download and extract the Terraform setup:
+```bash
+sudo apt-get install wget unzip -y
+```
+
+
+```bash
+hector@hector-Laptop:~/Project16-17$ sudo wget https://releases.hashicorp.com/terraform/0.14.7/terraform_0.14.7_linux_amd64.zip #download terraform setup
+
+hector@hector-Laptop:~/Project16-17$ ls #zip file downloaded
+PBL  README.md  terraform_1.1.9_linux_amd64.zip
+
+hector@hector-Laptop:~/Project16-17$ sudo unzip terraform_1.1.9_linux_amd64.zip #Extract the downloaded setup using unzip
+Archive:  terraform_1.1.9_linux_amd64.zip
+inflating: terraform
+
+hector@hector-Laptop:~/Project16-17$ ls #terraform extracted
+PBL  README.md  terraform  terraform_1.1.9_linux_amd64.zip
+
+hector@hector-Laptop:~/Project16-17$ sudo mv terraform /usr/local/bin/ #moving extracted setup to /bin directory
+```
+
+> [!success]
+> ```bash
+> hector@hector-Laptop:~/Project16-17$ terraform -v #checking `version (not latest)
+> Terraform v1.1.9
+> on linux_amd64
+> ```

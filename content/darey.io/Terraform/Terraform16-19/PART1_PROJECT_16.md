@@ -7,50 +7,49 @@ tags:
 # AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1/4
 Project 16 Terraform
 
-After you have built AWS infrastructure for 2 websites manually, it is time to automate the process using Terraform.
-Let us start building the same set up with the power of Infrastructure as Code (IaC)
+
+After manually provisioning [[Project15 AWS CLOUD SOLUTION FOR 2 COMPANY WEBSITES USING A REVERSE PROXY TECHNOLOGY|AWS Solution for 2 Company Websites using a Reverse Proxy]] we'll provision it again this time automating the process with Infrastructure as Code (IaC) using Terraform.
 
 ![Markdown Logo](https://raw.githubusercontent.com/hectorproko/AWS-CLOUD-SOLUTION-FOR-2-COMPANY-WEBSITES-USING-A-REVERSE-PROXY-TECHNOLOGY/main/images/tooling_project_15.png)  
 
 ### AUTOMATE INFRASTRUCTURE WITH IAC USING TERRAFORM PART 1
-You must have completed Terraform course from the Learning dashboard
 
-Create an IAM user, name it terraform (ensure that the user has only programatic access to your AWS account) and grant this user AdministratorAccess permissions.
+> [!attention]- Outdated: Programmatic User
+> I am creating an IAM user named 'terraform' and ensuring that the user has only programmatic access to my AWS account. I will also grant this user AdministratorAccess permissions.
+>
+> IAM > Users > Add users  
+> * **Step1**:  
+>   * User name: **terraform**  
+>   * Select AWS credential type: **Access key - Programmatic access**  
+> * **Step2**:  
+>   * Create group  
+>     * Group name: **terraform**  
+>     * Policy name:  `AdministratorAccess`  
+> * **Step3**:  
+>   * Add tags  
+>     * Name **terraform**  
+> * **Step4**:  
+>     * Review  
+> * **Step5**:  
+>     * Store Access key ID and Secret access key  
+> 
+> ![[images/users.png]]
 
-IAM > Users > Add users  
-* **Step1**:  
-  * User name: **terraform**  
-  * Select AWS credential type: **Access key - Programmatic access**  
-* **Step2**:  
-  * Create group  
-    * Group name: **terraform**  
-    * Policy name:  `AdministratorAccess`  
-* **Step3**:  
-  * Add tags  
-    * Name **terraform**  
-* **Step4**:  
-    * Review  
-* **Step5**:  
-    * Store Access key ID and Secret access key  
+> [!done] Updated: Programmatic User
+> I will be using the same AWS CLI setup from [[Assignment 2 – AWS Migration_Module11_AWS Weekday BC = 2301080808#**Using AWS CLI **|Assignment 2 – AWS Migration]]
 
 
-![Markdown Logo](https://raw.githubusercontent.com/hectorproko/AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1-to-4/main/images/users.png)  
-
-So I have pip installed
-
-pip install boto3
-
+I have installed pip and used it to install boto3 by running `pip install boto3`. After the installation, I confirmed its successful completion.
 ``` bash
 hector@hector-Laptop:~$ pip list | grep boto3
 boto3                        1.17.112
-hector@hector-Laptop:~$
 ```
 
-I will use AWS CLI to authenticate so I make sure I have installed
+
+I will use AWS CLI for authentication, so I want to make sure it's installed.
 ``` bash
 hector@hector-Laptop:~$ aws --version
 aws-cli/1.22.71 Python/3.8.10 Linux/5.4.0-109-generic botocore/1.24.16
-hector@hector-Laptop:~$
 ```
 
 Going to set authentication configuration on AWS CLI for user terraform  
@@ -62,11 +61,10 @@ AWS Access Key ID [****************HQXB]: xxxxxxxxxxxxxxxxxxxx
 AWS Secret Access Key [****************equ5]: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 Default region name [us-east-1]:
 Default output format [None]:
-hector@hector-Laptop:~$
 ```
 
-Create an [S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) to store Terraform state file.   
-Amazon S3 > Buckets > Create Bucket  
+Created an [S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html) to store the Terraform state file.   
+`Amazon S3 > Buckets > Create Bucket  `
 * General Configuration  
   * Bucket name: `hector-dev-terraform-bucket`  
   * AWS Region: `us-east-1 ` 
@@ -74,9 +72,9 @@ Amazon S3 > Buckets > Create Bucket
   * Name `hector-dev-terraform-bucket`  
 
 
-![Markdown Logo](https://raw.githubusercontent.com/hectorproko/AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1-to-4/main/images/buckets.png)  
+![[buckets.png]]
 
-When you have configured authentication and installed `boto3`, make sure you can programmatically access your
+After I configure authentication and installed `boto3` I test the programmatic access with S3
 ``` bash
 hector@hector-Laptop:~$ python3
 Python 3.8.10 (default, Mar 15 2022, 12:22:08)
@@ -92,28 +90,8 @@ hector-dev-terraform-bucket #Returns the name of our bucket`
 ```
 ### VPC | SUBNETS | SECURITY GROUPS
 
-Update the system packages
-udo apt update
-Install the wget and unzip package to download and extract terraform setup
+[[Installing Terraform#Linux|Installing Terraform: Linux]]
 
-sudo apt-get install wget unzip -y
-
-Installing **terraform**   
-``` bash
-hector@hector-Laptop:~/Project16-17$ sudo wget https://releases.hashicorp.com/terraform/0.14.7/terraform_0.14.7_linux_amd64.zip #download terraform setup
-hector@hector-Laptop:~/Project16-17$ ls #zip file downloaded
-PBL  README.md  terraform_1.1.9_linux_amd64.zip
-hector@hector-Laptop:~/Project16-17$ sudo unzip terraform_1.1.9_linux_amd64.zip #Extract the downloaded setup using unzip
-Archive:  terraform_1.1.9_linux_amd64.zip
-inflating: terraform
-hector@hector-Laptop:~/Project16-17$ ls #terraform extracted
-PBL  README.md  terraform  terraform_1.1.9_linux_amd64.zip
-hector@hector-Laptop:~/Project16-17$ sudo mv terraform /usr/local/bin/ #moving extracted setup to /bin directory
-hector@hector-Laptop:~/Project16-17$ terraform -v #checking `version (not latest)
-Terraform v1.1.9
-on linux_amd64
-hector@hector-Laptop:~/Project16-17$
-```
 
 Our current directory structure consists of a folder called `PBL` with a file inside `main.tf`   
 
