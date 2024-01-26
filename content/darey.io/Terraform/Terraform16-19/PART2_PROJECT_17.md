@@ -69,7 +69,7 @@ tags = merge(
 
 > [!NOTE] format()
 > `format("%s-%s!", aws_vpc.main.id,"IG")`
-> In the example above the **first** of the `%s` takes the interpolated value of `aws_vpc.main.id` while the **second** `%s` appends a literal string IG and finally an exclamation mark is added in the end.  
+> In this example the **first** of the `%s` takes the interpolated value of `aws_vpc.main.id` while the **second** `%s` appends a literal string IG and finally an exclamation mark is added in the end.  
 > 
 
 > [!info]
@@ -190,14 +190,12 @@ Now, when we run `terraform plan` and `terraform apply`, it should add the follo
 
 > Documentation: [**IAM**](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html) and [**Roles**](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html)  
 
-We want to pass an **IAM role** to our **EC2 instances** to give them **access** to some specific resources, so we need to do the following:  
-1. Create [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html)  
+We want to pass an **IAM** role to our **EC2** instances to grant them access to specific resources. To implement this, we will add the following code to a new file named [roles.tf](https://github.com/hectorproko/AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1-to-4/blob/main/PBL/modules/VPC/roles.tf)
+
+#### 1. Create [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html)  
    
-*Assume Role uses Security Token Service (STS) API that returns a set of temporary security credentials that you can use to access AWS resources that you might not normally have access to. These temporary credentials consist of an access key ID, a secret access key, and a security token. Typically, you use AssumeRole within your account or for cross-account access.*  
+> Assume Role uses Security Token Service (STS) API that returns a set of temporary security credentials that you can use to access AWS resources that you might not normally have access to. These temporary credentials consist of an access key ID, a secret access key, and a security token. Typically, you use AssumeRole within your account or for cross-account access.  
 
-
-
-Adding the following code to a new file named [roles.tf](https://github.com/hectorproko/AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1-to-4/blob/main/PBL/modules/VPC/roles.tf)
 
 ``` bash
 resource "aws_iam_role" "ec2_instance_role" {
@@ -225,7 +223,7 @@ resource "aws_iam_role" "ec2_instance_role" {
 ```
 In this code we are creating **AssumeRole** with **AssumeRole policy**. It grants to an entity, in our case it is an **EC2**, permissions to assume the role.  
 
-2. Create **IAM policy** for this role  
+#### 2. Create **IAM policy** for this role  
    
 This is where we need to define a required policy (i.e., permissions) according to our requirements. For example, allowing an **IAM role** to perform action **describe** applied to **EC2** instances:  
 ``` bash
@@ -253,7 +251,8 @@ tags = merge(
 }
 ```
 
-3. Attach the **Policy** to the **IAM Role**
+#### 3. Attach the **Policy** to the **IAM Role**
+
 This is where, we will be attaching the policy which we created above, to the role we created in the first step.  
 ``` bash
 resource "aws_iam_role_policy_attachment" "test-attach" {
@@ -261,21 +260,23 @@ resource "aws_iam_role_policy_attachment" "test-attach" {
   policy_arn = aws_iam_policy.policy.arn
 }
 ```
-4. Create an **Instance Profile** and interpolate the IAM Role  
+
+#### 4. Create an **Instance Profile** and interpolate the IAM Role  
+
 ``` bash
 resource "aws_iam_instance_profile" "ip" {
   name = "aws_instance_profile_test"
   role =  aws_iam_role.ec2_instance_role.name
 }
 ```
-For now we are done with **Identity and Management**  
 
+> [!done] For now we are done with **Identity and Management**  
+ 
 ### CREATE SECURITY GROUPS
 
-**Terraform Documentation:** [Security Group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group) and [Security Group Rule](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule)  
+> Terraform Documentation: [Security Group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group) and [Security Group Rule](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule)  
 
-
-We are going to create all the **security groups** in a single file `security.tf`, then we are going to reference a security group within each resources that needs it  
+We will create all the security groups in a single file named `security.tf` and then we will reference these security groups within each resource as needed.
 
 **NOTE**: We used the `aws_security_group_rule` to reference another **security group** in a **security group**  
 
