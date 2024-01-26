@@ -272,11 +272,6 @@ availability_zone       = data.aws_availability_zones.available.names[count.inde
 }
 ```
 
-
-> [!attention] Not ready yet
-> The line `cidr_block              = "10.0.1.0/24"` will fail in the second iteration of the loop.
-
-
 > [!NOTE] The data resource
 > `data.aws_availability_zones.available.names[count.index]` will return a list object that contains a list of AZs. In this case the `counter` is set to 2 so it will return something like this `["us-east-1a", "us-east-1b"]`  
 > 
@@ -287,24 +282,35 @@ availability_zone       = data.aws_availability_zones.available.names[count.inde
 > ```
 > 
 
-If we run Terraform with this configuration, it may succeed for the first time, but by the time it goes into the second loop, it will fail because we still have `cidr_block` hard coded. The same `cidr_block` cannot be created twice within the same VPC. So...
 
-**Let’s make `cidr_block` dynamic.** 
-We will introduce a function `cidrsubnet()` that works like an algorithm to dynamically create a subnet CIDR per AZ. Regardless of the number of subnets created, it takes care of the cidr value per subnet.  
+> [!attention] cidr_block = "10.0.1.0/24"
+> 
+> If we run Terraform with this configuration, it may succeed for the first time, but by the time it goes into the second iteration, it will fail because we still have `cidr_block` hard coded. The same `cidr_block` cannot be created twice within the same VPC. 
 
-Its parameters are **cidrsubnet(`prefix`, `newbits`, `netnum`)**  
-* The `prefix` parameter must be given in CIDR notation, same as for VPC.
-* The `newbits` parameter is the number of additional bits with which to extend the prefix. For example, if given a prefix ending with /16 and a newbits value of 4, the resulting subnet address will have length /20
-* The `netnum` parameter is a whole number that can be represented as a binary integer with no more than newbits binary digits, which will be used to populate the additional bits added to the prefix   
 
-Testing **terraform console**  
+> [!done] Let’s make `cidr_block` dynamic.
+> We will introduce a function `cidrsubnet()` that works like an algorithm to dynamically create a subnet CIDR per AZ. Regardless of the number of subnets created, it takes care of the cidr value per subnet.  
+> 
+> > [!note]
+> > Its parameters are **cidrsubnet ( `prefix`, `newbits`, `netnum`)**  
+> > * The `prefix` parameter must be given in CIDR notation, same as for VPC.
+> > * The `newbits` parameter is the number of additional bits with which to extend the prefix. For example, if given a prefix ending with `/16` and a `newbits` value of 4, the resulting subnet address will have length `/20`
+> > * The `netnum` parameter is a whole number that can be represented as a binary integer with no more than `newbits` binary digits, which will be used to populate the additional bits added to the prefix   
+> > 
+> 
+
+Testing `cidrsubnet` in **terraform console**  
+
 ``` bash
 hector@hector-Laptop:~$ terraform console
 > cidrsubnet("172.16.0.0/16", 4, 0)
 "172.16.0.0/20"
 >
 ```
-We update the configuration  
+
+
+
+We update the configuration:  
 ``` bash
 # Create public subnet1
 resource "aws_subnet" "public" { 
@@ -316,16 +322,18 @@ resource "aws_subnet" "public" {
 }
 ```
 
-**The final problem to solve is removing hard coded `count` value.**  
-*We'll introduce `length()` function, which basically determines the length of a given list, map, or string.*
+**Removing hard coded `count` value.**  
+> We'll introduce `length()` function, which basically determines the length of a given list, map, or string.
 
-Declare a variable to store the desired number of public subnets, and set the default value
+Declaring a variable to store the desired number of public subnets, and set the default value
 ``` bash	
 variable "preferred_number_of_public_subnets" {
   default = 2
 }
 ```
-Next, update the count argument with a condition. Terraform needs to check first if there is a desired number of subnets. Otherwise, use the data returned by the length function. See how that is presented below.
+
+
+Next, we will update the 'count' argument with a condition. Terraform should first check if there is a desired number of subnets. If not, it should use the data returned by the 'length' function. Here's how it is presented below:
 
 ``` bash	
 # Create public subnets
@@ -338,11 +346,12 @@ resource "aws_subnet" "public" {
 }
 ```
 
-Now lets break it down: `count  = var.preferred_number_of_public_subnets == null ? length(data.aws_availability_zones.available.names) : var.preferred_number_of_public_subnets`  
-
-* The first part `var.preferred_number_of_public_subnets == null` checks if the value of the variable is set to `null` or has some value defined.
-* The second part `?` and `length(data.aws_availability_zones.available.names)` means, if the first part is true, then use this. In other words, if preferred number of public subnets is `null` (Or not known) then set the value to the data returned by `length` function *(number of subnets created will equal amount of AZ)*
-* The third part `:` and `var.preferred_number_of_public_subnets` means, if the first condition is false, i.e preferred number of public subnets is `not null` then set the value to whatever is defined in `var.preferred_number_of_public_subnets`  
+> [!info] Breaking it down:
+> `count  = var.preferred_number_of_public_subnets == null ? length(data.aws_availability_zones.available.names) : var.preferred_number_of_public_subnets`  
+> 
+> * The first part `var.preferred_number_of_public_subnets == null` checks if the value of the variable is set to `null` or has some value defined.
+> * The second part `?` and `length(data.aws_availability_zones.available.names)` means, if the first part is true, then use this. In other words, if preferred number of public subnets is `null` (Or not known) then set the value to the data returned by `length` function *(number of subnets created will equal amount of AZ)*
+> * The third part `:` and `var.preferred_number_of_public_subnets` means, if the first condition is false, i.e preferred number of public subnets is `not null` then set the value to whatever is defined in `var.preferred_number_of_public_subnets`  
 
 
   
