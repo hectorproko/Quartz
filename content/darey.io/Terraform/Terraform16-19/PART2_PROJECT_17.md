@@ -278,8 +278,6 @@ resource "aws_iam_instance_profile" "ip" {
 
 We will create all the security groups in a single file named `security.tf` and then we will reference these security groups within each resource as needed.
 
-**NOTE**: We used the `aws_security_group_rule` to reference another **security group** in a **security group**  
-
 <details close>
 <summary>security.tf</summary>
 
@@ -490,12 +488,18 @@ resource "aws_security_group_rule" "inbound-mysql-webserver" {
 ```
 </details>
 
+> [!NOTE]- Note on `aws_security_group_rule`:
+> The `aws_security_group_rule` resource in Terraform is instrumental for detailed management of ingress and egress rules within AWS security groups. It allows the creation of granular and specific rules, separate from the main security group configuration.
+> 
+> A key attribute of this resource is `source_security_group_id`. This attribute enables referencing another security group as the source of traffic. This is particularly useful when setting up network rules based on the source security group, rather than specific IP addresses or CIDR ranges. It simplifies configurations where instances in different security groups need to communicate with each other, ensuring dynamic and scalable security management.
+
 
 ### CREATE CERTIFICATE FROM AMAZON CERIFICATE MANAGER
 
 Created [cert.tf](https://github.com/hectorproko/AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1-to-4/edit/main/PBL/modules/ALB/cert.tf) file and add the following code snippets to it.  
 
-**Terraform Documentation**: [AWS Certificate manager](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/acm_certificate) 
+> Terraform Documentation: [AWS Certificate manager](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/acm_certificate) 
+
 <details close>
 <summary>cert.tf</summary>
 
@@ -574,16 +578,14 @@ resource "aws_route53_record" "wordpress" {
 </details>
 
 
-Creating an **external** *(Internet facing)* **Application Load Balancer (ALB)**  
-Create a file called alb.tf  
-First we will create the **ALB**, then we create the **target group** and lastly we will create the **listener rule**.  
+### (External) Application Load Balancer (ALB)
+> (Internet facing)
 
-**Terraform Documentation** of resources:
-* [ALB](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb)
-* [ALB-target](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_target_group)
-* [ALB-listener](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_listener)
+Created a file called [alb.tf](https://github.com/hectorproko/AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1-to-4/blob/main/PBL/modules/ALB/alb.tf) to create the **ALB**, then we create the **target group** and lastly we will create the **listener rule**.  
+
+> Terraform Documentation: [ALB](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb), [ALB-target](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_target_group), [ALB-listener](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lb_listener)
   
-We need to create an **ALB** to balance the traffic between the Instances:  
+We create the **ALB** to balance the traffic between the Instances:  
 ``` bash
 resource "aws_lb" "ext-alb" {
   name     = "ext-alb"
@@ -651,10 +653,10 @@ output "alb_target_group_arn" {
 
 
 
-**Create an (Internal) [Application Load Balancer (ALB)](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-internal-load-balancers.html)**   
-For the **Internal Load balancer** we will follow the same concepts with the external load balancer.  
+### (Internal) [Application Load Balancer (ALB)](https://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-internal-load-balancers.html)
 
-Add the code snippets inside the `alb.tf` file  
+For the **Internal Load Balancer**, we will apply the same concepts as with the external load balancer. We will achieve this by creating an `alb.tf` file with the following content.
+
 ``` bash
 #Internal Load Balancers for webservers
 #---------------------------------
@@ -679,7 +681,8 @@ resource "aws_lb" "ialb" {
 }
 ```
 
-To inform our **ALB** to where route the traffic we need to create a [**Target Group**](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-target-groups.html) to point to its targets:
+To instruct our **ALB** on where to route traffic, we need to create a [**Target Group**](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-target-groups.html) to define its targets:
+
 ``` bash
 # --- target group  for wordpress -------
 resource "aws_lb_target_group" "wordpress-tgt" {
@@ -715,7 +718,7 @@ name        = "tooling-tgt"
 }
 ```
 
-Then we will need to create a [**Listener**](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-listeners.html) for this **Target Group** 
+Then we create a [**Listener**](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-listeners.html) for this **Target Group** 
 ``` bash 
 # For this aspect a single listener was created for the wordpress which is default,
 # A rule was created to route traffic to tooling when the host header changes
@@ -745,25 +748,20 @@ resource "aws_lb_listener_rule" "tooling-listener" {
 }
 ```
 
-### CREATING AUSTOALING GROUPS
+### CREATING AUTOSCALING GROUPS
 
+In this section, we will create the **Auto Scaling Group (ASG)** to enable automatic scaling of the **EC2** instances based on application traffic.
 
-In this Section we will create the **Auto Scaling Group (ASG)** to be able to scale the **EC2s** out and in depending on the application traffic.
+Before configuring an ASG, we need to create the launch template.
 
-Before we start configuring an ASG, we need to create the launch template
+Considering our architecture, we require Auto Scaling Groups for **bastion**, **nginx**, **wordpress**, and **tooling**. Therefore, we will create two separate files.
 
-Based on our Architecture we need **Auto Scaling Groups** for **bastion**, **nginx**, **wordpress** and **tooling**, so we will create two files     
+- `asg-bastion-nginx.tf` will contain **Launch Template** and **Auto Scaling Group** for **Bastion** and **Nginx**  
+- `asg-wordpress-tooling.tf` will contain **Launch Template** and **Auto Scaling group** for **wordpress** and **tooling**  
 
-`asg-bastion-nginx.tf` will contain **Launch Template** and **Auto Scaling Group** for **Bastion** and **Nginx**  
-`asg-wordpress-tooling.tf` will contain **Launch Template** and **Auto Scaling group** for **wordpress** and **tooling**  
+> Terraform Documentation: [SNS-topic](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sns_topic), [SNS-notification](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/autoscaling_notification), [AutoScaling](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/autoscaling_group), [Launch-template](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/launch_template)
 
-Useful Terraform Documentation, go through this documentation and understand the arguement needed for each resources:
-* [SNS-topic](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/sns_topic)
-* [SNS-notification](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/autoscaling_notification)
-* [Austoscaling](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/autoscaling_group)
-* [Launch-template](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/launch_template)
-
-Create `asg-bastion-nginx.tf` and paste all the code snippet below;
+Created `asg-bastion-nginx.tf` with the following content:
 
 <details close>
 <summary>asg-bastion-nginx.tf</summary>
