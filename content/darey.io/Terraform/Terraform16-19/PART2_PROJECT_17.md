@@ -900,8 +900,7 @@ resource "aws_autoscaling_attachment" "asg_attachment_nginx" {
 ```
 </details>
 
-
-Autoscaling for **wordpress** and **tooling** will be created in a separate file `asg-wordpress-tooling.tf` with the following code  
+Created `asg-wordpress-tooling.tf` with the following content:
 
 <details close>
 <summary>asg-wordpress-tooling.tf</summary>
@@ -1016,22 +1015,16 @@ resource "aws_autoscaling_attachment" "asg_attachment_tooling" {
 ```
 </details>
 
-
-
-
 ### STORAGE AND DATABASE
 
-Terraform Documentation:  
-* [RDS](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/db_subnet_group)
-* [EFS](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/efs_file_system)
-* [KMS](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/kms_key)  
+> Terraform Documentation: [RDS](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/db_subnet_group), [EFS](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/efs_file_system), [KMS](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/kms_key)  
   
-**Create Elastic File System (EFS)**
+#### Creating Elastic File System (EFS)
+
 In order to create an EFS we need to create a [KMS key](https://aws.amazon.com/kms/getting-started/)  
+> **AWS Key Management Service (KMS)** makes it easy to create and manage cryptographic keys and control their use across a wide range of AWS services and in applications.  
 
-**AWS Key Management Service (KMS)** makes it easy to create and manage cryptographic keys and control their use across a wide range of AWS services and in applications.  
-
-Creating `efs.tf`  with the following code  
+Creating `efs.tf`  with the following content:  
 
 <details close>
 <summary>efs.tf</summary>
@@ -1122,10 +1115,9 @@ resource "aws_efs_access_point" "tooling" {
 ```
 </details>
 
-  
-**Create** [**MySQL RDS**](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_MySQL.html)  
+#### Creating [**MySQL RDS**](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_MySQL.html)  
 
-Creating **RDS** itself using the following snippet of code in `rds.tf` file  
+Creating `rds.tf`  with the following content:
 ``` bash
 # This section will create the subnet group for the RDS  instance using the private subnet
 resource "aws_db_subnet_group" "HRA-rds" {
@@ -1156,8 +1148,7 @@ resource "aws_db_instance" "HRA-rds" {
 }
 ```
 
-
-Declaring in `variables.tf` variables that we previosly gave reference to
+Defining variables in `variables.tf`
 
 <details close>
 <summary>variables.tf</summary>
@@ -1175,7 +1166,7 @@ variable "enable_dns_support" {
   type = bool
 }
 variable "enable_dns_hostnames" {
-  dtype = bool
+  type = bool
 }
 variable "enable_classiclink" {
   type = bool
@@ -1223,8 +1214,7 @@ variable "master-password" {
 ```
 </details>
 
-
-We need to update `terraform.tfvars`  to declare the **values** for the variables in our `varibales.tf `  
+We need to update `terraform.tfvars` to declare the values for the variables defined in our `variables.tf`.
 
 ``` bash
 region = "us-east-1"
@@ -1250,7 +1240,8 @@ tags = {
 }
 ```
 
-So far we have a long list of files that is not a bad start, but we are going to fix this using the concepts of **modules** in [Project 18](https://github.com/hectorproko/AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1-to-4/blob/main/PART3_PROJECT_18.md)  
+Up to this point, we have a long list of files, which is not a bad start. However, we are going to enhance our organization by implementing the concept of **modules** in [[PART3_PROJECT18_Backends]].
+
 
 <!--
 Secondly, our application wont work because in out shell script that was passed into the launch some endpoints like the RDs and EFS point is needed in which they have not been created yet. So in project 19 we will use our Ansible knowledge to fix this.
