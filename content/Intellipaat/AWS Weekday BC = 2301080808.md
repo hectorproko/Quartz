@@ -66,7 +66,7 @@ title: AWS Course Work
 ### AWS DevOps
 42. [[Assignment 1 – AWS DevOps_AWS DevOps_AWS Weekday BC = 2301080808|Setting Up a CodeCommit Repository and Migrating Data from GitHub]] <!--2/23/24 Done-->
 43. [[Assignment 2 – CodeDeploy_AWS DevOps_AWS Weekday BC = 2301080808|Implementing Automated Deployments with CodeDeploy and EC2]] <!--2/26/24 Done-->
-44. [[Assignment 3 – CodePipeline_AWS DevOps_AWS Weekday BC = 2301080808|Building a CI\/CD Pipeline with CodePipeline for PHP Applications]] <!--2/27/24-->
+44. [[Assignment 3 – CodePipeline_AWS DevOps_AWS Weekday BC = 2301080808|Building a CI CD Pipeline with CodePipeline for PHP Applications]] <!--2/27/24-->
 45. [[Case Study – AWS DevOps_AWS DevOps_AWS Weekday BC = 2301080808|Streamlining Development Workflow with CodeCommit, CodeDeploy, and CodePipeline for Multi-Stage Deployments]] <!--2/28/24-->
 
 ### Projects
