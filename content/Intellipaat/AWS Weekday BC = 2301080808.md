@@ -66,12 +66,12 @@ title: AWS Course Work
 ### AWS DevOps
 42. [[Assignment 1 – AWS DevOps_AWS DevOps_AWS Weekday BC = 2301080808|Setting Up a CodeCommit Repository and Migrating Data from GitHub]] <!--2/23/24 Done-->
 43. [[Assignment 2 – CodeDeploy_AWS DevOps_AWS Weekday BC = 2301080808|Implementing Automated Deployments with CodeDeploy and EC2]] <!--2/26/24 Done-->
-44. [[Assignment 3 – CodePipeline_AWS DevOps_AWS Weekday BC = 2301080808|Building a CI CD Pipeline with CodePipeline for PHP Applications]] <!--2/27/24-->
-45. [[Case Study – AWS DevOps_AWS DevOps_AWS Weekday BC = 2301080808|Streamlining Development Workflow with CodeCommit, CodeDeploy, and CodePipeline for Multi-Stage Deployments]] <!--2/28/24-->
+44. [[Assignment 3 – CodePipeline_AWS DevOps_AWS Weekday BC = 2301080808|Building a CI CD Pipeline with CodePipeline for PHP Applications]] <!--2/27/24 Done-->
+45. [[Case Study – AWS DevOps_AWS DevOps_AWS Weekday BC = 2301080808|Streamlining Development Workflow with CodeCommit, CodeDeploy, and CodePipeline for Multi-Stage Deployments]] <!--2/28/24 Done-->
 
 ### Projects
-46. [[Project 1 – Deploying A Multi-Tier Website Using AWS EC2_Projects_AWS Weekday BC = 2301080808|Implementing a Scalable, Multi-Tier Web Architecture on AWS with EC2 and RDS]] <!--2/29/24-->
-47. [[Project 3 – Publishing Amazon SNS Messages Privately_Projects_AWS Weekday BC = 2301080808|Implementing Secure Amazon SNS Messaging in a Private AWS Environment]] <!--2/30/24-->
+46. [[Project 1 – Deploying A Multi-Tier Website Using AWS EC2_Projects_AWS Weekday BC = 2301080808|Implementing a Scalable, Multi-Tier Web Architecture on AWS with EC2 and RDS]] <!--2/29/24 Done-->
+47. [[Project 3 – Publishing Amazon SNS Messages Privately_Projects_AWS Weekday BC = 2301080808|Implementing Secure Amazon SNS Messaging in a Private AWS Environment]] <!--3/01/24 Done-->
 
 
 <!--

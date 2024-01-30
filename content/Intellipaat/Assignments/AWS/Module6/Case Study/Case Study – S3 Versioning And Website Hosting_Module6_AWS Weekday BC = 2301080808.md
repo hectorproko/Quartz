@@ -66,7 +66,7 @@ After ensuring all the settings met my requirements, I finalized by clicking on 
 **Step 3:** Name the rule "AutoDeleteAfter75Days".
 
 **Step 4:** Choose "Expire current versions of objects" and set to 75 days.
-<br>![[Pasted image 20231005212125.png]]
+<br>![[Pasted image 20231005212125.png]]  
 **Step 5:** Save the rule.
 
 ---
@@ -102,7 +102,7 @@ By selecting and opening each version, I confirmed that the content corresponds 
 **Step 2:** Clicked "Edit" next to  "Static website hosting" .
 
 **Step 3:** Set 'index.html' as the Index document and 'error.html' as the Error document.
-<br>![[Pasted image 20230927223731.png]] ^d9a6c3
+<br>![[Pasted image 20230927223731.png]] 
 
 **Step 5:** Uploaded `index.htm` and `error.html` with the following content:
 `index.html`
@@ -160,7 +160,7 @@ With this configuration in place, any visits to "temp.hectorproko.com" will be r
 
 ---
 
-Once you've completed these steps, XYZ Corporation's requirements will be fully implemented. The data will be stored securely on AWS, with a lifecycle rule ensuring automatic deletion after 75 days. Additionally, the website will be hosted on AWS, with proper error handling in place.
+Once we've completed these steps, XYZ Corporation's requirements will be fully implemented. The data will be stored securely on AWS, with a lifecycle rule ensuring automatic deletion after 75 days. Additionally, the website will be hosted on AWS, with proper error handling in place.
 
 
 
