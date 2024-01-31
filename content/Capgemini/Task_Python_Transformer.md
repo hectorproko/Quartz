@@ -1,6 +1,5 @@
 ---
 tags:
-  - capgemini
   - "#Python"
 title: XSOAR Python Transformer Script
 ---
