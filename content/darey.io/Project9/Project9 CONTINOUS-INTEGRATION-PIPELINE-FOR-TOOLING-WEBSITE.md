@@ -5,7 +5,7 @@ tags:
   - LoadBalancer
   - Jenkins
   - webhooks
-  - CD/CD
+  - CI/CD
 ---
 
  ==*~~(old [Project 9](https://github.com/hectorproko/CONTINOUS-INTEGRATION-PIPELINE-FOR-TOOLING-WEBSITE))~~*==

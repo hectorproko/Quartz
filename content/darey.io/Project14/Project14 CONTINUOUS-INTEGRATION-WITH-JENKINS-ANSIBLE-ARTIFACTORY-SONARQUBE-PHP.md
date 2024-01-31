@@ -3,8 +3,8 @@ title: Continues Integration with Jenkins, Ansible, Artifactory, SonarQube & PHP
 tags:
   - Jenkins
   - Artifactory
-  - CD/CD
   - Ansible
+  - CI/CD
 ---
 
 ==*~~(old [Project 14](https://github.com/hectorproko/EXPERIENCE-CONTINUOUS-INTEGRATION-WITH-JENKINS-ANSIBLE-ARTIFACTORY-SONARQUBE-PHP/blob/main/Steps_Project14.md))~~*==
