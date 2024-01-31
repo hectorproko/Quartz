@@ -1,4 +1,8 @@
-#bash
+---
+tags:
+  - Bash
+---
+
 ## Purpose: Data Archiving for Disk Space Optimization
 
 This script helps free up disk space by archiving incident, entry, and indicator data from the `/var/lib/demisto/tenants/{TENANT_NAME}/data` and `/var/lib/demisto/data` folders and moving them to the `/backups/demisto-archive` directory.

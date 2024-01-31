@@ -1,4 +1,8 @@
-#bash
+---
+tags:
+  - Bash
+---
+
 
 Replaced by [[XSOAR Archive Script README]]
 
