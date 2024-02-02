@@ -5,6 +5,7 @@ tags:
   - CodeBuild
   - CodeDeploy
   - AWSDevOps
+  - CI/CD
 title: Streamlining Development Workflow with CodeCommit, CodeDeploy, and CodePipeline for Multi-Stage Deployments
 ---
 <!--
