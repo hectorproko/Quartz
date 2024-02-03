@@ -34,7 +34,7 @@ After manually provisioning [[Project15 AWS CLOUD SOLUTION FOR 2 COMPANY WEBSITE
 > ![[images/users.png]]
 
 > [!done] Updated: Programmatic User
-> I will be using the same AWS CLI setup from [[Assignment 2 – AWS Migration_Module11_AWS Weekday BC = 2301080808#**Using AWS CLI **|Assignment 2 – AWS Migration]]
+> I will be using the same AWS CLI setup from [[Assignment 2 – AWS Migration_Module11_AWS Weekday BC = 2301080808#Using AWS CLI|Assignment 2 – AWS Migration]]
 
 
 I have installed pip and used it to install boto3 by running `pip install boto3`. After the installation, I confirmed its successful completion.
