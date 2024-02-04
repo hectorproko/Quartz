@@ -3,7 +3,6 @@ tags:
   - "#Terraform"
   - IaC
 ---
-==Pending Clean Up==
 
 # AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-2/4
 
@@ -579,7 +578,7 @@ resource "aws_route53_record" "wordpress" {
 
 
 ### (External) Application Load Balancer (ALB)
-> (Internet facing)
+*Internet facing*
 
 Created a file called [alb.tf](https://github.com/hectorproko/AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1-to-4/blob/main/PBL/modules/ALB/alb.tf) to create the **ALB**, then we create the **target group** and lastly we will create the **listener rule**.  
 
@@ -1240,7 +1239,7 @@ tags = {
 }
 ```
 
-Up to this point, we have a long list of files, which is not a bad start. However, we are going to enhance our organization by implementing the concept of **modules** in [[PART3_PROJECT18_Backends]].
+Up to this point, we have a long list of files, which is not a bad start. However, we are going to enhance our organization by implementing the concept of **modules** in [[PART3_PROJECT18_Backends_Modules]].
 
 
 <!--
