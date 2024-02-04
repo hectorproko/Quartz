@@ -38,7 +38,7 @@ Steps to **Re-initialize** Terraform to use **S3 backend**: *(init terraform)*
 5. ###### Add outputs
 6. ###### terraform apply  
 
-#### Add S3 and DynamoDB resource blocks before deleting the local state file  
+# 1. Add S3 and DynamoDB resource blocks before deleting the local state file  
 <!--
 To get to know how lock in DynamoDB works, read the following article
 https://angelo-malatacca83.medium.com/aws-terraform-s3-and-dynamodb-backend-3b28431a76c1
@@ -68,7 +68,7 @@ resource "aws_s3_bucket" "terraform_state" {
 Since **Terraform** stores secret data inside the state files. **Passwords**, and **secret keys** processed by resources are always stored in there. Hence, you must consider to always enable encryption. You can see how we achieved that with [`server_side_encryption_configuration`](https://docs.aws.amazon.com/AmazonS3/latest/userguide/serv-side-encryption.html).
 
 
-#### Update terraform block to introduce backend and locking
+# 2. Update terraform block to introduce backend and locking
 
 2. Next, we will create a **DynamoDB** table to handle locks and perform consistency checks. Previously, locks were handled with a local file `terraform.tfstate.lock.info`. Therefore, with a cloud storage database like **DynamoDB**, anyone running Terraform against the same infrastructure can use a central location to control a situation where Terraform is running at the same time from multiple different people.
    
@@ -100,7 +100,7 @@ terraform {
 ```
 Now its time to **re-initialize** the **backend**. We run `terraform init` and confirm to change the backend by typing `yes`  
 
-#### Re-initialize terraform
+# 3. Re-initialize terraform
 We run the `terraform plan` command again to get an updated list of resources, we will receive an error because the backend has changed and **Terraform** needs to start again  
 
 <details close>
@@ -175,11 +175,12 @@ hector@hector-Laptop:~/Project16-17/PBL$d
 </details>
 
 
-#### Delete the local tfstate file and check the one in S3 bucket  
+# 4. Delete the local tfstate file and check the one in S3 bucket  
 
 Now we can see the `.tfsate` file inside the **S3 Bucket**   
-![Markdown Logo](https://raw.githubusercontent.com/hectorproko/AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-1-to-4/main/images/S3Bucket_tfstate.gif) 
+![[S3Bucket_tfstate.gif]]
 
+# 5. Add outputs
 
 Before we run `terraform apply` let us add an output so that the **S3 bucket** Amazon Resource Names (**ARN**) and **DynamoDB** table name can be displayed.  
 
@@ -198,7 +199,7 @@ output "dynamodb_table_name" {
 Now we can run `terraform apply`  
 
 
-**Isolation Of Environments:**  
+# Isolation Of Environments:
 Most likely we will need to create resources for different environments, such as: dev, sit, uat, preprod, prod, etc.  
 
 This **separation** of environments can be achieved using one of two methods:  
@@ -208,7 +209,7 @@ This **separation** of environments can be achieved using one of two methods:
 <!-- ### WHEN TO USE WORKSPACES OR DIRECTORY? -->
 
 
-### REFACTOR YOUR PROJECT USING MODULES
+# REFACTOR YOUR PROJECT USING MODULES
 
 It is difficult to navigate through all the Terraform blocks if they are all written in a single long `.tf `file. We must strive to produce reusable and comprehensive **IaC** code structure, and one of the tool that Terraform provides out of the box is [**Modules**](https://www.terraform.io/docs/language/modules/index.html).  
 
@@ -248,7 +249,7 @@ It is also recommended to configure `providers` and `backends` sections in separ
     └── VPC  
 
 
-### COMPLETE THE TERRAFORM CONFIGURATION
+# COMPLETE THE TERRAFORM CONFIGURATION
 
 
 Complete the rest of the codes yourself, the resulting configuration structure in your working directory may look like this:
