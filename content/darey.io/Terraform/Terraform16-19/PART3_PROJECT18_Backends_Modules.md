@@ -13,25 +13,21 @@ There are some .sh file that are empty
 
 # AUTOMATE-INFRASTRUCTURE-WITH-IAC-USING-TERRAFORM-PART-3/4
 
-*==Now we will explore alternative **Terraform** [backends](https://www.terraform.io/language/settings/backends/configuration).*  ==
- 
-### AUTOMATE INFRASTRUCTURE WITH IAC USING TERRAFORM. PART 3 – REFACTORING  
 
-So far we have developed **AWS** Infrastructure code using Terraform and tried to run it from our local workstation.  
-Now we will explore alternative **Terraform** [backends](https://www.terraform.io/language/settings/backends/configuration).  
+REFACTORING  
 
-**Introducing Backend on [S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)**   
-Each **Terraform** configuration can specify a **backend**, which defines where and how operations are performed *(where state snapshots are stored, etc)*  
+> [!info]
+> Up to this point, our AWS infrastructure development with Terraform has been executed from local environments, using the default local backend. This method, while convenient for individual use, poses challenges in terms of robustness and team collaboration, primarily because it keeps the state file on a local machine, limiting access for other team members.
+> 
+> To improve our infrastructure's reliability and enhance collaboration, transitioning to a remote backend is essential. Terraform supports a variety of remote [backends](https://www.terraform.io/language/settings/backends/configuration) that offer enhanced security and shared accessibility. Opting for an [S3 bucket as a backend](https://www.terraform.io/docs/language/settings/backends/s3.html), considering our existing AWS framework, presents an ideal solution for storing and accessing the state file remotely, thereby facilitating a more collaborative and efficient development process.
 
-States file is basically where terraform stores all the state of the infrastructure in `json` format.  
+> [!tip] Introducing Backend on [S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
+> The S3 backend for Terraform enhances infrastructure management by offering secure and reliable storage for state files in JSON format. This approach not only enables efficient versioning but also supports collaborative efforts by storing state information remotely on AWS S3.
+> 
+> A standout feature of the S3 backend is the optional [**State Locking**](https://www.terraform.io/docs/language/state/locking.html) capability. This function prevents simultaneous state modifications, protecting against potential corruption through the use of [DynamoDB](https://aws.amazon.com/dynamodb/). By ensuring that only one operation can alter the state at a time, State Locking adds an essential layer of security to your infrastructure management practices.
 
-So far, we have been using the default **backend**, which is the `local backend` – it requires no configuration, and the states file is stored locally. This mode it is not a robust solution, so it is better to store it in some more reliable and durable storage.  
 
-The second problem with storing this file locally is that other engineers will not have access to a state file stored locally on your computer.  
 
-To solve this, we will need to configure a backend where the state file can be accessed remotely by other DevOps team members. There are plenty of different standard **backends** supported by **Terraform** that we can choose from. Since we are already using **AWS** – we can choose an [S3 bucket as a backend](https://www.terraform.io/docs/language/settings/backends/s3.html).  
-
-Another useful option that is supported by **S3** backend is [**State Locking**](https://www.terraform.io/docs/language/state/locking.html) *(used to lock your state for all operations that could write state)*. This prevents others from acquiring the lock and potentially corrupting your state. State Locking feature for S3 backend is optional and requires another AWS service – [DynamoDB](https://aws.amazon.com/dynamodb/).  
 
 
 Steps to **Re-initialize** Terraform to use **S3 backend**: *(init terraform)*  
