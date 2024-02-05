@@ -31,12 +31,7 @@ REFACTORING
 
 
 Steps to **Re-initialize** Terraform to use **S3 backend**: *(init terraform)*  
-1. ###### Add S3 and DynamoDB resource blocks before deleting the local state file
-2. ###### Update terraform block to introduce backend and locking
-3. ###### Re-initialize terraform
-4. ###### Delete the local tfstate file and check the one in S3 bucket
-5. ###### Add outputs
-6. ###### terraform apply  
+
 
 # 1. Add S3 and DynamoDB resource blocks before deleting the local state file  
 <!--
