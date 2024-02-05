@@ -44,7 +44,7 @@ title: Establishing and Querying a Redshift Data Warehouse in AWS
 <br>![[Pasted image 20230929214840.png]]
 **Step 3:** Before executing any queries, I had to connect to my database. I entered the database name, database user, and the password that I specified during the cluster creation.
 <br>![[Pasted image 20230929215112.png]]
-<br>![[Pasted image 20230929215206.png|]]
+<br>![[Pasted image 20230929215206.png]]
 
 **Step 4: Loading Data from Local Workstation:**
 
