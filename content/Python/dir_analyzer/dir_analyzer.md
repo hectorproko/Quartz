@@ -1,7 +1,7 @@
 ---
 tags:
   - Python
-"last-modified:": 2024-02-05
+"last-modified:": 2024-02-04
 ---
 
 [GitHub Repo](https://github.com/hectorproko/dir_analyzer)
