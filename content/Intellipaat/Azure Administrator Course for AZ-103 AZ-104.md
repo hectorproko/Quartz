@@ -7,8 +7,8 @@
 5. [[Assignment 1_Module2_Azure Administrator Course for AZ-103 AZ-104|Managing Azure Storage Accounts Across Resource Groups]] <!--done03/20/2024-->
 6. [[Assignment 2_Module2_Azure Administrator Course for AZ-103 AZ-104|Organizing Azure Storage Accounts Using Tags for Team-Based Management]] <!--done03/21/2024-->
 7. [[Assignment 3_Module2_Azure Administrator Course for AZ-103 AZ-104|Setting Up Azure File Shares on Windows and Linux Systems]] <!--done03/22/2024-->
-8. [[Assignment 4_Module2_Azure Administrator Course for AZ-103 AZ-104|Implementing Azure CDN with Blob Storage]] <!--03/23/2024-->
-9. [[Assignment 5_Module2_Azure Administrator Course for AZ-103 AZ-104|Managing File Storage and Access Tiers in Azure Blob Service]] <!--03/24/2024-->
+8. [[Assignment 4_Module2_Azure Administrator Course for AZ-103 AZ-104|Implementing Azure CDN with Blob Storage]] <!--done03/23/2024-->
+9. [[Assignment 5_Module2_Azure Administrator Course for AZ-103 AZ-104|Managing File Storage and Access Tiers in Azure Blob Service]] <!--done03/24/2024-->
 ### Module 3:
 10. [[Assignment 1_Module3_Azure Administrator Course for AZ-103 AZ-104|Setting Up a Storage Account and Integrating with Azure Storage Explorer]] <!--03/00/2024-->
 11. [[Assignment 2_Module3_Azure Administrator Course for AZ-103 AZ-104|Utilizing Azure Storage Explorer for File Share Creation, Blob Uploads, and Azure Table Management]] <!--03/00/2024-->
