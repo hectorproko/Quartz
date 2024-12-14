@@ -124,8 +124,147 @@ Container port: 80 and 3000
 > ![[Pasted image 20241211164626.png]]
 > ![[Pasted image 20241211164829.png]]
 
+I set up the subdomain `api.hectorproko.com` to direct traffic to the load balancer
 
+![[Pasted image 20241213223519.png]]
+
+I created a wildcard certificate for the domain `*.hectorproko.com`. This allows secure connections for all subdomains under `hectorproko.com`, such as `www.hectorproko.com` or `api.hectorproko.com`.
+![[Pasted image 20241213224114.png]]
 ## Part 2 Setting Up a CI/CD Pipeline with AWS Tools
 
 **Step 1: Create a CodeCommit Repository**
+Created CodeCommit `nodejs-api-git-repo` and move the code there
 
+**Step 2: Configure AWS CodeBuild**
+Made sure the role used `codebuild-nodejs-api-codebuild-service-role` has `AmazonEC2ContainerRegistryFullAccess`
+
+> [!NOTE]- Create CodeBuild
+> ![[Pasted image 20241211180813.png]]
+
+Made sure i have `buildspec.yml`
+
+> [!NOTE]- `buildspec.yml` code
+> ```
+> version: 0.2
+> 
+> phases:
+>   pre_build:
+>     commands:
+>       - echo Logging in to Amazon ECR...
+>       - aws --version
+>       - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com
+>       - REPOSITORY_URI=$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME
+>   build:
+>     commands:
+>       - echo Build started on `date`
+>       - echo Building the Docker image...
+>       - docker build -t $REPOSITORY_URI:$IMAGE_TAG .
+>       - docker tag $REPOSITORY_URI:$IMAGE_TAG $REPOSITORY_URI:$IMAGE_TAG
+>   post_build:
+>     commands:
+>       - echo Build completed on `date`
+>       - echo Pushing the Docker images...
+>       - docker push $REPOSITORY_URI:$IMAGE_TAG
+>       - echo Writing image definitions file...
+>       - printf '[{"name":"%s","imageUri":"%s"}]' $CONTAINER_NAME $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
+> 
+> artifacts:
+>     files: imagedefinitions.json
+> ```
+
+Variables that need values:
+- AWS_DEFAULT_REGION
+- AWS_ACCOUNT_ID
+- IMAGE_REPO_NAME
+- IMAGE_TAG
+- REPOSITORY_URI
+- CONTAINER_NAME
+
+**Step 3: Set Up AWS CodePipeline**
+
+> [!NOTE]- Choose pipeline settings:
+> ![[Pasted image 20241211184500.png]]
+
+> [!NOTE]- Add source stage:
+> ![[Pasted image 20241211182406.png]]
+
+> [!NOTE]- Add build stage:
+> *I am assigning values to the variables I declared earlier.*
+> ![[Pasted image 20241211194052.png]]
+
+> [!NOTE]- Add deploy stage:
+> ![[Pasted image 20241211182831.png]]
+
+> [!NOTE]- Review
+> ![[Pasted image 20241211184813.png]]
+
+
+
+# S3 Static Site
+
+**Step 1: Create bucket `staticsite-44656056`**
+
+Created **index.html** and **error.html**
+
+**index.html**
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>Hello, DevOps!</h1>
+
+</body>
+</html>
+```
+
+**error.html**
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>Error Page</h1>
+
+</body>
+</html>
+```
+
+We select the Bucket and navigate Properties > Static website hosting
+![[Pasted image 20241211212206.png]]
+Make sure to enable web hosting
+![[Pasted image 20241211212430.png|300]]
+
+I upload the files and make sure they are made public using ACL
+![[Pasted image 20241211213125.png]]
+
+If navigate to the Static website hosting section once again I get an URL I can test my page with
+
+```
+http://staticsite-44656056.s3-website-us-east-1.amazonaws.com
+```
+
+I have create a subdomain `hello.hectorproko.com` that redirects to the static page
+![[Pasted image 20241211212742.png]]
+
+## CloudFormation
+Creaated cloudformation distribution attached to the sam amacon acm certificate careted previously to use  https
+
+```
+https://d2sub371zvvrmc.cloudfront.net/
+```
+
+![[Pasted image 20241213231629.png]]
+
+## Pipeline
+
+Created CodeCommit where i push changes to the pages and the pipeline updates the S3 bucket
+
+
+![[Recording 2024-12-13 230245.mp4]]
