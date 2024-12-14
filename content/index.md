@@ -75,3 +75,5 @@ Here are some of the projects I've been working on, categorized by technology:
 
 -->
 
+
+![[20241212-2211-00.5955594.mp4]]
