@@ -82,3 +82,15 @@ Inside the repository I'll click "View push commands" to authenticate Docker wit
 
 `docker push 838427752759.dkr.ecr.us-east-1.amazonaws.com/nodejs-api-repository:latest`
 
+We are pushing the **Node14** image to our ECR repository specifically to update the `FROM` statement in the Dockerfile. This ensures the image is pulled from our private repository rather than over the internet from Docker Hub. This change improves efficiency and avoids rate limit issues with Docker Hub.
+
+The updated Dockerfile will look like this:
+```dockerfile
+FROM 838427752759.dkr.ecr.us-east-1.amazonaws.com/nodejs-api-repository:Node14
+```
+
+`docker pull node:14`
+
+`docker tag node:14 838427752759.dkr.ecr.us-east-1.amazonaws.com/nodejs-api-repository:Node14`
+
+`docker push 838427752759.dkr.ecr.us-east-1.amazonaws.com/nodejs-api-repository:Node14`

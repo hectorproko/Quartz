@@ -64,6 +64,7 @@ Here are some of the projects I've been working on, categorized by technology:
 - [[Packer_To_AMI|Packer to AMI]] 
 
 
+[[Take-Home Task]]
 
 <!--
 [[Azure Administrator Course for AZ-103 AZ-104|Azure Administrator]]
