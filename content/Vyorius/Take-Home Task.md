@@ -255,6 +255,7 @@ I have create a subdomain `hello.hectorproko.com` that redirects to the static p
 
 ## CloudFormation
 Created a CloudFormation distribution linked to the previously created Amazon ACM certificate to enable HTTPS."
+![[Pasted image 20241213224114.png]]
 ![[Pasted image 20241213232331.png]]
 
 ```
