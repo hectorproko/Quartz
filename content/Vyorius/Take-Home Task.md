@@ -1,3 +1,7 @@
+
+# NodeJS API
+## Part 1 Launch and Deploy a Web App Image to AWS ECS Fargate
+
 **Step 1: Requirements**
 - An AWS account.
 - A Node.js application
@@ -94,3 +98,34 @@ FROM 838427752759.dkr.ecr.us-east-1.amazonaws.com/nodejs-api-repository:Node14
 `docker tag node:14 838427752759.dkr.ecr.us-east-1.amazonaws.com/nodejs-api-repository:Node14`
 
 `docker push 838427752759.dkr.ecr.us-east-1.amazonaws.com/nodejs-api-repository:Node14`
+
+**Step 5: Creating Security Groups**
+Create two security groups:
+ - **Application Load Balancer (ALB) Security Group**: Open port 80,443 (HTTP/S) to the world.  `nodejs-api-alb-sg`   
+ - **ECS Service Security Group**: Open port 3000 (Node.js app)
+
+**Step 6: Creating an ECS Fargate Cluster**
+We created AWS Fargate (serverless) cluster `nodejs-api-cluster`
+
+**Step 7: Creating a Task Definition**
+Task definition family: `nodejs-api-task-definition`
+CPU: `0.5 vCPU`
+Memory: `1GB`
+Task execution role: `ecsTaskExecutionRole`
+Container Name: `nodejs-api-container` 
+Image URI: `838427752759.dkr.ecr.us-east-1.amazonaws.com/nodejs-api-repository:latest`
+Container port: 80 and 3000
+
+**Step 8: Creating an ECS Service**
+- Attach the task definition to the ECS cluster.
+- Configure load balancer settings, including health checks and a target group *(the ECS containers)*.
+  
+> [!done] Testing Load Balancer
+> ![[Pasted image 20241211164626.png]]
+> ![[Pasted image 20241211164829.png]]
+
+
+## Part 2 Setting Up a CI/CD Pipeline with AWS Tools
+
+**Step 1: Create a CodeCommit Repository**
+
