@@ -202,7 +202,7 @@ Variables that need values:
 
 # S3 Static Site
 
-**Step 1: Create bucket `staticsite-44656056`**
+**Create bucket `staticsite-44656056`**
 
 Created **index.html** and **error.html**
 
@@ -254,7 +254,8 @@ I have create a subdomain `hello.hectorproko.com` that redirects to the static p
 ![[Pasted image 20241211212742.png]]
 
 ## CloudFormation
-Creaated cloudformation distribution attached to the sam amacon acm certificate careted previously to use  https
+Created a CloudFormation distribution linked to the previously created Amazon ACM certificate to enable HTTPS."
+![[Pasted image 20241213232331.png]]
 
 ```
 https://d2sub371zvvrmc.cloudfront.net/
@@ -264,7 +265,6 @@ https://d2sub371zvvrmc.cloudfront.net/
 
 ## Pipeline
 
-Created CodeCommit where i push changes to the pages and the pipeline updates the S3 bucket
+Set up a CodeCommit repository to push changes to the pages, triggering a pipeline that updates the S3 bucket.
 
-
-![[Recording 2024-12-13 230245.mp4]]
+<iframe title="Recording 2024 12 13 230245" src="https://www.youtube.com/embed/MRQfpYa9ftY?feature=oembed" height="113" width="200" style="aspect-ratio: 1.76991 / 1; width: 100%; height: 100%;" allowfullscreen="" allow="fullscreen"></iframe>
